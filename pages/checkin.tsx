@@ -1,16 +1,13 @@
-import NavigationBar from '../components/NavigationBar'
 import Head from 'next/head'
-import Image from 'next/image'
 import projectStyles from '../styles/Project.module.css'
 import styles from '../styles/CheckIn.module.css'
 
 export default function CheckIn() {
     return(
-        <div>
+        <div className="page">
             <Head>
                 <title>Snazzy Portfolio</title>
             </Head>
-            <NavigationBar/>
             <div className="content">
                 <div className={projectStyles.section}>
                     <div className={projectStyles.headline}>

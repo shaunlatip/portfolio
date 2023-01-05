@@ -7,7 +7,7 @@ export default function Footer() {
 
     return(
         <div className={styles.footer}>
-            <div className={`${homeStyle.section} ${styles.noMarginBottom}`}>
+            <div className={homeStyle.sectionNoBottomMargin}>
                 <div className={styles.footerContent}>
                     <div className={styles.left}>
                         <Link className={styles.greyLink} href="mailto:shaunlatip@gmail.com?subject=Hi Shaun!">
@@ -20,7 +20,7 @@ export default function Footer() {
                         <br/>
                         <p>
                             <Link target="_blank" href="mailto:shaunlatip@gmail.com" className={styles.greyLink}>shaunlatip@gmail.com</Link><br/>
-                            Made in React, with Care © 2022 Shaun Latip
+                            Made in React & Next.js, with Care © 2022 Shaun Latip
                         </p>
                     </div>
                     <div className={styles.right}>

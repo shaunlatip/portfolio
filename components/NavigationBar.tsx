@@ -10,11 +10,11 @@ export default function NavigationBar() {
             <Link href="/" className={`${styles.name} ${styles.navLink}`}>Shaun Latip</Link>
 
             <div className={styles.links}>
-                <div className={styles.pageButtons}>
+                <div className={`${styles.hiddenPageButton} ${styles.pageButtons}`}>
                     <Link href="/" className={`${styles.navItem} ${styles.navLink}`}>Work</Link>
                 </div>
 
-                <div className={styles.pageButtons}>
+                <div className={`${styles.hiddenPageButton} ${styles.pageButtons}`}>
                     <Link href="/" className={`${styles.navItem} ${styles.navLink}`}>Writing</Link>
                 </div>
 

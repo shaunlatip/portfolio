@@ -9,11 +9,10 @@ import visualDesignStyleGuideImage from 'public/visualdesignstyleguide.jpg'
 
 export default function ExploreRI() {
     return (
-        <div>
+        <div className="page">
             <Head>
-                <title>Snazzy Portfolio</title>
+                <title>Explore Rhode Island | Shaun Latip</title>
             </Head>
-            <NavigationBar/>
             <div className="content">
                 <div className={projectStyles.section}>
                     <div className={projectStyles.headline}>

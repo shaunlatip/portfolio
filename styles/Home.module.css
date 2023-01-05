@@ -1,8 +1,14 @@
 
 
 .section {
-  width: 1200px;
+  width: 1080px;
   margin-bottom: 100px;
+  line-height: 1.5em;
+}
+
+.sectionNoBottomMargin {
+  width: 1080px;
+  line-height: 1.5em;
 }
 
 .sectionTitle {
@@ -22,6 +28,7 @@
 .headline h1 {
   font-size: 2rem;
   font-weight: 600;
+  line-height: 1.5em;
 }
 
 .headline h3 {
@@ -34,11 +41,11 @@
   flex-direction: column;
   align-items: flex-start;
   text-align: start;
-  width: 50%;
+  /* width: 80%; */
 }
 
 .headlineGraphic {
-  width: 50%;
+  /* width: 50%; */
 }
 
 .subHeadline {
@@ -175,7 +182,7 @@
   flex-direction: column;
   align-items: center;
   padding-top: 80px;
-  padding-bottom: 160px;
+  padding-bottom: 100px;
 }
 
 .titleEmoji {
@@ -184,7 +191,7 @@
 
 .rowGallery {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: flex-start;
   gap: 2rem;
 }
@@ -198,13 +205,26 @@
   /* filter: drop-shadow(0px 4px 32px rgba(0, 0, 0, 0.10)); */
 }
 
+
+
 .row:hover {
   background-color: #f4f5f7;
   transition: all 0.2s ease-in;
 
 }
 
-.row a:hover {
+.rowReverse {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: stretch;
+  border-radius: 12px;
+  /* gap: 1rem; */
+  /* filter: drop-shadow(0px 4px 32px rgba(0, 0, 0, 0.10)); */
+}
+
+.rowReverse:hover {
+  background-color: #f4f5f7;
+  transition: all 0.2s ease-in;
 
 }
 
@@ -214,10 +234,13 @@
 }
 
 .rowContent {
+  display: flex;
+  flex-direction: column;
   padding: 1.5rem;
   /* background-color: #FFFFFF; */
   width: calc(100% - 300px);
   border-radius: 12px;
+  gap: 0.5rem;
 }
 
 .rowContent h2 {
@@ -231,16 +254,7 @@
   text-decoration: none;
 }
 
-.about {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-}
 
-.aboutPortrait {
-  width: 360px;
-  border-radius: 12px;
-}
 
 .finalSection {
   margin-bottom: 50px;
@@ -275,6 +289,10 @@
   .section {
     width: calc(100vw - 4rem);
   }
+
+  .sectionNoBottomMargin {
+    width: calc(100vw - 4rem);
+  }
 }
 
 @media (max-width: 750px) {
@@ -287,5 +305,26 @@
   }
 
   .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rowReverse {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rowContent {
+    width: 100%;
+  }
+
+  .rowImage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .rowImage img {
+    width: calc(100% - 2rem);
   }
 }

@@ -9,7 +9,6 @@ export default function PokemonRanch() {
             <Head>
             <title>Snazzy Portfolio</title>
             </Head>
-            <NavigationBar/>
             <div className="content">
                 <div className={projectStyles.section}>
                     <div className={projectStyles.headline}>

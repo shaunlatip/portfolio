@@ -1,5 +1,8 @@
 import '../styles/destyle.css'
 import '../styles/globals.css'
+import '../styles/transition.css';
+import Transition from '../components/Transition';
+import Layout from '../components/Layout'
 
 import type { AppProps } from 'next/app'
 
@@ -16,7 +19,11 @@ export default function App({ Component, pageProps }: AppProps) {
     <main className={inter.className} >
         <style jsx global>{`
       `}</style>
-      <Component {...pageProps} />
+          <Layout>
+            <Transition>
+              <Component {...pageProps} />
+            </Transition>
+          </Layout>
     </main>
   )
 
