@@ -124,8 +124,8 @@ export default function ExploreRI() {
 
                             <p>The website itself:</p>
                             <div className={projectStyles.dualImage}>
-                                <Image src={original1}/>
-                                <Image src={original2}/>
+                                <Image alt="Original website" className={projectStyles.imageHalf}src={original1}/>
+                                <Image alt="Original website" className={projectStyles.imageHalf} src={original2}/>
                             </div>
 
                         
@@ -139,7 +139,7 @@ export default function ExploreRI() {
                             I then ran through each scenario while asking myself the following questions:
                         </p>
 
-                                                 <div className={projectStyles.ol}>
+                            <div className={projectStyles.ol}>
 
                                 <div className={projectStyles.olItem}>
                                     <span>01</span>
