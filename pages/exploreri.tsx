@@ -2,7 +2,7 @@ import NavigationBar from '../components/NavigationBar'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import Footer from '../components/Footer'
+import Footer from '../components//Footer'
 import projectStyles from '../styles/Project.module.css'
 import homeStyles from '../styles/Home.module.css'
 import styles from '../styles/ExploreRI.module.css'
@@ -24,8 +24,9 @@ export default function ExploreRI() {
                 <Link href="#overview"><span>Overview</span></Link>
                 <Link href="#research"><span>Research</span></Link>
                 <Link href="" target="_blank"><span>Wireframing</span></Link>
-                <Link href="" target="_blank"><span>The Design</span></Link>
+                <Link href="" target="_blank"><span>Design</span></Link>
                 <Link href="" target="_blank"><span>Development</span></Link>
+                <Link href="" target="_blank"><span>Takeaways</span></Link>
             </div>
 
             <div className={projectStyles.pageContent}>
@@ -56,12 +57,12 @@ export default function ExploreRI() {
                                 <p>UI/UX Designer, Researcher, Front-end Developer</p>
                             </div>
                             <div>
-                                <b>Platform</b>
+                                <b>Platforms</b>
                                 <p>Mobile, Tablet, Desktop</p>
                             </div>
                             <div>
                                 <b>Timeline</b>
-                                <p>Oct 4, 2022 - Oct 18, 2022, Two weeks</p>
+                                <p>Oct 4, 2022 - Oct 18, 2022 (Two weeks)</p>
                             </div>
                             <div>
                                 <b>Tools Used</b>
@@ -121,11 +122,11 @@ export default function ExploreRI() {
                                     </p>
                                 </div>
                             </div>
-
+{/* 
                             <div className={projectStyles.dualImage}>
                                 <Image alt="Original website" className={projectStyles.imageHalf}src={original1}/>
                                 <Image alt="Original website" className={projectStyles.imageHalf} src={original2}/>
-                            </div>
+                            </div> */}
 
                         
                     </div>
@@ -165,7 +166,7 @@ export default function ExploreRI() {
                             </div>
 
                             <p>
-                                In addition to these questions, I also made use of Jakob Nielsen's 10 Heuristics Principles to fuel my insights, while running each task separate in mobile, tablet, and desktop devices. As a result, these walkthroughts helped me to get a feel on what issues were hindering the experience of the website's users.
+                                In addition to these questions, I also made use of Jakob Nielsen's 10 Heuristics Principles to fuel my insights, while running each task separate in mobile, tablet, and desktop devices. As a result, these walkthroughts helped me to get a feel on what issues were likely hindering the experience of the website's users.
                             </p>
                     </div>
                 </div>
@@ -175,14 +176,14 @@ export default function ExploreRI() {
                         <h3>Problem Statement</h3>
                         <h4>The original website had significant issues surrounding<br/> <span className="primary600">organization, responsiveness, and accessibility.</span> </h4>
                         <p>
-                           The issues resulting from my cognitive walkthrough spanned 6 pain points:
+                           I summarized the key issues from my walkthrough into 6 pain points:
                         </p>
                         <div className={projectStyles.ol}>
 
                             <div className={projectStyles.olItem}>
                                 <span>01</span>
                                 <p>
-                                    Scattered hierarchy with elements grouping under specific tasks separated across the page. Running through tasks required confusing, back-and-forth scanning.
+                                    Scattered hierarchy with elements grouping under specific tasks separated across the page.
                                 </p>
                             </div>
 
@@ -190,28 +191,28 @@ export default function ExploreRI() {
                             <div className={projectStyles.olItem}>
                                 <span>02</span>
                                 <p>
-                                Inconsistent affordances from interactive UI elements , largely lacking feedback upon toggling, hovering, and clicking.
+                                Inconsistent affordances from interactive UI elements, with minimal feedback.
                                 </p>
                             </div>
 
                             <div className={projectStyles.olItem}>
                                 <span>03</span>
                                 <p>
-                                Undersized text, links, and images causing legibility issues, especially for users on touchscreens, using gloves, or with precision impairments.
+                                Undersized text, links, and images causing legibility issues.
                                 </p>
                             </div>
 
                             <div className={projectStyles.olItem}>
                                 <span>04</span>
                                 <p>
-                                Lack of responsiveness across differing devices. On mobile, several UI elements break with overlapping elements and spacings hiding UI elements and decreasing legibility.
+                                Lack of responsiveness across differing devices, with website breaking in mobile. 
                                 </p>
                             </div>
 
                             <div className={projectStyles.olItem}>
                                 <span>05</span>
                                 <p>
-                                Significant visual clutter from overuse of differing colors and fonts, with contrast issues and a lack of negative space.
+                                Significant visual clutter from overuse of differing colors, fonts, and lacking negative space.
                                 </p>
                             </div>
 
@@ -226,6 +227,36 @@ export default function ExploreRI() {
                 </div>
 
 
+                <div className={projectStyles.sectionContainer} id="wireframing">
+
+                    <div className={projectStyles.section}>
+                        <div className={projectStyles.sectionTitle}>Wireframing</div>
+                    </div>
+                </div>
+
+                <div className={projectStyles.sectionContainerGray} id="design">
+                    <div className={projectStyles.section}>
+                        <div className={projectStyles.sectionTitle}>Design</div>
+
+                    </div>
+                </div>
+
+                <div className={projectStyles.sectionContainer} id="development">
+                    <div className={projectStyles.section}>
+                        <div className={projectStyles.sectionTitle}>Development</div>
+
+                    </div>
+                </div>
+
+                <div className={projectStyles.sectionContainer} id="takeaways">
+                    <div className={projectStyles.section}>
+                        <div className={projectStyles.sectionTitle}>Takeaways</div>
+
+                        <h3> </h3>
+                    </div>
+                </div>
+
+
                 <div className={projectStyles.sectionContainer}>
                     <div className={projectStyles.section}>
                         <h3> </h3>
@@ -236,6 +267,8 @@ export default function ExploreRI() {
 
 
             </div>
+
+            <Footer variant={"project"}/>
         </div>
     )
 

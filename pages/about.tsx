@@ -28,13 +28,13 @@ export default function About() {
                                 <span className="primary600">As a designer and researcher</span>, my design process centers on accessibility, empathy, and impact.
                                 <br/>
                                 <br/>
-                                <span className="primary600">As an anthropologist and volunteer peer counselor</span> (at  <Link className={homeStyles.primaryLink} href="https://projectlets.org/">Project LETS</Link>), I believe design must be user-centered to truly work. Understanding the context behind user needs, outside of assumptions, is difficult, yet critical, to impact.
+                                <span className="primary600">As an anthropologist and volunteer peer counselor</span> (at  <Link className={homeStyles.primaryLink} target="_blank" href="https://projectlets.org/">Project LETS</Link>), I believe design must be user-centered to truly work. Understanding the context behind user needs, outside of assumptions, is difficult, yet critical, to impact.
                                 <br/>
                                 <br/>
                                 {/* <span className="primary600">My background in Urban Studies</span> shapes me to view digital products as another facet of space; as places that people inhabit, depend upon, and often find central to their lives. I often draw from theories in Urban Studies to help fuel my design process accomodate the user first.
                                 <br/>
                                 <br/> */}
-                                <span className="primary600">As a disabled, neurodivergent individual</span> and <span className="primary600">first-generation international student</span>, I understand how difficult it can be to navigate systems built without accessibility in mind. I deeply believe accessibility is critical and serves to benefit us all. I believe our digital interfaces have immense power in affecting the physical and mental health of our communities, and designers are charged with making sure our designs remain accountable to all.
+                                <span className="primary600">As a neurodivergent individual</span> and <span className="primary600">first-generation international student</span>, I understand how difficult it can be to navigate systems built without accessibility in mind. I deeply believe accessibility is critical and serves to benefit us all. I believe our digital interfaces have immense power in affecting the physical and mental health of our communities, and designers are charged with making sure our designs remain accountable to all.
                                 <br/>
                                 <br/>
                                 <br/>

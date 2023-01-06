@@ -6,7 +6,7 @@ export default function NavbarLayout({ children }) {
     <>
       <NavigationBar />
       <main>{children}</main>
-      <Footer/>
+      {/* <Footer/> */}
     </>
   )
 }
