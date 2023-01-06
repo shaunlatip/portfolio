@@ -1,8 +1,10 @@
 import NavigationBar from '../components/NavigationBar'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import Footer from '../components/Footer'
 import projectStyles from '../styles/Project.module.css'
+import homeStyles from '../styles/Home.module.css'
 import styles from '../styles/ExploreRI.module.css'
 import bannerImage from '../public/exploreri/banner.jpg';
 
@@ -14,11 +16,19 @@ export default function ExploreRI() {
             <Head>
                 <title>Explore Rhode Island | Shaun Latip</title>
             </Head>
+            <div className={projectStyles.sidebar}>
+                <Link href="" target="_blank"><span>Overview</span></Link>
+                <Link href="" target="_blank"><span>Research</span></Link>
+                <Link href="" target="_blank"><span>Wireframing</span></Link>
+                <Link href="" target="_blank"><span>The Design</span></Link>
+                <Link href="" target="_blank"><span>Development</span></Link>
+            </div>
+
             <div className={projectStyles.pageContent}>
                 <div className={`${styles.bannerProjectColor} ${projectStyles.banner}`}>
                     <div className={projectStyles.headline}>
                         <h2>Explore Rhode Island</h2>
-                        <h3>Redesigning public park information with responsive first</h3>
+                        <h3>Redesigning public park information with responsiveness in mind</h3>
                     </div>
                     <div className={projectStyles.bannerImageContainer}>
                         <Image
@@ -30,193 +40,193 @@ export default function ExploreRI() {
 
                     
                 </div>
-                <div className={projectStyles.section}>
-
-                </div>
-
-                <div id={projectStyles.subHeadline} className={projectStyles.section}>
-                    <div className={projectStyles.subHeadline}>
-                        <b>Visit:  </b>
-                        <a href="https://exploreri.org/gSiteReport2.php?siteID=102&src=siteList" target="_blank" rel="noreferrer">Original Site</a> • <a href="https://vegananteater125.github.io/responsive-redesign/" target="_blank" rel="noreferrer">Redesigned Site</a>
-                    </div>
-
-                    <div className={projectStyles.subHeadline}>
-                        <b>Jump to:  </b>
-                        <a href="#overview">Overview</a> • <a href="#finding-problems">Finding Problems</a> • <a href="#accessibility">Accessibility</a> • <a href="#low-fidelity">Low-Fidelity</a> • <a href="#visual-design-style-guide">Visual Design Style Guide</a> • <a href="#high-fidelity">High-Fidelity</a> • <a href="#development">Development</a> • <a href="#conclusion">Conclusion</a> 
-                    </div>
-                </div>
-
-                <div id="overview" className={`${projectStyles.section} ${projectStyles.contentSection}`}>
-                    <h2>Overview</h2>
-                    <p>
-                        I decided to redesign <a href="https://exploreri.org/gSiteReport2.php?siteID=102&src=siteList" target="_blank" rel="noreferrer">this page from Explore Rhode Island</a>,
-                        which is the first Google search result for a popular park close to where I live.
-                        <br/><br/>
-                        This was my first time redesigning and developing a public webpage.
-                    </p>
-                    <br/>
-                    <iframe className={projectStyles.desktopFrame} src="https://exploreri.org/gSiteReport2.php?siteID=102&src=siteList"/>
-                    {/* <img src="./exploreri/original-screenshot.png"/> */}
-                    <p>
-                        <br/>The site provides critical information on directions, ADA accessibility, trail restrictions, and historical context all difficult to find elsewhere; all useful and unique information hindered by poor design.
-                        <br/><br/>
-                        <b>I then redesigned and developed this page, with the following result:</b>
-                        <br/>
-                    </p>
-                    <iframe className={projectStyles.desktopFrame} src="https://vegananteater125.github.io/responsive-redesign/"/>
-                </div>
-
-                <div id="finding-problems" className={`${projectStyles.section} ${projectStyles.contentSection}`}>
-                    <h2>Finding Problems</h2>
-                    <p>
-                        To assess the usability of the webpage, I completed a Cognitive Walkthrough of the webpage to experience the webpage through the eyes of the user. 
-                        <br/><br/>To do this, I came up with a set of scenarios, keeping in mind a broad range of users with differing contexts and needs.
-                        <br/>
-                        My scenarios included:
-                    </p>
-
-                    <div className={projectStyles.centeredContent}>
-                        <ul>
-                            <li>
-                            Check if the park has wheelchair-friendly trails and ADA accessible parking
-                            </li>
-                            <li>
-                            Examine the distance and difficulty of the park’s trail.
-                            </li>
-                            <li>
-                            Figure out how to best get to the park across several modes of transport
-                            </li>
-                        </ul>
-                    </div>
-
-                    <p>
-                        For each step of each scenario, I asked myself the following questions:
-                    </p>
                 
-                    <div className={projectStyles.centeredContent}>
-                    <p>
-                        Will the correct action be sufficiently evident to the user?
-                        <br/>Will the user notice that the correct action is available?
-                        <br/>Will the user associate and interpret the response from the action correctly?
-                    </p>
+                <div className={projectStyles.sectionContainer}>
+                    <div className={projectStyles.section}>
+                        <div className={projectStyles.sectionTitle}>Overview</div>
+                        <b>Description</b>
+                        <p>Redesign and development of <Link href="https://exploreri.org/gSiteReport2.php?siteID=102&src=siteList" target="_blank" className={homeStyles.primaryLink}>the Explore Rhode Island park page</Link>, often the first result when searching for public park or trail information in Rhode Island. Completed as part of an assignment to improve a poorly designed website for UI/UX course.</p>
+                        <div className={projectStyles.projectInfo}>
+                            <div>
+                                <b>Role</b>
+                                <p>UI/UX Designer, Researcher, Front-end Developer</p>
+                            </div>
+                            <div>
+                                <b>Platform</b>
+                                <p>Mobile, Tablet, Desktop</p>
+                            </div>
+                            <div>
+                                <b>Timeline</b>
+                                <p>Oct 4, 2022 - Oct 18, 2022, Two weeks</p>
+                            </div>
+                            <div>
+                                <b>Tools Used</b>
+                                <p>Figma, Balsamiq Wireframes, HTML, CSS</p>
+                            </div>
+                        </div>
                     </div>
+                </div>
 
-                    <h3>Key Issues</h3>
-                    <p>
-                        <br/>
-                        After going through these, I also went through Nielson’s 10 Heuristics to fuel my insights. I also accessed the website across phones, tablets, and desktops across varying window sizes and orientations.
-                        <br/><br/>
-                        I summarized my findings into 6 key points:
-                    </p>
 
-                    <div className={projectStyles.centeredContent}>
+                <div className={projectStyles.sectionContainerGray}>
+                    <div className={projectStyles.section}>
+                    <div className={projectStyles.sectionTitle}>Research</div>
+                        <h3>I first put myself in the shoes of different users who might use the page.</h3>
                         <p>
-                            <b>Scattered hierarchy and organization</b> of information with related elements, such as transportation methods and trail maps, separated across the webpage. Running through different tasks made me scan back and forth and search in a very scattered, unorganized path.
-                            <br/><br/>
-                            <b>Inconsistent affordances from interactive UI elements</b>regarding their interactability and linked functions, while also lacking feedback upon toggling, hovering, and clicking, leading to possibility for errors in conflict with user’s conceptual model.
-                            <br/><br/>
-                            <b>Undersized text, hyperlinks, and images </b>create difficulty in legibility and interaction, the latter especially for users on touchscreens, using gloves, or with precision impairments.
-                            <br/><br/>
-                            <b>Lack of responsiveness</b> across differing devices. For example, on mobile, several UI elements break with overlapping elements and spacings hiding UI elements and decreasing legibility.
-                            <br/><br/>
-                            <b>Significant visual clutter</b> from overuse of differing colors and font-family/weight/size, alongside lack of contrast across UI and lack of white space creating unneeded density and lack of emphasis.
-                            <br/><br/>
-                            <b>Inconsistent language and unaccompanied icons</b> lead to confusion of park information. 
+
                         </p>
+                        <p>
+                            Before proceeding, it was important to become familiar with the different users who might use the webpage, and the different tasks each user group might want to complete. To achieve this, I came up with a list of 13 scenarios comprising tasks that a user might expect to complete. These included:
+                            </p> 
+                            
+                            <div className={projectStyles.ol}>
+
+                                <div className={projectStyles.olItem}>
+                                    <span>01</span>
+                                    <p>
+                                        Checking if the park has wheelchair-friendly trails and ADA accessible parking
+                                    </p>
+                                </div>
+
+
+                                <div className={projectStyles.olItem}>
+                                    <span>02</span>
+                                    <p>
+                                        Examining the distance and difficulty of the park’s trail
+                                    </p>
+                                </div>
+
+                                <div className={projectStyles.olItem}>
+                                    <span>03</span>
+                                    <p>
+                                        Learning how to access the park across several modes of transport
+                                    </p>
+                                </div>
+
+                                <div className={projectStyles.olItem}>
+                                    <span>04</span>
+                                    <p>
+                                        Reading and responding to submissions and questions from other users
+                                    </p>
+                                </div>
+
+                                <div className={projectStyles.olItem}>
+                                    <span>05</span>
+                                    <p>
+                                        Planning trail routes for trips ahead of time
+                                    </p>
+                                </div>
+                            </div>
+                            
+                        
                     </div>
                 </div>
 
-                <div id="accessibility" className={`${projectStyles.section} ${projectStyles.contentSection}`}>
-                    <h2>Accessibility</h2>
-                    <p>
-                        I also examined the accessibility of this webpage using WebAIM WAVE to assess compatibility with screen readers, keyboard navigation, and on contrast with the following results:
-                    </p>
-                    <div className={projectStyles.centeredContent}>
-                        <ul>
-                            <li>
-                                Lack of alternative text on a many key buttons and on all images of the park, and redundant alternative text on several images or alternative text tags with no content.
-                            </li>
-                            <li>
-                                Missing language descriptor.
-                            </li>
-                            <li>
-                                Very low contrast and size warnings on a significant amount of text on buttons and paragraphs.                    
-                            </li>
-                            <li>
-                                No page regions and no use of ARIA outside of linked Google maps widget.                    
-                            </li>
-                            <li>
-                                Skipped heading levels and smaller p tags styled to match larger headings.                    
-                            </li>
-                            <li>
-                                Most buttons lacking keyboard event handlers.                    
-                            </li>
-                        </ul>
+                <div className={projectStyles.sectionContainer}>
+                    <div className={projectStyles.section}>
+                        <h3>Walkthrough Research Methods</h3>
+                        <p>
+                            I then ran through each scenario while asking myself the following questions:
+                        </p>
+
+                                                 <div className={projectStyles.ol}>
+
+                                <div className={projectStyles.olItem}>
+                                    <span>01</span>
+                                    <p>
+                                        Will the correct action be sufficiently evident to the user?
+                                    </p>
+                                </div>
+
+
+                                <div className={projectStyles.olItem}>
+                                    <span>02</span>
+                                    <p>
+                                        Will the user notice that the correct action is available?
+                                    </p>
+                                </div>
+
+                                <div className={projectStyles.olItem}>
+                                    <span>03</span>
+                                    <p>
+                                        Will the user associate and interpret the response from the action correctly?
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <p>
+                                In addition to these questions, I also made use of Jakob Nielsen's 10 Heuristics Principles to fuel my insights, while running each task separate in mobile, tablet, and desktop devices. As a result, these walkthroughts helped me to get a feel on what issues were hindering the experience of the website's users.
+                            </p>
                     </div>
-                    <p>
-                        Judging from these findings, I would expect keyboard and/or screen reader navigation of this webpage to be extremely difficult, if not outright impossible. The only area I might disagree with is regarding low contrast, as some text contrast is still quite legible even on grayscale.
-                    </p>
                 </div>
+
+                <div className={projectStyles.sectionContainerDark}>
+                    <div className={projectStyles.section}>
+                        <h3>Problem Statement</h3>
+                        <h4>The original website had significant issues surrounding<br/> <span className="primary600">organization, responsiveness, and accessibility.</span> </h4>
+                        <p>
+                           The issues resulting from my cognitive walkthrough spanned 6 pain points:
+                        </p>
+                        <div className={projectStyles.ol}>
+
+                            <div className={projectStyles.olItem}>
+                                <span>01</span>
+                                <p>
+                                    Scattered hierarchy with elements grouping under specific tasks separated across the page. Running through tasks required confusing, back-and-forth scanning.
+                                </p>
+                            </div>
+
+
+                            <div className={projectStyles.olItem}>
+                                <span>02</span>
+                                <p>
+                                Inconsistent affordances from interactive UI elements , largely lacking feedback upon toggling, hovering, and clicking.
+                                </p>
+                            </div>
+
+                            <div className={projectStyles.olItem}>
+                                <span>03</span>
+                                <p>
+                                Undersized text, links, and images causing legibility issues, especially for users on touchscreens, using gloves, or with precision impairments.
+                                </p>
+                            </div>
+
+                            <div className={projectStyles.olItem}>
+                                <span>04</span>
+                                <p>
+                                Lack of responsiveness across differing devices. On mobile, several UI elements break with overlapping elements and spacings hiding UI elements and decreasing legibility.
+                                </p>
+                            </div>
+
+                            <div className={projectStyles.olItem}>
+                                <span>05</span>
+                                <p>
+                                Significant visual clutter from overuse of differing colors and fonts, with contrast issues and a lack of negative space.
+                                </p>
+                            </div>
+
+                            <div className={projectStyles.olItem}>
+                                <span>05</span>
+                                <p>
+                                Inconsistent use of language and unaccompanied icons creating confusion for park information.
+                                </p>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+
+
+                <div className={projectStyles.sectionContainer}>
+                    <div className={projectStyles.section}>
+                        <h3> </h3>
+                    </div>
+                </div>
+
                 
-                <div id="low-fidelity" className={`${projectStyles.section} ${projectStyles.contentSection}`}>
-                    <h2>Low Fidelity Wireframes</h2>
-                    <p>
-                        I then created three Low-Fidelity wireframes for Desktop, Tablet, and Mobile sizes addressing the key issues I found:
-                    </p>
-                    <iframe className={projectStyles.fullPdfFrame} src="./exploreri/lofi-desktop.pdf"/>
-                    <iframe className={projectStyles.fullPdfFrame} src="./exploreri/lofi-tablet.pdf"/>
-                    <iframe className={projectStyles.fullPdfFrame} src="./exploreri/lofi-mobile.pdf"/>
-
-                </div>
-
-                <div id="visual-design-style-guide" className={`${projectStyles.section} ${projectStyles.contentSection}`}>
-                    <h2>Visual Design Style Guide</h2>
-                    <p>
-                        I then created the following visual design style guide. I focused on maintaining the emphasis on nature-inspired blues and greens that the original site had, while mixing in cleaner UI elements, sans-serif typography, and more interaction states.
-                    </p>
-                    <img className={styles.styleGuideImage} alt="Graphic of Visual Design Style Guide" src="exploreri/visualdesignstyleguide.jpg"/>
-                </div>
-
-                <div id="high-fidelity" className={`${projectStyles.section} ${projectStyles.contentSection}`}>
-                    <h2>High Fidelity Wireframes</h2>
-                    <p>
-                        I designed three separate high fidelity prototypes for Desktop (1440px wide), Tablet (768px wide), and Mobile (375px wide) with annotation for development.
-                    </p>
-                    <iframe className={projectStyles.fullPdfFrame} src="./exploreri/hifi-desktop.pdf"/>
-                    <iframe className={projectStyles.fullPdfFrame} src="./exploreri/hifi-tablet.pdf"/>
-                    <iframe className={projectStyles.fullPdfFrame} src="./exploreri/hifi-mobile.pdf"/>
-                </div>
-
-                <div id="development" className={`${projectStyles.section} ${projectStyles.contentSection}`}>
-                    <h2>Development</h2>
-                    <p>
-                        I developed a prototype of my redesign on the link below: <br/>
-                        <a href="https://vegananteater125.github.io/responsive-redesign/" target="_blank" rel="noreferrer">vegananteater125.github.io/responsive-redesign/</a>
-                        <br/>
-                        <br/>
-                        <b>Images used:</b>
-                        <br/>
-                        http://www.friendsofindiapointpark.org/wp-content/uploads/2021/04/ramps-website-resolution-1200x550.jpg
-                        <br/>
-                        https://www.alltrails.com/parks/us/rhode-island/india-point-park
-                        <br/>
-                        https://www.labnol.org/internet/embed-responsive-google-maps/28333/
-                    </p>
-                </div>
-
-                <div id="conclusion" className={`${projectStyles.section} ${projectStyles.contentSection}`}>
-                    <h2>Conclusion</h2>
-                    <p>
-                        This project provided me several takeaways:<br/><br/>
-                        My research process, involving running through scenarious and heuristics, taught me that designs have to be able to <b>accomodate diverse ranges of behavior</b>; accounting for niche use cases while prioritizing frequent, critical cases. 
-                        <br/>Designing with both low fidelity and high fidelity prototypes also helped me to improve my process, by <b>distributing layout, hierarchy, and color design across structured stages</b>. 
-                        <br/>Developing my website also taught me the importance of <b>considering frontend engineering costs and complexity into my design decisions.</b>
-                    </p>
-                </div>
 
 
             </div>
-            <Footer/>
         </div>
     )
 

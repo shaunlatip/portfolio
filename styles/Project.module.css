@@ -4,6 +4,32 @@
     align-items: stretch;
     padding-top: 80px;
     padding-bottom: 160px;
+    /* gap: 4rem; */
+}
+
+.sidebar {
+    position: fixed;
+    width: 200px;
+    height: calc(100% - 80px);
+    margin-right: 4vw;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    right: 0;
+    text-align: right;
+}
+
+.sidebar span {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #444444;
+}
+
+.sidebar span:hover {
+    color: black;
+    transition: all 0.2s ease-in-out;
 }
 
 .banner {
@@ -47,29 +73,118 @@
 
 .headline h2 {
     font-weight: 600;
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 1.5em;
 }
 
 .headline h3 {
     font-weight: 300;
-    font-size: 1.5rem;
-}
 
-
-
-.section {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0 16vw 0 16vw;
-    margin: 1em 0 0 0;
+    font-size: 1.2rem;
     line-height: 1.5em;
 }
 
-.section a {
+.sectionTitle {
+    font-weight: 600;
+    font-size: 1rem;
     color: #F0916C;
-    font-weight: 500;
+    padding-bottom: 1.5rem;
+}
+
+.sectionContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 4rem 0 4rem 0;
+}
+
+.sectionContainerGray {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 4rem 0 4rem 0;
+    background-color: #F7F7F7;
+}
+
+.sectionContainerDark {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 4rem 0 4rem 0;
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.section {
+    width: 980px;
+    line-height: 1.5em;
+}
+
+.section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.section h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    line-height: 1.5em;
+}
+
+.section h4 {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.section b {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.section p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.ol {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 0 1rem 0;
+}
+
+.olItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.olItem span {
+    min-width: 3.5rem;
+    font-weight: 600;
+    color: #808080;
+}
+
+
+.olItem p {
+    font-weight: 300;
+}
+
+.projectInfo {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.projectInfo div {
+    width: calc((100% - 6rem) / 4);
 }
 
 #subHeadline {
@@ -78,23 +193,6 @@
 }
 
 .contentSection {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-.contentSection h3 {
-    margin-top: 2rem;
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
-}
-
-.contentSection h2 {
-    margin-bottom: 1.5rem;
-}
-
-.contentSection img {
-    width: 100%;
 }
 
 .fullPdfFrame {
@@ -173,6 +271,15 @@
 
 @media (max-width: 350px) {
     .bannerImageContainer {
+        display: none;
+    }
+}
+
+@media (max-width: 1264px) {
+    .section {
+      width: calc(100vw - 4rem);
+    }
+    .sidebar {
         display: none;
     }
 }
