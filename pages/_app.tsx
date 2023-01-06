@@ -2,7 +2,7 @@ import '../styles/destyle.css'
 import '../styles/globals.css'
 import '../styles/transition.css';
 import Transition from '../components/Transition';
-import Layout from '../components/Layout.js';
+import Layout from '../components/Layout';
 
 import type { AppProps } from 'next/app'
 
