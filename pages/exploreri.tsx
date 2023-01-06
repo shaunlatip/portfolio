@@ -6,7 +6,11 @@ import Footer from '../components/Footer'
 import projectStyles from '../styles/Project.module.css'
 import homeStyles from '../styles/Home.module.css'
 import styles from '../styles/ExploreRI.module.css'
-import bannerImage from '../public/exploreri/banner.jpg';
+
+import bannerImage from '../public/exploreri/banner.jpg'
+import original1 from '../public/exploreri/original1.jpg'
+import original2 from '../public/exploreri/original2.jpg'
+
 
 import visualDesignStyleGuideImage from 'public/visualdesignstyleguide.jpg'
 
@@ -117,7 +121,13 @@ export default function ExploreRI() {
                                     </p>
                                 </div>
                             </div>
-                            
+
+                            <p>The website itself:</p>
+                            <div className={projectStyles.dualImage}>
+                                <Image src={original1}/>
+                                <Image src={original2}/>
+                            </div>
+
                         
                     </div>
                 </div>
