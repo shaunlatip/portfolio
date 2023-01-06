@@ -2,6 +2,8 @@ import homeStyles from '../styles/Home.module.css'
 import styles from '../styles/About.module.css'
 import Head from 'next/head'
 import Link from 'next/link'
+import selfPortrait from '../public/about/portrait.jpeg'
+import Image from 'next/image'
 
 export default function About() {
 
@@ -64,8 +66,11 @@ export default function About() {
                                 Reach out to me <Link target="_blank" className={homeStyles.primaryLink} href="mailto:shaunlatip@gmail.com">shaunlatip@gmail.com</Link> if you'd like to chat!
                             </p>
                         </div>
-                        <img className={styles.aboutPortrait} src="images/aboutPortrait.jpg"/>
-                    </div>
+                        <Image
+                        src={selfPortrait}
+                        alt="Photo of me in a forest"
+                        className={styles.aboutPortrait}/>                    
+                        </div>
                     </div>
                 </div>
         </div>

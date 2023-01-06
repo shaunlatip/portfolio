@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Footer from '../components/Footer'
 import projectStyles from '../styles/Project.module.css'
 import styles from '../styles/ExploreRI.module.css'
+import bannerImage from '../public/exploreri/banner.jpg';
 
 import visualDesignStyleGuideImage from 'public/visualdesignstyleguide.jpg'
 
@@ -13,12 +14,24 @@ export default function ExploreRI() {
             <Head>
                 <title>Explore Rhode Island | Shaun Latip</title>
             </Head>
-            <div className="content">
-                <div className={projectStyles.section}>
+            <div className={projectStyles.pageContent}>
+                <div className={`${styles.bannerProjectColor} ${projectStyles.banner}`}>
                     <div className={projectStyles.headline}>
-                        <h1 className={styles.projectColorText}>Explore Rhode Island</h1>
-                        <p>Redesigning public park information in Providence, RI</p>
+                        <h2>Explore Rhode Island</h2>
+                        <h3>Redesigning public park information with responsive first</h3>
                     </div>
+                    <div className={projectStyles.bannerImageContainer}>
+                        <Image
+                        src={bannerImage}
+                        alt="iMac, Tablet, and Phone display of interface"
+                        className={projectStyles.bannerImage}
+                        fill={true}/>
+                    </div>
+
+                    
+                </div>
+                <div className={projectStyles.section}>
+
                 </div>
 
                 <div id={projectStyles.subHeadline} className={projectStyles.section}>

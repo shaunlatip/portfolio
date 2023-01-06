@@ -1,20 +1,62 @@
+.pageContent {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 80px;
+    padding-bottom: 160px;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* height: 680px; */
+    width: 100%;
+    text-align: center;
+}
+
+.bannerTitle {
+    margin-top: 73px;
+}
+
+.bannerImageContainer {
+    position: relative;
+    width: 700px;
+    height: 448px;
+    overflow: "hidden";
+}
+
+.bannerImage {
+    /* width: 700px;
+    height: 448px; */
+    position: absolute;
+    object-fit: contain;
+    object-position: bottom;
+}
+
 .headline {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
-    margin-top: 40px;
+    align-items: center;
+    margin-top: 60px;
+    padding: 0 2rem 0 2rem;
+    margin-bottom: 60px;
 }
 
-.headline h1 {
-    font-size: 4em;
-    line-height: 1em;
+.headline h2 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 1.5em;
 }
 
-.headline p {
-    margin-top: 1em;
-    font-size: 1.5em;
+.headline h3 {
+    font-weight: 300;
+    font-size: 1.5rem;
 }
+
+
 
 .section {
     display: flex;
@@ -120,4 +162,17 @@
 
 .col {
     width: 50%;
+}
+
+@media (max-width: 750px) {
+    .bannerImageContainer {
+        width: calc(100% - 4rem);
+        height: 60vw;
+    }
+}
+
+@media (max-width: 350px) {
+    .bannerImageContainer {
+        display: none;
+    }
 }
