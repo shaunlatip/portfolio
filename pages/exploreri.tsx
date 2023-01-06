@@ -21,8 +21,8 @@ export default function ExploreRI() {
                 <title>Explore Rhode Island | Shaun Latip</title>
             </Head>
             <div className={projectStyles.sidebar}>
-                <Link href="" target="_blank"><span>Overview</span></Link>
-                <Link href="" target="_blank"><span>Research</span></Link>
+                <Link href="#overview"><span>Overview</span></Link>
+                <Link href="#research"><span>Research</span></Link>
                 <Link href="" target="_blank"><span>Wireframing</span></Link>
                 <Link href="" target="_blank"><span>The Design</span></Link>
                 <Link href="" target="_blank"><span>Development</span></Link>
@@ -45,7 +45,7 @@ export default function ExploreRI() {
                     
                 </div>
                 
-                <div className={projectStyles.sectionContainer}>
+                <div className={projectStyles.sectionContainer} id="#overview">
                     <div className={projectStyles.section}>
                         <div className={projectStyles.sectionTitle}>Overview</div>
                         <b>Description</b>
@@ -72,7 +72,7 @@ export default function ExploreRI() {
                 </div>
 
 
-                <div className={projectStyles.sectionContainerGray}>
+                <div className={projectStyles.sectionContainerGray} id="research">
                     <div className={projectStyles.section}>
                     <div className={projectStyles.sectionTitle}>Research</div>
                         <h3>I first put myself in the shoes of different users who might use the page.</h3>
@@ -122,7 +122,6 @@ export default function ExploreRI() {
                                 </div>
                             </div>
 
-                            <p>The website itself:</p>
                             <div className={projectStyles.dualImage}>
                                 <Image alt="Original website" className={projectStyles.imageHalf}src={original1}/>
                                 <Image alt="Original website" className={projectStyles.imageHalf} src={original2}/>
