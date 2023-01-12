@@ -1,124 +1,88 @@
+.bannerProjectColor {
+    background-color: 
+    #FFEFDC;
+}
+
 .projectColorText {
-    color: #e1875c;
+    color: #215560;
 }
 
-.centeredImage {
-    padding: 0 10vw 0 10vw;
-    margin-bottom: 2rem;
-}
-
-.desktopSketchImage {
-    padding: 0 15vw 0 15vw;
-}
-
-.buildingImage {
-    width: 400px;
-}
-
-.personasContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.styleGuideImage {
+    width: 100%;
+    margin: 1rem 0 1rem 0;
+    border-radius: 16px;
 }
 
 .persona {
-    background-color: #F7F7F7;
-    border-radius: 16px;
-    /* filter: drop-shadow(2px 2px 2px #c4c4c4); */
-    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 2rem;
+    gap: 2rem;
+    max-width: 600px;
+}
+
+.personaHeader {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1em;
-    padding: 1rem;
-    flex-basis: auto;
-}
-
-.personaCard {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    align-items: stretch;
-    background-color: white;
-    border-radius: 16px;
-    width: 360px;
-    filter: drop-shadow(2px 2px 2px #c4c4c4);
-    padding: 1.5rem;
-}
-
-.personaCard img {
-    border-radius: 0.5em;
-    width: 180px;
-    align-self: center;
-}
-
-.personaCard p {
-    font-size: 1em;
-}
-
-.personaCard h3 {
-    margin: 0.5rem 0 0.5rem 0;
-}
-
-.personaInfo {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    align-items: stretch;
-    background-color: white;
-    border-radius: 16px;
-    width: 400px;
-    filter: drop-shadow(2px 2px 2px #c4c4c4);
-    padding: 1.5rem;
-  }
-  
-.personaInfo p {
-    font-size: 1rem;
-}
-
-.personaEmpathyMap {
-    padding: 1.5rem;
-    background-color: white;
-    border-radius: 16px;
-}
-
-.personaEmpathyMap img {
-    border-radius: 16px;
-    filter: drop-shadow(2px 2px 2px #e7e7e7);
-    width: 600px;
-    height: 600px;
-}
-  
-
-.storyboardContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem 0;
-    margin-top: 2rem;
-}
-
-.storyboardPanel {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
+    padding-bottom: 1rem;
+    gap: 1.5rem;
+}
+
+.personaHeader div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.personaMapPanel {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.storyboard {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    justify-content: center;
+    max-width: 1068px;
+    margin-top: 4rem;
     background-color: white;
-    /* border-radius: 0.5em; */
-    width: 380px;
-    filter: drop-shadow(2px 2px 2px #e7e7e7);
 }
 
-.storyboardPanel img {
-    /* border-radius: 0.5em; */
-    width: 360px;
+.panel {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: flex-start;
+    width: calc(320px + 2rem);
+    gap: 1rem;
+    background-color: white;
 }
 
-.storyboardPanel p {
-    font-size: 1rem;
-    padding: 0.5rem 1rem 0.5rem 1rem;
+.panel p {
+    font-size: 16px;
+    padding: 0 0.4rem;
+}
+
+.bannerImageContainer {
+    position: relative;
+    width: 653px;
+    height: 490px;
+    overflow: "hidden";
+}
+
+.bannerImage {
+    /* width: 700px;
+    height: 448px; */
+    position: absolute;
+    object-fit: contain;
+    object-position: bottom;
 }

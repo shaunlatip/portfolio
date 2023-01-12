@@ -3,11 +3,14 @@ import styles from '../styles/Footer.module.css';
 import homeStyle from '../styles/Home.module.css';
 import React, { useState, useEffect } from 'react';
 
-export default function Footer({
-    variant
-    }) {
+interface FooterProps {
+    variant: string;
+}
 
-        if (variant == "project") {
+export default function Footer(
+    props:FooterProps) {
+
+        if (props.variant == "project") {
             return(<div className={styles.footer}>
                 {/* <div className={homeStyle.section}> */}
                     <div className={styles.footerContentProject}>

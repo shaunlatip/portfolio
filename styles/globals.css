@@ -7,6 +7,7 @@ body {
   color: black;
   background: white;
   scroll-behavior: smooth;
+  scroll-padding-top: 60px;
 }
 
 h1 {
@@ -63,4 +64,11 @@ a:hover {
 
 .page {
   overflow: hidden;
+}
+
+@media (max-width: 500px) {
+  html,
+  body {
+    font-size: 14px;
+  }
 }

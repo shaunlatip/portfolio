@@ -3,32 +3,33 @@
     flex-direction: column;
     align-items: stretch;
     padding-top: 80px;
-    padding-bottom: 160px;
+    padding-bottom: 0px;
     /* gap: 4rem; */
 }
 
 .sidebar {
     position: fixed;
     width: 200px;
-    height: calc(100% - 80px);
+    height: calc(100%);
     margin-right: 4vw;
-    margin-top: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 0.5rem;
     right: 0;
+    padding-bottom: 80px;
     text-align: right;
+    z-index: 1;
 }
 
-.sidebar span {
+.sidebar button {
     font-weight: 400;
     font-size: 1rem;
     color: #444444;
 }
 
-.sidebar span:hover {
-    color: black;
+.sidebar button:hover {
+    color: #F0916C;
     transition: all 0.2s ease-in-out;
 }
 
@@ -40,6 +41,15 @@
     /* height: 680px; */
     width: 100%;
     text-align: center;
+    position: relative;
+}
+
+.bannerWhiteBottom {
+    width: 100%;
+    height: 34px;
+    position: absolute;
+    bottom: 0px;
+    background-color: white;
 }
 
 .bannerTitle {
@@ -73,13 +83,12 @@
 
 .headline h2 {
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 1.5em;
 }
 
 .headline h3 {
     font-weight: 300;
-
     font-size: 1.2rem;
     line-height: 1.5em;
 }
@@ -93,58 +102,65 @@
 
 .sectionContainer {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     padding: 4rem 0 4rem 0;
+    line-height: 1.5em;
 }
 
 .sectionContainerGray {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding: 4rem 0 4rem 0;
     background-color: #F7F7F7;
 }
 
 .sectionContainerDark {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding: 4rem 0 4rem 0;
     background-color: #1e1e1e;
     color: white;
 }
 
 .section {
+    display: flex;
+    flex-direction: column;
     width: 980px;
+    gap: 0.5rem;
+}
+
+.sections {
     line-height: 1.5em;
 }
 
-.section h2 {
+.sections h2 {
     font-size: 2rem;
     font-weight: 600;
 }
 
-.section h3 {
+.sections h3 {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
     line-height: 1.5em;
 }
 
-.section h4 {
+.sections h4 {
     font-size: 1.25rem;
     font-weight: 300;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
 }
 
-.section b {
+.sections b {
     font-size: 1rem;
     font-weight: 600;
 }
 
-.section p {
+.sections p {
     font-size: 1rem;
     font-weight: 300;
 }
@@ -153,7 +169,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    padding: 1rem 0 1rem 0;
+    padding: 1.5rem 0 1.5rem 0;
 }
 
 .olItem {
@@ -175,11 +191,46 @@
     font-weight: 300;
 }
 
+.olLarge {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem 0 1.5rem 0;
+}
+
+.olItemLarge {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.olItemLarge span {
+    min-width: 3.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #F0916C;
+}
+
+
+.olItemLarge p {
+    font-weight: 300;
+}
+
+.olItemLarge div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
 .projectInfo {
     display: flex;
     flex-direction: row;
     gap: 2rem;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     margin-top: 2rem;
 }
 
@@ -272,10 +323,100 @@
     width: 50%;
 }
 
+.spreadRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem 0 2rem 0;
+}
+
+.spreadRowText {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: center;
+    gap: 0.5rem;
+    max-width: 480px;
+}
+
+.selector {
+    width: 100%;
+}
+
+.selectorTabs {
+   display: flex;
+   flex-direction: row;
+}
+
+.selectorTab {
+    font-weight: 500;
+    font-size: 1rem;
+    color: black;
+    padding: 0.4rem 1rem;
+}
+
+.selectorTabActive {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #F0916C;
+    text-decoration: underline;
+    padding: 0.4rem 1rem;
+}
+
+.primaryLink {
+    font-weight: 400;
+    color: #F0916C;
+    position: relative;
+  }
+  
+.primaryLink::after {
+    content: '';
+    position: absolute;
+    bottom: -0.1em;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: #F0916C;
+    opacity: 0;
+    transition: opacity 250ms, transform 250ms;
+}
+
+.primaryLink:hover::after,
+.primaryLink:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.1em, 0);
+}
+
+.contentEnd {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 4rem;
+    gap: 1rem;
+}
+
+.backToHome {
+    background-color: black;
+    border-radius: 20.60px;
+    color: white;
+    padding: 0.4rem 0.9rem;
+}
+
+.backToHome:hover {
+    background-color: #F4F4F4;
+    color: black;
+    transition: all 0.2s ease-out;
+}
+
 @media (max-width: 750px) {
     .bannerImageContainer {
         width: calc(100% - 4rem);
         height: 60vw;
+    }
+
+    .spreadRow {
+        flex-direction: column;
     }
 }
 

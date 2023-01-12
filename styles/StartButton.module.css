@@ -1,0 +1,30 @@
+.button {
+    height: 41.39px;
+    width: 41.39px;
+    border-radius: 20.60px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover {
+    background-color: #F4F4F4;
+    transition: all 0.2s ease-out;
+}
+
+.path {
+    fill: white;
+}
+
+/* .button:hover {
+    background-color: #F4F4F4;
+    transition: all 0.2s ease-out;
+} */
+
+.button:hover svg path {
+    fill: black;
+    transition: all 0.2s ease-out;
+}
+

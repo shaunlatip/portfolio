@@ -15,11 +15,14 @@ export default function Home() {
               <div className={styles.headlineContent}>
               {/* <img className={styles.portrait} src="portrait.png"/> */}
               <h1>
-                  Hi! I'm Shaun, a product designer and user researcher.
+                  Hi! I'm Shaun, a curious product designer and researcher.
                   {/* <span className={styles.titleEmoji} role="img" aria-label="dog">☁️</span> */}
                 </h1>
                 <p className={styles.subHeadline}>
-                  I design to shape a more accessible, intentional digital world through UI/UX.
+                  I design to shape a more accessible, intentional digital world.
+                  <br/>My process is deeply informed by my past experiences in anthropology, psychology, and front-end development.
+                  <br/>
+                  Take a look at some of my work below to learn a bit more about how I tick.
                 </p>
                 <p className={styles.roles}>
                   Senior in Computer Science @ <a className={styles.primaryLink} target="_blank" href="https://www.brown.edu/">Brown University</a> <br/>
@@ -68,7 +71,7 @@ export default function Home() {
                   </div>
                 </Link>
               </div>
-              <div className={styles.project}>
+              <div className={styles.project} style={{display: 'none'}}>
                 <Link href="/pokemon-ranch">
                   <img className={styles.projectImage} src="images/pokemon-card.jpg"/>
                   <div className={styles.projectInfo}>
@@ -116,7 +119,7 @@ export default function Home() {
                   </div>
                 </Link>
               </div>
-              <div className={styles.projectPlaceholder}>
+              <div className={styles.projectPlaceholder} style={{display: 'none'}}>
                 <img className={styles.projectImage} src="images/projectPlaceholderImage.jpg"/>
                 <div className={styles.projectInfo}>
                     <div className={styles.projectInfoContent}>

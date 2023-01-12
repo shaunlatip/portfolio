@@ -217,7 +217,6 @@ export default function ExploreRI() {
 
 
             </div>
-            <Footer/>
         </div>
     )
 

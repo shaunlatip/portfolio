@@ -14,9 +14,9 @@ export default function NavigationBar() {
                     <Link href="/" className={`${styles.navItem} ${styles.navLink}`}>Work</Link>
                 </div>
 
-                <div className={`${styles.hiddenPageButton} ${styles.pageButtons}`}>
-                    <Link href="/" className={`${styles.navItem} ${styles.navLink}`}>Writing</Link>
-                </div>
+                {/* <div className={`${styles.hiddenPageButton} ${styles.pageButtons}`}>
+                    <Link href="/#writing" className={`${styles.navItem} ${styles.navLink}`}>Writing</Link>
+                </div> */}
 
                 <div className={styles.pageButtons}>
                     <Link href="/about" className={`${styles.navItem} ${styles.navLink}`}>About</Link>

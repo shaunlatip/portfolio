@@ -1,360 +1,802 @@
 import Head from 'next/head'
+import Image from 'next/image'
+import Link from 'next/link'
+import Footer from '../components//Footer'
 import projectStyles from '../styles/Project.module.css'
+import homeStyles from '../styles/Home.module.css'
 import styles from '../styles/CheckIn.module.css'
+import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
+import { Fade, ScaleFade, Slide, SlideFade } from "@chakra-ui/react"
+import { useDisclosure } from "@chakra-ui/react"
+import { motion, AnimatePresence } from "framer-motion"
+import { Box } from '@chakra-ui/react'
+import {useEffect} from "react"
+import React, { useRef } from "react"
+import StartButton from '../components/StartButton'
+
+import { useState } from "react"
+import bannerImage from '../public/checkin/building.jpg'
+import overviewSketch from '../public/checkin/overview-sketch.png'
+import desktopSketch from '../public/checkin/desktop-sketch.png'
+import harryPortrait from '../public/checkin/harry-portrait.png'
+import sakshiPortrait from '../public/checkin/sakshi-portrait.png'
 
 export default function CheckIn() {
+
+    const [sakshiTabIndex, setSakshiTabIndex] = useState(true)
+   
+    const variants = {
+        out: {
+          opacity: 0,
+          y: 0,
+          transition: {
+            duration: 0.8
+          }
+        },
+        in: {
+          opacity: 1,
+          y: 0,
+          transition: {
+            duration: 0.8,
+            delay: 0
+          }
+        }
+      };
+
+    const contextRef = useRef<HTMLDivElement>(null)
+    const interfaceRef = useRef<HTMLDivElement>(null)
+    const observationsRef = useRef<HTMLDivElement>(null)
+    const interviewsRef = useRef<HTMLDivElement>(null)
+    const personasRef = useRef<HTMLDivElement>(null)
+    const storyboardRef = useRef<HTMLDivElement>(null)
+    const takeawaysRef = useRef<HTMLDivElement>(null)
+
+    function handleSidebarClick(e: React.MouseEvent<HTMLElement>) {
+        const element = e.currentTarget as HTMLInputElement
+        const value = element.value
+
+        switch (value) {
+            case "Context":
+                if (!contextRef.current) {return} 
+                contextRef.current.scrollIntoView({behavior: "smooth"})
+                break;
+            case "Interface":
+                if (!interfaceRef.current) {return}
+                interfaceRef.current.scrollIntoView({behavior: "smooth"})
+                break;
+            case "Observations":
+                if (!observationsRef.current) {return}
+                observationsRef.current.scrollIntoView({behavior: "smooth"})
+                break;
+            case "Interviews":
+                if (!interviewsRef.current) {return}
+                interviewsRef.current.scrollIntoView({behavior: "smooth"})
+                break;
+            case "Personas":
+                if (!personasRef.current) {return}
+                personasRef.current.scrollIntoView({behavior: "smooth"})
+                break;
+            case "Storyboard":
+                if (!storyboardRef.current) {return}
+                storyboardRef.current.scrollIntoView({behavior: "smooth"})
+                break;
+            case "Takeaways":
+                if (!takeawaysRef.current) {return}
+                takeawaysRef.current.scrollIntoView({behavior: "smooth"})
+                break;
+        }
+        
+
+    }
+
     return(
         <div className="page">
             <Head>
-                <title>Snazzy Portfolio</title>
+                <title>Check In | Shaun Latip</title>
             </Head>
-            <div className="content">
-                <div className={projectStyles.section}>
+            <div className={projectStyles.sidebar}>
+                <button onClick={handleSidebarClick} value="Context">Context</button>
+                <button onClick={handleSidebarClick} value="Interface">Interface</button>
+                <button onClick={handleSidebarClick} value="Observations">Observations</button>
+                <button onClick={handleSidebarClick} value="Interviews">Interviews</button>
+                <button onClick={handleSidebarClick} value="Personas">Personas</button>
+                <button onClick={handleSidebarClick} value="Storyboard">Storyboard</button>
+                <button onClick={handleSidebarClick} value="Takeaways">Takeaways</button>
+                
+            </div>
+            <div className={projectStyles.pageContent}>
+
+                <div className={`${styles.bannerProjectColor} ${projectStyles.banner}`}>
                     <div className={projectStyles.headline}>
-                        <h1 className={styles.projectColorText}>Health Services Check In</h1>
-                        <p>Studying the state of clinical care from a UX perspective at Brown University</p>
+                        <h2>Check In</h2>
+                        <h3>Understanding clinical care experiences at Brown</h3>
                     </div>
+                    <div className={projectStyles.bannerWhiteBottom}/>
+                    <div className={styles.bannerImageContainer}>
+                        <Image
+                        src={bannerImage}
+                        alt="Banner Image"
+                        className={styles.bannerImage}
+                        fill={true}
+                        style={{boxShadow: '0px 8px 45px 0px rgba(0, 0, 0, 0.3)'
+                        }}/>
+                    </div>
+
+                    
                 </div>
 
-                <div id={projectStyles.subHeadline} className={projectStyles.section}>
-                    <div className={projectStyles.subHeadline}>
-                        <b>Jump to:  </b>
-                        <a href="#background">Background</a> • <a href="#overview">Overview</a> • <a href="#desktop-ui">Desktop UI</a> • <a href="#observations">Observations</a> • <a href="#personas">Personas</a> • <a href="#storyboard">Storyboard</a> • <a href="#conclusion">Conclusion</a>
+                <div className={projectStyles.sections}>
+                    <div className={projectStyles.sectionContainer} ref={contextRef} id="context">
+                        <div className={projectStyles.section}>
+                            <div className={projectStyles.sectionTitle}>Context</div>
+                            {/* <b>Context</b> */}
+                            <p>Since September 2021, clinical care at Brown University has been centralized at the <Link target="_blank" href="https://www.brown.edu/news/2021-09-16/wellness" className={homeStyles.primaryLink}>new health and wellness center</Link>. Being a clinic that nearly everyone at Brown visits, I wanted to better understand how different users experience visiting the new clinic, from walking in the door to being taken care of, in order to find room for improvement. To accomplish this, I applied research methodologies I learned from my UI/UX course.</p>
+                            <div className={projectStyles.projectInfo}>
+                                <div>
+                                    <b>Role</b>
+                                    <p>UI/UX Designer<br/>User Researcher</p>
+                                </div>
+                                <div>
+                                    <b>Timeline</b>
+                                    <p>Sep 20, 2022 - Oct 4, 2022</p>
+                                </div>
+                                <div>
+                                    <b>Skills</b>
+                                    <p>User Observation<br/>Storyboarding<br/>Persona Mapping</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <div id="background" className={`${projectStyles.section} ${projectStyles.contentSection}`}>
-                    {/* <div className={styles.overviewSketch}>
-                        <img src="checkin/building.jpg"/>
+                    <div className={projectStyles.sectionContainerDark}>
+                        <div className={projectStyles.section}>
+                            <h3>This was my first time crafting a whole UX research project, from A to Z.</h3>
+                            <p>While I spent the past summer researching at the Brown Language and Thought Lab, there I worked on assisting existing projects alongside others. This project <span>required me to assume ownership over every step:</span> from writing precise questions, to approaching strangers to ask about their experience, all while respecting the sensitive subject matter of health. This was also my first time crafting personas and storyboarding with real insights.</p>
+                        </div>
+                    </div>
+
+                    <div className={projectStyles.sectionContainer} ref={interfaceRef} id="interface">
+                        <div className={projectStyles.section}>
+                            <div className={projectStyles.sectionTitle}>Interface</div>
+                            <h3>First, I got familiar with the check-in interface and its surroundings.</h3>
+                        </div>
+                        <div style={{alignItems: 'center', padding: '0 0 0 0', gap: '2rem'}} className={projectStyles.spreadRow}>
+                            <div style={{width: 450}} className={projectStyles.spreadRowText}>
+                                <p>The check-in interface consisted of four sections:</p>
+                                <div className={projectStyles.ol}>
+                                    <div className={projectStyles.olItem}>
+                                        <span>01</span>
+                                        <p>
+                                            Desktop check-in booth where users validate their identity and update health information.
+                                        </p>
+                                    </div>
+                                    <div className={projectStyles.olItem}>
+                                        <span>02</span>
+                                        <p>
+                                        Seating area for users to sit and wait for their names to be called after using the booth.
+                                        </p>
+                                    </div>
+                                    <div className={projectStyles.olItem}>
+                                        <span>03</span>
+                                        <p>
+                                        Greeter area where staff members answer miscellaneous inquiries.
+                                        </p>
+                                    </div>
+                                    <div className={projectStyles.olItem}>
+                                        <span>04</span>
+                                        <p>
+                                        Clinical area entrance where nurses primarily call checked-in users inside to meet providers, and escort users out afterwards.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <Image src={overviewSketch} width={650} alt="Overview of area"/>
+                        </div>
+                        <div style={{alignItems: 'center', padding: '0 0 2rem 0', gap: '2rem'}} className={projectStyles.spreadRow}>
+                            <div style={{width: 450}} className={projectStyles.spreadRowText}>
+                                <p>The desktop interface is itself comprised of three main components:</p>
+                                <div className={projectStyles.ol}>
+                                    <div className={projectStyles.olItem}>
+                                        <span>01</span>
+                                        <p>
+                                            Navbar indicating which of the 5 pages a user is on.
+                                        </p>
+                                    </div>
+                                    <div className={projectStyles.olItem}>
+                                        <span>02</span>
+                                        <p>
+                                        Instructions containing paragraphs on how the displayed page should be used.
+                                        </p>
+                                    </div>
+                                    <div className={projectStyles.olItem}>
+                                        <span>03</span>
+                                        <p>
+                                        Body holding the fields, options, and checkboxes for each page, with a “Cancel” and “Next” button pair that resets the program and submits the displayed form respectively.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <Image src={desktopSketch} width={450} style={{margin: '0 100px 0 100px'}} alt="Overview of desktop"/>
+                        </div>
+                    </div>
+
+
+                    <div className={projectStyles.sectionContainerGray} ref={observationsRef} id="#observations">
+                        <div className={projectStyles.section}>
+                            <div className={projectStyles.sectionTitle}>Observations</div>
+                            <h3>Second, I observed users as they checked in to the clinic.</h3>
+                            <p>
+                                Over two weekdays, I waited in the public seating area and observed 12 users in the morning and afternoon. I avoided observing up close how users filled out forms on the desktop check-in to respect their privacy. Instead, I focused on observing how each user navigated the station, including how long they lingered on each section, and their interactions with staff.
+                            </p>
+                            <div style={{padding: '3rem 0 1rem 0'}}>
+                                <h4 style={{fontWeight: 600}}>Key Observations</h4>
+                                <div className={projectStyles.olLarge}>
+                                    <div className={projectStyles.olItemLarge}>
+                                        <span>1</span>
+                                        <div>
+                                            <b>Most (8/12) users first approached staff in the Greeter Area instead of the desktops.</b>
+                                            <p>
+                                            Half of these users stood and waited for several minutes while staff were busy, all without noticing a printed page instructing users to check-in with the computer.
+                                            Most of them seemed somewhat confused upon entering the check-in area, with the staff telling most of them to "just use the computer".
+                                            </p>
+                                        </div>
+                                        <p>
+
+                                        </p>
+                                    </div>
+                                    <div className={projectStyles.olItemLarge}>
+                                        <span>2</span>
+                                        <div>
+                                            <b>Several (3/12) users were late to their appointment.</b>
+                                            <p>These users tended to rush directly to a desktop, check in, then approach staff to apologize and see if they could still be seen. One user spent 10 minutes rescheduling with staff, as User A’s schedule conflicted with many of the suggested times.</p>
+                                            <p style={{color: '#F0916C', fontWeight: 400}}>
+                                                They later remarked: "I’m a med student…I can’t control when my lab ends.”
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className={projectStyles.olItemLarge}>
+                                        <span>3</span>
+                                        <div>
+                                            <b>Only a handful of users seemed to be familiar with the interface.</b>
+                                            <p>Outside of this minority, most seemed to appear unsure on how to check-in; scanning the room, observing others, before approaching a staff member.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div className={projectStyles.sectionContainer} ref={interviewsRef} id="interviews">
+                        <div className={projectStyles.section}>
+                            <div className={projectStyles.sectionTitle}>Interviews</div>
+                            <h3>Next, I approached and interviewed three users to hear about their experience directly.</h3>
+                            <p>
+                                To make this process less daunting, I created an interview guide of 8 questions to better understand what underlying goals, frustrations, and emotions they associated with the experience. I crafted my questions based on <Link className={homeStyles.primaryLink} href="https://www.cs.cmu.edu/~jhm/Readings/Dillman,%20Chapter%204.pdf" target="_blank">Dillman's basics of crafting good questions</Link>, emphasizing open-ended questions to capture more information, and keeping it simple and objective.
+                            </p>
+                            <p style={{marginTop: '0.5rem'}}>
+                                Depending on how the conversation went, I followed up on related topics that my interviewees expressed interest in discussing, while making space to answer any questions they had about my project.
+                            </p>
+                            <div style={{padding: '3rem 0 1rem 0'}}>
+                                <h4 style={{fontWeight: 600}}>My Interview Guide</h4>
+                                <div className={projectStyles.ol}>
+                                    <div className={projectStyles.olItem}>
+                                        <span>01</span>
+                                        <p>
+                                        Have you checked in here before today?
+                                        </p>
+                                    </div>
+                                    <div className={projectStyles.olItem}>
+                                        <span>02</span>
+                                        <p>
+                                        What initial reactions did you have when you arrived at the check in area today?
+                                        </p>
+                                    </div>
+                                    <div className={projectStyles.olItem}>
+                                        <span>03</span>
+                                        <p>
+                                        Did you experience any difficulty in understanding how to check in?
+                                        </p>
+                                    </div>
+                                    <div className={projectStyles.olItem}>
+                                        <span>04</span>
+                                        <p>
+                                            (If they used the computer) How was your experience navigating the computer?
+                                        </p>
+                                    </div>
+                                    <div className={projectStyles.olItem}>
+                                        <span>05</span>
+                                        <p>
+                                        What do you wish the check in process could accomplish differently?
+                                        </p>
+                                    </div>
+                                    <div className={projectStyles.olItem}>
+                                        <span>06</span>
+                                        <p>
+                                        Were there any parts of checking in that you enjoyed? If so, could you tell me about them?
+                                        </p>
+                                    </div>
+                                    <div className={projectStyles.olItem}>
+                                        <span>07</span>
+                                        <p>
+                                            Do you have any other concerns about the check in process?
+                                        </p>
+                                    </div>
+                                    <div className={projectStyles.olItem}>
+                                        <span>08</span>
+                                        <p>
+                                        Is there anything else about your experience today you’d like to share?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style={{padding: '3rem 0 1rem 0'}}>
+                                <h3>I then summarized the key points I learned from talking with three users.</h3>
+                                <div className={projectStyles.olLarge}>
+                                    <div className={projectStyles.olItemLarge}>
+                                        <span>1</span>
+                                        <div>
+                                            <b>Everyone unanimously felt frustrated and confused by the desktop interface.</b>
+                                            <p>
+                                            All three felt the desktop program was "cluttered, outdated, and hard to read," and wished that the process was more streamlined.
+                                            </p>
+                                        </div>
+                                        <p>
+
+                                        </p>
+                                    </div>
+                                    <div className={projectStyles.olItemLarge}>
+                                        <span>2</span>
+                                        <div>
+                                            <b>For those newer to campus, the check-in process made them feel anxious and nervous.</b>
+                                            <p> Users B and C were both first time users and undergraduates on campus for less than 2 years. Both were unsure on which section to first visit and felt nervous approaching staff. They both were anxious about how their presence could be acknowledged by clinicians.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className={projectStyles.olItemLarge}>
+                                        <span>3</span>
+                                        <div>
+                                            <b>Checking in quickly was only possible with experience and familiarity.</b>
+                                            <p>User B, relatively new to the interface, was frustrated that the desktop check-in took far longer than they expected and caused them to be late, despite having come "extra early". Meanwhile, another user, having been using the system for 5 years, claimed to be able to now check in extremely quickly “without reading instructions.”</p>
+                                        </div>
+                                    </div>
+                                    <div className={projectStyles.olItemLarge}>
+                                        <span>4</span>
+                                        <div>
+                                            <b>Sanitation, especially with COVID-19, was a concern with the desktop booth.</b>
+                                            <p>User A wished that the desktop required less physical contact, as once they were forced to use a booth right after somebody had coughed on it as they were running late. They also wished a way existed to display a wait time and queue for those waiting. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div className={projectStyles.sectionContainerGray}ref={personasRef} id="personas">
+                        <div className={projectStyles.section}>
+                            <div className={projectStyles.sectionTitle}>Personas</div>
+                            <h3>To analyze my findings, I devised two personas based on these insights.</h3>
+                            <p style={{marginBottom: 
+                            '0.5rem'}}>
+                                I worked to synthesize my findings into two distinct personas, each capturing a distinct set of behavior patterns. To better inform myself, I read Chapter 5 of Alan Cooper's "About Face: The Essentials of Interaction Design" to provide a framework for developing research based personas. During this process, I focused on exploring the underlying motivations behind the check-in process, emphasizing the 'why' moreso than the 'what'.
+                            </p>
+                        </div>
+                        <div style={{background: 'white', padding: '2rem', gap: '1rem'}} className={projectStyles.spreadRow}>
+                            <div className={styles.persona}>
+                                <div className={styles.personaHeader}>
+                                    <Image src={sakshiPortrait} width={140} height={196} alt="Portrait of Sakshi"/>
+                                    <div>
+                                        <h3 style={{color: '#F0916C', margin: 0}}>Scattered Sakshi</h3>
+                                        <p>25 Years Old</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <b style={{color: '#F0916C'}}>Background</b>
+                                    <p>
+                                    Sakshi is a med student, juggling her time between managing a lab project, volunteering at the hospital, and studying. Sakshi schedules biweekly clinical visits to manage an ongoing health condiiton between commitments, without much time to spare.
+                                    </p>
+                                </div>
+                                <div>
+                                    <b style={{color: '#F0916C'}}>Why Sakshi?</b>
+                                    <p>
+                                    Sakshi is based on observations of several users, alongside findings from my conversation with User A, who all arrived late. Sakshi represents those who possess more familiarity with the check-in process and struggle to fit their appointments within their busy schedules.
+                                    </p>
+                                </div>
+                                <div>
+                                    <b style={{color: '#F0916C'}}>Interface Issues</b>
+                                    <div className={projectStyles.ol} style={{paddingTop: '0.5rem'}}>
+                                        <div className={projectStyles.olItem}>
+                                            <span>01</span>
+                                            <p>
+                                            The keyboard and mouse are unhygienic, yet take too long to disinfect before use.
+                                            </p>
+                                        </div>
+                                        <div className={projectStyles.olItem}>
+                                            <span>02</span>
+                                            <p>
+                                            No wait time or queue information is provided while waiting.
+                                            </p>
+                                        </div>
+                                        <div className={projectStyles.olItem}>
+                                            <span>03</span>
+                                            <p>
+                                            Rescheduling any missed appointments takes a significant amount of time.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className={projectStyles.selector}>
+                                    <Tabs isLazy={true} variant='unstyled' size='md' colorScheme='orange' defaultIndex={0}>
+                                        <TabList>
+                                            <Tab style={{ fontWeight: 500, marginBottom: '2px'}}
+                                            _hover={{ color: '#F0916C'}}
+                                            _active={{ color: '#F0916C' }}
+                                            _selected={{ color: '#F0916C', boxShadow: '0 2px 0 rgba(240, 145, 108, 1)', marginBottom:'0px', transition: 'all 0.3s ease'}}>
+                                                Thinks
+                                            </Tab>
+                                            <Tab style={{ fontWeight: 500, marginBottom: '2px'}}
+                                            _hover={{ color: '#F0916C'}}
+                                            _active={{ color: '#F0916C' }}
+                                            _selected={{ color: '#F0916C', boxShadow: '0 2px 0 rgba(240, 145, 108, 1)', marginBottom:'0px', transition: 'all 0.3s ease'}} >
+                                                Feels
+                                            </Tab>
+                                            <Tab style={{ fontWeight: 500, marginBottom: '2px'}}
+                                            _hover={{ color: '#F0916C'}}
+                                            _active={{ color: '#F0916C' }}
+                                            _selected={{ color: '#F0916C', boxShadow: '0 2px 0 rgba(240, 145, 108, 1)', marginBottom:'0px', transition: 'all 0.3s ease'}}>
+                                                Does
+                                            </Tab>
+                                            <Tab style={{ fontWeight: 500, marginBottom: '2px'}}
+                                            _hover={{ color: '#F0916C'}}
+                                            _active={{ color: '#F0916C' }}
+                                            _selected={{ color: '#F0916C', boxShadow: '0 2px 0 rgba(240, 145, 108, 1)', marginBottom:'0px', transition: 'all 0.3s ease'}}>
+                                                Says
+                                            </Tab>
+                                        </TabList>
+
+                                        <TabPanels style={{transition: 'all 0.3s ease'}}>
+                                            <TabPanel>
+                                                    <Fade 
+                                                    variants={variants}
+                                                    animate="in"
+                                                    initial="out"
+                                                    exit="out"
+                                                    in={sakshiTabIndex}>
+                                                        <div className={styles.personaMapPanel}>
+                                                            <p>
+                                                                "If it's 4:04PM now, and if I sprint, I shouldn't be too late..."
+                                                            </p>
+                                                            <p>"If I can't make it today, I'll have to reschedule to finals week, which really won't work."</p>
+                                                            <p>"That time only works if lab ends on time..."</p>
+                                                        </div>
+                                                    </Fade>
+                                            </TabPanel>
+                                            <TabPanel>
+                                                <Fade 
+                                                variants={variants}
+                                                animate="in"
+                                                initial="out"
+                                                exit="out"
+                                                in={sakshiTabIndex}>
+                                                    <div className={styles.personaMapPanel}>
+                                                        <p>Grossed out by touching keyboards that are never sanitized.</p>
+                                                        <p>
+                                                            Stretched thin and exhausted after a long day in lab, lecture, and the library.
+                                                        </p>
+                                                        <p>
+                                                            Worried if the Doctor can still see them today.
+                                                        </p>
+                                                    </div>
+                                                </Fade>
+                                            </TabPanel>
+                                            <TabPanel>
+                                                <Fade 
+                                                    variants={variants}
+                                                    animate="in"
+                                                    initial="out"
+                                                    exit="out"
+                                                    in={sakshiTabIndex}>
+                                                <div className={styles.personaMapPanel}>
+                                                    <p>
+                                                        Speeds through desktop check-in having memorized each step
+                                                    </p>
+                                                    <p>Color codes every hour of every weekday on their Google Calendar</p>
+                                                    <p>Sprints straight towards the desktop check-in booth</p>
+                                                </div>
+                                                </Fade>
+                                            </TabPanel>
+                                            <TabPanel>
+                                                <Fade 
+                                                    variants={variants}
+                                                    animate="in"
+                                                    initial="out"
+                                                    exit="out"
+                                                    in={sakshiTabIndex}>
+                                                <div className={styles.personaMapPanel}>
+                                                    <p>"I have 45 minutes at 2PM between classes next Tuesday. Would that work for the X-Ray?"</p>
+                                                    <p>"I'm so sorry, I can't control when my lab ends. Can the Doctor still see me?"</p>
+                                                    <p>
+                                                        "Excuse me, I missed my 3:20. Is Doctor So-and-so still here?"
+                                                    </p>
+                                                </div>
+                                                </Fade>
+                                            </TabPanel>
+                                        </TabPanels>
+                                    </Tabs>
+                                </div>
+                            </div>
+                            <div className={styles.persona}>
+                                <div className={styles.personaHeader}>
+                                    <Image src={harryPortrait} width={140} alt="Portrait of Harry"/>
+                                    <div>
+                                        <h3 style={{color: '#F0916C', margin: 0}}>Hesitant Harry</h3>
+                                        <p>19 Years Old</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <b style={{color: '#F0916C'}}>Background</b>
+                                    <p style={{}}>
+                                    Harry is a sophomore in his first in-person year at Brown, navigating dorm-life and living alone for their first time, and is a combination of Users B and H. Today is Harry’s first visit to Health Services to get a vaccination shot.
+                                    </p>
+                                </div>
+                                <div>
+                                    <b style={{color: '#F0916C'}}>Why Harry?</b>
+                                    <p>
+                                    Harry is based off my observations of numerous users and conversations with Users B and C who required more staff guidance to successfully check in. Harry represents newer users less familiar to checking in, who feel pressured to avoid any mistakes.
+
+                                    </p>
+                                </div>
+                                <div>
+                                    <b style={{color: '#F0916C'}}>Interface Issues</b>
+                                    <div className={projectStyles.ol} style={{paddingTop: '0.5rem'}}>
+                                        <div className={projectStyles.olItem}>
+                                            <span>01</span>
+                                            <p>
+                                            A lack of appropriate affordances to indicate which section to first go to check in.
+                                            </p>
+                                        </div>
+                                        <div className={projectStyles.olItem}>
+                                            <span>02</span>
+                                            <p>
+                                            Difficulty reading and using user interface elements on desktop.
+                                            </p>
+                                        </div>
+                                        <div className={projectStyles.olItem}>
+                                            <span>03</span>
+                                            <p>
+                                            Feels unseen by healthcare providers while checking in.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <Tabs isLazy={true} variant='unstyled' size='md' colorScheme='orange' defaultIndex={0}>
+                                        <TabList>
+                                            <Tab style={{ fontWeight: 500, marginBottom: '2px'}}
+                                            _hover={{ color: '#F0916C'}}
+                                            _active={{ color: '#F0916C' }}
+                                            _selected={{ color: '#F0916C', boxShadow: '0 2px 0 rgba(240, 145, 108, 1)', marginBottom:'0px', transition: 'all 0.3s ease'}}>
+                                                Thinks
+                                            </Tab>
+                                            <Tab style={{ fontWeight: 500, marginBottom: '2px'}}
+                                            _hover={{ color: '#F0916C'}}
+                                            _active={{ color: '#F0916C' }}
+                                            _selected={{ color: '#F0916C', boxShadow: '0 2px 0 rgba(240, 145, 108, 1)', marginBottom:'0px', transition: 'all 0.3s ease'}}>
+                                                Feels
+                                            </Tab>
+                                            <Tab style={{ fontWeight: 500, marginBottom: '2px'}}
+                                            _hover={{ color: '#F0916C'}}
+                                            _active={{ color: '#F0916C' }}
+                                            _selected={{ color: '#F0916C', boxShadow: '0 2px 0 rgba(240, 145, 108, 1)', marginBottom:'0px', transition: 'all 0.3s ease'}}>
+                                                Does
+                                            </Tab>
+                                            <Tab style={{ fontWeight: 500, marginBottom: '2px'}}
+                                            _hover={{ color: '#F0916C'}}
+                                            _active={{ color: '#F0916C' }}
+                                            _selected={{ color: '#F0916C', boxShadow: '0 2px 0 rgba(240, 145, 108, 1)', marginBottom:'0px', transition: 'all 0.3s ease'}}>
+                                                Says
+                                            </Tab>
+                                        </TabList>
+
+                                        <TabPanels style={{transition: 'all 0.3s ease'}}>
+                                            <TabPanel>
+                                                <Fade 
+                                                    variants={variants}
+                                                    animate="in"
+                                                    initial="out"
+                                                    exit="out"
+                                                    in={sakshiTabIndex}>
+                                                    <div className={styles.personaMapPanel}>
+                                                        <p>
+                                                            "Where should I go first?"
+                                                        </p>
+                                                        <p>
+                                                            "What if I fill out this form wrong? Is that OK?"
+                                                            </p>
+                                                        <p>
+                                                            "How do I  let the doctors know I'm already here?"
+                                                        </p>
+                                                    </div>
+                                                </Fade>
+                                            </TabPanel>
+                                            <TabPanel>
+                                                <Fade 
+                                                    variants={variants}
+                                                    animate="in"
+                                                    initial="out"
+                                                    exit="out"
+                                                    in={sakshiTabIndex}>
+                                                    <div className={styles.personaMapPanel}>
+                                                        <p>Anxious about making a mistake and drawing attention.</p>
+                                                        <p>
+                                                            Pressured to not inconvenience other students and staff with unnecessary questions.
+                                                        </p>
+                                                        <p>
+                                                            Frustrated from scanning and straining eyes to use the desktop UI.
+                                                        </p>
+                                                    </div>
+                                                </Fade>
+                                            </TabPanel>
+                                            <TabPanel>
+                                                <Fade 
+                                                    variants={variants}
+                                                    animate="in"
+                                                    initial="out"
+                                                    exit="out"
+                                                    in={sakshiTabIndex}>
+                                                    <div className={styles.personaMapPanel}>
+                                                        <p>
+                                                            After arriving, scans left and right to try and figure out where to go.
+                                                        </p>
+                                                        <p>Waits for several minutes in front of the door to confirm if they have checked in or not.</p>
+                                                        <p>Asks staff what they should do to check in before trying anything.</p>
+                                                    </div>
+                                                </Fade>
+                                            </TabPanel>
+                                            <TabPanel>
+                                                <Fade 
+                                                    variants={variants}
+                                                    animate="in"
+                                                    initial="out"
+                                                    exit="out"
+                                                    in={sakshiTabIndex}>
+                                                    <div className={styles.personaMapPanel}>
+                                                        <p>"Excuse me, is this where I can check in for Health Services?"</p>
+                                                        <p>"Hi, I've checked in on the computer, do I need to do anything else here?"</p>
+                                                        <p>
+                                                            "Hi, I have an appointment at 5:40, is this where I should be?"
+                                                        </p>
+                                                    </div>
+                                                </Fade>
+                                            </TabPanel>
+                                        </TabPanels>
+                                    </Tabs>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={projectStyles.sectionContainerGray} ref={storyboardRef}>
+                        <div className={projectStyles.section}>
+                            <div className={projectStyles.sectionTitle}>Storyboard</div>
+                            <h3>To further explore and understand Scattered Sakshi's user flow, I created a storyboard. </h3>
+                            <p>
+                                This was a challenge for me as I rarely draw human characters, so I spent much effort to go through multiple drafts, practice sketching expressions, and using examples from comics to better portray the experience. While crafting this storyboard, I focused on the three pillars of authenticity, simplicity, and emotion to frame Sakshi's experience. 
+                            </p>
+                        </div>
+                    
+
+                        <div className={styles.storyboard}>
+                            <div className={styles.panel}>
+                                <Image alt="Comic Panel" width={320} height={320} src="/checkin/panel1.png"/>
+                                <p>
+                                    Sakshi spends the day cycling through lectures, volunteer work, and finally her lab.
+                                </p>
+                            </div>
+                            <div className={styles.panel}>
+                                <Image alt="Comic Panel" width={320} height={320} src="/checkin/panel2.png"/>
+                                <p>
+                                    Sakshi is working at her lab, expecting to finish when the lab runs into an unexpected problem. Her Professor asks her stay and help out: “Just another 15 minutes!”
+                                </p>
+                            </div>
+                            <div className={styles.panel}>
+                                <Image alt="Comic Panel" width={320} height={320} src="/checkin/panel3.png"/>
+                                <p>
+                                    30 minutes later, Sakshi sprints out of lab, barely catching the bus to 450 Brook St.
+                                </p>
+                            </div>
+                            <div className={styles.panel}>
+                                <Image alt="Comic Panel" width={320} height={320} src="/checkin/panel4.png"/>
+                                <p>
+                                    She arrives at the building, slamming open the door and sprinting up the stairs, 
+                                    as the user before her leaves their booth while coughing right into the keyboard.
+                                </p>
+                            </div>
+                            <div className={styles.panel}>
+                                <Image alt="Comic Panel" width={320} height={320} src="/checkin/panel5.png"/>
+                                <p>
+                                    After heading straight towards the nearest available counter, Sakshi, while grossed out, furiously clicks and types through the program just as she's done a thousand times.
+                                </p>
+                            </div>
+                            <div className={styles.panel}>
+                                <Image alt="Comic Panel" width={320} height={320} src="/checkin/panel6.png"/>
+                                <p>
+                                    Through each section, Sakshi ignores the paragraphs of dense instructions and text; using her experience to speed through the clunky program ASAP to not miss her appointment.
+                                </p>
+                            </div>
+                            <div className={styles.panel}>
+                                <Image alt="Comic Panel" width={320} height={320} src="/checkin/panel7.png"/>
+                                <p>
+                                    Unfortunately after the program says she is too late, she goes to the Greeter Area and makes her case:
+                                    "I'm sorry I'm late - I came here as fast as I could!"
+                                </p>
+                            </div>
+                            <div className={styles.panel}>
+                                <Image alt="Comic Panel" width={320} height={320} src="/checkin/panel8.png"/>
+                                <p>
+                                    They spend the next ten minutes trying to reschedule. They go back and forth: “2:00PM? No I cant do then, could 2:00pm Wednesday work?" "...What about Thursday?...Friday? [and so on]...”                  
+                                </p>
+                            </div>
+                            <div className={styles.panel}>
+                                <Image alt="Comic Panel" width={320} height={320} src="/checkin/panel9.png"/>
+                                <p>
+                                    After scheduling another appointment tightly packed between her commitments, Sakshi walks away disappointed, back again where she first started. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={projectStyles.sectionContainer} ref={takeawaysRef}>
+                        <div className={projectStyles.section}>
+                            <div className={projectStyles.sectionTitle}>Takeaways</div>
+                                <h3>As my first major project from UI/UX, this research project was truly valuable to my growth as a designer.</h3>
+                                <p>
+                                    Looking back, it was truly exciting to put the UX tools that my UI/UX class introduced to work, in examining a part of campus that I find important in a deeper light. This project forced me to learn in a lot of ways which I found valuable in helping to develop my process; 
+                                    in forcing me to practice sketching and visual imagination to communicate my ideas, in planning every step of a research project, and interviewing and observing users in real life.
+                                </p>
+                                <div className={projectStyles.contentEnd}>
+                                    <Link href="/">
+                                        <button className={projectStyles.backToHome}>
+                                            Back to home
+                                        </button>
+                                    </Link>
+                                    <StartButton/>
+                                </div>
+                       </div>
+                    </div>
+
+                    {/* <div className={projectStyles.sectionContainerDark}>
+                        <div className={projectStyles.section}>
+                        </div>
+                    </div>
+
+                    <div className={projectStyles.ol}>
+                        <div className={projectStyles.olItem}>
+                            <span>01</span>
+                            <p>
+
+                            </p>
+                        </div>
+                        <div className={projectStyles.olItem}>
+                            <span>02</span>
+                            <p>
+        
+                            </p>
+                        </div>
+                        <div className={projectStyles.olItem}>
+                            <span>03</span>
+                            <p>
+
+                            </p>
+                        </div>
                     </div> */}
-                    <h2>Background</h2>
-                    <div className={projectStyles.twoColContent}>
-                        <div>
-                            <p>
-                                My goal for this study was to better understand the experiences of users checking in for scheduled clinical appointments at Brown University's new Health Services clinic.
-                                <br/><br/>
-                                The new check in station my study centers on was <a href="https://www.brown.edu/news/2021-09-16/wellness">launched</a> in September of 2021 as part of a new, integrated Health and Wellness center, combining the previously separated Health Services alongside Counseling and Psychological Services into one centralized point of care in the middle of Brown University's campus.
-                                <br/>
-                                <br/>As someone interested in and personally invested towards the accessibility of healthcare on campus, I wanted to evaluate the experiences of patients to understand and communicate the condition of this facet of Brown's campus healthcare system.
-                            </p>
-                        </div>
-
-                        <div className={projectStyles.imageCol}>
-                            <img className={styles.buildingImage} src="checkin/building.jpg"/>
-                        </div>
-                    </div>
 
                 </div>
 
-                <div id="overview" className={`${projectStyles.section} ${projectStyles.contentSection}`}>
-                    <h2>Overview</h2>
-                    <p>
-                        The check-in station consisted of four distinct, interactable sections:
-                    </p>
-
-                    <img className={styles.centeredImage} src="checkin/overview-sketch.png"/>
-
-                    <p>
-                        <b>Desktop Check-in Booths</b>  where users validate their identity and update health information. <br/>
-                        <br/>
-                        <b>Seating Area</b> for users to sit and wait for their names to be called after using the booth. <br/>
-                        <br/>
-                        <b>Greeter Area</b> where staff members answer miscellaneous inquiries. <br/>
-                        A printed page instructs users to “Please sign in with the computers across from staff.” <br/>
-                        <br/>
-                        <b>Clinical Area Main Door</b> where nurses primarily call checked-in users inside to meet providers, and escort users out afterwards. Two other secondary doors are also used to the left and behind the sketched area.
-                    </p>
-                </div>
-
-                <div id="desktop-ui" className={`${projectStyles.section} ${projectStyles.contentSection}`}>
-                    <h2>Desktop UI</h2>
-                    <p>
-                        The Desktop interface is itself comprised of three main components:
-                    </p>
-
-                    <img className={`${styles.centeredImage} ${styles.desktopSketchImage}`} src="checkin/desktop-sketch.png"/>
-
-                    <p>
-                        <b>Navbar</b> indicates which of the 5 pages a user is on. <br/>
-                        <br/>
-                        <b>Instructions</b> contains paragraphs on how the displayed page should be used. <br/>
-                        <br/>
-                        <b>Body</b> holds the fields, options, and checkboxes for each page. 
-                        <br/><br/> A “Cancel” and “Next” button pair resets the program and submits the displayed form respectively. <br/>
-                        <br/>
-                    </p>
-                </div>
-                <div id="observations" className={`${projectStyles.section} ${projectStyles.contentSection}`}>
-                    <h2>Observations</h2>
-                    <p>
-                        Over two weekdays, I waited in the public seating area and observed 12 users from morning to afternoon.
-                        <br/>
-                        <br/>
-                        I avoided observing up close how users filled out forms on the desktop check-in to respect their privacy.
-                        Instead, I focused on observing how each user navigated the station, including how long they lingered on each section, and their interactions with staff.
-                    </p>
-                    <div className={projectStyles.centeredContent}>
-                    <b>Key Observations</b>
-                  <br/>
-                  <ul>
-  
-                    <li>
-                      8 users first approached staff in the Greeter Area instead of the desktops.
-                      <ul>
-                        <li>Half of these users stood and waited for several minutes while staff were busy, all without noticing the printed instructional page to use the computer.</li>
-                        <li>Most of them seemed somewhat confused upon entering the check-in area, with the staff telling most to just use the computer.</li>
-                      </ul>
-                    </li>
-  
-                    <br/>
-  
-                    <li>
-                      3 users were late to their appointment. These users tended to rush directly to a desktop, check in, then approach staff to apologize and see if they could still be seen.
-                      <ul>
-                        <li>User A spent 10 minutes rescheduling with staff, as User A’s schedule conflicted with many of the suggested times.</li>
-                        <li>User A remarked: "<i>I’m a med student…I can’t control when my lab ends</i>.”</li>
-                      </ul>
-                    </li>
-  
-                    <br/>
-  
-                    <li>
-                      3 users arrived holding a prescription from the downstairs pharmacy, with 2 stating they came for vaccinations. 
-                    </li>
-  
-                    <br/>
-  
-                    <li>
-                      The doors to the clinical area create a startling “Bang!” whenever opened, interrupting nearly everyone waiting from what they are doing and causing them to look up.
-                    </li>
-
-                  </ul>
-                    </div>
-                </div>
-
-                <div id="interviews" className={`${projectStyles.section} ${projectStyles.contentSection}`}>
-                    <h2>Interviews</h2>
-                    <p>
-                        Of those I observed, I interviewed Users A, B and H after they left the clinical area. I selected my interviewees based on how distinct their observed behaviors were to capture a more exhaustive range of patterns across diverse groups.
-                        <br/> 
-                        <br/>While I followed my eight questions, I also followed up on related topics that my interviewees expressed interest in discussing, while casually conversing afterwards and answering questions they had about my project.
-                    </p>
-                    <div className={projectStyles.centeredContent}>
-                        <p>
-                            <b>Interview Questions</b>
-                            <br/>
-                        </p>
-
-                        <ol>
-                            <li>Have you checked in here before today?</li>
-                            <li>What initial reactions did you have when you arrived at the check in area today?</li>
-                            <li>Did you experience any difficulty in understanding how to check in?</li>
-                            <li>(If they used the computer) How was your experience navigating the computer?</li>
-                            <li>What do you wish the check in process could accomplish differently?</li>
-                            <li>
-                            Were there any parts of checking in that you enjoyed? 
-                            <ul>
-                                <li>If so, which parts specifically?</li>
-                            </ul>
-                            </li>
-                            <li>Do you have any other concerns about the check in process?</li>
-                            <li>Is there anything else about your experience today you’d like to share?</li>
-                        </ol>
-                    </div>
-
-                    <p>
-                        I then summarized the responses in the following patterns:
-                    </p>
-
-                    <div className={projectStyles.centeredContent}>
-                        <ul>
-                            <li>Everyone unanimously felt the desktop program was cluttered, outdated, and hard to read, wishing that the process was more streamlined.</li>
-                            <br/>
-                            <li>Users B and H were both first time users and undergraduates on campus for less than 2 years. Both were unsure on which section to first approach and expressed anxiety while approaching staff and on how their presence could be acknowledged by clinicians.</li>
-                            <br/>
-                            <li>User H complained how, despite arriving early, the desktop check-in took far longer than they expected causing H to be seen late.</li>
-                            <br/>
-                            <li>User A, a med student, has been using the system very often for 5 years and claimed to be able to now check in extremely quickly “<i>without reading instructions.</i>”</li>
-                            <br/>
-                            <li>User A wished the desktop involved less physical contact, as once the student before A coughed on the keyboard as A was running late with no time to sanitize. They also wished a way existed to display a wait time and queue for those waiting.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div id="personas" className={`${projectStyles.section} ${projectStyles.contentSection}`}>
-                    <h2>Personas</h2>
-                    <p>
-                        Stemming from my research, I crafted two user personas, <b>Scattered Sakshi</b> and <b>Hesitant Harry</b>, who represented two discrete clusters of user behavior patterns I noticed.
-                    </p>
-
-                    <div className={styles.personasContainer}>
-                        <div className={styles.persona}>
-                            <div className={styles.personaCard}>
-                                <img src="checkin/sakshi-portrait.png"/>
-                                <h3 >Scattered Sakshi</h3>
-                                <p>
-                                    Sakshi is a med student, juggling her time between managing a research lab project, volunteering at RI hospital, and studying full time. Sakshi schedules biweekly visits to health services to manage an ongoing health condiiton between lab and class, without much time to spare.
-                                </p>
-                            </div>
-                            <div className={styles.personaInfo}>
-                                <b>
-                                    Why Sakshi?
-                                </b>
-                                <p>
-                                    Sakshi is based on observations of Users A, I, K, alongside findings from my conversation with User A, who all arrived late. Sakshi represents those who possess more familiarity with the check-in process and struggle to fit their appointments within their busy schedules.
-                                </p>
-                                <br/>
-                                <b>Interface Problems</b>
-                                <ul>
-                                    <li>
-                                        The keyboard and mouse are unhygienic, yet take too long to disinfect before use.
-                                    </li>
-                                    <li>
-                                    No wait time or queue information is provided while waiting.
-                                    </li>
-                                    <li>
-                                    Rescheduling any missed appointments takes a significant amount of time.
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className={styles.personaEmpathyMap}>
-                            <img src="checkin/sakshi-map.png"/>
-                            </div>
-                        </div>
-                        <div className={styles.persona}>
-                            <div className={styles.personaCard}>
-                            <img src="checkin/harry-portrait.png"/>
-                            <h3 >Hesitant Harry</h3>
-                            <p>
-                                Harry is a sophomore in his first in-person year at Brown, navigating dorm-life and living alone for their first time, and is a combination of Users B and H. Today is Harry’s first visit to Health Services to get a vaccination shot.
-                            </p>
-                            </div>
-                            <div className={styles.personaInfo}>
-                                <b>
-                                    Why Harry?
-                                </b>
-                                <p>
-                                    Harry is based off my observations of numerous users and conversations with Users B and H who required more staff guidance to successfully check in. Harry represents newer users less familiar to checking in, who feel pressured to avoid any mistakes.
-                                </p>
-                                <br/>
-                                <b>Interface Problems</b>
-                                <br/>
-                                <ul>
-                                    <li>
-                                    A lack of appropriate affordances to indicate which section to first go to check in.
-                                    </li>
-                                    <li>
-                                        Difficulty reading user interface elements on desktop.
-                                </li>
-                                    <li>
-                                    Feels unseen by healthcare providers while checking in.
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className={styles.personaEmpathyMap}>
-                            <img src="checkin/harry-map.png"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="storyboard" className={`${projectStyles.section} ${projectStyles.contentSection}`}>
-                    <h2>Storyboard</h2>
-
-                    <p>
-                        I then created the following storyboard to communicate the user journey of Scattered Sakshi. 
-                        I decided to map Sakshi's journey. One reason behind why I chose Sakshi was that I felt Sakshi's user journey could highlight instances where the existing check-in process could leave frequent users disappointed, especially within the context of their broader life.
-                    </p>
-
-                    <div className={styles.storyboardContainer}>
-
-                        <div className={styles.storyboardPanel}>
-                        <img src="checkin/panel1.png"/>
-                        <p>
-                            Sakshi spends the day cycling through lectures, volunteer work, and finally her lab.
-                        </p>
-                        </div>
-
-                        <div className={styles.storyboardPanel}>
-                        <img src="checkin/panel2.png"/>
-                        <p>
-                            Sakshi is working at her lab, expecting to finish when the lab runs into an unexpected problem. Her Professor asks her stay and help out: “Just another 15 minutes!”
-                        </p>
-                        </div>
-
-
-                        <div className={styles.storyboardPanel}>
-                        <img src="checkin/panel3.png"/>
-                        <p>
-                            30 minutes later, Sakshi sprints out of lab, barely catching the bus to 450 Brook St.
-                        </p>
-                        </div>
-
-
-                        <div className={styles.storyboardPanel}>
-                        <img src="checkin/panel4.png"/>
-                        <p>
-                            She arrives at the building, slamming open the door and sprinting up the stairs, 
-                            as the user before her leaves their booth while coughing right into the keyboard.
-                        </p>
-                        </div>
-
-
-                        <div className={styles.storyboardPanel}>
-                        <img src="checkin/panel5.png"/>
-                        <p>
-                            After heading straight towards the nearest available counter, Sakshi, while grossed out, furiously clicks and types through the program just as she's done a thousand times.
-                        </p>
-                        </div>
-
-
-                        <div className={styles.storyboardPanel}>
-                        <img src="checkin/panel6.png"/>
-                        <p>
-                            Through each section, Sakshi ignores the paragraphs of dense instructions and text; using her experience to speed through the clunky program ASAP to not miss her appointment.
-                        </p>
-                        </div>
-
-
-                        <div className={styles.storyboardPanel}>
-                        <img src="checkin/panel7.png"/>
-                        <p>
-                            Unfortunately after the program says she is too late, she goes to the Greeter Area and makes her case:
-                            "I'm sorry I'm late - I came here as fast as I could!"
-                        </p>
-                        </div>
-
-
-                        <div className={styles.storyboardPanel}>
-                        <img src="checkin/panel8.png"/>
-                        <p>
-                            They spend the next ten minutes trying to reschedule. They go back and forth: “2:00PM? No I cant do then, could 2:00pm Wednesday work?" "...What about Thursday?...Friday? [and so on]...”                  
-                        </p>
-                        </div>
-
-
-                        <div className={styles.storyboardPanel}>
-                        <img src="checkin/panel9.png"/>
-                        <p>
-                            After scheduling another appointment tightly packed between her commitments, Sakshi walks away disappointed, back again where she first started. 
-                        </p>
-                        </div>
-
-
-                        </div>
-                </div>
-
-                <div id="conclusion" className={`${projectStyles.section} ${projectStyles.contentSection}`}>
-                    <h2>Conclusion</h2>
-                    <p>
-                        All in all, I really enjoyed being able to conduct this research project. Despite being a frequent user of the check in station myself, I was surprised at how my findings of what different people wanted and got out from their experience checking in could differ so much from my own expectations. It was also a great experience to apply web design principles I knew from theory to use HTML and CSS to create a responsive webpage to showcase my research process. As I learn more, I hope to sometime redesign the way users access clinical care at 450 Brook St. based on my findings.
-                        <br/> <br/>
-                        If you are taking a look at this page for CSCI 1300, I would love to hear about any and all suggestions you might have regarding my process.
-                        <br/>
-                        <br/>Thank you for taking a look at my work!
-                    </p>
-                </div>
 
             </div>
+            <Footer variant="project"/>
+            
         </div>
     )
 }
