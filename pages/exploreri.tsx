@@ -12,6 +12,8 @@ import bannerImage from '../public/exploreri/banner.png'
 import problemSpread from '../public/exploreri/problemSpread.jpg'
 import airbnb from '../public/exploreri/airbnb.png'
 import allTrails from '../public/exploreri/allTrails.png'
+
+
 import original1 from '../public/exploreri/original1.jpg'
 import original2 from '../public/exploreri/original2.jpg'
 
@@ -99,47 +101,48 @@ export default function ExploreRI() {
                             </div>
 
                         </div>
-                        <div className={styles.comparison}>
+                        <div className={styles.frame}>
+                            <div className={styles.comparison}>
                                 {/* <h4>Compare my redesign with the original below.</h4> */}
                                 <Tabs isLazy={true} variant='unstyled' size='md' colorScheme='orange' defaultIndex={0}>
-                                        <TabList>
-                                            <Tab style={{ fontWeight: 500, marginBottom: '2px'}}
-                                            _hover={{ color: '#F0916C'}}
-                                            _active={{ color: '#F0916C' }}
-                                            _selected={{ color: '#F0916C', boxShadow: '0 2px 0 rgba(240, 145, 108, 1)', marginBottom:'0px', transition: 'all 0.3s ease'}} >
-                                                Redesigned
-                                            </Tab>
-                                            <Tab style={{ fontWeight: 500, marginBottom: '2px'}}
-                                            _hover={{ color: '#F0916C'}}
-                                            _active={{ color: '#F0916C' }}
-                                            _selected={{ color: '#F0916C', boxShadow: '0 2px 0 rgba(240, 145, 108, 1)', marginBottom:'0px', transition: 'all 0.3s ease'}}>
-                                                Original
-                                            </Tab>
-                                        </TabList>
-
-                                        <TabPanels style={{transition: 'all 0.3s ease'}}>
+                                    <TabList>
+                                        <Tab style={{ fontWeight: 500, marginBottom: '2px', padding: '0.8rem 1.2rem'}}
+                                        _hover={{ color: '#F0916C'}}
+                                        _active={{ color: '#F0916C' }}
+                                        _selected={{ color: '#F0916C', boxShadow: '0 2px 0 rgba(240, 145, 108, 1)', marginBottom:'0px', transition: 'all 0.3s ease'}} >
+                                            Redesigned
+                                        </Tab>
+                                        <Tab style={{ fontWeight: 500, marginBottom: '2px', padding: '0.8rem 1.2rem'}}
+                                        _hover={{ color: '#F0916C'}}
+                                        _active={{ color: '#F0916C' }}
+                                        _selected={{ color: '#F0916C', boxShadow: '0 2px 0 rgba(240, 145, 108, 1)', marginBottom:'0px', transition: 'all 0.3s ease'}}>
+                                            Original
+                                        </Tab>
+                                    </TabList>
+                                    <TabPanels style={{transition: 'all 0.3s ease'}}>
+                                    <TabPanel style={{padding: 0}}>
+                                            <Fade
+                                            variants={variants}
+                                            animate="in"
+                                            initial="out"
+                                            exit="out">
+                                                <iframe style={{borderRadius:'0 0 12px 12px'}}className={styles.previewFrame} src="https://vegananteater125.github.io/responsive-redesign/"/>
+                                            </Fade>
+                                        </TabPanel>
                                         <TabPanel style={{padding: 0}}>
-                                                <Fade 
+                                                <Fade
                                                 variants={variants}
                                                 animate="in"
                                                 initial="out"
                                                 exit="out">
-                                                    <iframe className={projectStyles.desktopFrame} src="https://vegananteater125.github.io/responsive-redesign/"/>
+                                                    <iframe className={styles.previewFrame} src="https://exploreri.org/gSiteReport2.php?siteID=102&src=siteList"/>
                                                 </Fade>
-                                            </TabPanel>
-                                            <TabPanel style={{padding: 0}}>
-                                                    <Fade 
-                                                    variants={variants}
-                                                    animate="in"
-                                                    initial="out"
-                                                    exit="out">
-                                                        <iframe className={projectStyles.desktopFrame} src="https://exploreri.org/gSiteReport2.php?siteID=102&src=siteList"/>
-                                                    </Fade>
-                                            </TabPanel>
-                                            
-                                        </TabPanels>
-                                    </Tabs>
+                                        </TabPanel>
+                            
+                                    </TabPanels>
+                                </Tabs>
                             </div>
+                        </div>
                     </div>
 
                     <div className={projectStyles.sectionContainerDark}>
@@ -228,7 +231,7 @@ export default function ExploreRI() {
                                 <p>
                                     While walking through, I also refrenced Jakob Nielsen's <Link href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank" className={homeStyles.primaryLink}>10 Heuristic Principles</Link> to fuel my insights. Each task was repeated thrice across mobile, tablet, and desktop devices. As a result, these walkthroughs provided me insight into what issues were likely hindering the experience of the website's users.
                                 </p>
-                                <h4 style={{fontWeight: 600, marginBottom: '1rem', marginTop: '4rem'}}>
+                                <h4 style={{fontWeight: 600, marginBottom: '1rem', marginTop: '2.5rem'}}>
                                 I also used WebAIM's <Link style={{fontWeight: 600}} href="https://wave.webaim.org/" target="_blank" className={homeStyles.primaryLink}>WAVE tool</Link> to assess site accessibility.
                                 </h4>
                                 <p>I chose to use this to assess the site for use with screen readers, keyboard navigation, and regarding contrast levels. This tool proved invaluable in helping me to understand how users with impairments might experience the site. </p>
@@ -237,10 +240,10 @@ export default function ExploreRI() {
 
                     <div className={projectStyles.sectionContainerDark}>
                         <div className={projectStyles.section}>
-                            <h3>With these insights, I defined the key problems I would focus on.</h3>
+                            <h3>With these insights, I explored the key problems I would focus on.</h3>
                             <h4>On a broader scale, the website had significant issues surrounding <br/> <span className="primary600">organization</span>, <span className="primary600">platform responsiveness</span>, and <span className="primary600">accessibility</span>.
                             </h4>
-                            <h4 style={{marginTop: '1.5rem'}}>
+                            <h4 style={{marginTop: '0.5rem'}}>
                                 My walkthroughs led me to 5 main pain points in the original design, seen below.
                             </h4>
                             {/* <p>
@@ -314,7 +317,7 @@ export default function ExploreRI() {
                     </div>
                     <div className={projectStyles.sectionContainer}>
                         <div className={projectStyles.section}>
-                            <h3>Lastly, I examined and analyzed adjacent platforms.</h3>
+                            <h3>To inform myself, I also analyzed adjacent platforms.</h3>
                             <p>I viewed at a variety of platforms online that sought to accomplish similar functions as the page I was redesigning. I wanted to see what design patterns have worked before for similar functions, informing myself as best as I could before I started wireframing.</p>
                         </div>
                         <div className={projectStyles.spreadRow} style={{gap: '6rem', marginTop: '4rem'}}>
@@ -349,90 +352,370 @@ export default function ExploreRI() {
                             <h3>I then created three wireframes, with one for each platform.</h3>
                             <p>
                                 During this stage, I focused on mapping out the layout of how the website would be structured using Balsamiq Wireframes. I prioritized making an overall structure that would translate easily across desktop, tablet, and mobile, with a strong sense of organization and hierarchy.
-                            </p>
-                            <p>
                                 Each wireframe is annotated to show why particular design decisions were made. 
                             </p>
                             </div>
-                            <div className={styles.lofis}>
-                                <Tabs isLazy={true} variant='unstyled' size='md' colorScheme='orange' defaultIndex={0}>
-                                            <TabList>
-                                                <Tab style={{ fontWeight: 500, marginBottom: '2px'}}
-                                                _hover={{ color: '#F0916C'}}
-                                                _active={{ color: '#F0916C' }}
-                                                _selected={{ color: '#F0916C', boxShadow: '0 2px 0 rgba(240, 145, 108, 1)', marginBottom:'0px', transition: 'all 0.3s ease'}} >
-                                                    Desktop
-                                                </Tab>
-                                                <Tab style={{ fontWeight: 500, marginBottom: '2px'}}
-                                                _hover={{ color: '#F0916C'}}
-                                                _active={{ color: '#F0916C' }}
-                                                _selected={{ color: '#F0916C', boxShadow: '0 2px 0 rgba(240, 145, 108, 1)', marginBottom:'0px', transition: 'all 0.3s ease'}}>
-                                                    Tablet
-                                                </Tab>
-                                                <Tab style={{ fontWeight: 500, marginBottom: '2px'}}
-                                                _hover={{ color: '#F0916C'}}
-                                                _active={{ color: '#F0916C' }}
-                                                _selected={{ color: '#F0916C', boxShadow: '0 2px 0 rgba(240, 145, 108, 1)', marginBottom:'0px', transition: 'all 0.3s ease'}}>
-                                                    Mobile
-                                                </Tab>
-                                            </TabList>
-                                            <TabPanels style={{transition: 'all 0.3s ease'}}>
-                                            <TabPanel style={{padding: 0}}>
-                                                <Fade
-                                                variants={variants}
-                                                animate="in"
-                                                initial="out"
-                                                exit="out">
-                                                    <iframe className={styles.lofiFrame} src="/exploreri/lofiDesktop.jpg"/>
-                                                </Fade>
-                                            </TabPanel>
-                                            <TabPanel style={{padding: 0}}>
-                                                <Fade
-                                                variants={variants}
-                                                animate="in"
-                                                initial="out"
-                                                exit="out">
-                                                    <iframe className={styles.lofiFrame} src="/exploreri/lofiTablet.jpg"/>
-                                                </Fade>
-                                            </TabPanel>
-                                            <TabPanel style={{padding: 0}}>
-                                                <Fade
-                                                variants={variants}
-                                                animate="in"
-                                                initial="out"
-                                                exit="out">
-                                                    <iframe className={styles.lofiFrame} src="/exploreri/lofiMobile.jpg"/>
-                                                </Fade>
-                                            </TabPanel>
+                            <div className={styles.frameAlt}>
+                                <div className={styles.lofis}>
+                                    <Tabs isLazy={true} variant='unstyled' size='md' colorScheme='orange' defaultIndex={0}>
+                                                <TabList>
+                                                    <Tab style={{ fontWeight: 500, marginBottom: '2px', padding: '0.8rem 1.2rem'}}
+                                                    _hover={{ color: '#F0916C'}}
+                                                    _active={{ color: '#F0916C' }}
+                                                    _selected={{ color: '#F0916C', boxShadow: '0 2px 0 rgba(240, 145, 108, 1)', marginBottom:'0px', transition: 'all 0.3s ease'}} >
+                                                        Desktop
+                                                    </Tab>
+                                                    <Tab style={{ fontWeight: 500, marginBottom: '2px', padding: '0.8rem 1.2rem'}}
+                                                    _hover={{ color: '#F0916C'}}
+                                                    _active={{ color: '#F0916C' }}
+                                                    _selected={{ color: '#F0916C', boxShadow: '0 2px 0 rgba(240, 145, 108, 1)', marginBottom:'0px', transition: 'all 0.3s ease'}}>
+                                                        Tablet
+                                                    </Tab>
+                                                    <Tab style={{ fontWeight: 500, marginBottom: '2px', padding: '0.8rem 1.2rem'}}
+                                                    _hover={{ color: '#F0916C'}}
+                                                    _active={{ color: '#F0916C' }}
+                                                    _selected={{ color: '#F0916C', boxShadow: '0 2px 0 rgba(240, 145, 108, 1)', marginBottom:'0px', transition: 'all 0.3s ease'}}>
+                                                        Mobile
+                                                    </Tab>
+                                                </TabList>
+                                                <TabPanels style={{transition: 'all 0.3s ease'}}>
+                                                <TabPanel style={{padding: 0}}>
+                                                    <Fade
+                                                    variants={variants}
+                                                    animate="in"
+                                                    initial="out"
+                                                    exit="out">
+                                                        <iframe className={styles.lofiFrame} src="/exploreri/lofiDesktop.jpg"/>
+                                                    </Fade>
+                                                </TabPanel>
+                                                <TabPanel style={{padding: 0}}>
+                                                    <Fade
+                                                    variants={variants}
+                                                    animate="in"
+                                                    initial="out"
+                                                    exit="out">
+                                                        <iframe className={styles.lofiFrame} src="/exploreri/lofiTablet.jpg"/>
+                                                    </Fade>
+                                                </TabPanel>
+                                                <TabPanel style={{padding: 0}}>
+                                                    <Fade
+                                                    variants={variants}
+                                                    animate="in"
+                                                    initial="out"
+                                                    exit="out">
+                                                        <iframe className={styles.lofiFrame} src="/exploreri/lofiMobile.jpg"/>
+                                                    </Fade>
+                                                </TabPanel>
                                 
-                                            </TabPanels>
-                                </Tabs>
+                                                </TabPanels>
+                                    </Tabs>
+                                </div>
                             </div>
                         <div>
 
                         </div>
                     </div>
-                    <div className={projectStyles.sectionContainer} id="design">
+                    {/* <div className={projectStyles.sectionContainer} id="design">
+                       
+                    </div>
+
+                    <div className={projectStyles.sectionContainer} style={{backgroundColor: '#e8f3e2'}}>
                         <div className={projectStyles.section}>
-                            <div className={projectStyles.sectionTitle}>Design</div>
+
+                        </div>
+                    </div> */}
+
+                    <div className={projectStyles.sectionContainer} style={{paddingBottom: '0rem'}}>
+                        <div className={projectStyles.section}>
+                            <b style={{marginBottom: 0}}><span style={{fontWeight: 600, color: '#F0916C'}}>Solution #1</span></b>
+                            
+                            <h3>
+                            Reshaping the visual design system
+                            </h3>
+
+                            <p>
+                                Visually, the original website often felt extremely <span style={{fontWeight: '600'}}>crowded and noisy</span> while in use, lending the website to feel <span style={{fontWeight: '600'}}>uninviting for users</span>. 
+                                
+                            </p>
+                            <p style={{paddingTop: '0.5rem'}}>
+                                To solve this, I reworked the website's visual design system to help make the feel of the website more inviting and clean for users. Working off of the original blue and green color palette, I made a few changes to help make the site better for users, while maintaining elements from the previous design that fit with the website's theme.
+                            </p>
+
+                            <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', marginBottom: '3rem'}}>
+                                    <Image src='/exploreri/styleGuide.jpg' quality={100} width={732} height={412} alt="Visual Style Guide"/>
+                                    <p style={{fontSize: '1rem', color:'#737373'}}>The visual design style guide that defined my visual redesign.</p>
+                                </div>
+
+
                         </div>
                     </div>
-                    <div className={projectStyles.sectionContainer} id="development">
+                        
+                    <div className={projectStyles.sectionContainerGray}>
                         <div className={projectStyles.section}>
-                            <div className={projectStyles.sectionTitle}>Development</div>
+                            <h4 style={{alignSelf: 'center'}}>This new design style was developed with the following goals in mind:</h4>
+                        </div>
+                        <div className={projectStyles.spreadRow} style={{gap: '4rem'}}>
+                            <div className={projectStyles.spreadRowText}>
+                                <div className={projectStyles.olLarge} style={{gap: '3rem'}}>
+                                    <div className={projectStyles.olItemLarge}>
+                                        <div style={{gap: '1rem'}}>
+                                            <span style={{fontWeight: 600, color: '#F0916C', fontSize: '1rem'}}>Goal #1</span>
+                                            <h4 style={{fontWeight: 600}}>Creating a lighter mood</h4>
+                                            <p>
+                                                The original was filled with an excess of visually dense colors, with dark browns, blues, and deep greens populating the space.
+                                            </p>
+                                            <p>
+                                                I used a lighter color palette, with a much lighter blue-green gradient background, and backgrounds of mostly white. I also flipped the gradient direction to move from light to dark to draw the user's gaze to scroll down the page. 
+                                            </p>
+                                            <p>
+                                                Lastly,drop shadow effects were also added to distinguish elements rather than borders and drastic color changes. I also strayed from the original's use of boxier elements to using more border radius and rounded shapes to aid this new theme.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className={projectStyles.olItemLarge}>
+                                        <div style={{gap: '1rem'}}>
+                                            <span style={{fontWeight: 600, color: '#F0916C', fontSize: '1rem'}}>Goal #2</span>
+                                            <h4 style={{fontWeight: 600}}>Improving contrast and legibility</h4>
+                                            <p>
+                                                Throughout the page, I made an effort to use as much blacks and whites as possible to emphasize contrast.
+                                            </p>
+                                            <p>
+                                                Furthermore, I chose a new, darker sole accent color of <span style={{fontWeight: 600, fontSize: '1rem', color: '#215561'}}>#215561</span> to maintain good contrast ratios against the lighter background when highlighting specific elements.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className={projectStyles.olItemLarge}>
+                                       
+                                        <div style={{gap: '1rem'}}>
+                                            <span style={{fontWeight: 600, color: '#F0916C', fontSize: '1rem'}}>Goal #3</span>
+                                            <h4 style={{fontWeight: 600}}>Emphasizing interaction</h4>
+                                            <p>
+                                                With a more streamlined use of color throughout the page, I used contrasting colors to visually emphasize interactable elements to distinguish them from regular content.
+                                            </p>
+                                            <p>
+                                                The original website's button styling, with thick, dark borders, did not match the lighter feel of the website I wanted to create. In response, I avoided the use of borders in buttons in my redesign, using instead more rounded corners and colors to emphasize them better.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <Image src='/exploreri/sideBySide.jpg' quality={100} width={450} height={1116} style={{borderRadius: '12px'}} alt="Side by side comparison"/>
                         </div>
                     </div>
+
+                        
+
+
+
+                        
+                       
+                   
+
+                    <div className={projectStyles.sectionContainer} style={{}}>
+                        <div className={projectStyles.section}>
+                            <b style={{marginBottom: 0}}><span style={{fontWeight: 600, color: '#F0916C'}}>Solution #2</span></b>
+                            
+                            <h3>
+                            Restructuring for organization and hierarchy
+                            </h3>
+
+                            <p>
+                                My research showed me that the original website contained a lot of useful information for many different tasks, from driving directions, trail maps, and community-submitted content. However, it became clear that this information was <span style={{fontWeight: '600'}}>largely inacessible due to subpar organization and a confusing structure</span> that made navigating the website and scanning quite frustrating. 
+                            </p>
+                            <p style={{marginTop: '0rem'}}>
+                                To solve this, I restructured the site to encourage the <Link className={homeStyles.primaryLink} style={{fontWeight: 600}}href="https://www.nngroup.com/articles/layer-cake-pattern-scanning/" target="_blank">layer-cake scanning pattern</Link>,   
+                                as it best allows users to efficiently and quickly find information that they need.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className={projectStyles.sectionContainerGray} style={{paddingBottom: '0rem', paddingTop: '0rem'}}>
+                        <div className={projectStyles.spreadRow}style={{gap: '4rem'}}>
+                            <div className={projectStyles.spreadRowText}>
+                                <b>
+                                    What is a layer-cake scanning pattern?
+                                </b>
+                                <p>
+                                    This pattern is characterized when users, while scanning through a page, fixate mostly on the page’s headings and subheadings, with deliberate occasional fixations on the (body) text in between. 
+                                </p>
+                            </div>
+                            <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem'}}>
+                                <Image alt="Layer cake pattern explanation graphic" src='/exploreri/patterns.png' width={500} height={336}/>
+                                <Link href="https://www.toptal.com/designers/web/ui-design-best-practices" target="_blank" style={{fontSize: '0.75rem'}} className={homeStyles.primaryLink}>Source</Link>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={projectStyles.sectionContainerDark}>
+                            <div className={projectStyles.section}>
+                                <h4>
+                                    The overall structure of my redesigned website focused on the two following ideas:
+                                </h4>
+                                <div className={projectStyles.olLarge}>
+                                        <div className={projectStyles.olItemLarge}>
+                                            <span style={{fontSize: '1.5rem'}}>1</span>
+                                            <div>
+                                                <h4 style={{fontWeight: 600}}>Clearly distributing sections</h4>
+                                                <p>
+                                                    Content is distributed into groups that are, for the most part, completely distinct with no overlap between groups, removing confusion on where information is located in the page.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div className={projectStyles.olItemLarge}>
+                                        <span style={{fontSize: '1.5rem'}}>2</span>
+                                            <div>
+                                                <h4 style={{fontWeight: 600}}>Following a grid structure</h4>
+                                                <p>
+                                                The page structure follows a consistent grid that divides each section into thirds. With this grid, users will be able to easily scan vertically across sections by following the implied lines of the grid. Certain sections are then split in two columns with a 2:1 width ratio. This allows users to view related content by predictably scanning horizontally.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                        </div>
+                        
+                        
+                    </div>
+
+                    
+
+                    <div className={projectStyles.sectionContainerGray} id="development">
+                        <div className={projectStyles.section}>
+                            <h4 style={{marginTop: '0rem', alignSelf: 'center'}}>
+                                        These changes were also aided by the inclusion of two new types of page elements:
+                            </h4>
+                        </div>
+                        <div className={projectStyles.spreadRow}style={{gap: '2rem'}}>
+                            <div className={projectStyles.spreadRowText}>
+                                {/* <span style={{fontWeight: 600, color: '#F0916C', fontSize: '1rem'}}>Inclusion #1</span> */}
+                                <h4 style={{fontWeight: 600}}>
+                                    Clearly distributing sections
+                                </h4>
+                                <p>
+                                    A navigation bar is included near the start of the page that acts as a table of contents, and provides an overview on the sections further down the page. On click, these links allow users to quickly navigate to a specific section.
+                                </p>
+                            </div>
+                            <Image style={{borderRadius: '0px'}} alt="Gif" src="/exploreri/navbar.gif" width={500} height={336}/>
+                        </div>
+                        <div className={projectStyles.spreadRow}style={{gap: '2rem'}}>
+                            <div className={projectStyles.spreadRowText}>
+                                {/* <span style={{fontWeight: 600, color: '#F0916C', fontSize: '1rem'}}>Inclusion #2</span> */}
+                                <h4 style={{fontWeight: 600}}>
+                                    Marking content with headings
+                                </h4>
+                                <p>
+                                    To help the user to scan, headings and subheadings are included throughout the page in a consistent, predictable manner. Font weights and sizes let these headings visually stand out to help users latch on to them. These also help screen readers to more easily navigate the page.
+                                </p>
+                            </div>
+                            <Image style={{}} alt="Gif" src="/exploreri/headings.gif" width={500} height={336}/>
+                        </div>
+                        
+                    </div>
+
+                    <div className={projectStyles.sectionContainer} style={{}}>
+                        <div className={projectStyles.section}>
+                            <b style={{marginBottom: 0}}><span style={{fontWeight: 600, color: '#F0916C'}}>Solution #3</span></b>
+                            
+                            <h3>
+                                Enforcing consistent language
+                            </h3>
+
+                            <p>
+                               Another frequent issue I discovered through my cognitive walkthroughts was the lack of consistent language, both visual and verbal, used across the original website. These inconsistencies made it difficult to understand what information was supposed to be communicated, and created frustration during my cognitive walkthroughs.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className={projectStyles.sectionContainerGray} id="development">
+                        <div className={projectStyles.section}>
+                            <h4 style={{marginTop: '0rem', alignSelf: 'center'}}>
+                                I reinforced consistency in three ways in my redesign:
+                            </h4>
+                        </div>
+                        <div className={projectStyles.spreadRow}style={{gap: '2rem'}}>
+                            <div className={projectStyles.spreadRowText}>
+                                {/* <span style={{fontWeight: 600, color: '#F0916C', fontSize: '1rem'}}>Inclusion #1</span> */}
+                                <h4 style={{fontWeight: 600}}>
+                                    Language
+                                </h4>
+                                <p>
+                                   
+                                </p>
+                            </div>
+                            <Image style={{borderRadius: '0px'}} alt="Gif" src="/exploreri/navbar.gif" width={500} height={336}/>
+                        </div>
+                        <div className={projectStyles.spreadRow}style={{gap: '2rem'}}>
+                            <div className={projectStyles.spreadRowText}>
+                                {/* <span style={{fontWeight: 600, color: '#F0916C', fontSize: '1rem'}}>Inclusion #2</span> */}
+                                <h4 style={{fontWeight: 600}}>
+                                    Interactivity
+                                </h4>
+                                <p>
+                                    
+                                </p>
+                            </div>
+                            <Image style={{}} alt="Gif" src="/exploreri/headings.gif" width={500} height={336}/>
+                        </div>
+                        <div className={projectStyles.spreadRow}style={{gap: '2rem'}}>
+                            <div className={projectStyles.spreadRowText}>
+                                {/* <span style={{fontWeight: 600, color: '#F0916C', fontSize: '1rem'}}>Inclusion #2</span> */}
+                                <h4 style={{fontWeight: 600}}>
+                                    Labels
+                                </h4>
+                                <p>
+                                    
+                                </p>
+                            </div>
+                            <Image style={{}} alt="Gif" src="/exploreri/headings.gif" width={500} height={336}/>
+                        </div>
+                        
+                    </div>
+
                     <div className={projectStyles.sectionContainer} id="takeaways">
                         <div className={projectStyles.section}>
                             <div className={projectStyles.sectionTitle}>Takeaways</div>
                             <h3> </h3>
                         </div>
                     </div>
+
                     <div className={projectStyles.sectionContainer}>
                         <div className={projectStyles.section}>
                             <h3> </h3>
                         </div>
                     </div>
+
+                    <div className={projectStyles.olLarge}>
+                                    <div className={projectStyles.olItemLarge}>
+                                        <span style={{fontSize: '1.5rem'}}>1</span>
+                                        <h4>
+                                            Will the correct action be sufficiently evident to the user?
+                                        </h4>
+                                    </div>
+                                    <div className={projectStyles.olItemLarge}>
+                                        <span style={{fontSize: '1.5rem'}}>2</span>
+                                        <h4>
+                                            Will the user notice that the correct action is available?
+                                        </h4>
+                                    </div>
+                                    <div className={projectStyles.olItemLarge}>
+                                        <span style={{fontSize: '1.5rem'}}>3</span>
+                                        <h4>
+                                            Will the user associate and interpret the response from the action correctly?
+                                        </h4>
+                                    </div>
+                                </div>
+
+                    <div className={projectStyles.spreadRow}style={{gap: '6rem'}}>
+                        <div className={projectStyles.spreadRowText}>
+                            <b>
+                            </b>
+                            <p>
+
+                            </p>
+                        </div>
+                        <Image style={{border: '1px solid #E4E4E4'}} alt="AllTrails home page" src={allTrails} width={500} height={336}/>
+                    </div>
+
                 </div>
 
                 

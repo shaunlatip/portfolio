@@ -229,7 +229,7 @@ export default function CheckIn() {
                                 Over two weekdays, I waited in the public seating area and observed 12 users in the morning and afternoon. I avoided observing up close how users filled out forms on the desktop check-in to respect their privacy. Instead, I focused on observing how each user navigated the station, including how long they lingered on each section, and their interactions with staff.
                             </p>
                             <div style={{padding: '3rem 0 1rem 0'}}>
-                                <h4 style={{fontWeight: 600}}>Key Observations</h4>
+                                <h4 style={{fontWeight: 600, marginBottom: '1.5rem'}}>These were some of my key observations:</h4>
                                 <div className={projectStyles.olLarge}>
                                     <div className={projectStyles.olItemLarge}>
                                         <span>1</span>
@@ -332,7 +332,7 @@ export default function CheckIn() {
                             </div>
 
                             <div style={{padding: '3rem 0 1rem 0'}}>
-                                <h3>I then summarized the key points I learned from talking with three users.</h3>
+                                <h3 style={{marginBottom: '1.5rem'}}>I then summarized the key points I learned from talking with three users.</h3>
                                 <div className={projectStyles.olLarge}>
                                     <div className={projectStyles.olItemLarge}>
                                         <span>1</span>

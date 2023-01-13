@@ -12,13 +12,29 @@
     border-radius: 16px;
 }
 
-.comparison {
-    width: 1080px;
+
+.frame {
+    padding: 2rem 2rem 1rem 2rem;
     margin-top: 4rem;
+    background-color: #F4F4F4;
+    border-radius: 12px;
+}
+
+.frameAlt {
+    padding: 2rem 2rem 1rem 2rem;
+    margin-top: 4rem;
+    background-color: #E4E4E4;
+    border-radius: 12px;
+}
+
+.comparison {
+    width: calc(1080px);
     /* background-color: white; */
     filter: drop-shadow(0px 10px 32px rgba(0, 0, 0, 0.10));
-
+    background-color: white;
+    border-radius: 12px;
 }
+
 
 .problemSpreadPdf {
     width: 1196px;
@@ -27,12 +43,21 @@
 
 .lofis {
     width: 1082px;
-    margin-top: 4rem;
+    border-radius: 12px;
+    filter: drop-shadow(0px 10px 32px rgba(0, 0, 0, 0.10));
+    background-color: white;
 }
 
 .lofiFrame {
     width: 100%;
     height: calc(100vh - 160px);
+    margin: 1rem 0 1rem 0;
+    border: solid 1px #eaeaea;
+}
+
+.previewFrame {
+    width: 1080px;
+    height: 600px;
     margin: 1rem 0 1rem 0;
     border: solid 1px #eaeaea;
 }
