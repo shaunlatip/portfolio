@@ -11,16 +11,6 @@ import StartButton from '../components/StartButton'
 import React, { useRef } from "react"
 
 import bannerImage from '../public/exploreri/banner.png'
-import problemSpread from '../public/exploreri/problemSpread.jpg'
-import airbnb from '../public/exploreri/airbnb.png'
-import allTrails from '../public/exploreri/allTrails.png'
-
-
-import original1 from '../public/exploreri/original1.jpg'
-import original2 from '../public/exploreri/original2.jpg'
-
-
-import visualDesignStyleGuideImage from 'public/visualdesignstyleguide.jpg'
 
 export default function ExploreRI() {
 
@@ -43,58 +33,28 @@ export default function ExploreRI() {
     };
 
     const overviewRef = useRef<HTMLDivElement>(null)
-    const researchRef = useRef<HTMLDivElement>(null)
-    const prototypingRef = useRef<HTMLDivElement>(null)
-    const finalDesignsRef = useRef<HTMLDivElement>(null)
-    const processRef = useRef<HTMLDivElement>(null)
-    const takeawaysRef = useRef<HTMLDivElement>(null)
 
     function handleSidebarClick(e: React.MouseEvent<HTMLElement>) {
         const element = e.currentTarget as HTMLInputElement
         const value = element.value
-
         
         switch (value) {
             case "Overview":
                 if (!overviewRef.current) {return} 
                 overviewRef.current.scrollIntoView({behavior: "smooth"})
                 break;
-            case "Research":
-                if (!researchRef.current) {return}
-                researchRef.current.scrollIntoView({behavior: "smooth"})
-                break;
-            case "Prototyping":
-                if (!prototypingRef.current) {return}
-                prototypingRef.current.scrollIntoView({behavior: "smooth"})
-                break;
-            case "Final Designs":
-                if (!finalDesignsRef.current) {return}
-                finalDesignsRef.current.scrollIntoView({behavior: "smooth"})
-                break;
-            case "Process":
-                if (!processRef.current) {return}
-                processRef.current.scrollIntoView({behavior: "smooth"})
-                break;
-            case "Takeaways":
-                if (!takeawaysRef.current) {return}
-                takeawaysRef.current.scrollIntoView({behavior: "smooth"})
-                break;
+
         }
     }
       
     return (
         <div className="page">
             <Head>
-                <title>Explore Rhode Island | Shaun Latip</title>
+                <title> | Shaun Latip</title>
             </Head>
 
             <div className={projectStyles.sidebar}>
                 <button onClick={handleSidebarClick} value="Overview">Overview</button>
-                <button onClick={handleSidebarClick} value="Research">Research</button>
-                <button onClick={handleSidebarClick} value="Prototyping">Prototyping</button>
-                <button onClick={handleSidebarClick} value="Final Designs">Final Designs</button>
-                <button onClick={handleSidebarClick} value="Process">Process</button>
-                <button onClick={handleSidebarClick} value="Takeaways">Takeaways</button>
             </div>
 
             <div className={projectStyles.pageContent}>
@@ -121,17 +81,17 @@ export default function ExploreRI() {
                     <div className={projectStyles.sectionContainer} ref={overviewRef}>
                         <div className={projectStyles.section}>
                             <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Overview</div>
-                            {/* <b>Description</b> */}
                             <p>
-                                As a UI/UX class assignment, I chose to redesign and develop the <Link href="https://exploreri.org/gSiteReport2.php?siteID=102&src=siteList" target="_blank" className={homeStyles.primaryLink}>Explore Rhode Island park page</Link>, which I often came across when looking up local parks and trails. The site would often come up as the first result when searching locally, and contained information such as ADA accessibility information that is hard to find elsewhere, which was a significant motivation for my redesign. My task involved creating a redesigned website, <Link href="https://vegananteater125.github.io/responsive-redesign/" target="_blank" className={homeStyles.primaryLink}>linked here</Link>, based on the aims of the original website, that would be able to better meet the expected needs of users visiting across mobile, tablet, and desktop platforms.</p>
+                                As a UI/UX class assignment, I chose to redesign and develop the <Link href="https://exploreri.org/gSiteReport2.php?siteID=102&src=siteList" target="_blank" className={homeStyles.primaryLink}>Explore Rhode Island park page</Link>, which I often came across when looking up local parks and trails. The site would often come up as the first result when searching locally, and contained information such as ADA accessibility information that is hard to find elsewhere, which was a significant motivation for my redesign. My task involved creating a redesigned website, <Link href="https://vegananteater125.github.io/responsive-redesign/" target="_blank" className={homeStyles.primaryLink}>linked here</Link>, based on the aims of the original website, that would be able to better meet the expected needs of users visiting across mobile, tablet, and desktop platforms.
+                            </p>
                             <div className={projectStyles.projectInfo}>
                                 <div>
                                     <b>Role</b>
-                                    <p>UI/UX Designer<br/>Researcher<br/>Front-end Engineer</p>
+                                    <p>UI/UX Designer, Researcher, Front-end Developer</p>
                                 </div>
                                 <div>
                                     <b>Platforms</b>
-                                    <p>Mobile, Tablet, <br/>and Desktop</p>
+                                    <p>Mobile, Tablet, Desktop</p>
                                 </div>
                                 <div>
                                     <b>Timeline</b>
@@ -139,7 +99,7 @@ export default function ExploreRI() {
                                 </div>
                                 <div>
                                     <b>Tools Used</b>
-                                    <p>Figma, Balsamiq Wireframes, HTML, <br/>and CSS</p>
+                                    <p>Figma, Balsamiq Wireframes, HTML, CSS</p>
                                 </div>
                             </div>
 

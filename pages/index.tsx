@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="page">
       <Head>
-        <title>Shaun Latip</title>
+        <title>Shaun Latip | Portfolio</title>
       </Head>
         <div className={styles.pageWrapper}>
           <div className={styles.section}>
@@ -36,7 +36,7 @@ export default function Home() {
           </div>
           <div className={styles.section}>
             <h3 className={styles.sectionTitle}>
-              Selected Work
+              Selected work
             </h3>
             <div className={styles.gallery}>
               <div className={styles.project}>
@@ -51,6 +51,22 @@ export default function Home() {
                         <span className={styles.badge}>HTML/CSS</span>
                       </div>
                       <p>Redesigning and developing how public park info is accessed through a responsive webpage</p>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+              <div className={styles.project}>
+                <Link href="/checkin">
+                  <img className={styles.projectImage} src="images/checkin-card.jpg"/>
+                  <div className={styles.projectInfo}>
+                    <div className={styles.projectInfoContent}>
+                    <h2>Health Services Check In</h2>
+                    <div className={styles.badges}>
+                        <span className={styles.badge}>User Research</span>
+                        <span className={styles.badge}>Storyboard</span>
+                        <span className={styles.badge}>Persona Mapping</span>
+                      </div>
+                      <p>Studying the state of clinical care from a UX perspective at Brown University</p>
                     </div>
                   </div>
                 </Link>
@@ -87,34 +103,17 @@ export default function Home() {
                   </div>
                 </Link>
               </div>
+              
               <div className={styles.project}>
-                <Link href="/checkin">
-                  <img className={styles.projectImage} src="images/checkin-card.jpg"/>
-                  <div className={styles.projectInfo}>
-                    <div className={styles.projectInfoContent}>
-                    <h2>Health Services Check In</h2>
-                    <div className={styles.badges}>
-                        <span className={styles.badge}>User Research</span>
-                        <span className={styles.badge}>Storyboard</span>
-                        <span className={styles.badge}>Persona Mapping</span>
-                      </div>
-                      <p>Studying the state of clinical care from a UX perspective at Brown University</p>
-                    </div>
-                  </div>
-                </Link>
-              </div>
-              <div className={styles.project}>
-                <Link href="/exploreri">
-                  <img className={styles.projectImage} src="images/projectPlaceholderImage.jpg"/>
+                <Link href="/blt">
+                  <img className={styles.projectImage} src="images/blt-card.jpg"/>
                   <div className={styles.projectInfo}>
                     <div className={styles.projectInfoContent}>
                       <h2>Language and Thought</h2>
                       <div className={styles.badges}>
-                        <span className={styles.badge}>UI/UX Design</span>
-                        <span className={styles.badge}>User Research</span>
-                        <span className={styles.badge}>HTML/CSS</span>
+                        <span className={styles.badge}>Behavioral Research</span>
                       </div>
-                      <p>Redesigning and developing a responsive webpage for public parks and trails across Rhode Island</p>
+                      <p>Running virtual research on how we think and speak at a Brown University psychology research lab</p>
                     </div>
                   </div>
                 </Link>

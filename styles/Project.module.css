@@ -25,7 +25,8 @@
 .sidebar button {
     font-weight: 400;
     font-size: 1rem;
-    color: #444444;
+    color: 
+    #737373;
 }
 
 .sidebar button:hover {
@@ -97,7 +98,7 @@
     font-weight: 600;
     font-size: 1rem;
     color: #F0916C;
-    padding-bottom: 1.5rem;
+    padding-bottom: 0rem;
 }
 
 .sectionContainer {
@@ -137,6 +138,11 @@
     line-height: 1.5em;
 }
 
+.sections h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
 .sections h2 {
     font-size: 2rem;
     font-weight: 600;
@@ -169,7 +175,7 @@
 .ol {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
     padding: 1.5rem 0 1.5rem 0;
 }
 

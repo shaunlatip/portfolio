@@ -102,7 +102,6 @@ export default function CheckIn() {
                 <button onClick={handleSidebarClick} value="Personas">Personas</button>
                 <button onClick={handleSidebarClick} value="Storyboard">Storyboard</button>
                 <button onClick={handleSidebarClick} value="Takeaways">Takeaways</button>
-                
             </div>
             <div className={projectStyles.pageContent}>
 
@@ -128,7 +127,7 @@ export default function CheckIn() {
                 <div className={projectStyles.sections}>
                     <div className={projectStyles.sectionContainer} ref={contextRef} id="context">
                         <div className={projectStyles.section}>
-                            <div className={projectStyles.sectionTitle}>Context</div>
+                            <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Context</div>
                             {/* <b>Context</b> */}
                             <p>Since September 2021, clinical care at Brown University has been centralized at the <Link target="_blank" href="https://www.brown.edu/news/2021-09-16/wellness" className={homeStyles.primaryLink}>new health and wellness center</Link>. Being a clinic that nearly everyone at Brown visits, I wanted to better understand how different users experience visiting the new clinic, from walking in the door to being taken care of, in order to find room for improvement. To accomplish this, I applied research methodologies I learned from my UI/UX course.</p>
                             <div className={projectStyles.projectInfo}>
