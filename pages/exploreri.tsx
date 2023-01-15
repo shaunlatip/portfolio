@@ -549,7 +549,7 @@ export default function ExploreRI() {
                                                 animate="in"
                                                 initial="out"
                                                 exit="out">
-                                                <iframe className={styles.hifiFrame} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F5RmQxdjM28kNy1HCv6DXUB%2FResponsive-Redesign%3Fnode-id%3D10%253A453%26t%3DMPFt0dAo7QpAwdxw-1" allowfullscreen></iframe>                                            </Fade>
+                                                <iframe className={styles.hifiFrame} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F5RmQxdjM28kNy1HCv6DXUB%2FResponsive-Redesign%3Fnode-id%3D10%253A453%26t%3DMPFt0dAo7QpAwdxw-1"></iframe>                                            </Fade>
                                         </TabPanel>
                                     </TabPanels>
                                 </Tabs>
