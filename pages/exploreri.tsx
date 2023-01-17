@@ -224,8 +224,8 @@ export default function ExploreRI() {
 
                     <div className={projectStyles.sectionContainerDark}>
                         <div className={projectStyles.section}>
-                            <h3>This project challenged me to identify specific areas of improvement while staying true to the original site's theme and design system.</h3>
-                            <p>This redesign was also my first time researching, redesigning and then developing an existing website, combining these tasks into one consolidated project.</p>
+                            <h3>This project challenged me as my first redesign.</h3>
+                            <p>Before this, I had mostly used Figma for working on isolated projects or tutorials. This was my learning opportunity to get familiar with Figma, and to fully follow through a whole redesign through research, protyping, and development.</p>
                         </div>
                     </div>
 
@@ -563,7 +563,7 @@ export default function ExploreRI() {
 
                         
 
-                    <div className={projectStyles.sectionContainer} style={{paddingBottom: '0rem', paddingTop: '2rem'}} ref={processRef}>
+                    <div className={projectStyles.sectionContainerGray} style={{paddingBottom: '0rem', paddingTop: '2rem'}} ref={processRef}>
                         <div className={projectStyles.section}>
                             <b style={{marginBottom: 0}}><span style={{fontWeight: 600, color: '#F0916C'}}>Aspect #1</span></b>
                             
@@ -580,19 +580,19 @@ export default function ExploreRI() {
                             </p>
 
                             <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', marginBottom: '3rem'}}>
-                                    <Image src='/exploreri/styleGuide.jpg' quality={100} width={732} height={412} alt="Visual Style Guide"/>
-                                    <p style={{fontSize: '1rem', color:'#737373'}}>The visual design style guide that defined my visual redesign.</p>
+                                    <Image src='/exploreri/styleGuide.jpg' quality={100} width={732} height={412} style={{borderRadius: '12px'}} alt="Visual Style Guide"/>
+                                    {/* <p style={{fontSize: '1rem', color:'#737373'}}>The visual design style guide that defined my visual redesign.</p> */}
                                 </div>
 
 
                         </div>
                     </div>
                         
-                    <div className={projectStyles.sectionContainerGray}>
+                    <div className={projectStyles.sectionContainerGray} style={{paddingTop: '1rem'}}>
                         <div className={projectStyles.section}>
                             <h4 style={{alignSelf: 'center'}}>This new design style was developed with the following goals in mind:</h4>
                         </div>
-                        <div className={projectStyles.spreadRow} style={{gap: '4rem'}}>
+                        <div className={projectStyles.spreadRow} style={{gap: '4rem', paddingTop: '2rem'}}>
                             <div className={projectStyles.spreadRowText}>
                                 <div className={projectStyles.olLarge} style={{gap: '3rem'}}>
                                     <div className={projectStyles.olItemLarge}>
@@ -667,7 +667,7 @@ export default function ExploreRI() {
                         </div>
                     </div>
 
-                    <div className={projectStyles.sectionContainerGray} style={{paddingBottom: '0rem', paddingTop: '0rem'}}>
+                    <div className={projectStyles.sectionContainer} style={{paddingBottom: '0rem', paddingTop: '0rem'}}>
                         <div className={projectStyles.spreadRow}style={{gap: '4rem'}}>
                             <div className={projectStyles.spreadRowText}>
                                 <b>
@@ -764,7 +764,7 @@ export default function ExploreRI() {
                         </div>
                     </div>
 
-                    <div className={projectStyles.sectionContainerGray} style={{paddingTop: '2rem'}}>
+                    <div className={projectStyles.sectionContainer} style={{paddingTop: '2rem'}}>
                         <div className={projectStyles.spreadRow}style={{gap: '2rem'}}>
                             <div className={projectStyles.spreadRowText}>
                                 {/* <span style={{fontWeight: 600, color: '#F0916C', fontSize: '1rem'}}>Inclusion #1</span> */}

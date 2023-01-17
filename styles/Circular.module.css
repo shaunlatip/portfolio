@@ -1,102 +1,25 @@
-.projectColorText {
-    color: #ea2e5c;
+.bannerProjectColor {
+    background-color: #FFF8F9;
+}
+
+.bannerImageContainer {
+    position: relative;
+    width: 600px;
+    height: 448px;
+    /* overflow: hidden; */
+}
+
+@media (max-width: 750px) {
+    .bannerImageContainer {
+        width: calc(100% - 4rem);
+        height: 60vw;
+    }
+}
+
+@media (max-width: 350px) {
+    .bannerImageContainer {
+        display: none;
+    }
 }
 
 
-.critiqueProblems {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 50%;
-    gap: 1em;
-    margin-right: 0.5em;
-}
-
-.critiqueSolutions {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 0.5em;
-    width: 50%;
-    gap: 1em;
-}
-
-.critiqueProblem {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: rgba(199, 214, 255, 1);
-    border-radius: 12px;
-}
-
-.critiqueSolution {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #FFF5C2;
-    border-radius: 12px;
-}
-
-.critiqueProblem p {
-    text-align: start;
-    margin: 1em;
-    font-size: 1em;
-}
-  
-.critiqueSolution p {
-text-align: start;
-margin: 1em;
-font-size: 1em;
-}
-
-.gifSpread {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    align-self: center;
-}
-
-.gifContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.gifContainer img {
-    width: 300px;
-}
-
-.subtaskInfo {
-    margin: 0 1rem 0 1rem;
-}
-
-.subtaskResult {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 33.33%;
-    margin: 1em;
-    border-radius: 16px;
-}
-
-.subtaskResult b {
-    margin-top: 1em;
-  }
-  
-.subtaskResult p {
-margin: 1em;
-}
-
-.subtaskResultA {
-background-color: #FFF5C2;
-}
-
-.subtaskResultB {
-background-color: #FFD7D7;
-}
-
-.subtaskResultC {
-background-color: rgba(199, 214, 255, 1);
-}

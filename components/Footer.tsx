@@ -12,7 +12,7 @@ export default function Footer(
 
         if (props.variant == "project") {
             return(<div className={styles.footer}>
-                {/* <div className={homeStyle.section}> */}
+                <div className={styles.projectSection}>
                     <div className={styles.footerContentProject}>
                         <div className={styles.left}>
                             <Link className={styles.greyLink} href="mailto:shaunlatip@gmail.com?subject=Hi Shaun!">
@@ -46,7 +46,7 @@ export default function Footer(
                     </div>
 
 
-                {/* </div> */}
+                </div>
             </div>);
         } else {
             return(

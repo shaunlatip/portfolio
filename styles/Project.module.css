@@ -130,7 +130,7 @@
 .section {
     display: flex;
     flex-direction: column;
-    width: 980px;
+    width: 840px;
     gap: 1rem;
 }
 
