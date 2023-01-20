@@ -34,8 +34,7 @@ export default function About() {
                                 {/* <span className="primary600">My background in Urban Studies</span> shapes me to view digital products as another facet of space; as places that people inhabit, depend upon, and often find central to their lives. I often draw from theories in Urban Studies to help fuel my design process accomodate the user first.
                                 <br/>
                                 <br/> */}
-                                <span className="primary600">Living with ADHD, and as a</span>  <span className="primary600">first-generation international student</span>, I understand how difficult it can be to navigate systems built without accessibility in mind. I believe accessibility in design is both a significant barrier and an agent of change in allowing our communities to thrive and realize their potential; we shape our designs, then afterwards, our designs shape us.
-                                <br/>
+                                <span className="primary600">Living with ADHD, and as a</span>  <span className="primary600">first-generation international student</span>, I understand how difficult it can be to navigate systems built without accessibility in mind. I believe inclusive design is a powerful way to unlock potential for our communities; for we shape our designs, then afterwards, our designs shape us.
                                 <br/>
                                 <br/>
                                 <br/>
@@ -62,7 +61,7 @@ export default function About() {
                             <p>
                                 <br/>
                                 <br/>
-                                If you've read all the way here, thank you for taking this journey with me. <br/>
+                                If you've read all the way here, thank you for taking this journey with me! <br/><br/>
                                 Reach out to me <Link target="_blank" className={homeStyles.primaryLink} href="mailto:shaunlatip@gmail.com">shaunlatip@gmail.com</Link> if you'd like to chat!
                             </p>
                         </div>

@@ -19,7 +19,7 @@ export default function Home() {
                   {/* <span className={styles.titleEmoji} role="img" aria-label="dog">☁️</span> */}
                 </h1>
                 <p className={styles.subHeadline}>
-                  I design to shape a more accessible, intentional digital world.
+                  I design to shape a more inclusive, intentional digital world.
                   <br/>My process is deeply informed by my past experiences in anthropology, psychology, and front-end development.
                   <br/>
                   Take a look at some of my work below to learn a bit more about how I tick.
