@@ -19,7 +19,7 @@ export default function Footer(
                                 <h2>Let's chat!</h2>
                             </Link>
 
-                            <Link className={styles.primaryLink} href="">
+                            <Link className={styles.primaryLink} href="resume/ShaunLatipResume.pdf">
                                 <h2>View my resume</h2>
                             </Link>
                             <br/>
@@ -58,7 +58,7 @@ export default function Footer(
                                 <h2>Let's chat!</h2>
                             </Link>
 
-                            <Link className={styles.primaryLink} href="">
+                            <Link className={styles.primaryLink} href="resume/ShaunLatipResume.pdf">
                                 <h2>View my resume</h2>
                             </Link>
                             <br/>
