@@ -23,7 +23,7 @@ export default function NavigationBar() {
                 </div>
 
                 <div className={styles.pageButtons}>
-                    <Link href="/" className={`${styles.navItem} ${styles.navLink}`}>Resume</Link>
+                    <Link href="resume/ShaunLatipResume.pdf" className={`${styles.navItem} ${styles.navLink}`}>Resume</Link>
                 </div>
             </div>
 

@@ -9,6 +9,29 @@
     /* overflow: hidden; */
 }
 
+.sketchDisplay {
+    width: calc(840px);
+    height: 500px;
+    margin: 1rem 0 1rem 0;
+    border: solid 1px #eaeaea;
+    border-radius: 12px;
+}
+
+.sketchFrame {
+    padding: 1rem 2rem 1rem 2rem;
+    margin-top: 2rem;
+    background-color: #F4F4F4;
+    border-radius: 12px;
+}
+
+.sketches {
+    /* width: calc(1080px); */
+    /* background-color: white; */
+    filter: drop-shadow(0px 10px 32px rgba(0, 0, 0, 0.10));
+    background-color: white;
+    border-radius: 12px;
+}
+
 @media (max-width: 750px) {
     .bannerImageContainer {
         width: calc(100% - 4rem);

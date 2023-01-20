@@ -416,6 +416,21 @@
     transition: all 0.2s ease-out;
 }
 
+.italicFocus {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.5em;
+    transform: skew(-6deg);
+    margin: 2rem 0rem;
+}
+
+.capsSpaced {
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
 @media (max-width: 750px) {
     .bannerImageContainer {
         width: calc(100% - 4rem);

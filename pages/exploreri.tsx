@@ -146,7 +146,6 @@ export default function ExploreRI() {
                         </div>
                         <div className={styles.frame}>
                             <div className={styles.comparison}>
-                                {/* <h4>Compare my redesign with the original below.</h4> */}
                                 <Tabs isLazy={true} variant='unstyled' size='md' colorScheme='orange' defaultIndex={0}>
                                     <TabList>
                                         <Tab style={{ fontWeight: 500, marginBottom: '2px', padding: '0.8rem 1.2rem'}}
@@ -397,7 +396,7 @@ export default function ExploreRI() {
                             <h3>To inform myself, I also analyzed adjacent platforms for inspiration.</h3>
                             <p>I viewed at a variety of platforms online that sought to accomplish similar functions as the page I was redesigning. I wanted to see what design patterns have worked before for similar functions, informing myself as best as I could before I started wireframing.</p>
                         </div>
-                        <div className={projectStyles.spreadRow} style={{gap: '6rem', marginTop: '4rem'}}>
+                        <div className={projectStyles.spreadRow} style={{gap: '4rem', marginTop: '4rem'}}>
                             <div className={projectStyles.spreadRowText}>
                                 <b>AirBnB</b>
                                 <p>AirBnB's experience is a lot less cluttered while still sharing a significant amount of information about a location, with a sparingly-used accent color and considerable white space. </p>
@@ -407,7 +406,7 @@ export default function ExploreRI() {
                             </div>
                             <Image style={{border: '1px solid #E4E4E4'}} alt="AirBnB home page" src={airbnb} width={600} height={336}/>
                         </div>
-                        <div className={projectStyles.spreadRow}style={{gap: '6rem'}}>
+                        <div className={projectStyles.spreadRow}style={{gap: '4rem'}}>
                             <div className={projectStyles.spreadRowText}>
                                 <b>
                                     AllTrails
@@ -435,56 +434,56 @@ export default function ExploreRI() {
                             <div className={styles.frameAlt}>
                                 <div className={styles.lofis}>
                                     <Tabs isLazy={true} variant='unstyled' size='md' colorScheme='orange' defaultIndex={0}>
-                                                <TabList>
-                                                    <Tab style={{ fontWeight: 500, marginBottom: '2px', padding: '0.8rem 1.2rem'}}
-                                                    _hover={{ color: '#F0916C'}}
-                                                    _active={{ color: '#F0916C' }}
-                                                    _selected={{ color: '#F0916C', boxShadow: '0 2px 0 rgba(240, 145, 108, 1)', marginBottom:'0px', transition: 'all 0.3s ease'}} >
-                                                        Desktop
-                                                    </Tab>
-                                                    <Tab style={{ fontWeight: 500, marginBottom: '2px', padding: '0.8rem 1.2rem'}}
-                                                    _hover={{ color: '#F0916C'}}
-                                                    _active={{ color: '#F0916C' }}
-                                                    _selected={{ color: '#F0916C', boxShadow: '0 2px 0 rgba(240, 145, 108, 1)', marginBottom:'0px', transition: 'all 0.3s ease'}}>
-                                                        Tablet
-                                                    </Tab>
-                                                    <Tab style={{ fontWeight: 500, marginBottom: '2px', padding: '0.8rem 1.2rem'}}
-                                                    _hover={{ color: '#F0916C'}}
-                                                    _active={{ color: '#F0916C' }}
-                                                    _selected={{ color: '#F0916C', boxShadow: '0 2px 0 rgba(240, 145, 108, 1)', marginBottom:'0px', transition: 'all 0.3s ease'}}>
-                                                        Mobile
-                                                    </Tab>
-                                                </TabList>
-                                                <TabPanels style={{transition: 'all 0.3s ease'}}>
-                                                <TabPanel style={{padding: 0}}>
-                                                    <Fade
-                                                    variants={variants}
-                                                    animate="in"
-                                                    initial="out"
-                                                    exit="out">
-                                                        <iframe className={styles.lofiFrame} src="/exploreri/lofiDesktop.jpg"/>
-                                                    </Fade>
-                                                </TabPanel>
-                                                <TabPanel style={{padding: 0}}>
-                                                    <Fade
-                                                    variants={variants}
-                                                    animate="in"
-                                                    initial="out"
-                                                    exit="out">
-                                                        <iframe className={styles.lofiFrame} src="/exploreri/lofiTablet.jpg"/>
-                                                    </Fade>
-                                                </TabPanel>
-                                                <TabPanel style={{padding: 0}}>
-                                                    <Fade
-                                                    variants={variants}
-                                                    animate="in"
-                                                    initial="out"
-                                                    exit="out">
-                                                        <iframe className={styles.lofiFrame} src="/exploreri/lofiMobile.jpg"/>
-                                                    </Fade>
-                                                </TabPanel>
-                                
-                                                </TabPanels>
+                                        <TabList>
+                                            <Tab style={{ fontWeight: 500, marginBottom: '2px', padding: '0.8rem 1.2rem'}}
+                                            _hover={{ color: '#F0916C'}}
+                                            _active={{ color: '#F0916C' }}
+                                            _selected={{ color: '#F0916C', boxShadow: '0 2px 0 rgba(240, 145, 108, 1)', marginBottom:'0px', transition: 'all 0.3s ease'}} >
+                                                Desktop
+                                            </Tab>
+                                            <Tab style={{ fontWeight: 500, marginBottom: '2px', padding: '0.8rem 1.2rem'}}
+                                            _hover={{ color: '#F0916C'}}
+                                            _active={{ color: '#F0916C' }}
+                                            _selected={{ color: '#F0916C', boxShadow: '0 2px 0 rgba(240, 145, 108, 1)', marginBottom:'0px', transition: 'all 0.3s ease'}}>
+                                                Tablet
+                                            </Tab>
+                                            <Tab style={{ fontWeight: 500, marginBottom: '2px', padding: '0.8rem 1.2rem'}}
+                                            _hover={{ color: '#F0916C'}}
+                                            _active={{ color: '#F0916C' }}
+                                            _selected={{ color: '#F0916C', boxShadow: '0 2px 0 rgba(240, 145, 108, 1)', marginBottom:'0px', transition: 'all 0.3s ease'}}>
+                                                Mobile
+                                            </Tab>
+                                        </TabList>
+                                        <TabPanels style={{transition: 'all 0.3s ease'}}>
+                                        <TabPanel style={{padding: 0}}>
+                                            <Fade
+                                            variants={variants}
+                                            animate="in"
+                                            initial="out"
+                                            exit="out">
+                                                <iframe className={styles.lofiFrame} src="/exploreri/lofiDesktop.jpg"/>
+                                            </Fade>
+                                        </TabPanel>
+                                        <TabPanel style={{padding: 0}}>
+                                            <Fade
+                                            variants={variants}
+                                            animate="in"
+                                            initial="out"
+                                            exit="out">
+                                                <iframe className={styles.lofiFrame} src="/exploreri/lofiTablet.jpg"/>
+                                            </Fade>
+                                        </TabPanel>
+                                        <TabPanel style={{padding: 0}}>
+                                            <Fade
+                                            variants={variants}
+                                            animate="in"
+                                            initial="out"
+                                            exit="out">
+                                                <iframe className={styles.lofiFrame} src="/exploreri/lofiMobile.jpg"/>
+                                            </Fade>
+                                        </TabPanel>
+                        
+                                        </TabPanels>
                                     </Tabs>
                                 </div>
                             </div>
@@ -765,7 +764,7 @@ export default function ExploreRI() {
                     </div>
 
                     <div className={projectStyles.sectionContainer} style={{paddingTop: '2rem'}}>
-                        <div className={projectStyles.spreadRow}style={{gap: '2rem'}}>
+                        <div className={projectStyles.spreadRow}style={{gap: '4rem'}}>
                             <div className={projectStyles.spreadRowText}>
                                 {/* <span style={{fontWeight: 600, color: '#F0916C', fontSize: '1rem'}}>Inclusion #1</span> */}
                                 <h4 style={{fontWeight: 600}}>
@@ -777,7 +776,7 @@ export default function ExploreRI() {
                             </div>
                             <Image style={{borderRadius: '0px'}} alt="Gif" src="/exploreri/verbs.jpg" width={521} height={301}/>
                         </div>
-                        <div className={projectStyles.spreadRow}style={{gap: '2rem'}}>
+                        <div className={projectStyles.spreadRow}style={{gap: '4rem'}}>
                             <div className={projectStyles.spreadRowText}>
                                 {/* <span style={{fontWeight: 600, color: '#F0916C', fontSize: '1rem'}}>Inclusion #2</span> */}
                                 <h4 style={{fontWeight: 600}}>
@@ -853,7 +852,7 @@ export default function ExploreRI() {
                         <div className={projectStyles.olItemLarge}>
                             <span style={{fontSize: '1.5rem'}}>1</span>
                             <h4>
-                                Will the correct action be sufficiently evident to the user?
+                                
                             </h4>
                         </div>
                         <div className={projectStyles.olItemLarge}>
