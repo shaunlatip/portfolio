@@ -201,7 +201,7 @@ export default function ExploreRI() {
                                             initial="out"
                                             exit="out">
                                                 <div className={styles.previewFrameContainer}>
-                                                    <iframe style={{borderRadius:'0 0 12px 12px'}}className={styles.previewFrameMobile} src="https://vegananteater125.github.io/responsive-redesign/"/>
+                                                    <iframe style={{borderRadius:'0 0 12px 12px'}}className={styles.previewFrameMobile} src="https://shaunlatip.github.io/responsive-redesign/"/>
                                                 </div>
                                             </Fade>
                                         </TabPanel>
