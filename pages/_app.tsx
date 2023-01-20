@@ -5,6 +5,7 @@ import Transition from '../components/Transition';
 import NavbarLayout from '../components/NavbarLayout';
 import { ChakraProvider } from '@chakra-ui/react';
 import { extendTheme } from "@chakra-ui/react"
+import { Analytics } from '@vercel/analytics/react';
 
 import type { AppProps } from 'next/app'
 
@@ -59,6 +60,7 @@ export default function App({ Component, pageProps }: AppProps) {
             <NavbarLayout>
               <Transition>
                 <Component {...pageProps} />
+                <Analytics />
               </Transition>
             </NavbarLayout>
       </main>
