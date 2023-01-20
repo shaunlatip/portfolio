@@ -123,7 +123,7 @@ export default function ExploreRI() {
                             <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Overview</div>
                             {/* <b>Description</b> */}
                             <p>
-                                As a UI/UX class assignment, I chose to redesign and develop the <Link href="https://exploreri.org/gSiteReport2.php?siteID=102&src=siteList" target="_blank" className={homeStyles.primaryLink}>Explore Rhode Island park page</Link>, which I often came across when looking up local parks and trails. The site would often come up as the first result when searching locally, and contained information such as ADA accessibility information that is hard to find elsewhere, which was a significant motivation for my redesign. My task involved creating a redesigned website, <Link href="https://vegananteater125.github.io/responsive-redesign/" target="_blank" className={homeStyles.primaryLink}>linked here</Link>, based on the aims of the original website, that would be able to better meet the expected needs of users visiting across mobile, tablet, and desktop platforms.</p>
+                                As a UI/UX class assignment, I chose to redesign and develop the <Link href="https://exploreri.org/gSiteReport2.php?siteID=102&src=siteList" target="_blank" className={homeStyles.primaryLink}>Explore Rhode Island park page</Link>, which I often came across when looking up local parks and trails. The site would often come up as the first result when searching locally, and contained information such as ADA accessibility information that is hard to find elsewhere, which was a significant motivation for my redesign. My task involved creating a redesigned website, <Link href="https://shaunlatip.github.io/responsive-redesign/" target="_blank" className={homeStyles.primaryLink}>linked here</Link>, based on the aims of the original website, that would be able to better meet the expected needs of users visiting across mobile, tablet, and desktop platforms.</p>
                             <div className={projectStyles.projectInfo}>
                                 <div>
                                     <b>Role</b>
@@ -180,7 +180,7 @@ export default function ExploreRI() {
                                             animate="in"
                                             initial="out"
                                             exit="out">
-                                                <iframe style={{borderRadius:'0 0 12px 12px'}}className={styles.previewFrame} src="https://vegananteater125.github.io/responsive-redesign/"/>
+                                                <iframe style={{borderRadius:'0 0 12px 12px'}}className={styles.previewFrame} src="https://shaunlatip.github.io/responsive-redesign/"/>
                                             </Fade>
                                         </TabPanel>
                                         <TabPanel style={{padding: 0}}>
@@ -190,7 +190,7 @@ export default function ExploreRI() {
                                             initial="out"
                                             exit="out">
                                                 <div className={styles.previewFrameContainer}>
-                                                    <iframe style={{borderRadius:'0 0 12px 12px'}}className={styles.previewFrameTablet} src="https://vegananteater125.github.io/responsive-redesign/"/>
+                                                    <iframe style={{borderRadius:'0 0 12px 12px'}}className={styles.previewFrameTablet} src="https://shaunlatip.github.io/responsive-redesign/"/>
                                                 </div>
                                             </Fade>
                                         </TabPanel>
