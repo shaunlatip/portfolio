@@ -237,8 +237,8 @@ export default function ExploreRI() {
                                 </p>
                                 <p>
                                 <span style={{fontWeight: 600}}>
-                                    For confidentiality reasons, other details about my work this summer are not available to the public.
-                                </span> <br/>Please reach out to me if you have any questions about my work.
+                                    For confidentiality reasons, other details about my work this summer are not publicly available.
+                                </span><br/><br/>Please reach out to me if you have any questions about my work.
                                 </p>
                                 <div className={projectStyles.contentEnd}>
                                     <Link href="/">

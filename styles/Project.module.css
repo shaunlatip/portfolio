@@ -67,7 +67,7 @@
 .bannerImage {
     /* width: 700px;
     height: 448px; */
-    position: absolute;
+    /* position: absolute; */
     object-fit: contain;
     object-position: bottom;
 }
@@ -429,6 +429,22 @@
     letter-spacing: .13em;
     text-transform: uppercase;
     font-weight: 600;
+}
+
+.pictureCaptionWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.caption {
+    font-size: 1rem;
+    color: #737373;
+}
+
+.h2SectionHeader {
+    margin: 0.5rem 0 1rem 0;
 }
 
 @media (max-width: 750px) {

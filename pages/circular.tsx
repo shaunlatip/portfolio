@@ -119,7 +119,7 @@ export default function Circular() {
                                 The challenge
                             </h3> */}
                             <h4 style={{fontWeight: 600}}>
-                                We began by outlining the problem we faced.
+                                We started by outlining the problem we faced.
                             </h4>
 
                             <p>
@@ -133,7 +133,7 @@ export default function Circular() {
                                 With Circular, customers can pay a monthly rate to keep a product for as long as they want, before choosing to either buy it, or to return it. Returned products will then be refurbished and passed on to the next owner to extend its useful life.
                             </p> */}
                             <p>
-                                Our solution focused on answering the following question:
+                                We focused on designing an answer to the question:
                             </p>
                             <span className={projectStyles.italicFocus}>
                                 How might we empower users to better access and experience consumer electronics?
@@ -141,6 +141,8 @@ export default function Circular() {
                             {/* <p>
                                 To break this down, we decided on three main principles that would ground our design.
                             </p> */}
+
+                    
 
                             <div className={projectStyles.olLarge} style={{display: 'none'}}>
                                 <div className={projectStyles.olItemLarge}>
@@ -183,13 +185,31 @@ export default function Circular() {
                         </div>
                     </div>
 
+                    {/* <div className={projectStyles.sectionContainerDark}>
+                        <div className={projectStyles.section}>
+                            <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Final Designs</div>
+                            <h3>
+                                Our final interactive prototype is available below.
+                            </h3>
+                            <p>
+
+                            </p>
+                        </div>
+                    </div> */}
+
+                    
+
                     <div className={projectStyles.sectionContainer}>
                         <div className={projectStyles.section}>
-                            <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Prototyping</div>
+                            <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Process</div>
+                            <h2 className={projectStyles.h2SectionHeader}>Brainstorming</h2>
                             <p>
-                                As a group, we started by individually sketching possible solutions for our problem, with the aim of quickly exploring a broad range of designs.
+                                We started our design process with a brainstorming session, where we each sketched a variety of possible design solutions to our challenge. Through this, we wanted to quickly explore a broad range of designs.
                            
-                                Afterwards, we reconvened and discussed our sketches, with each of us explaining the choices we made in our sketches, which helped us to converge our ideas towards a single, unified wireframe.
+                                We then reconvened and discussed our sketches, with each of us explaining the choices we made in our sketches. 
+                            </p>
+                            <p>
+                                This process allowed us to share and learn from the different approaches we each used to get closer to a single wireframe.
                             </p>
                         </div>
                         <div className={styles.sketchFrame}>
@@ -198,17 +218,145 @@ export default function Circular() {
                             </div>
                         </div>
                     </div>
-                
+
+                    <div className={projectStyles.sectionContainerGray}>
+                        <div className={projectStyles.section}>
+                            <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Process</div>
+                            <h2 className={projectStyles.h2SectionHeader}>Framing User Flow</h2>
+                            <p>
+                                Following our brainstorming session, we worked on forming an initial user flow to guide our wireframe. With just two weeks to finish our project, we decided that designing based on user tasks would be an efficient way to design around our solution. 
+                            </p>
+                            <p>
+                                We considered how a variety of different possible users, each with a unique set of tasks they set out to complete, might be able to access and navigate a single website. 
+                            </p>
+                            <div className={styles.splitCol}>
+                                <div className={styles.col}>
+                                    <div className={styles.ol}>
+                                        <h3 style={{fontWeight: 600, alignSelf: 'center'}}>New Users</h3>
+                                        <div className={styles.olItem}>
+                                            <span>01</span>
+                                            <p>
+                                            <p>
+                                                How might they get acquainted with Circular's flexible subscription model?
+                                            </p>
+                                            </p>
+                                        </div>
+                                        <div className={styles.olItem}>
+                                            <span>02</span>
+                                            <p>
+                                                How would they browse Circular's selection and rates of different electronics?
+                                            </p>
+                                        </div>
+                                        <div className={styles.olItem}>
+                                            <span>03</span>
+                                            <p>
+                                                How could they evaluate the legitimacy and credibility of Circular?
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className={styles.col}>
+                                    <div className={styles.ol}>
+                                        <h3 style={{fontWeight: 600, alignSelf: 'center'}}>Returning Users</h3>
+                                        <div className={styles.olItem}>
+                                            <span>01</span>
+                                            
+                                            <p>
+                                                How would they purchase products that they are currently trying from Circular?
+                                            </p>
+                                            
+                                        </div>
+                                        <div className={styles.olItem}>
+                                            <span>02</span>
+                                            <p>
+                                                How could they find new products to try and explore?
+                                            </p>
+                                        </div>
+                                        <div className={styles.olItem}>
+                                            <span>03</span>
+                                            <p>
+                                                How might they change information or preferences linked with their account?
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>
+                                Building off these considerations, we started to map out a broad-level view on how our first prototype would manage these tasks. To accomodate the abundance of filters, information, and different functions we anticipated our design would need, we decided on designing for a desktop web interface. 
+                            </p>
+                        </div>
+                        <div className={projectStyles.spreadRow}style={{gap: '2rem'}}>
+                            <div className={projectStyles.spreadRowText}>
+                                <b>
+                                    Sketching User Flows
+                                </b>
+                                <p>
+                                    On a classroom whiteboard, we experimented with a variety of user flows. We created a series of rough mock webpages with dry-erase markers, and ran through our list of user tasks.
+                                </p>
+                                <p>
+                                    Through iteration and experimenting with changes, we were able to identify more intuitive and efficient ways of navigating our website, which led us to a flow we were satisfied with.
+                                </p>
+                            </div>
+                            <div className={projectStyles.pictureCaptionWrapper}>
+                                <Image style={{border: '1px solid #E4E4E4'}} alt="AllTrails home page" src="/circular/whiteboard.jpg" width={500} height={336}/>
+                                <span className={projectStyles.caption}>
+                                    One iteration of our user flow sketching process
+                                </span>
+                            </div>
+                        </div>
+                        <div className={projectStyles.section} style={{marginTop: '2rem'}}>
+                            <h4 style={{fontWeight: 600}}>These sketches led us to three choices in our website's flow.</h4>
+                            <div className={projectStyles.olLarge}>
+                                <div className={projectStyles.olItemLarge}>
+                                    <span style={{fontSize: '1.5rem'}}>1</span>
+                                    <div>
+                                        <b>
+                                            Landing page
+                                        </b>
+                                        <p>
+                                            We decided on having users first go through a landing page because we felt that a dedicated page was needed to acquaint users with Circular's unique subscription model.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className={projectStyles.olItemLarge}>
+                                    <span style={{fontSize: '1.5rem'}}>2</span>
+                                    <div>
+                                        <b>
+                                            Logged in and out states
+                                        </b>
+                                        <p>
+                                            A logged out state and logged in state exist for certain pages, to both prevent new users from being overwhelmed with information irrelevant in deciding to join the marketplace, and to make the flow of information more efficient for returning users.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className={projectStyles.olItemLarge}>
+                                    <span style={{fontSize: '1.5rem'}}>3</span>
+                                    <div>
+                                        <b>
+                                            Centralized explore page
+                                        </b>
+                                        <p>
+                                            After the landing page, users are brought to the Explore page which lets users explore new products, search for specific products, and, if logged in, manage existing account information to let users complete tasks efficiently. This also allowed users to return to this page to reset after errors.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <div className={projectStyles.sectionContainer}>
                         <div className={projectStyles.section}>
-                        <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Research</div>
-                        <h4 style={{fontWeight: 600}}>Next, I analyzed the market for related platforms.</h4>
-                        <p>
-                            With so many different options possible, I chose to analyze a selection of websites that competed or functioned similarly to Circular. I wanted to see what was working, and what wasn't, to see what I could learn for Circular.
-                        </p>
+                            <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Prototyping</div>
+                            <h2 className={projectStyles.h2SectionHeader}>Platform Analysis</h2>
+                            <p>
+                                With the overall structure defined, we delegated different sections of the website to create a prototype for. I was tasked with the site-wide navigation bars and the central explore page.
+                            </p>
+                            <p>
+                                With so many different options possible to design, I chose to start by analyzing the market for websites that competed with or functioned similarly to Circular. I wanted to see what was working, and what wasn't, to see what I could apply.
+                            </p>
                         </div>
                     </div>
+
                     <div className={projectStyles.sectionContainerGray}>
                         <div className={projectStyles.section}>
                         <h3 style={{paddingTop: '1rem'}}>Design principles</h3>

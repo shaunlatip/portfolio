@@ -231,12 +231,12 @@ export default function ExploreRI() {
                     <div className={projectStyles.sectionContainerGray} ref={researchRef}>
                         <div className={projectStyles.section}>
                         <div className={projectStyles.sectionTitle}>Research</div>
-                            <h3>To start, I put myself in the shoes of the the user.</h3>
+                            <h4 style={{fontWeight: 600}}>To start, I put myself in the shoes of the the user.</h4>
                             <p style={{marginBottom: '0.5rem'}}>
                                 Due to the limited time frame of two weeks, and the nature of the class assignment, I decided to start my research process by conducting a series of <Link href="https://www.nngroup.com/articles/cognitive-walkthroughs/" target="_blank" className={homeStyles.primaryLink}>cognitive walkthroughs</Link>.
                             </p>
                             <p>
-                                To start, I came up with a list of 13 broad scenarios containing a series of tasks that a user might expect to complete. These included the following scenarios.
+                                I came up with a list of 13 broad scenarios containing a series of tasks that a user might expect to complete. These included the following scenarios.
                                 </p>
                     
                                 <div className={projectStyles.ol}>
@@ -316,7 +316,7 @@ export default function ExploreRI() {
 
                     <div className={projectStyles.sectionContainerDark}>
                         <div className={projectStyles.section}>
-                            <h3>With these insights, I explored the key problems I would focus on.</h3>
+                            <h4 style={{fontWeight: 600}}>With these insights, I explored the key problems I would focus on.</h4>
                             <h4>On a broader scale, the website had significant issues surrounding <br/> <span className="primary600">organization</span>, <span className="primary600">platform responsiveness</span>, and <span className="primary600">accessibility</span>.
                             </h4>
                             <h4 style={{marginTop: '0.5rem'}}>
@@ -367,7 +367,7 @@ export default function ExploreRI() {
                         <Image style={{marginTop: '4.5rem'}}alt="Spread of 6 key pain points" src={problemSpread} width={1176} height={1114} quality={100}/>
                         {/* <iframe src="./exploreri/problemSpread.pdf" className={styles.problemSpreadPdf}></iframe> */}
                         <div className={projectStyles.section} style={{marginTop: '6rem'}}>
-                            <h3>The WAVE tool highlighted other possible issues to my attention, including: </h3>
+                            <h4 style={{fontWeight: 600}}>The WAVE tool highlighted other possible issues to my attention, including: </h4>
                             <div className={projectStyles.olLarge} style={{marginTop: '0rem', paddingTop: '0.5rem'}}>
                                 <div className={projectStyles.olItemLarge}>
                                     <span style={{fontSize: '1.5rem'}}>1</span>
@@ -393,7 +393,7 @@ export default function ExploreRI() {
                     </div>
                     <div className={projectStyles.sectionContainer}>
                         <div className={projectStyles.section}>
-                            <h3>To inform myself, I also analyzed adjacent platforms for inspiration.</h3>
+                            <h4 style={{fontWeight: 600}}>To inform myself, I also analyzed adjacent platforms for inspiration.</h4>
                             <p>I viewed at a variety of platforms online that sought to accomplish similar functions as the page I was redesigning. I wanted to see what design patterns have worked before for similar functions, informing myself as best as I could before I started wireframing.</p>
                         </div>
                         <div className={projectStyles.spreadRow} style={{gap: '4rem', marginTop: '4rem'}}>
@@ -425,7 +425,7 @@ export default function ExploreRI() {
                     <div className={projectStyles.sectionContainerGray} ref={prototypingRef}>
                         <div className={projectStyles.section}>
                             <div className={projectStyles.sectionTitle}>Prototyping</div>
-                            <h3>I then created three wireframes, with one for each platform.</h3>
+                            <h4 style={{fontWeight: 600}}>I then created three wireframes, with one for each platform.</h4>
                             <p>
                                 During this stage, I focused on mapping out the layout of how the website would be structured using Balsamiq Wireframes. I prioritized making an overall structure that would translate easily across desktop, tablet, and mobile, with a strong sense of organization and hierarchy.
                                 Each wireframe is annotated to show why particular design decisions were made. 
@@ -495,7 +495,7 @@ export default function ExploreRI() {
                     <div className={projectStyles.sectionContainer} ref={finalDesignsRef}>
                         <div className={projectStyles.section}>
                             <div className={projectStyles.sectionTitle}>Final Designs</div>
-                            <h3>High-Fidelity Design</h3>
+                            <h2 className={projectStyles.h2SectionHeader}>High-Fidelity Design</h2>
                             <p>
                                 Working off my wireframes, I then developed three high-fidelity prototypes in Figma, with one for each platform.
                             </p>
@@ -566,9 +566,9 @@ export default function ExploreRI() {
                         <div className={projectStyles.section}>
                             <b style={{marginBottom: 0}}><span style={{fontWeight: 600, color: '#F0916C'}}>Aspect #1</span></b>
                             
-                            <h3>
-                            Reshaping the visual design system
-                            </h3>
+                            <h2 className={projectStyles.h2SectionHeader}>
+                                Visual Redesign
+                            </h2>
 
                             <p>
                                 Visually, the original website often felt extremely <span style={{fontWeight: '600'}}>crowded and noisy</span> while in use, lending the website to feel <span style={{fontWeight: '600'}}>uninviting for users</span>. 
@@ -652,9 +652,10 @@ export default function ExploreRI() {
                         <div className={projectStyles.section}>
                             <b style={{marginBottom: 0}}><span style={{fontWeight: 600, color: '#F0916C'}}>Aspect #2</span></b>
                             
-                            <h3>
-                            Restructuring for organization and hierarchy
-                            </h3>
+                            <h2 className={projectStyles.h2SectionHeader}>
+                                Restructuring
+                            </h2>
+
 
                             <p>
                                 My research showed me that the original website contained a lot of useful information for many different tasks, from driving directions, trail maps, and community-submitted content. However, it became clear that this information was <span style={{fontWeight: '600'}}>largely inacessible due to subpar organization and a confusing structure</span> that made navigating the website and scanning quite frustrating. 
@@ -689,25 +690,25 @@ export default function ExploreRI() {
                                     The overall structure of my redesigned website focused on the two following ideas:
                                 </h4>
                                 <div className={projectStyles.olLarge}>
-                                        <div className={projectStyles.olItemLarge}>
-                                            <span style={{fontSize: '1.5rem'}}>1</span>
-                                            <div>
-                                                <h4 style={{fontWeight: 600}}>Clearly distributing sections</h4>
-                                                <p>
-                                                    Content is distributed into groups that are, for the most part, completely distinct with no overlap between groups, removing confusion on where information is located in the page.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div className={projectStyles.olItemLarge}>
-                                        <span style={{fontSize: '1.5rem'}}>2</span>
-                                            <div>
-                                                <h4 style={{fontWeight: 600}}>Following a grid structure</h4>
-                                                <p>
-                                                The page structure follows a consistent grid that divides each section into thirds. With this grid, users will be able to easily scan vertically across sections by following the implied lines of the grid. Certain sections are then split in two columns with a 2:1 width ratio. This allows users to view related content by predictably scanning horizontally.
-                                                </p>
-                                            </div>
+                                    <div className={projectStyles.olItemLarge}>
+                                        <span style={{fontSize: '1.5rem'}}>1</span>
+                                        <div>
+                                            <h4 style={{fontWeight: 600}}>Clearly distributing sections</h4>
+                                            <p>
+                                                Content is distributed into groups that are, for the most part, completely distinct with no overlap between groups, removing confusion on where information is located in the page.
+                                            </p>
                                         </div>
                                     </div>
+                                    <div className={projectStyles.olItemLarge}>
+                                    <span style={{fontSize: '1.5rem'}}>2</span>
+                                        <div>
+                                            <h4 style={{fontWeight: 600}}>Following a grid structure</h4>
+                                            <p>
+                                            The page structure follows a consistent grid that divides each section into thirds. With this grid, users will be able to easily scan vertically across sections by following the implied lines of the grid. Certain sections are then split in two columns with a 2:1 width ratio. This allows users to view related content by predictably scanning horizontally.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
 
                         </div>
                         
@@ -753,9 +754,10 @@ export default function ExploreRI() {
                         <div className={projectStyles.section}>
                             <b style={{marginBottom: 0}}><span style={{fontWeight: 600, color: '#F0916C'}}>Aspect #3</span></b>
                             
-                            <h3>
-                                Using consistent language
-                            </h3>
+                            <h2 className={projectStyles.h2SectionHeader}>
+                                Consistent Language
+                            </h2>
+
 
                             <p>
                                Another frequent issue I discovered through my cognitive walkthroughts was the lack of consistent language used across the original website. These inconsistencies made it difficult to understand what information was supposed to be communicated, and created frustration during my cognitive walkthroughs.
