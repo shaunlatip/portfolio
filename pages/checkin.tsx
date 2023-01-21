@@ -149,7 +149,7 @@ export default function CheckIn() {
 
                     <div className={projectStyles.sectionContainerDark}>
                         <div className={projectStyles.section}>
-                            <h3>This was my first time crafting a whole UX research project, from A to Z.</h3>
+                            <h4 style={{fontWeight: 600}}>This was my first time crafting a whole UX research project, from A to Z.</h4>
                             <p>While I spent the past summer researching at the Brown Language and Thought Lab, there I worked on assisting existing projects alongside others. This project <span>required me to assume ownership over every step:</span> from writing precise questions, to approaching strangers to ask about their experience, all while respecting the sensitive subject matter of health. This was also my first time crafting personas and storyboarding with real insights.</p>
                         </div>
                     </div>
@@ -157,7 +157,7 @@ export default function CheckIn() {
                     <div className={projectStyles.sectionContainer} ref={interfaceRef} id="interface">
                         <div className={projectStyles.section}>
                             <div className={projectStyles.sectionTitle}>Interface</div>
-                            <h3>First, I got familiar with the check-in interface and its surroundings.</h3>
+                            <h4 style={{fontWeight: 600}}>First, I got familiar with the check-in interface and its surroundings.</h4>
                         </div>
                         <div style={{alignItems: 'center', padding: '0 0 0 0', gap: '2rem'}} className={projectStyles.spreadRow}>
                             <div style={{width: 450}} className={projectStyles.spreadRowText}>
@@ -223,12 +223,12 @@ export default function CheckIn() {
                     <div className={projectStyles.sectionContainerGray} ref={observationsRef} id="#observations">
                         <div className={projectStyles.section}>
                             <div className={projectStyles.sectionTitle}>Observations</div>
-                            <h3>Second, I observed users as they checked in to the clinic.</h3>
+                            <h4 style={{fontWeight: 600}}>Second, I observed users as they checked in to the clinic.</h4>
                             <p>
                                 Over two weekdays, I waited in the public seating area and observed 12 users in the morning and afternoon. I avoided observing up close how users filled out forms on the desktop check-in to respect their privacy. Instead, I focused on observing how each user navigated the station, including how long they lingered on each section, and their interactions with staff.
                             </p>
                             <div style={{padding: '3rem 0 1rem 0'}}>
-                                <h4 style={{fontWeight: 600, marginBottom: '1.5rem'}}>These were some of my key observations:</h4>
+                                <h4 style={{fontWeight: 600, marginBottom: '0.5rem'}}>These were some of my key observations:</h4>
                                 <div className={projectStyles.olLarge}>
                                     <div className={projectStyles.olItemLarge}>
                                         <span>1</span>
@@ -269,7 +269,7 @@ export default function CheckIn() {
                     <div className={projectStyles.sectionContainer} ref={interviewsRef} id="interviews">
                         <div className={projectStyles.section}>
                             <div className={projectStyles.sectionTitle}>Interviews</div>
-                            <h3>Next, I approached and interviewed three users to hear about their experience directly.</h3>
+                            <h4 style={{fontWeight: 600}}>Next, I spoke with three users to hear about their experience directly.</h4>
                             <p>
                                 To make this process less daunting, I created an interview guide of 8 questions to better understand what underlying goals, frustrations, and emotions they associated with the experience. I crafted my questions based on <Link className={homeStyles.primaryLink} href="https://www.cs.cmu.edu/~jhm/Readings/Dillman,%20Chapter%204.pdf" target="_blank">Dillman's basics of crafting good questions</Link>, emphasizing open-ended questions to capture more information, and keeping it simple and objective.
                             </p>
@@ -331,7 +331,7 @@ export default function CheckIn() {
                             </div>
 
                             <div style={{padding: '3rem 0 1rem 0'}}>
-                                <h3 style={{marginBottom: '1.5rem'}}>I then summarized the key points I learned from talking with three users.</h3>
+                                <h4 style={{fontWeight: 600, marginBottom: '0.5rem'}}>I then summarized the key points I learned from talking with three users.</h4>
                                 <div className={projectStyles.olLarge}>
                                     <div className={projectStyles.olItemLarge}>
                                         <span>1</span>
@@ -376,7 +376,7 @@ export default function CheckIn() {
                     <div className={projectStyles.sectionContainerGray}ref={personasRef} id="personas">
                         <div className={projectStyles.section}>
                             <div className={projectStyles.sectionTitle}>Personas</div>
-                            <h3>To analyze my findings, I devised two personas based on these insights.</h3>
+                            <h4 style={{fontWeight: 600}}>To analyze my findings, I devised two personas based on these insights.</h4>
                             <p style={{marginBottom: 
                             '0.5rem'}}>
                                 I worked to synthesize my findings into two distinct personas, each capturing a distinct set of behavior patterns. To better inform myself, I read Chapter 5 of Alan Cooper's "About Face: The Essentials of Interaction Design" to provide a framework for developing research based personas. During this process, I focused on exploring the underlying motivations behind the check-in process, emphasizing the 'why' moreso than the 'what'.
@@ -678,7 +678,7 @@ export default function CheckIn() {
                     <div className={projectStyles.sectionContainerGray} ref={storyboardRef}>
                         <div className={projectStyles.section}>
                             <div className={projectStyles.sectionTitle}>Storyboard</div>
-                            <h3>To further explore and understand Scattered Sakshi's user flow, I created a storyboard. </h3>
+                            <h4 style={{fontWeight: 600}}>To further explore Scattered Sakshi's user journey, I created a storyboard. </h4>
                             <p>
                                 This was a challenge for me as I rarely draw human characters, so I spent much effort to go through multiple drafts, practice sketching expressions, and using examples from comics to better portray the experience. While crafting this storyboard, I focused on the three pillars of authenticity, simplicity, and emotion to frame Sakshi's experience. 
                             </p>
@@ -748,7 +748,7 @@ export default function CheckIn() {
                     <div className={projectStyles.sectionContainer} ref={takeawaysRef}>
                         <div className={projectStyles.section}>
                             <div className={projectStyles.sectionTitle}>Takeaways</div>
-                                <h3>As my first major project from UI/UX, this research project was truly valuable to my growth as a designer.</h3>
+                                <h4 style={{fontWeight: 600}}>As my first major UI/UX experience, this research project was truly valuable to my growth as a designer.</h4>
                                 <p>
                                     Looking back, it was truly exciting to put the UX tools that my UI/UX class introduced to work, in examining a part of campus that I find important in a deeper light. This project forced me to learn in a lot of ways which I found valuable in helping to develop my process; 
                                     in forcing me to practice sketching and visual imagination to communicate my ideas, in planning every step of a research project, and interviewing and observing users in real life.

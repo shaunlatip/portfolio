@@ -95,7 +95,7 @@ export default function ExploreRI() {
                 <div className={projectStyles.sectionContainerDark}>
                         <div className={projectStyles.section}>
                             <div className={projectStyles.sectionTitle}>Context</div>
-                            <h2 style={{marginBottom: '1rem'}}>Adapting Research in the time of COVID-19</h2>
+                            <h2 className={projectStyles.h2SectionHeader}>Adapting Research in the time of COVID-19</h2>
                             <p>
                                 With the onset of the COVID-19 pandemic, psychology research in labs across the U.S faced an enormous challenge. With the pandemic halting the use of in-person studies, labs were forced to either learn how to transition their research fully online, through platforms such as Zoom, or to stop researching completely.
                             </p>
@@ -111,12 +111,13 @@ export default function ExploreRI() {
 
                 <div className={projectStyles.sectionContainer}>
                         <div className={projectStyles.section}>
-                            <h2 style={{marginBottom: '0rem'}}>My Impact</h2>
+                            
                            
                         </div>
 
                         <div className={projectStyles.spreadRow}style={{gap: '2rem'}}>
                             <div className={projectStyles.spreadRowText} style={{maxWidth: 600}}>
+                            <h2 className={projectStyles.h2SectionHeader}>My Impact</h2>
                             <div className={projectStyles.ol}>
                                 <div className={projectStyles.olItem}>
                                     <span>01</span>
@@ -161,7 +162,7 @@ export default function ExploreRI() {
 
                     <div className={projectStyles.sectionContainerGray}>
                         <div className={projectStyles.section}>
-                            <h2 style={{marginBottom: '1rem'}}>Learnings</h2>
+                            <h2 className={projectStyles.h2SectionHeader}>Learnings</h2>
                             <div className={projectStyles.olLarge} style={{gap: '3rem'}}>
                                 <div className={projectStyles.olItemLarge}>
                                     <span style={{fontSize: '1.5rem'}}>1</span>
