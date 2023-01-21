@@ -109,7 +109,8 @@ export default function ExploreRI() {
                         src={bannerImage}
                         alt="iMac, Tablet, and Phone display of interface"
                         className={projectStyles.bannerImage}
-                        fill={true}/>
+                        fill={true}
+                        style={{maxWidth: '700px'}}/>
                     </div>
                     
 
@@ -822,7 +823,7 @@ export default function ExploreRI() {
                                     </div>
                                 </div>
                                 <div className={projectStyles.olItemLarge}>
-                                    <span style={{fontSize: '1.5rem'}}>1</span>
+                                    <span style={{fontSize: '1.5rem'}}>2</span>
                                     <div>
                                         <b>
                                             Explore redesigning other sections of the website

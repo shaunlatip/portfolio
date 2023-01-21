@@ -71,7 +71,8 @@ export default function Circular() {
                         src={bannerImage}
                         alt=""
                         className={projectStyles.bannerImage}
-                        fill={true}/>
+                        fill={true}
+                        style={{maxWidth: '600px'}}/>
                     </div>
                     
 

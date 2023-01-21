@@ -53,7 +53,8 @@ export default function ExploreRI() {
                         src={bannerImage}
                         alt="Banner image"
                         className={projectStyles.bannerImage}
-                        fill={true}/>
+                        fill={true}
+                        style={{maxWidth: '700px'}}/>
                     </div>
                 
                 
