@@ -299,7 +299,7 @@ export default function Circular() {
                                 </p>
                             </div>
                             <div className={projectStyles.pictureCaptionWrapper}>
-                                <Image style={{border: '1px solid #E4E4E4'}} alt="AllTrails home page" src="/circular/whiteboard.jpg" width={500} height={336} style={{borderRadius: '12px'}}/>
+                                <Image alt="AllTrails home page" src="/circular/whiteboard.jpg" width={500} height={336} style={{borderRadius: '12px', border: '1px solid #E4E4E4'}}/>
                                 <span className={projectStyles.caption}>
                                     One iteration of our user flow sketching process
                                 </span>
