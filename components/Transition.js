@@ -19,7 +19,7 @@ const Transition = ({ children }) => {
       opacity: 0,
       y: 0,
       transition: {
-        duration: 0.25
+        duration: 0.0
       }
     },
     in: {
