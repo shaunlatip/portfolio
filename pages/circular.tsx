@@ -210,7 +210,7 @@ export default function Circular() {
                         </div>
                     </div>
 
-                    <div className={projectStyles.sectionContainer}>
+                    <div className={projectStyles.sectionContainer} style={{display: 'none'}}>
                         <div className={projectStyles.section}>
                             <h2 className={projectStyles.h2SectionHeader}>Final Solution</h2>
                         </div>
