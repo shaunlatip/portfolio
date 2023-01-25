@@ -55,6 +55,23 @@ export default function Home() {
                   </div>
                 </Link>
               </div>
+              
+              <div className={styles.project}>
+                <Link href="/circular">
+                  <img className={styles.projectImage} src="images/circular-card.jpg"/>
+                  <div className={styles.projectInfo}>
+                    <div className={styles.projectInfoContent}>
+                    <h2>Circular</h2>
+                      <div className={styles.badges}>
+                        <span className={styles.badge}>UI/UX Design</span>
+                        <span className={styles.badge}>User Research</span>
+                        <span className={styles.badge}>User Testing</span>
+                      </div>
+                      <p>Iterative design and research for YC Startup providing flexible access to consumer electronics</p>
+                    </div>
+                  </div>
+                </Link>
+              </div>
               <div className={styles.project}>
                 <Link href="/checkin">
                   <img className={styles.projectImage} src="images/checkin-card.jpg"/>
@@ -67,22 +84,6 @@ export default function Home() {
                         <span className={styles.badge}>Persona Mapping</span>
                       </div>
                       <p>User observation and interview research on the clinical experience at Brown Health Services.</p>
-                    </div>
-                  </div>
-                </Link>
-              </div>
-              <div className={styles.project}>
-                <Link href="/circular">
-                  <img className={styles.projectImage} src="images/circular-card.jpg"/>
-                  <div className={styles.projectInfo}>
-                    <div className={styles.projectInfoContent}>
-                    <h2>Circular</h2>
-                      <div className={styles.badges}>
-                        <span className={styles.badge}>UI/UX Design</span>
-                        <span className={styles.badge}>User Research</span>
-                        <span className={styles.badge}>User Testing</span>
-                      </div>
-                      <p>Designed website for Circular, providing accessible consumer technology subscriptions</p>
                     </div>
                   </div>
                 </Link>
