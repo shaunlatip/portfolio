@@ -278,6 +278,40 @@
     gap: 0.5rem;
 }
 
+.tasks {
+    filter: drop-shadow(0px 10px 32px rgba(0, 0, 0, 0.10));
+    background-color: white;
+    border-radius: 12px;
+    width: 960px;
+}
+
+.task {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 3rem 4rem;
+    background-color: #f4f4f4;
+    border-radius: 0 0 12px 12px;
+    gap: 2rem;
+}
+
+.users {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    max-width: calc((100% - 2rem) / 3);
+    filter: drop-shadow(0px 5px 8px rgba(0, 0, 0, 0.10));
+}
+
 @media (max-width: 750px) {
     .bannerImageContainer {
         width: calc(100% - 4rem);

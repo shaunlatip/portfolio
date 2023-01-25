@@ -93,6 +93,9 @@ export default function Circular() {
                         <p>
                             For a class project, I was challenged to design an interactive interface for <Link href="https://www.ycombinator.com/companies/circular" target="_blank" className={homeStyles.primaryLink}>Circular</Link>, an emerging startup for subscription consumer electronics, which was part of Y Combinator's Winter 2022 batch. With a group, I iteratively designed an interface matching Circular's concept by looking only at their Y Combinator description.
                         </p>
+                        <p>
+                            After completing the initial prototype, this prototype then underwent initial user testing with peers, which provided the insights needed to develop the final version. Afterwards, we user tested this final version again with several users on <Link href="https://www.usertesting.com/" target="_blank" className={homeStyles.primaryLink}>usertesting.com</Link>, which revealed further insights.
+                        </p>
                         <div className={projectStyles.projectInfo}>
                             <div>
                                 <b>Role</b>
@@ -212,7 +215,7 @@ export default function Circular() {
 
                     <div className={projectStyles.sectionContainer} style={{display: 'none'}}>
                         <div className={projectStyles.section}>
-                            <h2 className={projectStyles.h2SectionHeader}>Final Solution</h2>
+                            
                         </div>
                         <div className={projectStyles.spreadRow}style={{gap: '4rem'}}>
                             <div className={projectStyles.spreadRowText}>
@@ -241,7 +244,6 @@ export default function Circular() {
 
                     <div className={projectStyles.sectionContainerDark}>
                         <div className={projectStyles.section}>
-                            <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>First Iteration</div>
                             <h4 style={{fontWeight: 600}}>First, I outlined the value that Circular should provide for users.</h4>
                             <p>Based on the prompt we were given, I broke down our goal into three design principles that defined what our solution should translate into for users as a better way to access electronics.</p>
                             <div className={projectStyles.olLarge} style={{paddingTop: '2rem', paddingBottom: '2rem', gap: '1.5rem'}}>
@@ -306,8 +308,7 @@ export default function Circular() {
 
                     <div className={projectStyles.sectionContainerGray}>
                         <div className={projectStyles.section}>
-                            
-                            <h2 className={projectStyles.h2SectionHeader}>Brainstorming</h2>
+                            <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Brainstorming</div>
                             <p>
                                 To kick off our initial designs, I started our design process with a brainstorming session, where our group sketched a variety of possible design solutions to the challenge. Through this, I wanted to quickly explore a broad range of designs.
                            
@@ -329,6 +330,7 @@ export default function Circular() {
                     <div className={projectStyles.sectionContainer}>
                         <div className={projectStyles.section}>
                             {/* <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Prototyping</div> */}
+                            <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Research</div>
                             <h2 className={projectStyles.h2SectionHeader}>Platform Analysis</h2>
                             <p>
                                 At this point, I knew that Circular would have to <span style={{fontWeight: 600}}>incorporate ideas from a wide variety of genres.</span>
@@ -337,11 +339,20 @@ export default function Circular() {
                                  In many ways, much of Circular's planned functionalities mirrored that of existing e-commerce marketplaces that Circular would compete with. However, in contrast with these competitors, Circular was an emerging startup which uniquely allowed users to flexibly access consumer electronics.
                             </p>
                             <p>
-                                To inform myself, I analyzed a variety of platforms that fit the two forementioned groups. I looked at existing e-commerce competitors, such as Amazon and Shopee and at newer platforms providing less conventional ways to access products, to see what I could incorporate, modify, and avoid.
+                                To inform myself, I ran through a heuristic evaluation of a variety of platforms that fit the two forementioned groups. I looked at existing e-commerce competitors, such as Amazon and Shopee and at newer platforms providing less conventional ways to access products, to see what I could incorporate, modify, and avoid.
                             </p>
                         </div>
+                       
+                        
+
+                        
+
+                    </div>
+
+                    <div className={projectStyles.sectionContainerGray} style={{padding: 0}}>
                         <div className={projectStyles.spreadRow} style={{gap: '4rem', marginTop: '4rem'}}>
                             <div className={projectStyles.spreadRowText}>
+                                <h3 style={{color: '#F0916C'}}>Traditional e-commerce</h3>
                                 <b>Amazon</b>
                                 <p>
                                     Despite Amazon selling products spanning 33 categories, it was easy to find results by searching, with the search bar prominent on each page. The search bar itself took nearly the whole size of the navigation bar, which makes it hard to miss. Searching by category further helped to ease navigating the site.
@@ -352,7 +363,7 @@ export default function Circular() {
                             </div>
                             <Image style={{border: '1px solid #E4E4E4'}} alt="" src="/circular/amazon.jpg" width={551} height={321.6}/>
                         </div>
-                        <div className={projectStyles.spreadRow}style={{gap: '4rem'}}>
+                        <div className={projectStyles.spreadRow}style={{gap: '4rem', marginBottom: '4rem'}}>
                             <div className={projectStyles.spreadRowText}>
                                 <b>
                                     Shopee Singapore
@@ -363,9 +374,13 @@ export default function Circular() {
                             </div>
                             <Image style={{border: '1px solid #E4E4E4'}} alt="" src="/circular/shopee.jpg" width={551} height={321.6}/>
                         </div>
+                    </div>
+
+                    <div className={projectStyles.sectionContainer} style={{padding: 0}}>
                         <div className={projectStyles.spreadRow}style={{gap: '4rem', marginTop: '4rem'}}>
-                            <Image style={{border: '1px solid #E4E4E4'}} alt="" src="/circular/scentbird.jpg" width={551} height={428.16}/>
+                            
                             <div className={projectStyles.spreadRowText}>
+                                <h3 style={{color: '#F0916C'}}>Alternative platforms</h3>
                                 <b>
                                     ScentBird
                                 </b>
@@ -376,14 +391,18 @@ export default function Circular() {
                                     ScentBird directed new users to a landing page with prompts on how their process worked, with a variety of buttons channeling users to view their product offerings and sign up.
                                 </p>
                             </div>
+                            <Image style={{border: '1px solid #E4E4E4'}} alt="" src="/circular/scentbird.jpg" width={551} height={428.16}/>
                             
                         </div>
-                        <div className={projectStyles.spreadRow}style={{gap: '4rem'}}>
-                            <Image style={{border: '1px solid #E4E4E4'}} alt="AllTrails home page" src="/circular/airbnb.jpg" width={551} height={321.6}/>
+                        <div className={projectStyles.spreadRow}style={{gap: '4rem', marginBottom: '4rem'}}>
+                            
                             <div className={projectStyles.spreadRowText}>
                                 <b>
                                     AirBnB
                                 </b>
+                                <p>
+                                    I looked to AirBnB as an established example of a company providing more flexible ways to access products.
+                                </p>
                                 <p>
                                     AirBnB’s search bar, easily noticed at the center of the navigation bar, allows users to use constraints to easily quickly refine searches.
                                 </p>
@@ -392,9 +411,54 @@ export default function Circular() {
                                     A primarily white background with a single accent color also helps to draw users to focus onto listings and to search with the search icon.
                                 </p>
                             </div>
+                            <Image style={{border: '1px solid #E4E4E4'}} alt="AirBnB home page" src="/circular/airbnb.jpg" height={321.6} width={551} />
                             
                         </div>
                     </div>
+
+                    <div className={projectStyles.sectionContainerDark}>
+                        <div className={projectStyles.section} style={{marginTop: '0rem'}}>
+                            <h4 style={{fontWeight: 600}}>This analysis led me towards several design choices.</h4>
+                            <div className={projectStyles.olLarge}>
+                                <div className={projectStyles.olItemLarge}>
+                                    <span style={{fontSize: '1.5rem'}}>1</span>
+                                    <div>
+                                        <b>
+                                            Search-focused navigation
+                                        </b>
+                                        <p>
+                                           For marketplaces with a large offering of products, having a prominent searchbar constantly placed in a fixed navigation bar facilitated the discovery and exploration of products.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className={projectStyles.olItemLarge}>
+                                    <span style={{fontSize: '1.5rem'}}>2</span>
+                                    <div>
+                                        <b>
+                                            Highlighting categories
+                                        </b>
+                                        <p>
+                                            Many marketplaces prominently featured a list of different product categories on their home page. I found this inclusion to affect my experience in two ways which I found applicable to Circular. First, by quickly communicating to users the range of products a website offered. Second, by allowing users to quickly filter and browse categories they are interested in.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className={projectStyles.olItemLarge}>
+                                    <span style={{fontSize: '1.5rem'}}>3</span>
+                                    <div>
+                                        <b>
+                                            Three simple steps
+                                        </b>
+                                        <p>
+                                            I examined existing, emerging platforms offering unconventional ways to try or access products. From this, I learned that websites that clearly communicated a simple process of ordering felt easier to understand and to navigate. 
+                                        </p>
+                                        <p>
+                                            This fueled me to streamline Circular's process for the user into three steps: Choosing a product, trying it, and buying/returning it - a pattern used in the landing page and across the platform.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
 
                     <div className={projectStyles.sectionContainerGray}>
                         <div className={projectStyles.section}>
@@ -491,7 +555,7 @@ export default function Circular() {
                                             Landing page
                                         </b>
                                         <p>
-                                            I decided on having users first go through a landing page because I felt that a dedicated page was needed to acquaint users with Circular's unique subscription model. This was inspired by how ScentBird and other emerging platforms similarly used a landing page.
+                                            I decided on having users first go through a landing page because I felt that a dedicated page was needed to acquaint users with Circular's unique subscription model. This was also inspired by how ScentBird and other emerging platforms similarly used a landing page.
                                         </p>
                                     </div>
                                 </div>
@@ -525,7 +589,7 @@ export default function Circular() {
 
                     <div className={projectStyles.sectionContainer}>
                         <div className={projectStyles.section}>
-                            <h2 className={projectStyles.h2SectionHeader}>Wireframing</h2>
+                            <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>First Iteration</div>
                             <p>With what I learned from my research, I created a set of low-fidelity wireframes on Figma for the site-wide navigation bars and explore page, while wireframing the landing page closely with Juliana.</p>
                             <p>
                                 During the wireframing process, I focused on <span style={{fontWeight: 300}}>defining the overall structure and organization</span> of my design, prioritizing during this process the development of a <span style={{fontWeight: 300}}>clear hierarchy through the size, shading, and position</span> of different elements.
@@ -713,7 +777,7 @@ export default function Circular() {
 
                     <div className={projectStyles.sectionContainerGray}>
                         <div className={projectStyles.section}>
-                            <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Mock Critique</div>
+                            <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Second Iteration</div>
                             
                             <p>
                                 To understand how we could improve, our prototype underwent user testing through a group critique session. 36 peer students, alongside <Link href="http://giffordcheung.weebly.com/" target="_blank" className={homeStyles.primaryLink}>Gifford Cheung</Link>, a senior UX researcher at Nintendo, ran through a variety of tasks on our interactive prototype and shared their thoughts with us.
@@ -722,11 +786,11 @@ export default function Circular() {
                                 <Image width={600} height={346} alt="Screenshot of our Zoom critique" src="/circular/zoomCritique.png"/>
                             </div>
                             <p>
-                                With my group, I reviewed the feedback that our first prototype received, and proposed matching solutions, all completed in the next design iteration, that addressed the issues uncovered.
+                                With my group, I reviewed the feedback that our first prototype received and proposed matching solutions that addressed the issues uncovered. Working with my team, I implemented these solutions towards the final Circular prototype.
                             </p>
                             
-                        </div>
-                        <div className={styles.frameAlt}>
+                        </div> 
+                        <div className={styles.frameAlt} >
                             <div className={styles.wireframes}>
                                 <Tabs isLazy={true} variant='unstyled' size='md' colorScheme='orange' defaultIndex={0}>
                                     <TabList>
@@ -1093,13 +1157,448 @@ export default function Circular() {
 
                     <div className={projectStyles.sectionContainer}>
                         <div className={projectStyles.section}>
+                            <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>User Testing</div>
+                            <p>
+                                The project went through further user testing with online users on <Link href="https://www.usertesting.com/" target="_blank" className={homeStyles.primaryLink}>usertesting.com</Link>. Juliana and I developed a series of tasks and assesments to be presented to three users to interact with the interactive Figma prototype updated based on feedback from our first critique session.
+                            </p>
+                            
+                            <p>
+                                For this test, we wanted to assess how users using our prototype started new rentals and managed existing rentals. 
+                            </p>
+                            <b style={{marginTop: '1rem'}}>
+                                We designed a series of 4 tasks for each user to complete:
+                            </b>
+                            <div className={projectStyles.ol} style={{padding: 0, paddingBottom: '1rem'}}>
+                                <div className={projectStyles.olItem}>
+                                    <span>01</span>
+                                    <p>
+                                        Check the available categories of products
+                                    </p>
+                                </div>
+                                <div className={projectStyles.olItem}>
+                                    <span>02</span>
+                                    <p>
+                                        Select a category, browse the products, and select a specific product
+                                    </p>
+                                </div>
+                                <div className={projectStyles.olItem}>
+                                    <span>03</span>
+                                    <p>
+                                        Learn about how renting works
+                                    </p>
+                                </div>
+                                <div className={projectStyles.olItem}>
+                                    <span>04</span>
+                                    <p>
+                                        From the eyes of a returning user, buy a product that they are currently renting
+                                    </p>
+                                </div>
+                            </div>
+                            <b>
+                                    After completing each task, we then asked each user two questions:
+                            </b>
+                            <div className={projectStyles.ol} style={{padding: 0, paddingBottom: '1rem'}}>
+                                <div className={projectStyles.olItem}>
+                                    <span>01</span>
+                                    <p>
+                                        To describe whether they felt they successfully completed the subtask
+                                    </p>
+                                </div>
+                                <div className={projectStyles.olItem}>
+                                    <span>02</span>
+                                    <p>
+                                        To rate the difficulty of the subtask from 1 to 5 (1 = Very Difficult, 5 = Very Easy)
+                                    </p>
+                                </div>
+                            </div>
+
+                            
+
                             
                         </div>
+                            
+                        
+
+                       
+                        
                     </div>
+
+                    <div className={projectStyles.sectionContainerDark}>
+                        <div className={projectStyles.section}>
+                        <h4 style={{fontWeight: 600, marginTop: '0rem'}}>
+                                With just three users, we focused on collecting qualitative data.
+                            </h4>
+                            <p>
+                                On our user testing platform, Juliana and I decided to ask participants to narrate their thought process out loud while completing tasks. This let us better understand the 'Why?' behind the decisions users made, instead of relying on assumptions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className={projectStyles.sectionContainerGray}>
+                        <div className={projectStyles.section}>
+                            <h4 style={{fontWeight: 600}}>
+                                Analyzing these results led us to further insights on how to improve.
+                            </h4>
+                            <p>
+                                Whenever a user we surveyed had difficulty with successfully completing a task, we came up with specific ways to modify our prototype to better achieve our goals.
+                            </p>
+                            <p style={{paddingBottom: '2rem'}}>
+                                Throughout the breakdown below, we marked where certain user experiences led us to specific solutions that we proposed further below.
+                            </p>
+                            {/* <h3 style={{marginTop: '4rem', textAlign: 'center'}}>Task Breakdown</h3> */}
+                        </div>
+
+                        <div className={styles.frameAlt}>
+                            <div className={styles.tasks}>
+                                <Tabs isLazy={true} variant='unstyled' size='md' colorScheme='orange' defaultIndex={0}>
+                                    <TabList>
+                                        <Tab style={{ fontWeight: 500, marginBottom: '2px', padding: '0.8rem 1.2rem'}}
+                                        _hover={{ color: '#F0916C'}}
+                                        _active={{ color: '#F0916C' }}
+                                        _selected={{ color: '#F0916C', boxShadow: '0 2px 0 rgba(240, 145, 108, 1)', marginBottom:'0px', transition: 'all 0.3s ease'}} >
+                                            Task 1
+                                        </Tab>
+                                        <Tab style={{ fontWeight: 500, marginBottom: '2px', padding: '0.8rem 1.2rem'}}
+                                        _hover={{ color: '#F0916C'}}
+                                        _active={{ color: '#F0916C' }}
+                                        _selected={{ color: '#F0916C', boxShadow: '0 2px 0 rgba(240, 145, 108, 1)', marginBottom:'0px', transition: 'all 0.3s ease'}} >
+                                            Task 2
+                                        </Tab>
+                                        <Tab style={{ fontWeight: 500, marginBottom: '2px', padding: '0.8rem 1.2rem'}}
+                                        _hover={{ color: '#F0916C'}}
+                                        _active={{ color: '#F0916C' }}
+                                        _selected={{ color: '#F0916C', boxShadow: '0 2px 0 rgba(240, 145, 108, 1)', marginBottom:'0px', transition: 'all 0.3s ease'}} >
+                                            Task 3
+                                        </Tab>
+                                        <Tab style={{ fontWeight: 500, marginBottom: '2px', padding: '0.8rem 1.2rem'}}
+                                        _hover={{ color: '#F0916C'}}
+                                        _active={{ color: '#F0916C' }}
+                                        _selected={{ color: '#F0916C', boxShadow: '0 2px 0 rgba(240, 145, 108, 1)', marginBottom:'0px', transition: 'all 0.3s ease'}} >
+                                            Task 4
+                                        </Tab>
+                                    </TabList>
+                                    <TabPanels style={{transition: 'all 0.3s ease'}}>
+                                        
+                                        <TabPanel style={{padding: 0}}>
+                                            <Fade
+                                            variants={variants}
+                                            animate="in"
+                                            initial="out"
+                                            exit="out">
+                                                <div className={styles.task}>
+                                                    <div>
+                                                        <b>Prompt</b>
+                                                        <p>
+                                                            Imagine you want to find out what types of products the website offers. Now use this website to find this information. Stop when you feel like you have seen a complete list of what products are available.
+                                                        </p>
+                                                    </div>
+                                                    <div>
+                                                        <b>
+                                                            Expected Taskflow
+                                                        </b>
+                                                        <p>
+                                                            Click the “Explore now” button on the landing page to go to the explore page; see the selected categories and click the “View all categories” below.
+                                                        </p>
+                                                    </div>
+                                                    <div className={styles.users}>
+                                                        <div className={styles.user} style={{background: 'white'}}>
+                                                            <b style={{textAlign: 'center'}}>User 1 - Completed</b>
+                                                            <p>
+                                                                First action was clicking the search bar, then used breadcrumbs to go to the correct categories page
+                                                            </p>
+                                                            <p>
+                                                                (Reported they were sure that they completed the task successfully, and rated it 4/5.)
+                                                            </p>
+                                                        </div>
+                                                        <div className={styles.user} style={{background: 'white'}}>
+                                                            <b style={{textAlign: 'center'}}>User 2 - Completed</b>
+                                                            <p>
+                                                                Navigated to the correct categories page but did not recognize it as the correct page, then went back to the explore page
+                                                            </p>
+                                                            <p>
+                                                                (Reported they were sure that they completed the task successfully, and rated it 5/5.)
+                                                            </p>
+                                                        </div>
+                                                        <div className={styles.user} style={{background: 'white'}}>
+                                                            <b style={{textAlign: 'center'}}>User 3 - <span style={{color: 'red'}}>Incomplete</span></b>
+                                                            <p>
+                                                                Thought the categories on the explore page were a complete list, did not see the “View all categories” link 
+                                                            </p>
+                                                            <p>
+                                                                Led to <span style={{color: '#F0916C', fontWeight: 600}}>Solution 1</span>
+                                                            </p>
+                                                            <p>
+                                                                (Reported they were sure that they completed the task successfully, and rated it 4/5.)
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </Fade>
+                                        </TabPanel>
+                                        <TabPanel style={{padding: 0}}>
+                                            <Fade
+                                            variants={variants}
+                                            animate="in"
+                                            initial="out"
+                                            exit="out">
+                                                <div className={styles.task}>
+                                                    <div>
+                                                        <b>Prompt</b>
+                                                        <p>
+                                                            Imagine that you are looking to try out a new tablet. Try to browse the tablet section and then rent a tablet using the website. Go as far as you can with the prototype before moving on to the next task.
+                                                        </p>
+                                                    </div>
+                                                    <div>
+                                                        <b>
+                                                            Expected Taskflow
+                                                        </b>
+                                                        <p>
+                                                            Click the tablet icon on the categories page to go to the browse page, then click the image or the title of a product to go to the product page.
+                                                        </p>
+                                                    </div>
+                                                    <div className={styles.users}>
+                                                        <div className={styles.user} style={{background: 'white'}}>
+                                                            <b style={{textAlign: 'center'}}>User 1 - <span style={{color: 'red'}}>Incomplete</span></b>
+                                                            <p>
+                                                                Clicked the rental button on the browse page but did not check product specifics
+                                                            </p>
+                                                            <p>
+                                                                Led to <span style={{color: '#F0916C', fontWeight: 600}}>Solution 2</span>
+                                                            </p>
+                                                            <p>
+                                                                (Reported they were sure that they completed the task successfully, and rated it 5/5.)
+                                                            </p>
+                                                        </div>
+                                                        <div className={styles.user} style={{background: 'white'}}>
+                                                            <b style={{textAlign: 'center'}}>User 2 - <span style={{color: 'red'}}>Incomplete</span></b>
+                                                            <p>
+                                                            Clicked the rental button on the browse page but did not check product specifics
+                                                            </p>
+                                                            <p>
+                                                                Led to <span style={{color: '#F0916C', fontWeight: 600}}>Solution 2</span>
+                                                            </p>
+                                                            <p>
+                                                            (Reported they were sure that they completed the task successfully, and rated it 5/5.)
+                                                            </p>
+                                                        </div>
+                                                        <div className={styles.user} style={{background: 'white'}}>
+                                                            <b style={{textAlign: 'center'}}>User 3 - Completed</b>
+                                                            <p>
+                                                                Had some trouble finding the tablet category but completed successfully, only realized that this was a charged rental service instead of free trials until seeing the “rent” button
+                                                            </p>
+                                                            <p>
+                                                                Led to <span style={{color: '#F0916C', fontWeight: 600}}>Solution 3</span>
+                                                            </p>
+                                                            <p>
+                                                                (Reported they were NOT sure that they completed the task successfully, and rated it 3/5.)
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </Fade>
+                                        </TabPanel>
+                                        <TabPanel style={{padding: 0}}>
+                                            <Fade
+                                            variants={variants}
+                                            animate="in"
+                                            initial="out"
+                                            exit="out">
+                                                <div className={styles.task}>
+                                                    <div>
+                                                        <b>Prompt</b>
+                                                        <p>
+                                                        Imagine you want to rent this tablet but you are confused about how the renting process works. Try to find more information about what you will need to do after trying out a product. Stop when you think you have found the corresponding section.
+                                                        </p>
+                                                    </div>
+                                                    <div>
+                                                        <b>
+                                                            Expected Taskflow
+                                                        </b>
+                                                        <p>
+                                                        At the product page, click “How does renting work?” or scroll down to the section.
+                                                        </p>
+                                                    </div>
+                                                    <div className={styles.users}>
+                                                        <div className={styles.user} style={{background: 'white'}}>
+                                                            <b style={{textAlign: 'center'}}>User 1 - Completed</b>
+                                                            <p>
+                                                            Looked for information on the browse page at first before going to the correct product page
+                                                            </p>
+                                                            <p>
+                                                                Led to <span style={{color: '#F0916C', fontWeight: 600}}>Solution 3</span>
+                                                            </p>
+                                                            <p>
+                                                            (Reported they were sure that they completed the task successfully, and rated it 4/5.)
+                                                            </p>
+                                                        </div>
+                                                        <div className={styles.user} style={{background: 'white'}}>
+                                                            <b style={{textAlign: 'center'}}>User 2 - <span style={{color: 'red'}}>Incomplete</span></b>
+                                                            <p>
+                                                            Looked for a separate “about” or “terms & conditions” page and ended with the “How it works” section on the landing page
+                                                            </p>
+                                                            <p>
+                                                                Led to <span style={{color: '#F0916C', fontWeight: 600}}>Solution 3</span>
+                                                            </p>
+                                                            <p>
+                                                            (Reported they were NOT sure that they completed the task successfully, and rated it 5/5.)
+                                                            </p>
+                                                        </div>
+                                                        <div className={styles.user} style={{background: 'white'}}>
+                                                            <b style={{textAlign: 'center'}}>User 3 - Completed</b>
+                                                            <p>
+                                                            Already on the product page and found the correct section, but asked for a more detailed explanation
+                                                            </p>
+                                                            <p>
+                                                            (Reported they were sure that they completed the task successfully, and rated it 4/5.)
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </Fade>
+                                        </TabPanel>
+                                        <TabPanel style={{padding: 0}}>
+                                            <Fade
+                                            variants={variants}
+                                            animate="in"
+                                            initial="out"
+                                            exit="out">
+                                                <div className={styles.task}>
+                                                    <div>
+                                                        <b>Prompt</b>
+                                                        <p>
+                                                        Imagine you rented a pair of Sennheiser headphones to try out from this website a while ago. Now use this website to see how much it would cost to buy the headphones now.
+                                                        </p>
+                                                    </div>
+                                                    <div>
+                                                        <b>
+                                                            Expected Taskflow
+                                                        </b>
+                                                        <p>
+                                                        Click the “Rentals” tab on the navbar to go to the manage rentals page then the “view rental” button, or “Your rentals” section on the explore page, to go to the rental details pages, find the corresponding section.
+                                                        </p>
+                                                    </div>
+                                                    <div className={styles.users}>
+                                                        <div className={styles.user} style={{background: 'white'}}>
+                                                            <b style={{textAlign: 'center'}}>User 1 - Completed</b>
+                                                            <p>
+                                                            Had some confusion understanding the task at first, but completed successfully
+
+                                                            </p>
+                                                            <p>
+                                                                
+                                                                (Reported they were sure that they completed the task successfully, and rated it 4/5.)
+                                                            </p>
+                                                        </div>
+                                                        <div className={styles.user} style={{background: 'white'}}>
+                                                            <b style={{textAlign: 'center'}}>User 2 - Completed</b>
+                                                            <p>
+                                                            First clicked the “Your rentals” under the account drop-down menu, which was not implemented
+                                                            </p>
+                                                            <p>
+                                                            (Reported they were sure that they completed the task successfully, and rated it 4/5.)
+                                                            </p>
+                                                        </div>
+                                                        <div className={styles.user} style={{background: 'white'}}>
+                                                            <b style={{textAlign: 'center'}}>User 3 - Completed</b>
+                                                            <p>
+                                                            Asked for a more detailed explanation of the price
+                                                            </p>
+                                                            <p>
+                                                                Led to <span style={{color: '#F0916C', fontWeight: 600}}>Solution 4</span>
+                                                            </p>
+                                                            <p>
+                                                            (Reported they were sure that they completed the task successfully, and rated it 4/5.)
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </Fade>
+                                        </TabPanel>
+                                    </TabPanels>
+                                </Tabs>
+                            </div>
+                        </div>
+                        <div className={projectStyles.section} style={{paddingTop: '4rem'}}>
+                            <h4 style={{fontWeight: 600}}>These findings led us to propose four more changes to our second iteration.</h4>
+                            <div className={projectStyles.olLarge} style={{paddingTop: '2rem', paddingBottom: '2rem', gap: '1.5rem'}}>
+                                <div className={projectStyles.olItemLarge}>
+                                    <span style={{fontSize: '1.5rem'}}>1</span>
+                                    <div>
+                                        <b>
+                                            Modify "View all categories" button on Explore Page.
+                                        </b>
+                                        <p>
+                                            Change the wording instead into “view more categories”. Might also be possible to allow horizontal scrolling to let all categories be displayed on Explore page.
+                                        </p>
+                                        <p>
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className={projectStyles.olItemLarge}>
+                                    <span style={{fontSize: '1.5rem'}}>2</span>
+                                    <div>
+                                        <b>
+                                            Update the "Rent" button on Search page
+                                        </b>
+                                        <p>
+                                            Add additional functionality to create an overlay when clicking this "Rent" button that provides key product information for users seeking new rentals.
+                                        </p>
+                                        <p>
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className={projectStyles.olItemLarge}>
+                                    <span style={{fontSize: '1.5rem'}}>3</span>
+                                    <div>
+                                        <b>Add more intuitive information on how renting works throughout the website
+                                        </b>
+                                        <p>
+                                            Change the wording of conversion buttons on the landing page from "Try" to "Rent" to avoid misconceptions of free trials.
+                                        </p>
+                                        <p>
+                                            Include tooltips on on the browse page to help explain the renting process.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className={projectStyles.olItemLarge}>
+                                    <span style={{fontSize: '1.5rem'}}>4</span>
+                                    <div>
+                                        <b>
+                                            Visualize product information
+                                        </b>
+                                        <p>
+                                            Provide graphics on buy price breakdown and how the buy price changes based on months rented. For instance, communicating what the price will be if users buy next month and how this month’s rental rate is calculated.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+{/* 
+                    <div className={projectStyles.sectionContainer}>
+                        <div className={projectStyles.section}>
+                            
+                        </div>
+                    </div> */}
 
 
                     <div className={projectStyles.sectionContainer}>
                         <div className={projectStyles.section}>
+                            <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Takeaways</div>
+                            <h4 style={{fontWeight: 600}}>
+                                Circular was critical to my growth as a designer and researcher.
+                            </h4>
+                            <p>
+                                This project gave me the experience to more speedily utilize the powerful prototyping features that Figma had to offer. By making components used across multiple pages and by several other team members, I became familiar with using Figma components and variants to create dynamic, interactive, and reusable components.
+                            </p>
+                            <p>
+                                As my first formal design project at this scale with a team, Circular also taught me how to better collaborate with teammates and manage conflicting ideas. While designing, I would often have disagreements with different team members on how to best approach a task. Over time, I learned to take these situations as learning opportunities to broaden my perspective: to understand the approach my teammate took to come closer towards an ideal solution. 
+                            </p>
+                            <p>
+                                This also taught me to always reinforce my claims with data - it is not enough to say that a design just 'feels right'; decisions have to be backed up by insights, research, and data to be effective and be effectively communicated to others.
+                            </p>
                             
                             <div className={projectStyles.contentEnd}>
                                 <Link href="/">

@@ -713,6 +713,15 @@ export default function ExploreRI() {
                                         </div>
                                     </div>
                                 </div>
+                                <b>
+                                    I experimented with a variety of alternatives before arriving at this grid structure.
+                                </b>
+                                <p>
+                                     Initially, I tried fitting each section with just one column. However, this made paragraphs difficult to read, and also made the sizing of certain elements such as maps fit awkwardly. 
+                                </p>
+                                <p>
+                                    I also experimented with splitting sections into columns of two. Although better, I found that having a 2:1 ratio allowed more efficient use of space. I also found that the asymmetry with the 2:1 ratio helped to further delineate a clearer hierarchy through size. 
+                                </p>
 
                         </div>
                         
