@@ -24,6 +24,13 @@
     border-radius: 12px;
 }
 
+.sketchFrameAlt {
+    padding: 1rem 2rem 1rem 2rem;
+    margin-top: 2rem;
+    background-color: #E4E4E4;
+    border-radius: 12px;
+}
+
 .sketches {
     /* width: calc(1080px); */
     /* background-color: white; */
@@ -51,6 +58,7 @@
     text-align: start;
     background-color: white;
     border-radius: 12px;
+    
 }
 
 .ol {
@@ -83,6 +91,191 @@
     flex-direction: column;
     gap: 2rem;
     padding: 1rem 0 1rem 0;
+}
+
+.frame {
+    padding: 2rem 2rem 2rem 2rem;
+    margin-top: 2rem;
+    background-color: #F4F4F4;
+    border-radius: 12px;
+}
+
+.frameAlt {
+    padding: 2rem 2rem 2rem 2rem;
+    margin-top: 2rem;
+    background-color: #E4E4E4;
+    border-radius: 12px;
+}
+
+.framePrimary {
+    padding: 2rem 2rem 2rem 2rem;
+    margin-top: 4rem;
+    background-color: #F0916C;
+    border-radius: 12px;
+}
+
+.wireframes {
+    filter: drop-shadow(0px 10px 32px rgba(0, 0, 0, 0.10));
+    background-color: white;
+    border-radius: 12px;
+    width: 1080px;
+}
+
+.initialHifis {
+    filter: drop-shadow(0px 10px 32px rgba(0, 0, 0, 0.10));
+    background-color: white;
+    border-radius: 12px;
+    width: 1080px;
+}
+
+.initialHifi {
+    width: 100%;
+    height: 800px;
+    border-radius: 12px;
+}
+
+.wireframe {
+    width: 100%;
+    height: 600px;
+    border-radius: 0 0 12px 12px;
+}
+
+.preview {
+    filter: drop-shadow(0px 10px 32px rgba(0, 0, 0, 0.10));
+    background-color: white;
+    border-radius: 12px;
+    width: 1000px;
+}
+
+.previewIFrame {
+    width: 100%;
+    height: 800px;
+    border-radius: 12px;
+}
+
+.previewFrame {
+    padding: 2rem 2rem 2rem 2rem;
+    background-color: #F4F4F4;
+    border-radius: 12px;
+    margin-top: 2rem;
+}
+
+.finalDesignGif {
+    border: 1px solid #F4F4F4;
+}
+
+.pageCritique {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 3rem 4rem;
+    background-color: #F4F4F4;
+    border-radius: 0 0 12px 12px;
+}
+
+.critiqueRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.critiqueRow span {
+    min-width: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #F0916C;
+}
+
+.critiqueLeft {
+    max-width: 432px;
+    min-width: 432px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.critiqueRight {
+    max-width: 432px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.critiqueArrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+}
+
+.critiqueRow p {
+    padding: 1rem;
+}
+
+.critiqueTitles {
+    display: flex;
+    flex-direction: row;
+}
+
+.critiqueTitles h3 {
+    width: 50%;
+}
+
+.pageCritique h3 {
+    text-align: center;
+    color: black;
+}
+
+
+
+
+
+.pageCritiqueProblems {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.pageCritiqueProblems p {
+    /* background: #F4F4F4; */
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+.pageCritiqueSolutions {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.pageCritiqueSolutions p {
+    background: #F4F4F4;
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+.critiqueOlItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+
+
+
+.critiqueOlItem p {
+    font-weight: 300;
+}
+
+.critiqueOlItem div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 @media (max-width: 750px) {

@@ -53,6 +53,14 @@ export default function Circular() {
                 <title>Circular | Shaun Latip</title>
             </Head>
             
+            <div className={projectStyles.sidebar} style={{display: 'none'}}>
+                <button onClick={handleSidebarClick} value="Overview">Overview</button>
+                <button onClick={handleSidebarClick} value="Challenge">Challenge</button>
+                <button onClick={handleSidebarClick} value="Final Designs">First Iteration</button>
+                <button onClick={handleSidebarClick} value="Process">Second Iteration</button>
+                <button onClick={handleSidebarClick} value="Takeaways">User Testing</button>
+                <button onClick={handleSidebarClick} value="Takeaways">Takeaways</button>
+            </div>
 
             {/* <div className={projectStyles.sidebar}>
                 <button onClick={handleSidebarClick} value="Overview">Overview</button>
@@ -83,12 +91,12 @@ export default function Circular() {
                     <div className={projectStyles.section}>
                         <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Overview</div>
                         <p>
-                            For a class project, we were challenged to design an interactive interface for <Link href="https://www.ycombinator.com/companies/circular" target="_blank" className={homeStyles.primaryLink}>Circular</Link>, an emerging startup for subscription consumer electronics, which was part of Y Combinator's Winter 2022 batch. We iteratively designed an interface matching Circular's concept by looking only at their Y Combinator description.
+                            For a class project, I was challenged to design an interactive interface for <Link href="https://www.ycombinator.com/companies/circular" target="_blank" className={homeStyles.primaryLink}>Circular</Link>, an emerging startup for subscription consumer electronics, which was part of Y Combinator's Winter 2022 batch. With a group, I iteratively designed an interface matching Circular's concept by looking only at their Y Combinator description.
                         </p>
                         <div className={projectStyles.projectInfo}>
                             <div>
                                 <b>Role</b>
-                                <p>UI/UX Designer<br/>User Researcher</p>
+                                <p>Lead UI/UX Designer<br/>User Researcher</p>
                             </div>
                             <div>
                                 <b>Platform</b>
@@ -100,7 +108,7 @@ export default function Circular() {
                             </div>
                             <div>
                                 <b>Teammates</b>
-                                <p>Juliana Han<br/>Eric Guo<br/>Kevin Nguyen</p>
+                                <p>Juliana Han (Co-Lead)<br/>Eric Guo<br/>Kevin Nguyen</p>
                             </div>
                             {/* <div>
                                 <b>Tools Used</b>
@@ -108,10 +116,26 @@ export default function Circular() {
                             </div> */}
                         </div>
                     </div>
+                    <div className={projectStyles.section}>
+                        {/* <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Preview</div> */}
+                        <b style={{fontWeight: 700, marginTop: '1rem'}}>Preview</b>
+                        {/* <h2 className={projectStyles.h2SectionHeader}>Final Prototype</h2> */}
+                        <p>
+                            The final interactive prototype for Circular is attached below.
+                        </p>
+                        
+                    </div>
+                    <div className={styles.previewFrame}>
+                        <div className={styles.preview}>
+                            <iframe className={styles.previewIFrame} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FiEBib4ZvHpBnFPusFXnLl9%2FIterative%3Fpage-id%3D152%253A1823%26node-id%3D152%253A1823%26viewport%3D1106%252C1084%252C0.76%26scaling%3Dscale-down%26starting-point-node-id%3D152%253A1824" ></iframe>
+                        </div>
+                    </div>
 
                 </div>
 
                 <div className={projectStyles.sections}>
+
+                    
                     
                     <div className={projectStyles.sectionContainerGray}>
                         <div className={projectStyles.section}>
@@ -120,12 +144,12 @@ export default function Circular() {
                                 The challenge
                             </h3> */}
                             <h4 style={{fontWeight: 600}}>
-                                We started by outlining the problem we faced.
+                                I started by outlining the challenge we were tasked with.
                             </h4>
 
                             <p>
-                                First, we examined the current experience of how consumer technology was distributed. 
-                                Looking over the range of existing platforms that allow consumers to access electronic, we saw that these platforms largely <span style={{fontWeight: 600}}>required customers to commit to fully purchasing or financing</span> the full cost of new electronics before being able to use them.
+                                First, I examined the current experience of how consumer technology was distributed. 
+                                Looking over the range of existing platforms that allow consumers to access electronic, I saw that these platforms largely <span style={{fontWeight: 600}}>required customers to commit to fully purchasing or financing</span> the full cost of new electronics before being able to use them.
                             </p>
                             <p>
                                 In response, Circular was attempting to change how consumer technology was accessed and experienced across Asia through <span style={{fontWeight: 600}}>low-cost, convenient subscriptions</span> that act as a novel way for consumers to access the best consumer electronics. 
@@ -134,14 +158,14 @@ export default function Circular() {
                                 With Circular, customers can pay a monthly rate to keep a product for as long as they want, before choosing to either buy it, or to return it. Returned products will then be refurbished and passed on to the next owner to extend its useful life.
                             </p> */}
                             <p>
-                                We focused on designing an answer to the question:
+                                My approach centered on answering the question:
                             </p>
                             <span className={projectStyles.italicFocus}>
                                 How might we empower users to better access and experience consumer electronics?
                             </span>
-                            {/* <p>
-                                To break this down, we decided on three main principles that would ground our design.
-                            </p> */}
+                            <p>
+                                For this challenge, our team avoided looking at Circular's existing interface. This meant that I had to create a solution from the ground-up based solely on Circular's description.
+                            </p>
 
                     
 
@@ -186,6 +210,23 @@ export default function Circular() {
                         </div>
                     </div>
 
+                    <div className={projectStyles.sectionContainer}>
+                        <div className={projectStyles.section}>
+                            <h2 className={projectStyles.h2SectionHeader}>Final Solution</h2>
+                        </div>
+                        <div className={projectStyles.spreadRow}style={{gap: '4rem'}}>
+                            <div className={projectStyles.spreadRowText}>
+                                <h4 style={{fontWeight: 600}}>
+                                    Tooltips
+                                </h4>
+                                <p>
+                                    Instead of mixing unaccompanied nouns and verbs, text accompanying interactive elements always address the user and start with an action verb. This helps to make it clearer to users what different elements do.
+                                </p>
+                            </div>
+                            <Image className={styles.finalDesignGif} style={{borderRadius: '0px'}} alt="Gif" src="/circular/tooltip.gif" width={700} height={792}/>
+                        </div>
+                    </div>
+
                     {/* <div className={projectStyles.sectionContainerDark}>
                         <div className={projectStyles.section}>
                             <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Final Designs</div>
@@ -198,14 +239,77 @@ export default function Circular() {
                         </div>
                     </div> */}
 
-                    
+                    <div className={projectStyles.sectionContainerDark}>
+                        <div className={projectStyles.section}>
+                            <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>First Iteration</div>
+                            <h4 style={{fontWeight: 600}}>First, I outlined the value that Circular should provide for users.</h4>
+                            <p>Based on the prompt we were given, I broke down our goal into three design principles that defined what our solution should translate into for users as a better way to access electronics.</p>
+                            <div className={projectStyles.olLarge} style={{paddingTop: '2rem', paddingBottom: '2rem', gap: '1.5rem'}}>
+                                <div className={projectStyles.olItemLarge}>
+                                    <span style={{fontSize: '1.5rem'}}>1</span>
+                                    <div>
+                                        <h4 style={{fontWeight: 600}}>Providing flexible access</h4>
+                                        <p>
+                                            The solution should allow consumers to try products before outright buying them, giving more choice and freedom into the hands of consumers. Users should be able to pay monthly, keep products for as long as they want, and either purchase or return their products whenever they'd like.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className={projectStyles.olItemLarge}>
+                                    <span style={{fontSize: '1.5rem'}}>2</span>
+                                    <div>
+                                        <h4 style={{fontWeight: 600}}>An intuitive process</h4>
+                                        <p>
+                                            The design should intuitively introduce users to the Circular subscription model, involving the increased reuse of refurbished electronics and temporary ownership. Users should feel comfortable with the reuse of electronics, and still feel a sense of ownership for the products they receive from Circular.
+                                        </p>
+                                        {/* <p style={{fontWeight: 500, color: '#F0916C'}}>
+                                            How might we promote this idea of circular ownership for consumers?
+                                        </p> */}
+                                    </div>
+                                </div>
+                                <div className={projectStyles.olItemLarge}>
+                                    <span style={{fontSize: '1.5rem'}}>3</span>
+                                    <div>
+                                        <h4 style={{fontWeight: 600}}>Assuring quality and choice</h4>
+                                        <p>
+                                            Ensure users are able to easily browse from quality products across diverse categories all on one platform, including the latest and most desirable electronics. Flexible access and subscriptions should not mean compromising on quality and choice.
+                                        </p>
+                                        {/* <p style={{fontWeight: 500, color: '#F0916C'}}>
+                                            How might we allow users to choose from a broad range of quality products?
+                                        </p> */}
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                            
+                        </div>
+                        
+                    </div>
 
                     <div className={projectStyles.sectionContainer}>
                         <div className={projectStyles.section}>
-                            <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Process</div>
+                        <h4 style={{fontWeight: 600}}>This led me to consider how to design for an emerging startup.</h4>
+                            <p>
+                                As I was essentially designing an MVP, Circular would have to appeal to users who felt dissatisfied with and excluded by the current distribution model for consumer electronics. 
+                            </p>
+                            <p>
+                                With this, I also realized that, for many of these users, Circular's flexible distribution model would likely feel quite unfamiliar. 
+                            </p>
+                            <p>
+                                <span style={{fontWeight: 600}}>I realized that our design had to tread a fine line between familiarity and distinction.</span> 
+                            </p>
+                            <p>
+                                This meant the solution had to optimize for familiarity from existing electronics vendors that users were already familiar with, while distinguishing Circular enough to reflect the unique approach that Circular had as a startup.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className={projectStyles.sectionContainerGray}>
+                        <div className={projectStyles.section}>
+                            
                             <h2 className={projectStyles.h2SectionHeader}>Brainstorming</h2>
                             <p>
-                                We started our design process with a brainstorming session, where we each sketched a variety of possible design solutions to our challenge. Through this, we wanted to quickly explore a broad range of designs.
+                                To kick off our initial designs, I started our design process with a brainstorming session, where our group sketched a variety of possible design solutions to the challenge. Through this, I wanted to quickly explore a broad range of designs.
                            
                                 We then reconvened and discussed our sketches, with each of us explaining the choices we made in our sketches. 
                             </p>
@@ -213,22 +317,94 @@ export default function Circular() {
                                 This process allowed us to share and learn from the different approaches we each used to get closer to a single wireframe.
                             </p>
                         </div>
-                        <div className={styles.sketchFrame}>
+                        <div className={styles.sketchFrameAlt}>
                             <div className={styles.sketches}>
                                 <iframe className={styles.sketchDisplay} src="/circular/sketches.pdf"/>
                             </div>
                         </div>
                     </div>
 
-                    <div className={projectStyles.sectionContainerGray}>
+                    
+
+                    <div className={projectStyles.sectionContainer}>
                         <div className={projectStyles.section}>
-                            <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Process</div>
-                            <h2 className={projectStyles.h2SectionHeader}>Framing User Flow</h2>
+                            {/* <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Prototyping</div> */}
+                            <h2 className={projectStyles.h2SectionHeader}>Platform Analysis</h2>
                             <p>
-                                Following our brainstorming session, we worked on forming an initial user flow to guide our wireframe. With just two weeks to finish our project, we decided that designing based on user tasks would be an efficient way to design around our solution. 
+                                At this point, I knew that Circular would have to <span style={{fontWeight: 600}}>incorporate ideas from a wide variety of genres.</span>
                             </p>
                             <p>
-                                We considered how a variety of different possible users, each with a unique set of tasks they set out to complete, might be able to access and navigate a single website. 
+                                 In many ways, much of Circular's planned functionalities mirrored that of existing e-commerce marketplaces that Circular would compete with. However, in contrast with these competitors, Circular was an emerging startup which uniquely allowed users to flexibly access consumer electronics.
+                            </p>
+                            <p>
+                                To inform myself, I analyzed a variety of platforms that fit the two forementioned groups. I looked at existing e-commerce competitors, such as Amazon and Shopee and at newer platforms providing less conventional ways to access products, to see what I could incorporate, modify, and avoid.
+                            </p>
+                        </div>
+                        <div className={projectStyles.spreadRow} style={{gap: '4rem', marginTop: '4rem'}}>
+                            <div className={projectStyles.spreadRowText}>
+                                <b>Amazon</b>
+                                <p>
+                                    Despite Amazon selling products spanning 33 categories, it was easy to find results by searching, with the search bar prominent on each page. The search bar itself took nearly the whole size of the navigation bar, which makes it hard to miss. Searching by category further helped to ease navigating the site.
+                                </p>
+                                <p>
+                                    Amazon’s home page, with endless cards of varying shapes filling up most of the screen, felt rather confusing to navigate through. Although space-efficient, the layout made exploring new products feel tedious.
+                                </p>
+                            </div>
+                            <Image style={{border: '1px solid #E4E4E4'}} alt="" src="/circular/amazon.jpg" width={551} height={321.6}/>
+                        </div>
+                        <div className={projectStyles.spreadRow}style={{gap: '4rem'}}>
+                            <div className={projectStyles.spreadRowText}>
+                                <b>
+                                    Shopee Singapore
+                                </b>
+                                <p>
+                                    Shopee’s <Link className={homeStyles.primaryLink} target="_blank" href="https://shopee.sg/">home page</Link> contains banners that feature current promotions and new products that change throughout the year. Having dynamic banners allows users to engage with content that remains relevant with seasonal events and trends.
+                                </p>
+                            </div>
+                            <Image style={{border: '1px solid #E4E4E4'}} alt="" src="/circular/shopee.jpg" width={551} height={321.6}/>
+                        </div>
+                        <div className={projectStyles.spreadRow}style={{gap: '4rem', marginTop: '4rem'}}>
+                            <Image style={{border: '1px solid #E4E4E4'}} alt="" src="/circular/scentbird.jpg" width={551} height={428.16}/>
+                            <div className={projectStyles.spreadRowText}>
+                                <b>
+                                    ScentBird
+                                </b>
+                                <p>
+                                    <Link className={homeStyles.primaryLink} target="_blank" href="https://www.scentbird.com/">ScentBird</Link> allows users to choose samples of designer fragrances on a monthly basis before buying them, intriguing me as another platform providing flexible access to consumer products.
+                                </p>
+                                <p>
+                                    ScentBird directed new users to a landing page with prompts on how their process worked, with a variety of buttons channeling users to view their product offerings and sign up.
+                                </p>
+                            </div>
+                            
+                        </div>
+                        <div className={projectStyles.spreadRow}style={{gap: '4rem'}}>
+                            <Image style={{border: '1px solid #E4E4E4'}} alt="AllTrails home page" src="/circular/airbnb.jpg" width={551} height={321.6}/>
+                            <div className={projectStyles.spreadRowText}>
+                                <b>
+                                    AirBnB
+                                </b>
+                                <p>
+                                    AirBnB’s search bar, easily noticed at the center of the navigation bar, allows users to use constraints to easily quickly refine searches.
+                                </p>
+                                <p>
+                                    AirBnB’s home page, with a consistent size for images and a common grid layout, made scanning through different listings feel natural.
+                                    A primarily white background with a single accent color also helps to draw users to focus onto listings and to search with the search icon.
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div className={projectStyles.sectionContainerGray}>
+                        <div className={projectStyles.section}>
+                            {/* <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Process</div> */}
+                            <h2 className={projectStyles.h2SectionHeader}>Framing User Flow</h2>
+                            <p>
+                                Before wireframing, I worked with my group to develop a user flow that would guide our initial prototype. With just two weeks to finish our project, we decided that designing based on user tasks would be an efficient way to design around our solution. 
+                            </p>
+                            <p>
+                                I made sure to consider how a variety of different possible users, each with a unique set of tasks they set out to complete, might be able to access and navigate a single website. 
                             </p>
                             <div className={styles.splitCol}>
                                 <div className={styles.col}>
@@ -237,9 +413,9 @@ export default function Circular() {
                                         <div className={styles.olItem}>
                                             <span>01</span>
                                             <p>
-                                            <p>
+                                            
                                                 How might they get acquainted with Circular's flexible subscription model?
-                                            </p>
+                                            
                                             </p>
                                         </div>
                                         <div className={styles.olItem}>
@@ -283,7 +459,7 @@ export default function Circular() {
                                 </div>
                             </div>
                             <p>
-                                Building off these considerations, we started to map out a broad-level view on how our first prototype would manage these tasks. To accomodate the abundance of filters, information, and different functions we anticipated our design would need, we decided on designing for a desktop web interface. 
+                                Building off these considerations, we started to map out a broad-level view on how our first prototype would manage these tasks. To accomodate the abundance of filters, information, and different functions I anticipated our design would need, we decided on designing for a desktop web interface. 
                             </p>
                         </div>
                         <div className={projectStyles.spreadRow}style={{gap: '2rem'}}>
@@ -299,14 +475,14 @@ export default function Circular() {
                                 </p>
                             </div>
                             <div className={projectStyles.pictureCaptionWrapper}>
-                                <Image alt="AllTrails home page" src="/circular/whiteboard.jpg" width={500} height={336} style={{borderRadius: '12px', border: '1px solid #E4E4E4'}}/>
+                                <Image alt="" src="/circular/whiteboard.JPG" width={500} height={336} style={{borderRadius: '12px', border: '1px solid #E4E4E4'}}/>
                                 <span className={projectStyles.caption}>
                                     One iteration of our user flow sketching process
                                 </span>
                             </div>
                         </div>
                         <div className={projectStyles.section} style={{marginTop: '2rem'}}>
-                            <h4 style={{fontWeight: 600}}>These sketches led us to three choices in our website's flow.</h4>
+                            <h4 style={{fontWeight: 600}}>These sketches led to three choices in the website's flow.</h4>
                             <div className={projectStyles.olLarge}>
                                 <div className={projectStyles.olItemLarge}>
                                     <span style={{fontSize: '1.5rem'}}>1</span>
@@ -315,7 +491,7 @@ export default function Circular() {
                                             Landing page
                                         </b>
                                         <p>
-                                            We decided on having users first go through a landing page because we felt that a dedicated page was needed to acquaint users with Circular's unique subscription model.
+                                            I decided on having users first go through a landing page because I felt that a dedicated page was needed to acquaint users with Circular's unique subscription model. This was inspired by how ScentBird and other emerging platforms similarly used a landing page.
                                         </p>
                                     </div>
                                 </div>
@@ -345,61 +521,579 @@ export default function Circular() {
                         </div>
                     </div>
 
+                    
+
                     <div className={projectStyles.sectionContainer}>
                         <div className={projectStyles.section}>
-                            <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Prototyping</div>
-                            <h2 className={projectStyles.h2SectionHeader}>Platform Analysis</h2>
+                            <h2 className={projectStyles.h2SectionHeader}>Wireframing</h2>
+                            <p>With what I learned from my research, I created a set of low-fidelity wireframes on Figma for the site-wide navigation bars and explore page, while wireframing the landing page closely with Juliana.</p>
                             <p>
-                                With the overall structure defined, we delegated different sections of the website to create a prototype for. I was tasked with the site-wide navigation bars and the central explore page.
+                                During the wireframing process, I focused on <span style={{fontWeight: 300}}>defining the overall structure and organization</span> of my design, prioritizing during this process the development of a <span style={{fontWeight: 300}}>clear hierarchy through the size, shading, and position</span> of different elements.
                             </p>
-                            <p>
-                                With so many different options possible to design, I chose to start by analyzing the market for websites that competed with or functioned similarly to Circular. I wanted to see what was working, and what wasn't, to see what I could apply.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className={projectStyles.sectionContainerGray}>
-                        <div className={projectStyles.section}>
-                        <h3 style={{paddingTop: '1rem'}}>Design principles</h3>
-                            <div className={projectStyles.olLarge} style={{paddingTop: '0', gap: '1.5rem'}}>
+                            
+                            {/* <h4 style={{fontWeight: 600, marginTop: '1rem'}}>First, I defined a series of principles that guided our wireframing approach.</h4>
+                            <div className={projectStyles.olLarge} style={{marginBottom: '2rem'}}>
                                 <div className={projectStyles.olItemLarge}>
                                     <span style={{fontSize: '1.5rem'}}>1</span>
                                     <div>
-                                        <b style={{fontWeight: 600}}>Flexible access</b>
+                                        <b>
+                                            Softer shapes and forms
+                                        </b>
                                         <p>
-                                            Allow consumers to try products before outright buying them, giving more choice and freedom into the hands of consumers. Users should be able to pay monthly, keep products for as long as they want, and either purchase or return their products whenever they'd like.
+                                           
                                         </p>
-                                        {/* <p style={{fontWeight: 500, color: '#F0916C'}}>
-                                            How might we allow users to flexibly try, rent, and buy electronics?
-                                        </p> */}
                                     </div>
                                 </div>
                                 <div className={projectStyles.olItemLarge}>
                                     <span style={{fontSize: '1.5rem'}}>2</span>
                                     <div>
-                                        <b style={{fontWeight: 600}}>Circular ownership</b>
+                                        <b>
+                                            Spacing
+                                        </b>
                                         <p>
-                                            Introduce an intuitive process for users to reuse products used by others before them with confidence. Users should feel comfortable with the reuse of electronics, and still feel a sense of ownership for the products they receive from Circular.
+                                            
                                         </p>
-                                        {/* <p style={{fontWeight: 500, color: '#F0916C'}}>
-                                            How might we promote this idea of circular ownership for consumers?
-                                        </p> */}
                                     </div>
                                 </div>
                                 <div className={projectStyles.olItemLarge}>
                                     <span style={{fontSize: '1.5rem'}}>3</span>
                                     <div>
-                                        <b style={{fontWeight: 600}}>Quality and choice</b>
+                                        <b>
+                                            Centralized explore page
+                                        </b>
                                         <p>
-                                            Ensure users are able to easily browse from quality products across diverse categories all on one platform, including the latest and most desirable electronics. Flexible access and subscriptions should not mean compromising on quality and choice.
+                                            After the landing page, users are brought to the Explore page which lets users explore new products, search for specific products, and, if logged in, manage existing account information to let users complete tasks efficiently. This also allowed users to return to this page to reset after errors.
                                         </p>
-                                        {/* <p style={{fontWeight: 500, color: '#F0916C'}}>
-                                            How might we allow users to choose from a broad range of quality products?
-                                        </p> */}
+                                    </div>
+                                </div>
+                            </div> */}
+                            
+                        </div>
+                    
+                        <div className={styles.frame}>
+                            <div className={styles.wireframes}>
+                                <Tabs isLazy={true} variant='unstyled' size='md' colorScheme='orange' defaultIndex={0}>
+                                    <TabList>
+                                        <Tab style={{ fontWeight: 500, marginBottom: '2px', padding: '0.8rem 1.2rem'}}
+                                        _hover={{ color: '#F0916C'}}
+                                        _active={{ color: '#F0916C' }}
+                                        _selected={{ color: '#F0916C', boxShadow: '0 2px 0 rgba(240, 145, 108, 1)', marginBottom:'0px', transition: 'all 0.3s ease'}} >
+                                            Explore (Logged Out)
+                                        </Tab>
+                                        <Tab style={{ fontWeight: 500, marginBottom: '2px', padding: '0.8rem 1.2rem'}}
+                                        _hover={{ color: '#F0916C'}}
+                                        _active={{ color: '#F0916C' }}
+                                        _selected={{ color: '#F0916C', boxShadow: '0 2px 0 rgba(240, 145, 108, 1)', marginBottom:'0px', transition: 'all 0.3s ease'}} >
+                                            Explore (Logged In)
+                                        </Tab>
+                                        <Tab style={{ fontWeight: 500, marginBottom: '2px', padding: '0.8rem 1.2rem'}}
+                                        _hover={{ color: '#F0916C'}}
+                                        _active={{ color: '#F0916C' }}
+                                        _selected={{ color: '#F0916C', boxShadow: '0 2px 0 rgba(240, 145, 108, 1)', marginBottom:'0px', transition: 'all 0.3s ease'}} >
+                                            Landing
+                                        </Tab>
+                                        <Tab style={{ fontWeight: 500, marginBottom: '2px', padding: '0.8rem 1.2rem'}}
+                                        _hover={{ color: '#F0916C'}}
+                                        _active={{ color: '#F0916C' }}
+                                        _selected={{ color: '#F0916C', boxShadow: '0 2px 0 rgba(240, 145, 108, 1)', marginBottom:'0px', transition: 'all 0.3s ease'}} >
+                                            Other Wireframes
+                                        </Tab>
+                                    </TabList>
+                                    <TabPanels style={{transition: 'all 0.3s ease'}}>
+                                        <TabPanel style={{padding: 0}}>
+                                            <Fade
+                                            variants={variants}
+                                            animate="in"
+                                            initial="out"
+                                            exit="out">
+                                                <iframe className={styles.wireframe} src="/circular/loggedOutLofi.jpg"/>
+                                            </Fade>
+                                        </TabPanel>
+                                        <TabPanel style={{padding: 0}}>
+                                            <Fade
+                                            variants={variants}
+                                            animate="in"
+                                            initial="out"
+                                            exit="out">
+                                                <iframe className={styles.wireframe} src="/circular/loggedInLofi.jpg"/>
+                                            </Fade>
+                                        </TabPanel>
+                                        <TabPanel style={{padding: 0}}>
+                                            <Fade
+                                            variants={variants}
+                                            animate="in"
+                                            initial="out"
+                                            exit="out">
+                                                <iframe className={styles.wireframe} src="/circular/landing.jpg"/>
+                                            </Fade>
+                                        </TabPanel>
+                                        <TabPanel style={{padding: 0}}>
+                                            <Fade
+                                            variants={variants}
+                                            animate="in"
+                                            initial="out"
+                                            exit="out">
+                                                <iframe className={styles.wireframe} src="/circular/allWireframes.jpg"/>
+                                            </Fade>
+                                        </TabPanel>
+                            
+                                    </TabPanels>
+                                </Tabs>
+                            </div>
+                        </div>
+                    
+                    </div>
+
+                    
+
+                    {/* <div className={projectStyles.sectionContainerDark}>
+                    <div className={projectStyles.section}>
+                            <h4 style={{alignSelf: 'center', textAlign: 'center', marginTop: '2rem', marginBottom: '2rem'}}>
+                               My design process can be examined through the aspects of <br/> <span style={{fontWeight: 600, color: '#F0916C'}}>visual design</span>, <span style={{fontWeight: 600, color: '#F0916C'}}>structure</span>, and <span style={{fontWeight: 600, color: '#F0916C'}}>consistent language</span>.
+                            </h4>
+                        </div>
+                    </div> */}
+
+                    <div className={projectStyles.sectionContainerGray}>
+                        <div className={projectStyles.section}>
+                            <h2 className={projectStyles.h2SectionHeader}>Crafting Visual Identity</h2>
+                            <p>
+                                After wireframing, I defined a visual identity for Circular that fit our design goals.
+                            </p>
+                            <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', marginBottom: '3rem', marginTop: '2rem'}}>
+                                <Image src='/circular/styleGuide.jpg' quality={100} width={732} height={412} style={{borderRadius: '12px'}} alt="Visual Style Guide"/>
+                                {/* <p style={{fontSize: '1rem', color:'#737373'}}>The visual design style guide that defined my visual redesign.</p> */}
+                            </div>
+                            <h4 style={{fontWeight: 600}}>
+                                Why these choices?
+                            </h4>
+                            <p>As an emerging startup competing with a plethora of established e-commerce platforms, I found it important for Circular to host a distinctive brand identity. Based on my research, I designed a visual identity for Circular that centered around creating an <span style={{fontWeight: 600}}>approachable, inviting,</span> and <span style={{fontWeight: 600}}>energetic</span> experience for users which contrasted with the brand identities seen in Circular's main competition.</p>
+                            
+                            <p>This goal influenced my visual identity in two ways:</p>
+
+                            <div className={projectStyles.olLarge} style={{paddingTop: '1rem', paddingBottom: '2rem', gap: '1.5rem'}}>
+                                <div className={projectStyles.olItemLarge}>
+                                    <span style={{fontSize: '1.5rem'}}>1</span>
+                                    <div>
+                                        <h4 style={{fontWeight: 600}}>Distinctive color choice</h4>
+                                        <p>
+                                            I selected <span style={{color: '#EA2E5D', fontWeight: 800, fontSize: '1rem'}}>#EA2E5D</span>, a warm, pinkish red, as the primary accent color for my design. Using a vivid, saturated color helps to create a distinctive identity for Circular while retaining good contrast against white backgrounds.
+                                        </p>
+                                        <p>
+                                            Moreover, this accent color was used sparingly throughout the design upon a mostly-white background to encourage emphasis on the most important elements on each page. This allowed interactive buttons, the search function, photos, and alerts to maintain focus to maintain a clear hierarchy for users.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className={projectStyles.olItemLarge}>
+                                    <span style={{fontSize: '1.5rem'}}>2</span>
+                                    <div>
+                                        <h4 style={{fontWeight: 600}}>Friendliness through rounder elements</h4>
+                                        <p>
+                                            I used rounded corners and circular elements throughout my design. Compared to the angular design language that many e-commerce websites I viewed at used, rounded elements helped to further distinguish Circular among peers, while creating a more friendly, inviting atmosphere throughout the site. 
+                                        </p>
                                     </div>
                                 </div>
                                 
+                                
                             </div>
+                        </div>
+                    </div>
+
+                    <div className={projectStyles.sectionContainer}>
+                        <div className={projectStyles.section}>
+                            <h4 style={{fontWeight: 600}}>I then developed the high-fidelity, interactive prototype on Figma.</h4>
+                            <p>I focused on augmenting the structure and layout from the wireframes to create an interactive Figma prototype that looked and felt like a real website.</p>
+                        </div>
+                        <div className={styles.frame}>
+                            <div className={styles.initialHifis}>
+                                <iframe className={styles.initialHifi} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FiEBib4ZvHpBnFPusFXnLl9%2FIterative%3Fpage-id%3D96%253A2107%26node-id%3D96%253A2479%26viewport%3D639%252C287%252C0.15%26scaling%3Dscale-down%26starting-point-node-id%3D124%253A3841" ></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={projectStyles.sectionContainerGray}>
+                        <div className={projectStyles.section}>
+                            <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Mock Critique</div>
+                            
+                            <p>
+                                To understand how we could improve, our prototype underwent user testing through a group critique session. 36 peer students, alongside <Link href="http://giffordcheung.weebly.com/" target="_blank" className={homeStyles.primaryLink}>Gifford Cheung</Link>, a senior UX researcher at Nintendo, ran through a variety of tasks on our interactive prototype and shared their thoughts with us.
+                            </p>
+                            <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', margin: '1.5rem 0'}}>
+                                <Image width={600} height={346} alt="Screenshot of our Zoom critique" src="/circular/zoomCritique.png"/>
+                            </div>
+                            <p>
+                                With my group, I reviewed the feedback that our first prototype received, and proposed matching solutions, all completed in the next design iteration, that addressed the issues uncovered.
+                            </p>
+                            
+                        </div>
+                        <div className={styles.frameAlt}>
+                            <div className={styles.wireframes}>
+                                <Tabs isLazy={true} variant='unstyled' size='md' colorScheme='orange' defaultIndex={0}>
+                                    <TabList>
+                                        <Tab style={{ fontWeight: 500, marginBottom: '2px', padding: '0.8rem 1.2rem'}}
+                                        _hover={{ color: '#F0916C'}}
+                                        _active={{ color: '#F0916C' }}
+                                        _selected={{ color: '#F0916C', boxShadow: '0 2px 0 rgba(240, 145, 108, 1)', marginBottom:'0px', transition: 'all 0.3s ease'}} >
+                                            Landing
+                                        </Tab>
+                                        <Tab style={{ fontWeight: 500, marginBottom: '2px', padding: '0.8rem 1.2rem'}}
+                                        _hover={{ color: '#F0916C'}}
+                                        _active={{ color: '#F0916C' }}
+                                        _selected={{ color: '#F0916C', boxShadow: '0 2px 0 rgba(240, 145, 108, 1)', marginBottom:'0px', transition: 'all 0.3s ease'}} >
+                                            Explore
+                                        </Tab>
+                                        <Tab style={{ fontWeight: 500, marginBottom: '2px', padding: '0.8rem 1.2rem'}}
+                                        _hover={{ color: '#F0916C'}}
+                                        _active={{ color: '#F0916C' }}
+                                        _selected={{ color: '#F0916C', boxShadow: '0 2px 0 rgba(240, 145, 108, 1)', marginBottom:'0px', transition: 'all 0.3s ease'}} >
+                                            Categories
+                                        </Tab>
+                                        <Tab style={{ fontWeight: 500, marginBottom: '2px', padding: '0.8rem 1.2rem'}}
+                                        _hover={{ color: '#F0916C'}}
+                                        _active={{ color: '#F0916C' }}
+                                        _selected={{ color: '#F0916C', boxShadow: '0 2px 0 rgba(240, 145, 108, 1)', marginBottom:'0px', transition: 'all 0.3s ease'}} >
+                                            Product
+                                        </Tab>
+                                        <Tab style={{ fontWeight: 500, marginBottom: '2px', padding: '0.8rem 1.2rem'}}
+                                        _hover={{ color: '#F0916C'}}
+                                        _active={{ color: '#F0916C' }}
+                                        _selected={{ color: '#F0916C', boxShadow: '0 2px 0 rgba(240, 145, 108, 1)', marginBottom:'0px', transition: 'all 0.3s ease'}} >
+                                            My Rentals
+                                        </Tab>
+                                        <Tab style={{ fontWeight: 500, marginBottom: '2px', padding: '0.8rem 1.2rem'}}
+                                        _hover={{ color: '#F0916C'}}
+                                        _active={{ color: '#F0916C' }}
+                                        _selected={{ color: '#F0916C', boxShadow: '0 2px 0 rgba(240, 145, 108, 1)', marginBottom:'0px', transition: 'all 0.3s ease'}} >
+                                            Rental
+                                        </Tab>
+                                        <Tab style={{ fontWeight: 500, marginBottom: '2px', padding: '0.8rem 1.2rem'}}
+                                        _hover={{ color: '#F0916C'}}
+                                        _active={{ color: '#F0916C' }}
+                                        _selected={{ color: '#F0916C', boxShadow: '0 2px 0 rgba(240, 145, 108, 1)', marginBottom:'0px', transition: 'all 0.3s ease'}} >
+                                            Navigation
+                                        </Tab>
+                                    </TabList>
+                                    <TabPanels style={{transition: 'all 0.3s ease'}}>
+                                        
+                                        <TabPanel style={{padding: 0}}>
+                                            <Fade
+                                            variants={variants}
+                                            animate="in"
+                                            initial="out"
+                                            exit="out">
+                                                <div className={styles.pageCritique}>
+                                                        <div className={styles.critiqueTitles}>
+                                                            <h3>Problems</h3>
+                                                            <h3>Solutions</h3>
+                                                        </div>
+                                                        <div className={styles.critiqueRow}>
+                                                            <div className={styles.critiqueLeft}>
+                                                                <span>1</span>
+                                                                <p>
+                                                                    This page includes important information, but there is no way of going back to this page once users click the “CHOOSE NOW” button because the logo on the navbar currently links to explore page
+                                                                </p>
+                                                            </div>
+                                                            <div className={styles.critiqueArrow}>
+                                                                <Image src="/circular/critiqueArrow.png" width={24} height={12} quality={100} alt="Arrow"/>
+                                                            </div>
+                                                            <div className={styles.critiqueRight}>
+                                                                <p>
+                                                                    Reorganize navbar: link the logo to the landing page, add an “Explore” tab next to the “Rentals” tab
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div className={styles.critiqueRow}>
+                                                            <div className={styles.critiqueLeft}>
+                                                                <span>2</span>
+                                                                <p>
+                                                                    User feedback indicated that information on how renting works is very important and should have a higher priority than the product display section
+                                                                </p>
+                                                            </div>
+                                                            <div className={styles.critiqueArrow}>
+                                                                <Image src="/circular/critiqueArrow.png" width={24} height={12} quality={100} alt="Arrow"/>
+                                                            </div>
+                                                            <div className={styles.critiqueRight}>
+                                                                <p>
+                                                                    Put the “How It Works” section above the “Popular products” section
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div className={styles.critiqueRow}>
+                                                            <div className={styles.critiqueLeft}>
+                                                                <span>3</span>
+                                                                <p>
+                                                                    The wording of the “Choose Now” button is confusing - peers expect it to lead to a page where they can browse and choose from available products, but it just leads to the exploration page instead
+                                                                </p>
+                                                            </div>
+                                                            <div className={styles.critiqueArrow}>
+                                                                <Image src="/circular/critiqueArrow.png" width={24} height={12} quality={100} alt="Arrow"/>
+                                                            </div>
+                                                            <div className={styles.critiqueRight}>
+                                                                <p>
+                                                                    Change the button from “Choose Now” to “Explore Now”
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                            </Fade>
+                                        </TabPanel>
+                                        <TabPanel style={{padding: 0}}>
+                                            <Fade
+                                            variants={variants}
+                                            animate="in"
+                                            initial="out"
+                                            exit="out">
+                                                <div className={styles.pageCritique}>
+                                                    <div className={styles.critiqueTitles}>
+                                                        <h3>Problems</h3>
+                                                        <h3>Solutions</h3>
+                                                    </div>
+                                                    <div className={styles.critiqueRow}>
+                                                        <div className={styles.critiqueLeft}>
+                                                            <span>1</span>
+                                                            <p>
+                                                                The layout is very different when logged in and when logged out, confusing returning users before they log in, making users confused when transitioning between states
+                                                            </p>
+                                                        </div>
+                                                        <div className={styles.critiqueArrow}>
+                                                            <Image src="/circular/critiqueArrow.png" width={24} height={12} quality={100} alt="Arrow"/>
+                                                        </div>
+                                                        <div className={styles.critiqueRight}>
+                                                            <p>
+                                                                Add a section telling users to log in to see current rentals with a “Log In” action button, indicating how returning users can view rentals if they log in
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                               </div>
+                                            </Fade>
+                                        </TabPanel>
+                                        <TabPanel style={{padding: 0}}>
+                                            <Fade
+                                            variants={variants}
+                                            animate="in"
+                                            initial="out"
+                                            exit="out">
+                                                <div className={styles.pageCritique}>
+                                                        <div className={styles.critiqueTitles}>
+                                                            <h3>Problems</h3>
+                                                            <h3>Solutions</h3>
+                                                        </div>
+                                                        <div className={styles.critiqueRow}>
+                                                            <div className={styles.critiqueLeft}>
+                                                                <span>1</span>
+                                                                <p>
+                                                                    The category icons are unnecessarily big such that the page conveys little information, yet requires scrolling
+                                                                </p>
+                                                            </div>
+                                                            <div className={styles.critiqueArrow}>
+                                                                <Image src="/circular/critiqueArrow.png" width={24} height={12} quality={100} alt="Arrow"/>
+                                                            </div>
+                                                            <div className={styles.critiqueRight}>
+                                                                <p>
+                                                                    Shrink the icons and fit more icons in one row to allow more efficient use of space
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div className={styles.critiqueRow}>
+                                                            <div className={styles.critiqueLeft}>
+                                                                <span>2</span>
+                                                                <p>
+                                                                    Lacks hierarchy - the three featured categories are not emphasized enough
+                                                                </p>
+                                                            </div>
+                                                            <div className={styles.critiqueArrow}>
+                                                                <Image src="/circular/critiqueArrow.png" width={24} height={12} quality={100} alt="Arrow"/>
+                                                            </div>
+                                                            <div className={styles.critiqueRight}>
+                                                                <p>
+                                                                    Invert the color of the three curated categories to emphasize them
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div className={styles.critiqueRow}>
+                                                            <div className={styles.critiqueLeft}>
+                                                                <span>3</span>
+                                                                <p>
+                                                                    Users complained that the categories felt arbitrarily sorted
+                                                                </p>
+                                                            </div>
+                                                            <div className={styles.critiqueArrow}>
+                                                                <Image src="/circular/critiqueArrow.png" width={24} height={12} quality={100} alt="Arrow"/>
+                                                            </div>
+                                                            <div className={styles.critiqueRight}>
+                                                                <p>
+                                                                    Sort the categories by popularity to prioriotize more important ones first
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                </div>
+                                            </Fade>
+                                        </TabPanel>
+                                        <TabPanel style={{padding: 0}}>
+                                            <Fade
+                                            variants={variants}
+                                            animate="in"
+                                            initial="out"
+                                            exit="out">
+                                                <div className={styles.pageCritique}>
+                                                    <div className={styles.critiqueTitles}>
+                                                        <h3>Problems</h3>
+                                                        <h3>Solutions</h3>
+                                                    </div>
+                                                    <div className={styles.critiqueRow}>
+                                                        <div className={styles.critiqueLeft}>
+                                                            <span>1</span>
+                                                            <p>
+                                                                Some users felt that it was difficult to conceptualize the process of trying products from Circular while browsing different products. From their confusion when using this page, more explanation is needed
+                                                            </p>
+                                                        </div>
+                                                        <div className={styles.critiqueArrow}>
+                                                            <Image src="/circular/critiqueArrow.png" width={24} height={12} quality={100} alt="Arrow"/>
+                                                        </div>
+                                                        <div className={styles.critiqueRight}>
+                                                            <p>
+                                                                Add a section explaining the rental process; include a link next to where users select the rental period that scrolls to this section
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </Fade>
+                                        </TabPanel>
+                                        <TabPanel style={{padding: 0}}>
+                                            <Fade
+                                            variants={variants}
+                                            animate="in"
+                                            initial="out"
+                                            exit="out">
+                                                <div className={styles.pageCritique}>
+                                                    <div className={styles.critiqueTitles}>
+                                                        <h3>Problems</h3>
+                                                        <h3>Solutions</h3>
+                                                    </div>
+                                                    <div className={styles.critiqueRow}>
+                                                        <div className={styles.critiqueLeft}>
+                                                            <span>1</span>
+                                                            <p>
+                                                                Gifford stated that users should be able to know immediately what they can do and what options they have about the current rentals, especially the option to end the rental. Some users felt confused and restricted as to what they could do to manage their rentals.
+                                                            </p>
+                                                        </div>
+                                                        <div className={styles.critiqueArrow}>
+                                                            <Image src="/circular/critiqueArrow.png" width={24} height={12} quality={100} alt="Arrow"/>
+                                                        </div>
+                                                        <div className={styles.critiqueRight}>
+                                                            <p>
+                                                                Change layout from two products per row to one product per row to include more information, and ddd three action buttons for each rental
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </Fade>
+                                        </TabPanel>
+                                        <TabPanel style={{padding: 0}}>
+                                            <Fade
+                                            variants={variants}
+                                            animate="in"
+                                            initial="out"
+                                            exit="out">
+                                                <div className={styles.pageCritique}>
+                                                    <div className={styles.critiqueTitles}>
+                                                        <h3>Problems</h3>
+                                                        <h3>Solutions</h3>
+                                                    </div>
+                                                    <div className={styles.critiqueRow}>
+                                                        <div className={styles.critiqueLeft}>
+                                                            <span>1</span>
+                                                            <p>
+                                                                The layout looks too similar to the shopping product page. This led to some getting confused about whether it is a product that they are about to rent or a product that they are currently renting
+                                                            </p>
+                                                        </div>
+                                                        <div className={styles.critiqueArrow}>
+                                                            <Image src="/circular/critiqueArrow.png" width={24} height={12} quality={100} alt="Arrow"/>
+                                                        </div>
+                                                        <div className={styles.critiqueRight}>
+                                                            <p>
+                                                                Redesign the layout to differentiate from the shopping product page (smaller photo, less product information, more information on next steps)
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div className={styles.critiqueRow}>
+                                                        <div className={styles.critiqueLeft}>
+                                                            <span>2</span>
+                                                            <p>
+                                                                More information that users expressed they wanted to see, such as the cumulative amount paid, the last payment date, etc was missing in the prototype.
+                                                            </p>
+                                                        </div>
+                                                        <div className={styles.critiqueArrow}>
+                                                            <Image src="/circular/critiqueArrow.png" width={24} height={12} quality={100} alt="Arrow"/>
+                                                        </div>
+                                                        <div className={styles.critiqueRight}>
+                                                            <p>
+                                                                Include more information through text and graphics, including shipping status, payment methods, address, upcoming payments, etc.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div className={styles.critiqueRow}>
+                                                        <div className={styles.critiqueLeft}>
+                                                            <span>3</span>
+                                                            <p>
+                                                                Some users felt the locations of the existing extend, buy, and end buttons were awkwardly placed and far from relevant, corresponding information.
+                                                            </p>
+                                                        </div>
+                                                        <div className={styles.critiqueArrow}>
+                                                            <Image src="/circular/critiqueArrow.png" width={24} height={12} quality={100} alt="Arrow"/>
+                                                        </div>
+                                                        <div className={styles.critiqueRight}>
+                                                            <p>
+                                                                Use three cards corresponding to three actions, each with information and an action button
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </Fade>
+                                        </TabPanel>
+                                        <TabPanel style={{padding: 0}}>
+                                            <Fade
+                                            variants={variants}
+                                            animate="in"
+                                            initial="out"
+                                            exit="out">
+                                                <div className={styles.pageCritique}>
+                                                    <div className={styles.critiqueTitles}>
+                                                        <h3>Problems</h3>
+                                                        <h3>Solutions</h3>
+                                                    </div>
+                                                    <div className={styles.critiqueRow}>
+                                                        <div className={styles.critiqueLeft}>
+                                                            <span>1</span>
+                                                            <p>
+                                                                Some peers had trouble navigating to the desired page using breadcrumbs. A few wished that there was a back button that goes back to the previous page that they were on
+                                                            </p>
+                                                        </div>
+                                                        <div className={styles.critiqueArrow}>
+                                                            <Image src="/circular/critiqueArrow.png" width={24} height={12} quality={100} alt="Arrow"/>
+                                                        </div>
+                                                        <div className={styles.critiqueRight}>
+                                                            <p>
+                                                                Gray out the breadcrumb that corresponds to the current page that the user is on. After discussion, we decided that a back button is not necessary as users can generally use a browser's back button, which was unavailable to use for a Figma prototype.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </Fade>
+                                        </TabPanel>
+                            
+                                    </TabPanels>
+                                </Tabs>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={projectStyles.sectionContainer}>
+                        <div className={projectStyles.section}>
+                            
                         </div>
                     </div>
 

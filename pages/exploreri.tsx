@@ -500,7 +500,9 @@ export default function ExploreRI() {
                             <p>
                                 Working off my wireframes, I then developed three high-fidelity prototypes in Figma, with one for each platform.
                             </p>
-                            <div className={styles.hifiComparison} style={{marginTop: '2rem'}}>
+                        </div>
+                        <div className={styles.frame}>
+                            <div className={styles.hifiComparison} style={{marginTop: '0rem'}}>
                                 {/* <h4>Compare my redesign with the original below.</h4> */}
                                 <Tabs isLazy={true} variant='unstyled' size='md' colorScheme='orange' defaultIndex={0}>
                                     <TabList>
@@ -523,7 +525,6 @@ export default function ExploreRI() {
                                             Mobile Hi-Fi
                                         </Tab>
                                     </TabList>
-
                                     <TabPanels style={{transition: 'all 0.3s ease'}}>
                                         <TabPanel style={{padding: 0}}>
                                             <Fade
@@ -554,12 +555,14 @@ export default function ExploreRI() {
                                     </TabPanels>
                                 </Tabs>
                             </div>
+                        </div>
+                        <div className={projectStyles.section}>
                             <h4 style={{alignSelf: 'center', textAlign: 'center', marginTop: '4rem'}}>
-                               My redesign process can be broken down into the three aspects of <br/> <span style={{fontWeight: 600, color: '#F0916C'}}>visual design</span>, <span style={{fontWeight: 600, color: '#F0916C'}}>structure</span>, and <span style={{fontWeight: 600, color: '#F0916C'}}>consistent language</span>.
+                                My redesign process can be broken down into the three aspects of <br/> <span style={{fontWeight: 600, color: '#F0916C'}}>visual design</span>, <span style={{fontWeight: 600, color: '#F0916C'}}>structure</span>, and <span style={{fontWeight: 600, color: '#F0916C'}}>consistent language</span>.
                             </h4>
                         </div>
-                        
-                        </div>
+                    
+                    </div>
 
                         
 
@@ -579,7 +582,7 @@ export default function ExploreRI() {
                                 To solve this, I reworked the website's visual design system to help make the feel of the website more inviting and clean for users. Working off of the original blue and green color palette, I made a few changes to help make the site better for users, while maintaining elements from the previous design that fit with the website's theme.
                             </p>
 
-                            <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', marginBottom: '3rem'}}>
+                            <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', marginBottom: '3rem', marginTop: '2rem'}}>
                                     <Image src='/exploreri/styleGuide.jpg' quality={100} width={732} height={412} style={{borderRadius: '12px'}} alt="Visual Style Guide"/>
                                     {/* <p style={{fontSize: '1rem', color:'#737373'}}>The visual design style guide that defined my visual redesign.</p> */}
                                 </div>
@@ -688,7 +691,7 @@ export default function ExploreRI() {
                     <div className={projectStyles.sectionContainerDark}>
                             <div className={projectStyles.section}>
                                 <h4>
-                                    The overall structure of my redesigned website focused on the two following ideas:
+                                    The overall structure of my redesigned website focused on the two ideas:
                                 </h4>
                                 <div className={projectStyles.olLarge}>
                                     <div className={projectStyles.olItemLarge}>
@@ -721,7 +724,7 @@ export default function ExploreRI() {
                     <div className={projectStyles.sectionContainerGray}>
                         <div className={projectStyles.section}>
                             <h4 style={{marginTop: '0rem', alignSelf: 'center'}}>
-                                        These changes were also aided by the inclusion of two new types of page elements:
+                                        These changes were also aided by the inclusion of two types of page elements:
                             </h4>
                         </div>
                         <div className={projectStyles.spreadRow}style={{gap: '2rem'}}>

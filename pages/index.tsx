@@ -66,7 +66,7 @@ export default function Home() {
                         <span className={styles.badge}>Storyboard</span>
                         <span className={styles.badge}>Persona Mapping</span>
                       </div>
-                      <p>Studying the state of clinical care from a UX perspective at Brown University</p>
+                      <p>Heuristic evaluation research on the clinical experience at Brown University Health Services.</p>
                     </div>
                   </div>
                 </Link>
