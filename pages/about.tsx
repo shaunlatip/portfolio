@@ -2,7 +2,7 @@ import homeStyles from '../styles/Home.module.css'
 import styles from '../styles/About.module.css'
 import Head from 'next/head'
 import Link from 'next/link'
-import selfPortrait from '../public/about/portrait.jpeg'
+import selfPortrait from '../public/about/portraitSitting.jpg';
 import Image from 'next/image'
 
 export default function About() {

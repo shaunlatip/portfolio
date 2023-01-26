@@ -53,9 +53,10 @@ export default function Circular() {
                 <title>Circular | Shaun Latip</title>
             </Head>
             
-            <div className={projectStyles.sidebar} style={{display: 'none'}}>
+            <div className={projectStyles.sidebar}>
                 <button onClick={handleSidebarClick} value="Overview">Overview</button>
                 <button onClick={handleSidebarClick} value="Challenge">Challenge</button>
+                <button onClick={handleSidebarClick} value="Challenge">Research</button>
                 <button onClick={handleSidebarClick} value="Final Designs">First Iteration</button>
                 <button onClick={handleSidebarClick} value="Process">Second Iteration</button>
                 <button onClick={handleSidebarClick} value="Takeaways">User Testing</button>
@@ -71,7 +72,7 @@ export default function Circular() {
                 <div className={`${styles.bannerProjectColor} ${projectStyles.banner}`}>
                     <div className={projectStyles.headline}>
                         <h2>Circular</h2>
-                        <h3>Designing accessible tech subscriptions</h3>
+                        <h3>A flexible way to experience consumer electronics</h3>
                     </div>
                     <div className={projectStyles.bannerWhiteBottom}/>
                     <div className={styles.bannerImageContainer}>
@@ -91,7 +92,7 @@ export default function Circular() {
                     <div className={projectStyles.section}>
                         <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Overview</div>
                         <p>
-                            For a class project, I was challenged to design an interactive interface for <Link href="https://www.ycombinator.com/companies/circular" target="_blank" className={homeStyles.primaryLink}>Circular</Link>, an emerging startup for subscription consumer electronics, which was part of Y Combinator's Winter 2022 batch. With a group, I iteratively designed an interface matching Circular's concept by looking only at their Y Combinator description.
+                            For a class project, I was challenged to design an interactive interface for <Link href="https://www.ycombinator.com/companies/circular" target="_blank" className={homeStyles.primaryLink}>Circular</Link>, an emerging startup for subscription consumer electronics, which was part of Y Combinator's Winter 2022 batch. With a group, I iteratively designed an interface matching Circular's concept by looking only at Circular's Y Combinator description which described the problem Circular aimed to solve.
                         </p>
                         <p>
                             After completing the initial prototype, this prototype then underwent initial user testing with peers, which provided the insights needed to develop the final version. Afterwards, we user tested this final version again with several users on <Link href="https://www.usertesting.com/" target="_blank" className={homeStyles.primaryLink}>usertesting.com</Link>, which revealed further insights.
@@ -333,7 +334,7 @@ export default function Circular() {
                             <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Research</div>
                             <h2 className={projectStyles.h2SectionHeader}>Platform Analysis</h2>
                             <p>
-                                At this point, I knew that Circular would have to <span style={{fontWeight: 600}}>incorporate ideas from a wide variety of genres.</span>
+                                At this point, I knew that Circular would have to <span style={{fontWeight: 600}}>merge ideas from a wide variety of genres.</span>
                             </p>
                             <p>
                                  In many ways, much of Circular's planned functionalities mirrored that of existing e-commerce marketplaces that Circular would compete with. However, in contrast with these competitors, Circular was an emerging startup which uniquely allowed users to flexibly access consumer electronics.
@@ -533,6 +534,9 @@ export default function Circular() {
                                 </b>
                                 <p>
                                     On a classroom whiteboard, we experimented with a variety of user flows. We created a series of rough mock webpages with dry-erase markers, and ran through our list of user tasks.
+                                </p>
+                                <p>
+                                    This process of rapid prototyping was inspired by <Link href="/circular/buxton-sketching.pdf" target="_blank" className={homeStyles.primaryLink}>Buxton's work</Link> on using interactive paper interfaces to quickly iterate interfaces.
                                 </p>
                                 <p>
                                     Through iteration and experimenting with changes, we were able to identify more intuitive and efficient ways of navigating our website, which led us to a flow we were satisfied with.
@@ -751,7 +755,7 @@ export default function Circular() {
                                 <div className={projectStyles.olItemLarge}>
                                     <span style={{fontSize: '1.5rem'}}>2</span>
                                     <div>
-                                        <h4 style={{fontWeight: 600}}>Friendliness through rounder elements</h4>
+                                        <h4 style={{fontWeight: 600}}>Friendliness through roundness</h4>
                                         <p>
                                             I used rounded corners and circular elements throughout my design. Compared to the angular design language that many e-commerce websites I viewed at used, rounded elements helped to further distinguish Circular among peers, while creating a more friendly, inviting atmosphere throughout the site. 
                                         </p>
@@ -778,7 +782,7 @@ export default function Circular() {
                     <div className={projectStyles.sectionContainerGray}>
                         <div className={projectStyles.section}>
                             <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Second Iteration</div>
-                            
+                            <h4 style={{fontWeight: 600}}>Hosting group testing with our prototype led to more insights.</h4>
                             <p>
                                 To understand how we could improve, our prototype underwent user testing through a group critique session. 36 peer students, alongside <Link href="http://giffordcheung.weebly.com/" target="_blank" className={homeStyles.primaryLink}>Gifford Cheung</Link>, a senior UX researcher at Nintendo, ran through a variety of tasks on our interactive prototype and shared their thoughts with us.
                             </p>
@@ -1158,6 +1162,9 @@ export default function Circular() {
                     <div className={projectStyles.sectionContainer}>
                         <div className={projectStyles.section}>
                             <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>User Testing</div>
+                            <h4 style={{fontWeight: 600}}>
+                                Our project underwent further user testing to gather insights.
+                            </h4>
                             <p>
                                 The project went through further user testing with online users on <Link href="https://www.usertesting.com/" target="_blank" className={homeStyles.primaryLink}>usertesting.com</Link>. Juliana and I developed a series of tasks and assesments to be presented to three users to interact with the interactive Figma prototype updated based on feedback from our first critique session.
                             </p>
