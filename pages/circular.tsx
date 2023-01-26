@@ -92,7 +92,7 @@ export default function Circular() {
                     <div className={projectStyles.section}>
                         <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Overview</div>
                         <p>
-                            For a class project, I was challenged to design an interactive interface for <Link href="https://www.ycombinator.com/companies/circular" target="_blank" className={homeStyles.primaryLink}>Circular</Link>, an emerging startup for subscription consumer electronics, which was part of Y Combinator's Winter 2022 batch. With a group, I iteratively designed an interface matching Circular's concept by looking only at Circular's Y Combinator description which described the problem Circular aimed to solve.
+                            For a class project, I was challenged to design an interactive interface for <Link href="https://www.ycombinator.com/companies/circular" target="_blank" className={homeStyles.primaryLink}>Circular</Link>, an emerging startup for subscription consumer electronics, which was part of Y Combinator's Winter 2022 batch. With a group, I iteratively designed an interface matching Circular's concept by looking only at Circular's Y Combinator page, describing the problem Circular aimed to solve.
                         </p>
                         <p>
                             After completing the initial prototype, this prototype then underwent initial user testing with peers, which provided the insights needed to develop the final version. Afterwards, we user tested this final version again with several users on <Link href="https://www.usertesting.com/" target="_blank" className={homeStyles.primaryLink}>usertesting.com</Link>, which revealed further insights.
