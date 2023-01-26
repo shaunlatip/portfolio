@@ -67,7 +67,7 @@ export default function Home() {
                         <span className={styles.badge}>User Research</span>
                         <span className={styles.badge}>User Testing</span>
                       </div>
-                      <p>Iterative design and research for YC Startup providing flexible access to consumer electronics</p>
+                      <p>Iterative design and research for YC W22 startup providing flexible access to consumer electronics</p>
                     </div>
                   </div>
                 </Link>
