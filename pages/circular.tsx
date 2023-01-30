@@ -32,6 +32,12 @@ export default function Circular() {
     };
 
     const overviewRef = useRef<HTMLDivElement>(null)
+    const challengeRef = useRef<HTMLDivElement>(null)
+    const researchRef = useRef<HTMLDivElement>(null)
+    const firstIterationRef = useRef<HTMLDivElement>(null)
+    const secondIterationRef = useRef<HTMLDivElement>(null)
+    const userTestingRef = useRef<HTMLDivElement>(null)
+    const takeawaysRef = useRef<HTMLDivElement>(null)
 
     function handleSidebarClick(e: React.MouseEvent<HTMLElement>) {
         const element = e.currentTarget as HTMLInputElement
@@ -41,6 +47,30 @@ export default function Circular() {
             case "Overview":
                 if (!overviewRef.current) {return} 
                 overviewRef.current.scrollIntoView({behavior: "smooth"})
+                break;
+            case "Challenge":
+                if (!challengeRef.current) {return} 
+                challengeRef.current.scrollIntoView({behavior: "smooth"})
+                break;
+            case "Research":
+                if (!researchRef.current) {return} 
+                researchRef.current.scrollIntoView({behavior: "smooth"})
+                break;
+            case "First Iteration":
+                if (!firstIterationRef.current) {return} 
+                firstIterationRef.current.scrollIntoView({behavior: "smooth"})
+                break;
+            case "Second Iteration":
+                if (!secondIterationRef.current) {return} 
+                secondIterationRef.current.scrollIntoView({behavior: "smooth"})
+                break;
+            case "User Testing":
+                if (!userTestingRef.current) {return} 
+                userTestingRef.current.scrollIntoView({behavior: "smooth"})
+                break;
+            case "Takeaways":
+                if (!takeawaysRef.current) {return} 
+                takeawaysRef.current.scrollIntoView({behavior: "smooth"})
                 break;
 
         }
@@ -56,10 +86,10 @@ export default function Circular() {
             <div className={projectStyles.sidebar}>
                 <button onClick={handleSidebarClick} value="Overview">Overview</button>
                 <button onClick={handleSidebarClick} value="Challenge">Challenge</button>
-                <button onClick={handleSidebarClick} value="Challenge">Research</button>
-                <button onClick={handleSidebarClick} value="Final Designs">First Iteration</button>
-                <button onClick={handleSidebarClick} value="Process">Second Iteration</button>
-                <button onClick={handleSidebarClick} value="Takeaways">User Testing</button>
+                <button onClick={handleSidebarClick} value="Research">Research</button>
+                <button onClick={handleSidebarClick} value="First Iteration">First Iteration</button>
+                <button onClick={handleSidebarClick} value="Second Iteration">Second Iteration</button>
+                <button onClick={handleSidebarClick} value="User Testing">User Testing</button>
                 <button onClick={handleSidebarClick} value="Takeaways">Takeaways</button>
             </div>
 
@@ -122,7 +152,7 @@ export default function Circular() {
                     </div>
                     <div className={projectStyles.section}>
                         {/* <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Preview</div> */}
-                        <b style={{fontWeight: 700, marginTop: '1rem'}}>Preview</b>
+                        <b style={{fontWeight: 700, marginTop: '1rem'}}>Final Prototype</b>
                         {/* <h2 className={projectStyles.h2SectionHeader}>Final Prototype</h2> */}
                         <p>
                             The final interactive prototype for Circular is attached below.
@@ -141,7 +171,7 @@ export default function Circular() {
 
                     
                     
-                    <div className={projectStyles.sectionContainerGray}>
+                    <div className={projectStyles.sectionContainerGray} ref={challengeRef}>
                         <div className={projectStyles.section}>
                             <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Challenge</div>
                             {/* <h3>
@@ -328,7 +358,7 @@ export default function Circular() {
 
                     
 
-                    <div className={projectStyles.sectionContainer}>
+                    <div className={projectStyles.sectionContainer} ref={researchRef}>
                         <div className={projectStyles.section}>
                             {/* <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Prototyping</div> */}
                             <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Research</div>
@@ -591,7 +621,7 @@ export default function Circular() {
 
                     
 
-                    <div className={projectStyles.sectionContainer}>
+                    <div className={projectStyles.sectionContainer} ref={firstIterationRef}>
                         <div className={projectStyles.section}>
                             <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>First Iteration</div>
                             <p>With what I learned from my research, I created a set of low-fidelity wireframes on Figma for the site-wide navigation bars and explore page, while wireframing the landing page closely with Juliana.</p>
@@ -779,7 +809,7 @@ export default function Circular() {
                         </div>
                     </div>
 
-                    <div className={projectStyles.sectionContainerGray}>
+                    <div className={projectStyles.sectionContainerGray} ref={secondIterationRef}>
                         <div className={projectStyles.section}>
                             <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Second Iteration</div>
                             <h4 style={{fontWeight: 600}}>Hosting group testing with our prototype led to more insights.</h4>
@@ -1159,7 +1189,7 @@ export default function Circular() {
                         </div>
                     </div>
 
-                    <div className={projectStyles.sectionContainer}>
+                    <div className={projectStyles.sectionContainer} ref={userTestingRef}>
                         <div className={projectStyles.section}>
                             <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>User Testing</div>
                             <h4 style={{fontWeight: 600}}>
@@ -1591,7 +1621,7 @@ export default function Circular() {
                     </div> */}
 
 
-                    <div className={projectStyles.sectionContainer}>
+                    <div className={projectStyles.sectionContainer} ref={takeawaysRef}>
                         <div className={projectStyles.section}>
                             <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Takeaways</div>
                             <h4 style={{fontWeight: 600}}>
