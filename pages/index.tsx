@@ -132,7 +132,7 @@ export default function Home() {
           <div className={styles.section} id="writing">
             <h3 className={styles.sectionTitle}>Writing</h3>
             <div className={styles.rowGallery}>
-            <Link href="writing/TheEastSide.pdf">
+            <Link href="writing/OnTheEastSide.pdf">
               <div className={styles.row}>
                 <div className={styles.rowImage}>
                   <img src="images/lippitthill.jpg"/>
@@ -140,12 +140,12 @@ export default function Home() {
                 <div className={styles.rowContent}>
                   <h2>"Lippitt Hill" and the East Side</h2>
                   <p>
-                    A research project exploring the razing of Providence's predominant Black Neighborhood in the 1950s. Produced for URBN 1871A, I explore the often discriminatory, unsavory history of urban development in Providence and, more broadly, the U.S.
+                    A research project exploring the razing of Providence's predominant Black Neighborhood in the 1950s. Produced for the Brown Urban Studies Department, I explore the often discriminatory, unsavory history of urban development in Providence and, more broadly, the U.S.
                   </p>
                 </div>
               </div>
             </Link>
-            <Link href="writing/IdentityDisabilityAgency.pdf">
+            <Link href="writing/IdentityDisabilityAndAgency.pdf">
               <div className={styles.rowReverse}>
                 <div className={styles.rowImage}>
                     <img src="images/kilimanjaro.jpeg"/>
@@ -158,7 +158,7 @@ export default function Home() {
                   </div>
               </div>
             </Link>
-              <Link href="writing/DigitalSpacesOfComfort.pdf">
+              <Link href="writing/DigitalSpacesOfComfortInSeoul.pdf">
                 <div className={styles.row}>
                   <div className={styles.rowImage}>
                     <img src="images/seoul.png"/>
