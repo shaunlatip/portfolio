@@ -156,6 +156,12 @@
         flex-direction: column;
         justify-content: flex-start;
     }
+
+    .footerContentProject {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
     .right {
         align-items: flex-start;
         margin-top: 2rem;

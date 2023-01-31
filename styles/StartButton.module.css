@@ -28,3 +28,11 @@
     transition: all 0.2s ease-out;
 }
 
+
+@media (max-width: 500px) {
+    .button {
+        height: 32.19px;
+        width: 32.19px;
+        border-radius: 16.10px;
+    }
+  }

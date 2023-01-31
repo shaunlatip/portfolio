@@ -504,7 +504,7 @@ export default function Circular() {
                             <div className={styles.splitCol}>
                                 <div className={styles.col}>
                                     <div className={styles.ol}>
-                                        <h3 style={{fontWeight: 600, alignSelf: 'center'}}>New Users</h3>
+                                        <h3 style={{fontWeight: 600, alignSelf: 'center', textAlign: 'center'}}>New Users</h3>
                                         <div className={styles.olItem}>
                                             <span>01</span>
                                             <p>
@@ -529,7 +529,7 @@ export default function Circular() {
                                 </div>
                                 <div className={styles.col}>
                                     <div className={styles.ol}>
-                                        <h3 style={{fontWeight: 600, alignSelf: 'center'}}>Returning Users</h3>
+                                        <h3 style={{fontWeight: 600, alignSelf: 'center', textAlign: 'center'}}>Returning Users</h3>
                                         <div className={styles.olItem}>
                                             <span>01</span>
                                             

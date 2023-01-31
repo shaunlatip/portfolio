@@ -112,3 +112,18 @@
     }
 
 }
+
+@media (max-width: 1200px) {
+
+    .comparison {
+        width: calc(100vw - 4rem);
+    }
+
+    .lofis {
+        width: calc(100vw - 4rem);
+    }
+
+    .hifiComparison {
+        width: calc(100vw - 4rem);
+    }
+}

@@ -74,15 +74,29 @@
 
 .bannerImageContainer {
     position: relative;
-    width: 653px;
-    height: 490px;
-    overflow: "hidden";
+    width: 600px;
+    height: 450px;
+    /* overflow: "hidden"; */
 }
 
 .bannerImage {
     /* width: 700px;
     height: 448px; */
-    position: absolute;
     object-fit: contain;
     object-position: bottom;
+    filter: drop-shadow(0px 16px 16px rgba(0, 0, 0, 0.20));
+    border-radius: 16px;
+}
+
+@media (max-width: 750px) {
+    .bannerImageContainer {
+        width: calc(100% - 4rem);
+        height: 60vw;
+    }
+}
+
+@media (max-width: 350px) {
+    .bannerImageContainer {
+        display: none;
+    }
 }

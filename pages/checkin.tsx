@@ -116,9 +116,7 @@ export default function CheckIn() {
                         src={bannerImage}
                         alt="Banner Image"
                         className={styles.bannerImage}
-                        fill={true}
-                        style={{maxWidth: '653px', boxShadow: '0px 8px 45px 0px rgba(0, 0, 0, 0.3)'
-                        }}/>
+                        fill={true}/>
                     </div>
 
                     

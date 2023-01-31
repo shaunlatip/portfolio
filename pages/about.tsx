@@ -3,6 +3,7 @@ import styles from '../styles/About.module.css'
 import Head from 'next/head'
 import Link from 'next/link'
 import selfPortrait from '../public/about/portraitSitting.jpg';
+import selfPortraitMobile from '../public/about/portraitMobile.jpg';
 import Image from 'next/image'
 
 export default function About() {
@@ -17,6 +18,12 @@ export default function About() {
                     <br/>
                     <div className={styles.about}>
                         <div className={styles.aboutContent}>
+                            <div className={styles.mobilePortraitWrapper}>
+                                <Image
+                                src={selfPortraitMobile}
+                                alt=""
+                                className={styles.aboutPortraitMobile}/>
+                            </div>
                             <h3 className={styles.greeting}>
                                 Hi there! I'm Shaun. Nice to meet you.
                             </h3>
@@ -40,6 +47,7 @@ export default function About() {
                                 <br/>
                 
                             </p>
+                            
                             <h3 className={styles.greeting}>
                                 Before this, I started as...
                             </h3>

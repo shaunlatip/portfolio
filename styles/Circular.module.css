@@ -189,7 +189,6 @@
 
 .critiqueLeft {
     max-width: 432px;
-    min-width: 432px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -325,4 +324,52 @@
     }
 }
 
+@media (max-width: 1200px) {
+    .critiqueRow span {
+        display: none;
+    }
 
+    .pageCritique {
+        padding: 1rem;
+    }
+
+    .critiqueArrow {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .users {
+        flex-direction: column;
+    }
+    .user {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .tasks {
+        width: calc(100vw - 4rem);
+    }
+
+    .initialHifis {
+        width: calc(100vw - 4rem);
+    }
+
+    .wireframes {
+        width: calc(100vw - 4rem);
+    }
+
+    .preview {
+        width: calc(100vw - 4rem);
+    }
+
+    .sketchDisplay {
+        width: calc(100vw - 4rem);
+    }
+
+    .previewIFrame {
+        height: 500px;
+    }
+}
