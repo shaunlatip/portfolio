@@ -2,6 +2,7 @@ import styles from '../styles/Home.module.css'
 import Head from 'next/head'
 import Link from 'next/link'
 import Footer from '../components//Footer'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -41,7 +42,7 @@ export default function Home() {
             <div className={styles.gallery}>
               <div className={styles.project}>
                 <Link href="/exploreri">
-                  <img className={styles.projectImage} src="images/exploreri-card.jpg"/>
+                  <Image src="/images/exploreri-card.jpg" width={522} height={351.86} className={styles.projectImage} alt=""/>
                   <div className={styles.projectInfo}>
                     <div className={styles.projectInfoContent}>
                       <h2>Explore Rhode Island</h2>
@@ -58,7 +59,7 @@ export default function Home() {
               
               <div className={styles.project}>
                 <Link href="/circular">
-                  <img className={styles.projectImage} src="images/circular-card.jpg"/>
+                  <Image className={styles.projectImage} src="/images/circular-card.jpg" width={522} height={362.5} alt=""/>
                   <div className={styles.projectInfo}>
                     <div className={styles.projectInfoContent}>
                     <h2>Circular</h2>
@@ -74,7 +75,7 @@ export default function Home() {
               </div>
               <div className={styles.project}>
                 <Link href="/checkin">
-                  <img className={styles.projectImage} src="images/checkin-card.jpg"/>
+                  <Image className={styles.projectImage} src="/images/checkin-card.jpg" width={522} height={351.98} alt=""/>
                   <div className={styles.projectInfo}>
                     <div className={styles.projectInfoContent}>
                     <h2>Health Services Check In</h2>
@@ -90,7 +91,7 @@ export default function Home() {
               </div>
               <div className={styles.project} style={{display: 'none'}}>
                 <Link href="/pokemon-ranch">
-                  <img className={styles.projectImage} src="images/pokemon-card.jpg"/>
+                  <Image className={styles.projectImage} src="/images/pokemon-card.jpg" width={522} height={362.5} alt=""/>
                   <div className={styles.projectInfo}>
                     <div className={styles.projectInfoContent}>
                       <h2>Honeydew Pokemon Ranch</h2>
@@ -135,7 +136,7 @@ export default function Home() {
             <Link href="writing/OnTheEastSide.pdf">
               <div className={styles.row}>
                 <div className={styles.rowImage}>
-                  <img src="images/lippitthill.jpg"/>
+                  <Image src="/images/lippitthill.jpg" width={300} height={225} alt=""/>
                 </div>
                 <div className={styles.rowContent}>
                   <h2>"Lippitt Hill" and the East Side</h2>
@@ -148,7 +149,7 @@ export default function Home() {
             <Link href="writing/IdentityDisabilityAndAgency.pdf">
               <div className={styles.rowReverse}>
                 <div className={styles.rowImage}>
-                    <img src="images/kilimanjaro.jpeg"/>
+                    <Image src="/images/kilimanjaro.jpeg" width={300} height={225} alt=""/>
                   </div>
                   <div className={styles.rowContent}>
                     <h2>Identity, Disability, and Agency through Lupus</h2>
@@ -161,7 +162,7 @@ export default function Home() {
               <Link href="writing/DigitalSpacesOfComfortInSeoul.pdf">
                 <div className={styles.row}>
                   <div className={styles.rowImage}>
-                    <img src="images/seoul.png"/>
+                    <Image src="/images/seoul.png" width={300} height={225} alt=""/>
                   </div>
                   <div className={styles.rowContent}>
                     <h2>Digital Spaces of Comfort in Seoul</h2>
@@ -172,6 +173,49 @@ export default function Home() {
                   </div>
                 </div>
               </Link>
+            </div>
+          </div>
+
+          <div className={styles.section} id="other" style={{marginTop: '1rem', marginBottom: '2rem'}}>
+            <h3 className={styles.sectionTitle}>Other side projects</h3>
+            <div className={styles.otherProjects}>
+
+              <div className={styles.otherProject}>
+                <Link href="https://www.browndailyherald.com/article/2021/10/richie-engn-robots" target="_blank">
+                  <Image src="/images/robots.gif" alt="" width={348} height={229} className={styles.otherProjectImage}/>
+                  <div className={styles.otherProjectInfo}>
+                    <div className={styles.otherProjectInfoContent}>
+                      <h3>Think-Bot Split Flaps</h3>
+                      <p>Designing and coding an Arduino-powered split-flap display for an artistic robotic installation.</p>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+
+              <div className={styles.otherProject}>
+                <Link href="https://drive.google.com/file/d/1BDbKiPABNon0NO-FpfMnJBnjMC8lRFDQ/view" target="_blank">
+                  <Image src="/images/scallops.gif" alt="" width={348} height={229} className={styles.otherProjectImage}/>
+                  <div className={styles.otherProjectInfo}>
+                    <div className={styles.otherProjectInfoContent}>
+                      <h3>Scallop-Bot</h3>
+                      <p>Designer, pseudo-electrical-engineer, and coder for an Arduino-based art installation.</p>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+              
+              <div className={styles.otherProject}>
+                <Link href="https://shaunlatip.github.io/Pokemon-Ranch/" target="_blank">
+                  <Image src="/images/pokemonRanch.gif" alt="" width={348} height={229} className={styles.otherProjectImage}/>
+                  <div className={styles.otherProjectInfo}>
+                    <div className={styles.otherProjectInfoContent}>
+                      <h3>Pokemon Ranch</h3>
+                      <p>React web app that lets you select a team of certified-cute Pokemon that I developed.</p>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+              
             </div>
           </div>
         

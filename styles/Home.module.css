@@ -72,7 +72,7 @@
 
   background-color: #FFFFFF;
   width: calc(50% - 1rem);
-  border-radius: 12px;
+  border-radius: 16px;
 }
 
 .project:hover {
@@ -87,7 +87,7 @@
 }
 
 .projectImage {
-  border-radius: 12px 12px 0px 0px;
+  border-radius: 16px 16px 0px 0px;
   width: 100%;
 }
 
@@ -131,7 +131,7 @@
   background-color: #fafafa;
   width: calc(50% - 1rem);
   height: 627px;
-  border-radius: 12px;
+  border-radius: 16px;
 }
 
 .projectPlaceholderText {
@@ -200,7 +200,7 @@
   display: flex;
   flex-direction: row;
   justify-content: stretch;
-  border-radius: 12px;
+  border-radius: 16px;
   /* gap: 1rem; */
   /* filter: drop-shadow(0px 4px 32px rgba(0, 0, 0, 0.10)); */
 }
@@ -230,7 +230,7 @@
 
 .rowImage img {
   width: 300px;
-  border-radius: 12px;
+  border-radius: 16px;
 }
 
 .rowContent {
@@ -239,7 +239,7 @@
   padding: 1.5rem;
   /* background-color: #FFFFFF; */
   width: calc(100% - 300px);
-  border-radius: 12px;
+  border-radius: 16px;
   gap: 0.5rem;
 }
 
@@ -284,6 +284,69 @@
   transform: translate3d(0, 0.1em, 0);
 }
 
+.otherProjects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.otherProject {
+  display: flex;
+  flex-direction: column;
+  width: calc((100% - 2rem) / 3);
+  border-radius: 16px;
+  filter: drop-shadow(0px 4px 32px rgba(0, 0, 0, 0.10));
+  background-color: #FFFFFF;
+
+}
+
+.otherProject:hover {
+  filter: drop-shadow(0px 4px 32px rgba(0, 0, 0, 0.18));
+  transition: all 0.2s ease-in;
+  /* transform: scale(1.01); */
+  transform: translateY(-5px);
+}
+
+.otherProject a:hover {
+  text-decoration: none;
+}
+
+
+.otherProjectInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: start;
+  background-color: white;
+  border-radius: 0 0 16px 16px;
+}
+
+.otherProjectInfoContent {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem;
+  gap: 1rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.otherProjectInfoContent h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.otherProjectInfoContent p {
+  line-height: 1.5em;
+}
+
+.otherProjectImage {
+    border-radius: 16px 16px 0px 0px;
+    width: 100%;
+
+}
+
 
 @media (max-width: 1264px) {
   .section {
@@ -326,5 +389,14 @@
 
   .rowImage img {
     width: calc(100% - 2rem);
+  }
+
+  .otherProjects {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .otherProject {
+    width: 100%;
   }
 }
