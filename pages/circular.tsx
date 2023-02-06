@@ -142,7 +142,7 @@ export default function Circular() {
                             </div>
                             <div>
                                 <b>Teammates</b>
-                                <p>Juliana Han (Co-Lead)<br/>Eric Guo<br/>Kevin Nguyen</p>
+                                <p><Link href="https://www.julianahan.me/" target="_blank" className={homeStyles.primaryLink}>Juliana Han</Link> (Co-Lead)<br/>Eric Guo<br/>Kevin Nguyen</p>
                             </div>
                             {/* <div>
                                 <b>Tools Used</b>
