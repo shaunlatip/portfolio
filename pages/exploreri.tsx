@@ -43,6 +43,7 @@ export default function ExploreRI() {
     };
 
     const overviewRef = useRef<HTMLDivElement>(null)
+    const redesignedWebsiteRef = useRef<HTMLDivElement>(null)
     const researchRef = useRef<HTMLDivElement>(null)
     const prototypingRef = useRef<HTMLDivElement>(null)
     const finalDesignsRef = useRef<HTMLDivElement>(null)
@@ -58,6 +59,10 @@ export default function ExploreRI() {
             case "Overview":
                 if (!overviewRef.current) {return} 
                 overviewRef.current.scrollIntoView({behavior: "smooth"})
+                break;
+            case "Redesigned Website":
+                if (!redesignedWebsiteRef.current) {return} 
+                redesignedWebsiteRef.current.scrollIntoView({behavior: "smooth"})
                 break;
             case "Research":
                 if (!researchRef.current) {return}
@@ -90,10 +95,11 @@ export default function ExploreRI() {
 
             <div className={projectStyles.sidebar}>
                 <button onClick={handleSidebarClick} value="Overview">Overview</button>
+                <button onClick={handleSidebarClick} value="Redesigned Website">Redesigned Website</button>
                 <button onClick={handleSidebarClick} value="Research">Research</button>
                 <button onClick={handleSidebarClick} value="Prototyping">Prototyping</button>
                 <button onClick={handleSidebarClick} value="Final Designs">Final Designs</button>
-                <button onClick={handleSidebarClick} value="Process">Process</button>
+                <button onClick={handleSidebarClick} value="Process">Design Choices</button>
                 <button onClick={handleSidebarClick} value="Takeaways">Takeaways</button>
             </div>
 
@@ -118,6 +124,8 @@ export default function ExploreRI() {
                 </div>
                 
                 <div className={projectStyles.sections}>
+
+
 
                     <div className={projectStyles.sectionContainer} ref={overviewRef}>
                         <div className={projectStyles.section}>
@@ -145,6 +153,15 @@ export default function ExploreRI() {
                             </div>
 
                         </div>
+                        
+                    </div>
+
+                    <div className={projectStyles.sectionContainer} style={{paddingTop: '2rem'}} ref={redesignedWebsiteRef}>
+
+                        <div className={projectStyles.section}>
+                            <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Redesigned Website</div>
+                        </div>
+                        
                         <div className={styles.frame}>
                             <div className={styles.comparison}>
                                 <Tabs isLazy={true} variant='unstyled' size='md' colorScheme='orange' defaultIndex={0}>

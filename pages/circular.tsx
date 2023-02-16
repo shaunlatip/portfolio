@@ -183,7 +183,7 @@ export default function Circular() {
                     <div className={projectStyles.sectionContainer} style={{padding: '2rem 0 2rem 0'}}>
                         <div className={projectStyles.spreadRow}style={{gap: '2rem'}}>
                             <div className={projectStyles.spreadRowText}>
-                                <h4 style={{color: "#a0a09f", fontWeight: '600'}}>01</h4>
+                                <b style={{color: "#a0a09f", fontWeight: '600'}}>01</b>
                                 <h4 style={{fontWeight: 600}}>
                                     Communicating the Circular model
                                 </h4>
@@ -198,7 +198,7 @@ export default function Circular() {
                     <div className={projectStyles.sectionContainerGray} style={{padding: '2rem 0 2rem 0'}}>
                         <div className={projectStyles.spreadRow}style={{gap: '2rem'}}>
                             <div className={projectStyles.spreadRowText}>
-                                <h4 style={{color: "#a0a09f", fontWeight: '600'}}>02</h4>
+                                <b style={{color: "#a0a09f", fontWeight: '600'}}>02</b>
                                 <h4 style={{fontWeight: 600}}>
                                 Centralized exploration
                                 </h4>
@@ -213,7 +213,7 @@ export default function Circular() {
                     <div className={projectStyles.sectionContainer} style={{padding: '2rem 0 2rem 0'}}>
                         <div className={projectStyles.spreadRow}style={{gap: '2rem'}}>
                             <div className={projectStyles.spreadRowText}>
-                                <h4 style={{color: "#a0a09f", fontWeight: '600'}}>03</h4>
+                                <b style={{color: "#a0a09f", fontWeight: '600'}}>03</b>
                                 <h4 style={{fontWeight: 600}}>
                                     Easily manage products
                                 </h4>
@@ -228,9 +228,9 @@ export default function Circular() {
                     <div className={projectStyles.sectionContainerGray} style={{padding: '2rem 0 2rem 0'}}>
                         <div className={projectStyles.spreadRow}style={{gap: '2rem'}}>
                             <div className={projectStyles.spreadRowText}>
-                                <h4 style={{color: "#a0a09f", fontWeight: '600'}}>04</h4>
+                                <b style={{color: "#a0a09f", fontWeight: '600'}}>04</b>
                                 <h4 style={{fontWeight: 600}}>
-                                    Streamlined actions
+                                    Streamlined actions and information
                                 </h4>
                                 <p>
                                     Letting users know key details about their products, key dates, prices, and access to help, while allowing users to extend, buy, or return products comfortably.
