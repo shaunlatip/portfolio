@@ -32,6 +32,7 @@ export default function Circular() {
     };
 
     const overviewRef = useRef<HTMLDivElement>(null)
+    const finalPrototypeRef = useRef<HTMLDivElement>(null)
     const challengeRef = useRef<HTMLDivElement>(null)
     const researchRef = useRef<HTMLDivElement>(null)
     const firstIterationRef = useRef<HTMLDivElement>(null)
@@ -47,6 +48,10 @@ export default function Circular() {
             case "Overview":
                 if (!overviewRef.current) {return} 
                 overviewRef.current.scrollIntoView({behavior: "smooth"})
+                break;
+            case "Final Prototype":
+                if (!finalPrototypeRef.current) {return} 
+                finalPrototypeRef.current.scrollIntoView({behavior: "smooth"})
                 break;
             case "Challenge":
                 if (!challengeRef.current) {return} 
@@ -85,6 +90,7 @@ export default function Circular() {
             
             <div className={projectStyles.sidebar}>
                 <button onClick={handleSidebarClick} value="Overview">Overview</button>
+                <button onClick={handleSidebarClick} value="Final Prototype">Final Solution</button>
                 <button onClick={handleSidebarClick} value="Challenge">Challenge</button>
                 <button onClick={handleSidebarClick} value="Research">Research</button>
                 <button onClick={handleSidebarClick} value="First Iteration">First Iteration</button>
@@ -150,28 +156,94 @@ export default function Circular() {
                             </div> */}
                         </div>
                     </div>
-                    <div className={projectStyles.section}>
-                        {/* <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Preview</div> */}
-                        <b style={{fontWeight: 700, marginTop: '1rem'}}>Final Prototype</b>
-                        {/* <h2 className={projectStyles.h2SectionHeader}>Final Prototype</h2> */}
-                        <p>
-                            The final interactive prototype for Circular is attached below.
-                        </p>
-                        
-                    </div>
-                    <div className={styles.previewFrame}>
-                        <div className={styles.preview}>
-                            <iframe className={styles.previewIFrame} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FiEBib4ZvHpBnFPusFXnLl9%2FIterative%3Fpage-id%3D152%253A1823%26node-id%3D152%253A1823%26viewport%3D1106%252C1084%252C0.76%26scaling%3Dscale-down%26starting-point-node-id%3D152%253A1824" ></iframe>
-                        </div>
-                    </div>
 
                 </div>
 
                 <div className={projectStyles.sections}>
 
+                    <div className={projectStyles.sectionContainerGray} ref={finalPrototypeRef}>
+                        <div className={projectStyles.section}  style={{}}>
+                            {/* <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Preview</div> */}
+                            <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Final Solution</div>
+                            {/* <h2 className={projectStyles.h2SectionHeader}>Final Prototype</h2> */}
+                            <p>
+                                The final interactive prototype for Circular is attached below.
+                            </p>
+                            
+                        </div>
+                        <div className={styles.previewFrame}>
+                            <div className={styles.preview}>
+                                <iframe className={styles.previewIFrame} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FiEBib4ZvHpBnFPusFXnLl9%2FIterative%3Fpage-id%3D152%253A1823%26node-id%3D152%253A1823%26viewport%3D1106%252C1084%252C0.76%26scaling%3Dscale-down%26starting-point-node-id%3D152%253A1824" ></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div className={projectStyles.sectionContainer} style={{padding: '2rem 0 2rem 0'}}>
+                        <div className={projectStyles.spreadRow}style={{gap: '2rem'}}>
+                            <div className={projectStyles.spreadRowText}>
+                                <h4 style={{color: "#a0a09f", fontWeight: '600'}}>01</h4>
+                                <h4 style={{fontWeight: 600}}>
+                                    Communicating the Circular model
+                                </h4>
+                                <p>
+                                    Conveying how Circular works to new users in three simple steps, while highlighting popular products to route users to the rest of the website.
+                                </p>
+                            </div>
+                            <Image className={styles.finalDesignGif} style={{borderRadius: '4px', border: '1px solid #E4E4E4'}} alt="Gif" src="/circular/final1.gif" width={600} height={369}/>
+                        </div>
+                    </div>
+
+                    <div className={projectStyles.sectionContainerGray} style={{padding: '2rem 0 2rem 0'}}>
+                        <div className={projectStyles.spreadRow}style={{gap: '2rem'}}>
+                            <div className={projectStyles.spreadRowText}>
+                                <h4 style={{color: "#a0a09f", fontWeight: '600'}}>02</h4>
+                                <h4 style={{fontWeight: 600}}>
+                                Centralized exploration
+                                </h4>
+                                <p>
+                                    Providing users insight into seasonal promotions, new product launches, and curated recommendations on one centralized explore page.
+                                </p>
+                            </div>
+                            <Image className={styles.finalDesignGif} style={{borderRadius: '4px', border: '1px solid #E4E4E4'}} alt="Gif" src="/circular/final2.gif" width={600} height={369}/>
+                        </div>
+                    </div>
+                    
+                    <div className={projectStyles.sectionContainer} style={{padding: '2rem 0 2rem 0'}}>
+                        <div className={projectStyles.spreadRow}style={{gap: '2rem'}}>
+                            <div className={projectStyles.spreadRowText}>
+                                <h4 style={{color: "#a0a09f", fontWeight: '600'}}>03</h4>
+                                <h4 style={{fontWeight: 600}}>
+                                    Easily manage products
+                                </h4>
+                                <p>
+                                    Communicating rental status, pricing, and all actions users have at their disposable quickly and effectively.
+                                </p>
+                            </div>
+                            <Image className={styles.finalDesignGif} style={{borderRadius: '4px', border: '1px solid #E4E4E4'}} alt="Gif" src="/circular/final3.gif" width={600} height={369}/>
+                        </div>
+                    </div>
+                    
+                    <div className={projectStyles.sectionContainerGray} style={{padding: '2rem 0 2rem 0'}}>
+                        <div className={projectStyles.spreadRow}style={{gap: '2rem'}}>
+                            <div className={projectStyles.spreadRowText}>
+                                <h4 style={{color: "#a0a09f", fontWeight: '600'}}>04</h4>
+                                <h4 style={{fontWeight: 600}}>
+                                    Streamlined actions
+                                </h4>
+                                <p>
+                                    Letting users know key details about their products, key dates, prices, and access to help, while allowing users to extend, buy, or return products comfortably.
+                                </p>
+                            </div>
+                            <Image className={styles.finalDesignGif} style={{borderRadius: '4px', border: '1px solid #E4E4E4'}} alt="Gif" src="/circular/final4.gif" width={600} height={369}/>
+                        </div>
+                    </div>
+                    
+
                     
                     
-                    <div className={projectStyles.sectionContainerGray} ref={challengeRef}>
+                    <div className={projectStyles.sectionContainer} ref={challengeRef}>
                         <div className={projectStyles.section}>
                             <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Challenge</div>
                             {/* <h3>
