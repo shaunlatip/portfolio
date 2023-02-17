@@ -40,22 +40,6 @@ export default function Home() {
               Selected work
             </h3>
             <div className={styles.gallery}>
-              <div className={styles.project}>
-                <Link href="/exploreri">
-                  <Image src="/images/exploreri-card.jpg" width={522} height={351.86} className={styles.projectImage} alt=""/>
-                  <div className={styles.projectInfo}>
-                    <div className={styles.projectInfoContent}>
-                      <h2>Explore Rhode Island</h2>
-                      <div className={styles.badges}>
-                        <span className={styles.badge}>UI/UX Design</span>
-                        <span className={styles.badge}>User Research</span>
-                        <span className={styles.badge}>HTML/CSS</span>
-                      </div>
-                      <p>Redesigning and developing how public park info is accessed through a responsive webpage</p>
-                    </div>
-                  </div>
-                </Link>
-              </div>
               
               <div className={styles.project}>
                 <Link href="/circular">
@@ -73,6 +57,24 @@ export default function Home() {
                   </div>
                 </Link>
               </div>
+
+              <div className={styles.project}>
+                <Link href="/exploreri">
+                  <Image src="/images/exploreri-card.jpg" width={522} height={351.86} className={styles.projectImage} alt=""/>
+                  <div className={styles.projectInfo}>
+                    <div className={styles.projectInfoContent}>
+                      <h2>Explore Rhode Island</h2>
+                      <div className={styles.badges}>
+                        <span className={styles.badge}>UI/UX Design</span>
+                        <span className={styles.badge}>User Research</span>
+                        <span className={styles.badge}>HTML/CSS</span>
+                      </div>
+                      <p>Redesigning and developing how public park info is accessed through a responsive webpage</p>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+
               <div className={styles.project}>
                 <Link href="/checkin">
                   <Image className={styles.projectImage} src="/images/checkin-card.jpg" width={522} height={351.98} alt=""/>
