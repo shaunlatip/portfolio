@@ -128,19 +128,15 @@ export default function Circular() {
                     <div className={projectStyles.section}>
                         <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Overview</div>
                         <p>
-                            For a class project, I was challenged to design an interactive interface for <Link href="https://www.ycombinator.com/companies/circular" target="_blank" className={homeStyles.primaryLink}>Circular</Link>, an emerging startup for subscription consumer electronics, which was part of Y Combinator's Winter 2022 batch. With a group, I iteratively designed an interface matching Circular's concept by looking only at Circular's Y Combinator page, describing the problem Circular aimed to solve.
+                            I was challenged to design an interactive interface for <Link href="https://www.ycombinator.com/companies/circular" target="_blank" className={homeStyles.primaryLink}>Circular</Link>, a Y Combinator Winter 2022 startup for subscription consumer electronics. I designed an interface matching Circular's concept of providing flexible consumer electronics.
                         </p>
                         <p>
-                            After completing the initial prototype, this prototype then underwent initial user testing with peers, which provided the insights needed to develop the final version. Afterwards, we user tested this final version again with several users on <Link href="https://www.usertesting.com/" target="_blank" className={homeStyles.primaryLink}>usertesting.com</Link>, which revealed further insights.
+                            After an initial prototype, my solution underwent peer user testing which provided the insights needed to develop the final version. Afterwards, we user tested this final version again with several users on <Link href="https://www.usertesting.com/" target="_blank" className={homeStyles.primaryLink}>usertesting.com</Link>, which revealed further insights.
                         </p>
                         <div className={projectStyles.projectInfo}>
                             <div>
                                 <b>Role</b>
                                 <p>Lead UI/UX Designer<br/>User Researcher</p>
-                            </div>
-                            <div>
-                                <b>Platform</b>
-                                <p>Desktop</p>
                             </div>
                             <div>
                                 <b>Timeline</b>
@@ -149,6 +145,10 @@ export default function Circular() {
                             <div>
                                 <b>Teammates</b>
                                 <p><Link href="https://www.julianahan.me/" target="_blank" className={homeStyles.primaryLink}>Juliana Han</Link> (Co-Lead)<br/>Eric Guo<br/>Kevin Nguyen</p>
+                            </div>
+                            <div>
+                                <b>Platform</b>
+                                <p>Desktop</p>
                             </div>
                             {/* <div>
                                 <b>Tools Used</b>
@@ -183,7 +183,7 @@ export default function Circular() {
                     <div className={projectStyles.sectionContainer} style={{padding: '2rem 0 2rem 0'}}>
                         <div className={projectStyles.spreadRow}style={{gap: '2rem'}}>
                             <div className={projectStyles.spreadRowText}>
-                                <b style={{color: "#a0a09f", fontWeight: '600'}}>01</b>
+                                <b style={{color: "#F0916C", fontWeight: '600'}}>01</b>
                                 <h4 style={{fontWeight: 600}}>
                                     Communicating the Circular model
                                 </h4>
@@ -198,12 +198,12 @@ export default function Circular() {
                     <div className={projectStyles.sectionContainerGray} style={{padding: '2rem 0 2rem 0'}}>
                         <div className={projectStyles.spreadRow}style={{gap: '2rem'}}>
                             <div className={projectStyles.spreadRowText}>
-                                <b style={{color: "#a0a09f", fontWeight: '600'}}>02</b>
+                                <b style={{color: "#F0916C", fontWeight: '600'}}>02</b>
                                 <h4 style={{fontWeight: 600}}>
                                 Centralized exploration
                                 </h4>
                                 <p>
-                                    Providing users insight into seasonal promotions, new product launches, and curated recommendations on one centralized explore page.
+                                    Providing users insight into seasonal promotions, new product launches, and curated recommendations on one centralized page.
                                 </p>
                             </div>
                             <Image className={styles.finalDesignGif} style={{borderRadius: '4px', border: '1px solid #E4E4E4'}} alt="Gif" src="/circular/final2.gif" width={600} height={369}/>
@@ -213,7 +213,7 @@ export default function Circular() {
                     <div className={projectStyles.sectionContainer} style={{padding: '2rem 0 2rem 0'}}>
                         <div className={projectStyles.spreadRow}style={{gap: '2rem'}}>
                             <div className={projectStyles.spreadRowText}>
-                                <b style={{color: "#a0a09f", fontWeight: '600'}}>03</b>
+                                <b style={{color: "#F0916C", fontWeight: '600'}}>03</b>
                                 <h4 style={{fontWeight: 600}}>
                                     Easily manage products
                                 </h4>
@@ -228,7 +228,7 @@ export default function Circular() {
                     <div className={projectStyles.sectionContainerGray} style={{padding: '2rem 0 2rem 0'}}>
                         <div className={projectStyles.spreadRow}style={{gap: '2rem'}}>
                             <div className={projectStyles.spreadRowText}>
-                                <b style={{color: "#a0a09f", fontWeight: '600'}}>04</b>
+                                <b style={{color: "#F0916C", fontWeight: '600'}}>04</b>
                                 <h4 style={{fontWeight: 600}}>
                                     Streamlined actions and information
                                 </h4>
@@ -249,29 +249,26 @@ export default function Circular() {
                             {/* <h3>
                                 The challenge
                             </h3> */}
-                            <h4 style={{fontWeight: 600}}>
+                            <span className={projectStyles.italicFocus}>
+                                How might we empower users to better access and experience consumer electronics?
+                            </span>
+                            {/* <h4 style={{fontWeight: 600}}>
                                 I started by outlining the challenge we were tasked with.
-                            </h4>
-
+                            </h4> */}
                             <p>
-                                First, I examined the current experience of how consumer technology was distributed. 
-                                Looking over the range of existing platforms that allow consumers to access electronic, I saw that these platforms largely <span style={{fontWeight: 600}}>required customers to commit to fully purchasing or financing</span> the full cost of new electronics before being able to use them.
+                                To start, I examined the current experience of how consumer technology was distributed. 
+                                Many existing consumer electronics platforms <span style={{fontWeight: 600}}>require customers to commit to fully purchasing or financing</span> the full cost of electronics before being able to use them.
                             </p>
                             <p>
-                                In response, Circular was attempting to change how consumer technology was accessed and experienced across Asia through <span style={{fontWeight: 600}}>low-cost, convenient subscriptions</span> that act as a novel way for consumers to access the best consumer electronics. 
+                                In response, Circular was attempting to change this through a novel approach: <span style={{fontWeight: 600}}>low-cost, convenient subscriptions</span> that let users try out or rent productss without committing. 
                             </p>
                             {/* <p>
                                 With Circular, customers can pay a monthly rate to keep a product for as long as they want, before choosing to either buy it, or to return it. Returned products will then be refurbished and passed on to the next owner to extend its useful life.
                             </p> */}
-                            <p>
+                            {/* <p>
                                 My approach centered on answering the question:
-                            </p>
-                            <span className={projectStyles.italicFocus}>
-                                How might we empower users to better access and experience consumer electronics?
-                            </span>
-                            <p>
-                                For this challenge, our team avoided looking at Circular's existing interface. This meant that I had to create a solution from the ground-up based solely on Circular's description.
-                            </p>
+                            </p> */}
+
 
                     
 
@@ -347,15 +344,17 @@ export default function Circular() {
 
                     <div className={projectStyles.sectionContainerDark}>
                         <div className={projectStyles.section}>
-                            <h4 style={{fontWeight: 600}}>First, I outlined the value that Circular should provide for users.</h4>
-                            <p>Based on the prompt we were given, I broke down our goal into three design principles that defined what our solution should translate into for users as a better way to access electronics.</p>
+                            {/* <h4 style={{fontWeight: 600}}>First, I outlined the value Circular should provide for users.</h4> */}
+                            <h4 style={{fontWeight: 600}}>
+                                I broke down our goal into <span style={{color: '#F0916C'}}>three guiding design principles</span>.
+                            </h4>
                             <div className={projectStyles.olLarge} style={{paddingTop: '2rem', paddingBottom: '2rem', gap: '1.5rem'}}>
                                 <div className={projectStyles.olItemLarge}>
                                     <span style={{fontSize: '1.5rem'}}>1</span>
                                     <div>
                                         <h4 style={{fontWeight: 600}}>Providing flexible access</h4>
                                         <p>
-                                            The solution should allow consumers to try products before outright buying them, giving more choice and freedom into the hands of consumers. Users should be able to pay monthly, keep products for as long as they want, and either purchase or return their products whenever they'd like.
+                                            Allow consumers to try products before fully purchasing them, providing users more flexibility. Users can pay monthly, keep products for as long as they want, and either purchase or return their products whenever they'd like.
                                         </p>
                                     </div>
                                 </div>
@@ -364,7 +363,7 @@ export default function Circular() {
                                     <div>
                                         <h4 style={{fontWeight: 600}}>An intuitive process</h4>
                                         <p>
-                                            The design should intuitively introduce users to the Circular subscription model, involving the increased reuse of refurbished electronics and temporary ownership. Users should feel comfortable with the reuse of electronics, and still feel a sense of ownership for the products they receive from Circular.
+                                            Intuitively introduce and acclimate users to the Circular subscription model, involving increased reuse of refurbished electronics and temporary ownership.
                                         </p>
                                         {/* <p style={{fontWeight: 500, color: '#F0916C'}}>
                                             How might we promote this idea of circular ownership for consumers?
@@ -376,7 +375,7 @@ export default function Circular() {
                                     <div>
                                         <h4 style={{fontWeight: 600}}>Assuring quality and choice</h4>
                                         <p>
-                                            Ensure users are able to easily browse from quality products across diverse categories all on one platform, including the latest and most desirable electronics. Flexible access and subscriptions should not mean compromising on quality and choice.
+                                            Users can easily browse from quality products across diverse categories on one platform, including the latest and most desirable electronics. Flexible access should not mean compromising on quality and choice.
                                         </p>
                                         {/* <p style={{fontWeight: 500, color: '#F0916C'}}>
                                             How might we allow users to choose from a broad range of quality products?
@@ -395,16 +394,13 @@ export default function Circular() {
                         <div className={projectStyles.section}>
                         <h4 style={{fontWeight: 600}}>This led me to consider how to design for an emerging startup.</h4>
                             <p>
-                                As I was essentially designing an MVP, Circular would have to appeal to users who felt dissatisfied with and excluded by the current distribution model for consumer electronics. 
-                            </p>
-                            <p>
-                                With this, I also realized that, for many of these users, Circular's flexible distribution model would likely feel quite unfamiliar. 
+                                As I was designing a startup's MVP, I felt Circular would have to appeal to users who felt dissatisfied with and excluded by the current distribution model for consumer electronics, to whom Circular's flexible distribution model would likely feel quite unfamiliar. 
                             </p>
                             <p>
                                 <span style={{fontWeight: 600}}>I realized that our design had to tread a fine line between familiarity and distinction.</span> 
                             </p>
                             <p>
-                                This meant the solution had to optimize for familiarity from existing electronics vendors that users were already familiar with, while distinguishing Circular enough to reflect the unique approach that Circular had as a startup.
+                                This required employing familiarity from existing mental models from platforms users were already familiar with, while distinguishing Circular enough to reflect the unique approach that Circular had as a startup.
                             </p>
                         </div>
                     </div>
@@ -413,12 +409,7 @@ export default function Circular() {
                         <div className={projectStyles.section}>
                             <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Brainstorming</div>
                             <p>
-                                To kick off our initial designs, I started our design process with a brainstorming session, where our group sketched a variety of possible design solutions to the challenge. Through this, I wanted to quickly explore a broad range of designs.
-                           
-                                We then reconvened and discussed our sketches, with each of us explaining the choices we made in our sketches. 
-                            </p>
-                            <p>
-                                This process allowed us to share and learn from the different approaches we each used to get closer to a single wireframe.
+                                Our group sketched a variety of possible design solutions to the challenge, quickly exploring a broad range of ideas, and discussing our varied solutions.
                             </p>
                         </div>
                         <div className={styles.sketchFrameAlt}>
@@ -436,13 +427,13 @@ export default function Circular() {
                             <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Research</div>
                             <h2 className={projectStyles.h2SectionHeader}>Platform Analysis</h2>
                             <p>
-                                At this point, I knew that Circular would have to <span style={{fontWeight: 600}}>merge ideas from a wide variety of genres.</span>
+                                I knew that Circular would have to <span style={{fontWeight: 600}}>merge ideas from a wide variety of genres.</span>
                             </p>
                             <p>
-                                 In many ways, much of Circular's planned functionalities mirrored that of existing e-commerce marketplaces that Circular would compete with. However, in contrast with these competitors, Circular was an emerging startup which uniquely allowed users to flexibly access consumer electronics.
+                                 First, much of Circular's planned functionalities mirrored that of existing e-commerce marketplaces that Circular would compete with. Second, in contrast with these competitors, Circular was an emerging concept involving temporary ownership, short-term rentals, and heightened reuse.
                             </p>
                             <p>
-                                To inform myself, I ran through a heuristic evaluation of a variety of platforms that fit the two forementioned groups. I looked at existing e-commerce competitors, such as Amazon and Shopee and at newer platforms providing less conventional ways to access products, to see what I could incorporate, modify, and avoid.
+                                I ran through a heuristic evaluation of a variety of platforms that fit these two sides of Circular. I looked at existing e-commerce competitors, such as Amazon, and newer platforms providing less conventional ways to access products, to see what I could incorporate, modify, and avoid.
                             </p>
                         </div>
                        
@@ -458,7 +449,7 @@ export default function Circular() {
                                 <h3 style={{color: '#F0916C'}}>Traditional e-commerce</h3>
                                 <b>Amazon</b>
                                 <p>
-                                    Despite Amazon selling products spanning 33 categories, it was easy to find results by searching, with the search bar prominent on each page. The search bar itself took nearly the whole size of the navigation bar, which makes it hard to miss. Searching by category further helped to ease navigating the site.
+                                    Despite selling across 33 categories, searching made finding products easy. The search bar itself took nearly the whole size of the navigation bar, making it hard to miss, while searching by category further helped to ease navigating the site.
                                 </p>
                                 <p>
                                     Amazon’s home page, with endless cards of varying shapes filling up most of the screen, felt rather confusing to navigate through. Although space-efficient, the layout made exploring new products feel tedious.
@@ -521,7 +512,7 @@ export default function Circular() {
 
                     <div className={projectStyles.sectionContainerDark}>
                         <div className={projectStyles.section} style={{marginTop: '0rem'}}>
-                            <h4 style={{fontWeight: 600}}>This analysis led me towards several design choices.</h4>
+                            <h4 style={{fontWeight: 600}}>This analysis led me make several design choices.</h4>
                             <div className={projectStyles.olLarge}>
                                 <div className={projectStyles.olItemLarge}>
                                     <span style={{fontSize: '1.5rem'}}>1</span>
@@ -541,7 +532,7 @@ export default function Circular() {
                                             Highlighting categories
                                         </b>
                                         <p>
-                                            Many marketplaces prominently featured a list of different product categories on their home page. I found this inclusion to affect my experience in two ways which I found applicable to Circular. First, by quickly communicating to users the range of products a website offered. Second, by allowing users to quickly filter and browse categories they are interested in.
+                                            Many marketplaces prominently featured a list of different product categories on their home page. I felt this was applicable to Circular in two ways: quickly communicating to users the range of products Circular could offer, and allowing users to quickly filter and browse categories they are interested in.
                                         </p>
                                     </div>
                                 </div>
@@ -552,10 +543,10 @@ export default function Circular() {
                                             Three simple steps
                                         </b>
                                         <p>
-                                            I examined existing, emerging platforms offering unconventional ways to try or access products. From this, I learned that websites that clearly communicated a simple process of ordering felt easier to understand and to navigate. 
+                                            I examined existing, emerging platforms offering unconventional ways to try or access products. From this, I learned that websites that clearly communicated a simple process of ordering felt much easier to understand and navigate. 
                                         </p>
                                         <p>
-                                            This fueled me to streamline Circular's process for the user into three steps: Choosing a product, trying it, and buying/returning it - a pattern used in the landing page and across the platform.
+                                            Thus, I streamlined Circular's user process into three steps: Choosing a product, trying it, and buying/returning it - a pattern used in the landing page and across the platform.
                                         </p>
                                     </div>
                                 </div>
@@ -568,7 +559,7 @@ export default function Circular() {
                             {/* <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Process</div> */}
                             <h2 className={projectStyles.h2SectionHeader}>Framing User Flow</h2>
                             <p>
-                                Before wireframing, I worked with my group to develop a user flow that would guide our initial prototype. With just two weeks to finish our project, we decided that designing based on user tasks would be an efficient way to design around our solution. 
+                                I developed a user flow that would guide our initial prototype. With just two weeks for this solution, I decided designing based on user tasks would be time-efficient and effective. 
                             </p>
                             <p>
                                 I made sure to consider how a variety of different possible users, each with a unique set of tasks they set out to complete, might be able to access and navigate a single website. 
@@ -626,7 +617,7 @@ export default function Circular() {
                                 </div>
                             </div>
                             <p>
-                                Building off these considerations, we started to map out a broad-level view on how our first prototype would manage these tasks. To accomodate the abundance of filters, information, and different functions I anticipated our design would need, we decided on designing for a desktop web interface. 
+                                We started to map out on a high-level how our first prototype would manage these tasks. To accomodate the abundance of filters, information, and different functions I anticipated our design would need, we decided on designing for a desktop web interface. 
                             </p>
                         </div>
                         <div className={projectStyles.spreadRow}style={{gap: '2rem'}}>
@@ -635,14 +626,14 @@ export default function Circular() {
                                     Sketching User Flows
                                 </b>
                                 <p>
-                                    On a classroom whiteboard, we experimented with a variety of user flows. We created a series of rough mock webpages with dry-erase markers, and ran through our list of user tasks.
+                                    On a classroom whiteboard, we created a very rough prototype with dry-erase markers, running through different user tasks with them and experimenting with changes as we went.
                                 </p>
                                 <p>
                                     This process of rapid prototyping was inspired by <Link href="/circular/buxton-sketching.pdf" target="_blank" className={homeStyles.primaryLink}>Buxton's work</Link> on using interactive paper interfaces to quickly iterate interfaces.
                                 </p>
-                                <p>
+                                {/* <p>
                                     Through iteration and experimenting with changes, we were able to identify more intuitive and efficient ways of navigating our website, which led us to a flow we were satisfied with.
-                                </p>
+                                </p> */}
                             </div>
                             <div className={projectStyles.pictureCaptionWrapper}>
                                 <Image alt="" src="/circular/whiteboard.JPG" width={500} height={336} style={{borderRadius: '12px', border: '1px solid #E4E4E4'}}/>
@@ -652,7 +643,7 @@ export default function Circular() {
                             </div>
                         </div>
                         <div className={projectStyles.section} style={{marginTop: '2rem'}}>
-                            <h4 style={{fontWeight: 600}}>These sketches led to three choices in the website's flow.</h4>
+                            <h4 style={{fontWeight: 600}}>Rapid prototyping led to three choices in the Circular's flow.</h4>
                             <div className={projectStyles.olLarge}>
                                 <div className={projectStyles.olItemLarge}>
                                     <span style={{fontSize: '1.5rem'}}>1</span>
@@ -661,7 +652,7 @@ export default function Circular() {
                                             Landing page
                                         </b>
                                         <p>
-                                            I decided on having users first go through a landing page because I felt that a dedicated page was needed to acquaint users with Circular's unique subscription model. This was also inspired by how ScentBird and other emerging platforms similarly used a landing page.
+                                            I decided on having users first go through a landing page to acquaint users with Circular's unique subscription model. This was inspired by how ScentBird and other emerging platforms similarly used a landing page.
                                         </p>
                                     </div>
                                 </div>
@@ -672,7 +663,7 @@ export default function Circular() {
                                             Logged in and out states
                                         </b>
                                         <p>
-                                            A logged out state and logged in state exist for certain pages, to both prevent new users from being overwhelmed with information irrelevant in deciding to join the marketplace, and to make the flow of information more efficient for returning users.
+                                            A logged out state and logged in state exist for certain pages, to prevent new users from being overwhelmed irrelevant information to their conversion, and to streamline information for returning users.
                                         </p>
                                     </div>
                                 </div>
@@ -683,7 +674,7 @@ export default function Circular() {
                                             Centralized explore page
                                         </b>
                                         <p>
-                                            After the landing page, users are brought to the Explore page which lets users explore new products, search for specific products, and, if logged in, manage existing account information to let users complete tasks efficiently. This also allowed users to return to this page to reset after errors.
+                                            A centralized Explore page lets users explore and search for new products, and, if logged in, allow easier managing of accounts. Centralization also allowed users to return to this page to reset after errors.
                                         </p>
                                     </div>
                                 </div>
@@ -696,7 +687,7 @@ export default function Circular() {
                     <div className={projectStyles.sectionContainer} ref={firstIterationRef}>
                         <div className={projectStyles.section}>
                             <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>First Iteration</div>
-                            <p>With what I learned from my research, I created a set of low-fidelity wireframes on Figma for the site-wide navigation bars and explore page, while wireframing the landing page closely with Juliana.</p>
+                            <p>I created a set of low-fidelity wireframes on Figma for the site-wide navigation bars and explore page, while wireframing the landing page closely with Juliana.</p>
                             <p>
                                 During the wireframing process, I focused on <span style={{fontWeight: 300}}>defining the overall structure and organization</span> of my design, prioritizing during this process the development of a <span style={{fontWeight: 300}}>clear hierarchy through the size, shading, and position</span> of different elements.
                             </p>
@@ -827,9 +818,9 @@ export default function Circular() {
                     <div className={projectStyles.sectionContainerGray}>
                         <div className={projectStyles.section}>
                             <h2 className={projectStyles.h2SectionHeader}>Crafting Visual Identity</h2>
-                            <p>
+                            {/* <h4>
                                 After wireframing, I defined a visual identity for Circular that fit our design goals.
-                            </p>
+                            </h4> */}
                             <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', marginBottom: '3rem', marginTop: '2rem'}}>
                                 <Image src='/circular/styleGuide.jpg' quality={100} width={732} height={412} style={{borderRadius: '12px'}} alt="Visual Style Guide"/>
                                 {/* <p style={{fontSize: '1rem', color:'#737373'}}>The visual design style guide that defined my visual redesign.</p> */}
@@ -837,9 +828,12 @@ export default function Circular() {
                             <h4 style={{fontWeight: 600}}>
                                 Why these choices?
                             </h4>
-                            <p>As an emerging startup competing with a plethora of established e-commerce platforms, I found it important for Circular to host a distinctive brand identity. Based on my research, I designed a visual identity for Circular that centered around creating an <span style={{fontWeight: 600}}>approachable, inviting,</span> and <span style={{fontWeight: 600}}>energetic</span> experience for users which contrasted with the brand identities seen in Circular's main competition.</p>
+                            <p>
+                                As an emerging startup competing with a plethora of established e-commerce platforms, I found it important for Circular to host a distinctive brand identity. 
+                            </p>
+                            <p> Based on my research, I designed a visual identity that centered around creating an <span style={{fontWeight: 600}}>approachable, inviting,</span> and <span style={{fontWeight: 600}}>energetic</span> experience for users; contrasting with the brand identities seen in Circular's main competition.</p>
                             
-                            <p>This goal influenced my visual identity in two ways:</p>
+                            {/* <p>This goal influenced my visual identity in two ways:</p> */}
 
                             <div className={projectStyles.olLarge} style={{paddingTop: '1rem', paddingBottom: '2rem', gap: '1.5rem'}}>
                                 <div className={projectStyles.olItemLarge}>
@@ -850,7 +844,7 @@ export default function Circular() {
                                             I selected <span style={{color: '#EA2E5D', fontWeight: 800, fontSize: '1rem'}}>#EA2E5D</span>, a warm, pinkish red, as the primary accent color for my design. Using a vivid, saturated color helps to create a distinctive identity for Circular while retaining good contrast against white backgrounds.
                                         </p>
                                         <p>
-                                            Moreover, this accent color was used sparingly throughout the design upon a mostly-white background to encourage emphasis on the most important elements on each page. This allowed interactive buttons, the search function, photos, and alerts to maintain focus to maintain a clear hierarchy for users.
+                                            Using this accent color sparingly upon white backgrounds further emphasizes important UI elements.
                                         </p>
                                     </div>
                                 </div>
@@ -859,7 +853,7 @@ export default function Circular() {
                                     <div>
                                         <h4 style={{fontWeight: 600}}>Friendliness through roundness</h4>
                                         <p>
-                                            I used rounded corners and circular elements throughout my design. Compared to the angular design language that many e-commerce websites I viewed at used, rounded elements helped to further distinguish Circular among peers, while creating a more friendly, inviting atmosphere throughout the site. 
+                                            I used rounded corners and circular elements throughout my design. Compared to the angular design language that many e-commerce websites I viewed at used, rounded elements helped to further distinguish Circular while creating a more friendly, inviting atmosphere throughout the site. 
                                         </p>
                                     </div>
                                 </div>
@@ -871,8 +865,8 @@ export default function Circular() {
 
                     <div className={projectStyles.sectionContainer}>
                         <div className={projectStyles.section}>
-                            <h4 style={{fontWeight: 600}}>I then developed the high-fidelity, interactive prototype on Figma.</h4>
-                            <p>I focused on augmenting the structure and layout from the wireframes to create an interactive Figma prototype that looked and felt like a real website.</p>
+                            <h4 style={{fontWeight: 600}}>This led to Circular's initial interactive prototype.</h4>
+                            {/* <p>I focused on augmenting the structure and layout from the wireframes to create an interactive Figma prototype that looked and felt like a real website.</p> */}
                         </div>
                         <div className={styles.frame}>
                             <div className={styles.initialHifis}>
@@ -886,13 +880,13 @@ export default function Circular() {
                             <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Second Iteration</div>
                             <h4 style={{fontWeight: 600}}>Hosting group testing with our prototype led to more insights.</h4>
                             <p>
-                                To understand how we could improve, our prototype underwent user testing through a group critique session. 36 peer students, alongside <Link href="http://giffordcheung.weebly.com/" target="_blank" className={homeStyles.primaryLink}>Gifford Cheung</Link>, a senior UX researcher at Nintendo, ran through a variety of tasks on our interactive prototype and shared their thoughts with us.
+                                Our initial prototype underwent user testing through a group critique session. 36 peer students, alongside <Link href="http://giffordcheung.weebly.com/" target="_blank" className={homeStyles.primaryLink}>Gifford Cheung</Link>, a senior UX researcher at Nintendo, ran through a variety of tasks on our interactive prototype and shared their thoughts with us.
                             </p>
                             <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', margin: '1.5rem 0'}}>
                                 <Image width={600} height={346} alt="Screenshot of our Zoom critique" src="/circular/zoomCritique.png"/>
                             </div>
                             <p>
-                                With my group, I reviewed the feedback that our first prototype received and proposed matching solutions that addressed the issues uncovered. Working with my team, I implemented these solutions towards the final Circular prototype.
+                                The UX problems their feedback highlighted mapped to several solutions listed below. All these solutions were then implemented in our final solution. <button onClick={handleSidebarClick} value="Final Prototype" className={homeStyles.primaryLink}>Click here to see these changes.</button>
                             </p>
                             
                         </div> 
@@ -1268,11 +1262,11 @@ export default function Circular() {
                                 Our project underwent further user testing to gather insights.
                             </h4>
                             <p>
-                                The project went through further user testing with online users on <Link href="https://www.usertesting.com/" target="_blank" className={homeStyles.primaryLink}>usertesting.com</Link>. Juliana and I developed a series of tasks and assesments to be presented to three users to interact with the interactive Figma prototype updated based on feedback from our first critique session.
+                                With our updates implemented, Juliana and I developed a series of tasks and assesments to be presented to three users on <Link href="https://www.usertesting.com/" target="_blank" className={homeStyles.primaryLink}>usertesting.com</Link> to interact with the interactive Figma prototype updated based on feedback from our first critique session.
                             </p>
                             
                             <p>
-                                For this test, we wanted to assess how users using our prototype started new rentals and managed existing rentals. 
+                                Here, we assessed how users on our prototype started new rentals and managed existing rentals. 
                             </p>
                             <b style={{marginTop: '1rem'}}>
                                 We designed a series of 4 tasks for each user to complete:
@@ -1637,7 +1631,7 @@ export default function Circular() {
                                             Modify "View all categories" button on Explore Page.
                                         </b>
                                         <p>
-                                            Change the wording instead into “view more categories”. Might also be possible to allow horizontal scrolling to let all categories be displayed on Explore page.
+                                            Change the wording instead into “view more categories”. It might also be possible to allow horizontal scrolling to let all categories be displayed on Explore page.
                                         </p>
                                         <p>
                                             
@@ -1700,13 +1694,13 @@ export default function Circular() {
                                 Circular was critical to my growth as a designer and researcher.
                             </h4>
                             <p>
-                                This project gave me the experience to more speedily utilize the powerful prototyping features that Figma had to offer. By making components used across multiple pages and by several other team members, I became familiar with using Figma components and variants to create dynamic, interactive, and reusable components.
+                                This project gave me the experience to <b>better utilize Figma's powerful prototyping features.</b> Through making components used across multiple pages and by several other team members, I became familiar with using Figma components and variants to create dynamic, interactive, and reusable components.
                             </p>
                             <p>
-                                As my first formal design project at this scale with a team, Circular also taught me how to better collaborate with teammates and manage conflicting ideas. While designing, I would often have disagreements with different team members on how to best approach a task. Over time, I learned to take these situations as learning opportunities to broaden my perspective: to understand the approach my teammate took to come closer towards an ideal solution. 
+                                Circular also taught me how to <b>better collaborate with teammates and manage conflicting ideas.</b> While designing, I would often have disagreements with different team members on how to best approach a task. Over time, I learned to take these situations as learning opportunities to broaden my perspective: to understand the approach my teammate took to come closer towards an ideal solution. 
                             </p>
                             <p>
-                                This also taught me to always reinforce my claims with data - it is not enough to say that a design just 'feels right'; decisions have to be backed up by insights, research, and data to be effective and be effectively communicated to others.
+                                This also taught me to <b>always reinforce my claims with data</b> - it is not enough to say that a design just 'feels right'; decisions have to be backed up by insights, research, and data to be effective and be effectively communicated to others.
                             </p>
                             
                             <div className={projectStyles.contentEnd}>
