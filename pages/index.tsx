@@ -69,7 +69,7 @@ export default function Home() {
                         <span className={styles.badge}>User Research</span>
                         <span className={styles.badge}>HTML/CSS</span>
                       </div>
-                      <p>Redesigning and developing how public park info is accessed through a responsive webpage</p>
+                      <p>Redesigning and developing how public park info is accessed through responsive design</p>
                     </div>
                   </div>
                 </Link>

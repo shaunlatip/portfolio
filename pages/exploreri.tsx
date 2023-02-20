@@ -132,11 +132,14 @@ export default function ExploreRI() {
                             <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Overview</div>
                             {/* <b>Description</b> */}
                             <p>
-                                As a UI/UX class assignment, I chose to redesign and develop the <Link href="https://exploreri.org/gSiteReport2.php?siteID=102&src=siteList" target="_blank" className={homeStyles.primaryLink}>Explore Rhode Island park page</Link>, which I often came across when looking up local parks and trails. The site would often come up as the first result when searching locally, and contained information such as ADA accessibility information that is hard to find elsewhere, which was a significant motivation for my redesign. My task involved creating a redesigned website, <Link href="https://shaunlatip.github.io/responsive-redesign/" target="_blank" className={homeStyles.primaryLink}>linked here</Link>, based on the aims of the original website, that would be able to better meet the expected needs of users visiting across mobile, tablet, and desktop platforms.</p>
+                                I chose to redesign and develop the <Link href="https://exploreri.org/gSiteReport2.php?siteID=102&src=siteList" target="_blank" className={homeStyles.primaryLink}>Explore Rhode Island park page</Link> for a class assignment, which I often came across when looking up local parks and trails. The site often came up as the first result when searching for information on local parks and trails, and contained information such as ADA accessibility information hard to find elsewhere, which was a significant motivation for my redesign.</p>
+                            <p>
+                                I developed a redesigned, responsive website, <Link href="https://shaunlatip.github.io/responsive-redesign/" target="_blank" className={homeStyles.primaryLink}>linked here</Link>, based on the aims of the original website, that better met the needs of users visiting across mobile, tablet, and desktop platforms.
+                            </p>
                             <div className={projectStyles.projectInfo}>
                                 <div>
                                     <b>Role</b>
-                                    <p>UI/UX Designer<br/>Researcher<br/>Front-end Engineer</p>
+                                    <p>UI/UX Designer<br/>User Researcher<br/>Frontend Developer</p>
                                 </div>
                                 <div>
                                     <b>Platforms</b>
@@ -242,7 +245,7 @@ export default function ExploreRI() {
                     <div className={projectStyles.sectionContainerDark}>
                         <div className={projectStyles.section}>
                             <h3>This project challenged me as my first redesign.</h3>
-                            <p>Before this, I had mostly used Figma for working on isolated projects or tutorials. This was my learning opportunity to get familiar with Figma, and to fully follow through a whole redesign through research, protyping, and development.</p>
+                            <p>Before this, I had mostly used Figma for working on isolated projects or tutorials. This redesign let me better master Figma and fully follow through research, prototyping, and development.</p>
                         </div>
                     </div>
 
@@ -325,7 +328,7 @@ export default function ExploreRI() {
                                 <p>
                                     While walking through, I also refrenced Jakob Nielsen's <Link href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank" className={homeStyles.primaryLink}>10 Heuristic Principles</Link> to fuel my insights. Each task was repeated thrice across mobile, tablet, and desktop devices. As a result, these walkthroughs provided me insight into what issues were likely hindering the experience of the website's users.
                                 </p>
-                                <h4 style={{fontWeight: 600, marginBottom: '1rem', marginTop: '2.5rem'}}>
+                                <h4 style={{fontWeight: 600, marginBottom: '1rem', marginTop: '1.5rem'}}>
                                 I also used WebAIM's <Link style={{fontWeight: 600}} href="https://wave.webaim.org/" target="_blank" className={homeStyles.primaryLink}>WAVE tool</Link> to assess site accessibility.
                                 </h4>
                                 <p>I chose to use this to assess the site for use with screen readers, keyboard navigation, and regarding contrast levels. This tool proved invaluable in helping me to understand how users with impairments might experience the site. </p>
@@ -338,7 +341,7 @@ export default function ExploreRI() {
                             <h4>On a broader scale, the website had significant issues surrounding <br/> <span className="primary600">organization</span>, <span className="primary600">platform responsiveness</span>, and <span className="primary600">accessibility</span>.
                             </h4>
                             <h4 style={{marginTop: '0.5rem'}}>
-                                My walkthroughs led me to 5 main pain points in the original design, seen below.
+                                My walkthroughs led me to 5 main pain points in the original design:
                             </h4>
                             {/* <p>
                                I summarized the key issues from my walkthrough into 6 pain points:
@@ -445,8 +448,11 @@ export default function ExploreRI() {
                             <div className={projectStyles.sectionTitle}>Prototyping</div>
                             <h4 style={{fontWeight: 600}}>I then created three wireframes, with one for each platform.</h4>
                             <p>
-                                During this stage, I focused on mapping out the layout of how the website would be structured using Balsamiq Wireframes. I prioritized making an overall structure that would translate easily across desktop, tablet, and mobile, with a strong sense of organization and hierarchy.
-                                Each wireframe is annotated to show why particular design decisions were made. 
+                                I focused on mapping out the layout of how the website would be structured using Balsamiq Wireframes. I prioritized making an overall structure that would <b>translate easily across desktop, tablet, and mobile,</b> with a strong sense of organization and hierarchy.
+                                 
+                            </p>
+                            <p>
+                                Each wireframe is annotated to show why a particular design decision was made.
                             </p>
                             </div>
                             <div className={styles.frameAlt}>
@@ -515,7 +521,7 @@ export default function ExploreRI() {
                             <div className={projectStyles.sectionTitle}>Final Designs</div>
                             <h2 className={projectStyles.h2SectionHeader}>High-Fidelity Design</h2>
                             <p>
-                                Working off my wireframes, I then developed three high-fidelity prototypes in Figma, with one for each platform.
+                                I then developed three high-fidelity prototypes in Figma, with one for each platform.
                             </p>
                         </div>
                         <div className={styles.frame}>
@@ -573,22 +579,26 @@ export default function ExploreRI() {
                                 </Tabs>
                             </div>
                         </div>
+
+                    
+                    </div>
+
+                    <div className={projectStyles.sectionContainerDark} ref={processRef}>
                         <div className={projectStyles.section}>
-                            <h4 style={{alignSelf: 'center', textAlign: 'center', marginTop: '4rem'}}>
+                            <h4 style={{alignSelf: 'center', textAlign: 'center', marginTop: '0rem'}}>
                                 My redesign process can be broken down into the three aspects of <br/> <span style={{fontWeight: 600, color: '#F0916C'}}>visual design</span>, <span style={{fontWeight: 600, color: '#F0916C'}}>structure</span>, and <span style={{fontWeight: 600, color: '#F0916C'}}>consistent language</span>.
                             </h4>
                         </div>
-                    
                     </div>
 
                         
 
-                    <div className={projectStyles.sectionContainerGray} style={{paddingBottom: '0rem', paddingTop: '2rem'}} ref={processRef}>
+                    <div className={projectStyles.sectionContainerGray} style={{paddingBottom: '0rem', paddingTop: '2rem'}}>
                         <div className={projectStyles.section}>
                             <b style={{marginBottom: 0}}><span style={{fontWeight: 600, color: '#F0916C'}}>Aspect #1</span></b>
                             
                             <h2 className={projectStyles.h2SectionHeader}>
-                                Visual Redesign
+                                Visual Design
                             </h2>
 
                             <p>
@@ -596,7 +606,7 @@ export default function ExploreRI() {
                                 
                             </p>
                             <p style={{paddingTop: '0.5rem'}}>
-                                To solve this, I reworked the website's visual design system to help make the feel of the website more inviting and clean for users. Working off of the original blue and green color palette, I made a few changes to help make the site better for users, while maintaining elements from the previous design that fit with the website's theme.
+                                I reworked the website's visual design system to help make the feel of the website more inviting and clean for users. Working off of the original blue and green color palette, I made changes to improve usability while maintaining certain elements from the previous visual design theme.
                             </p>
 
                             <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', marginBottom: '3rem', marginTop: '2rem'}}>
@@ -610,7 +620,7 @@ export default function ExploreRI() {
                         
                     <div className={projectStyles.sectionContainerGray} style={{paddingTop: '1rem'}}>
                         <div className={projectStyles.section}>
-                            <h4 style={{alignSelf: 'center'}}>This new design style was developed with the following goals in mind:</h4>
+                            <h4 style={{alignSelf: 'center', paddingTop: '1rem'}}>This new design style was developed with the following goals in mind:</h4>
                         </div>
                         <div className={projectStyles.spreadRow} style={{gap: '4rem', paddingTop: '2rem'}}>
                             <div className={projectStyles.spreadRowText}>
@@ -679,7 +689,10 @@ export default function ExploreRI() {
 
 
                             <p>
-                                My research showed me that the original website contained a lot of useful information for many different tasks, from driving directions, trail maps, and community-submitted content. However, it became clear that this information was <span style={{fontWeight: '600'}}>largely inacessible due to subpar organization and a confusing structure</span> that made navigating the website and scanning quite frustrating. 
+                                My research showed me that the original website contained a lot of useful information for many different tasks, from driving directions, trail maps, and community-submitted content. 
+                            </p>
+                            <p>
+                                However, it became clear that this information was <span style={{fontWeight: '600'}}>largely inacessible due to subpar organization and a confusing structure</span> that made navigating the website and scanning quite frustrating. 
                             </p>
                             <p style={{marginTop: '0rem'}}>
                                 To solve this, I restructured the site to encourage the <Link className={homeStyles.primaryLink} style={{fontWeight: 600}}href="https://www.nngroup.com/articles/layer-cake-pattern-scanning/" target="_blank">layer-cake scanning pattern</Link>,   
@@ -695,7 +708,7 @@ export default function ExploreRI() {
                                     What is a layer-cake scanning pattern?
                                 </b>
                                 <p>
-                                    This pattern is characterized when users, while scanning through a page, fixate mostly on the page’s headings and subheadings, with deliberate occasional fixations on the (body) text in between. 
+                                    When users, while scanning through a page, fixate mostly on the page’s headings and subheadings, with deliberate occasional fixations on the (body) text in between. 
                                 </p>
                             </div>
                             <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem'}}>
@@ -730,7 +743,16 @@ export default function ExploreRI() {
                                         </div>
                                     </div>
                                 </div>
-                                <b>
+                                
+
+                        </div>
+                        
+                        
+                    </div>
+
+                    <div className={projectStyles.sectionContainerGray}>
+                        <div className={projectStyles.section}>
+                        <b>
                                     I experimented with a variety of alternatives before arriving at this grid structure.
                                 </b>
                                 <p>
@@ -739,18 +761,15 @@ export default function ExploreRI() {
                                 <p>
                                     I also experimented with splitting sections into equal columns of two. Although this was better than one, after further experimentation I found that having a 2:1 ratio allowed more efficient use of space. I also found that the asymmetry with the 2:1 ratio helped to further delineate a clearer hierarchy through size. 
                                 </p>
-
                         </div>
-                        
-                        
                     </div>
 
                     
 
-                    <div className={projectStyles.sectionContainerGray}>
+                    <div className={projectStyles.sectionContainer}>
                         <div className={projectStyles.section}>
                             <h4 style={{marginTop: '0rem', alignSelf: 'center'}}>
-                                        These changes were also aided by the inclusion of two types of page elements:
+                                This restructure was aided by the inclusion of two types of page elements:
                             </h4>
                         </div>
                         <div className={projectStyles.spreadRow}style={{gap: '2rem'}}>
@@ -772,7 +791,10 @@ export default function ExploreRI() {
                                     Marking content with headings
                                 </h4>
                                 <p>
-                                    To help the user to scan, headings and subheadings are included throughout the page in a consistent, predictable manner. Font weights and sizes let these headings visually stand out to help users latch on to them. These also help screen readers to more easily navigate the page.
+                                    To help the user to scan, headings and subheadings are included throughout the page in a consistent, predictable manner. 
+                                </p>
+                                <p>
+                                    Font weights and sizes let these headings visually stand out to help users latch on to them. These also help screen readers to more easily navigate the page.
                                 </p>
                             </div>
                             <Image style={{}} alt="Gif" src="/exploreri/headings.gif" width={500} height={336}/>
@@ -780,7 +802,7 @@ export default function ExploreRI() {
                         
                     </div>
 
-                    <div className={projectStyles.sectionContainer} style={{}}>
+                    <div className={projectStyles.sectionContainerGray} style={{}}>
                         <div className={projectStyles.section}>
                             <b style={{marginBottom: 0}}><span style={{fontWeight: 600, color: '#F0916C'}}>Aspect #3</span></b>
                             
@@ -790,12 +812,15 @@ export default function ExploreRI() {
 
 
                             <p>
-                               Another frequent issue I discovered through my cognitive walkthroughts was the lack of consistent language used across the original website. These inconsistencies made it difficult to understand what information was supposed to be communicated, and created frustration during my cognitive walkthroughs.
+                               Another frequent issue I discovered through my cognitive walkthroughts was the lack of consistent language used across the original website. 
+                            </p>
+                            <p>
+                                These inconsistencies made it <b>difficult to understand what information was supposed to be communicated</b>, and created frustration during my cognitive walkthroughs.
                             </p>
                         </div>
                     </div>
 
-                    <div className={projectStyles.sectionContainer} style={{paddingTop: '2rem'}}>
+                    <div className={projectStyles.sectionContainerGray} style={{paddingTop: '2rem'}}>
                         <div className={projectStyles.spreadRow}style={{gap: '4rem'}}>
                             <div className={projectStyles.spreadRowText}>
                                 {/* <span style={{fontWeight: 600, color: '#F0916C', fontSize: '1rem'}}>Inclusion #1</span> */}
@@ -815,7 +840,10 @@ export default function ExploreRI() {
                                     Labeling icons
                                 </h4>
                                 <p>
-                                Previously, important park information such as park restrictions were conveyed through unaccompanied icons. These icons had the potential to confuse readers as to what they meant, and also made it more difficult for screen reader use. To solve this, I made sure these icons are always accompanied with labels that confirm their intended meaning.
+                                Previously, important park information such as park restrictions were conveyed through unaccompanied icons. These icons had the potential to confuse readers as to what they meant, and also made it more difficult for screen reader use. 
+                                </p>
+                                <p>
+                                    To solve this, I made sure these icons are always accompanied with labels that confirm their intended meaning.
                                 </p>
                             </div>
                             <Image style={{}} alt="" src="/exploreri/labels.gif" width={521} height={350}/>
