@@ -52,7 +52,7 @@ export default function Home() {
                         <span className={styles.badge}>User Research</span>
                         <span className={styles.badge}>User Testing</span>
                       </div>
-                      <p>Iterative design and research for YC W22 startup providing flexible access to consumer electronics</p>
+                      <p>Designing interactive MVP for YC W22 startup providing flexible access to consumer electronics</p>
                     </div>
                   </div>
                 </Link>
@@ -69,7 +69,7 @@ export default function Home() {
                         <span className={styles.badge}>User Research</span>
                         <span className={styles.badge}>HTML/CSS</span>
                       </div>
-                      <p>Redesigning and developing how public park info is accessed through responsive design</p>
+                      <p>Redesign upgrading responsiveness, usability, and intuitiveness of frequently used public park website</p>
                     </div>
                   </div>
                 </Link>

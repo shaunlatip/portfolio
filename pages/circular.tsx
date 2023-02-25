@@ -127,12 +127,29 @@ export default function Circular() {
                 <div className={projectStyles.sectionContainer} ref={overviewRef}>
                     <div className={projectStyles.section}>
                         <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Overview</div>
-                        <p>
-                            I was challenged to design an interactive interface for <Link href="https://www.ycombinator.com/companies/circular" target="_blank" className={homeStyles.primaryLink}>Circular</Link>, a Y Combinator Winter 2022 startup for subscription consumer electronics. I designed an interface matching Circular's concept of providing flexible consumer electronics.
-                        </p>
-                        <p>
-                            After an initial prototype, my solution underwent peer user testing which provided the insights needed to develop the final version. Afterwards, we user tested this final version again with several users on <Link href="https://www.usertesting.com/" target="_blank" className={homeStyles.primaryLink}>usertesting.com</Link>, which revealed further insights.
-                        </p>
+                        <div>
+                            <b>Impact</b>
+                            
+                                    <p style={{marginBottom: '0rem', marginTop: '0rem'}}>
+                                        Provided clearer value proposition for product + clearer call to action for new users.
+                                    </p>
+                                
+                                    <p style={{marginBottom: '0rem'}}>
+                                        Crafted comprehensive web platform to browse, try, and manage consumer electronics.
+                                    </p>
+                                
+                                    <p>
+                                        Facilitated user testing with peers + <Link href="https://www.usertesting.com/" target="_blank" className={homeStyles.primaryLink}>usertesting.com</Link> to improve and validate usability.
+                                    </p>
+                                
+
+                        </div>
+                        <div style={{marginTop: '1rem'}}>
+                            <b>Context</b>
+                            <p style={{marginBottom: '1rem'}}>
+                                Led team of four to design interface for <Link href="https://www.ycombinator.com/companies/circular" target="_blank" className={homeStyles.primaryLink}>Circular</Link>, a Y Combinator Winter 2022 startup providing flexible ownership of consumer electronics, involving multiple rounds of testing and iteration. 
+                            </p>
+                        </div>
                         <div className={projectStyles.projectInfo}>
                             <div>
                                 <b>Role</b>

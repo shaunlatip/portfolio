@@ -131,19 +131,23 @@ export default function ExploreRI() {
                         <div className={projectStyles.section}>
                             <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Overview</div>
                             {/* <b>Description</b> */}
-                            <p>
-                                I chose to redesign and develop the <Link href="https://exploreri.org/gSiteReport2.php?siteID=102&src=siteList" target="_blank" className={homeStyles.primaryLink}>Explore Rhode Island park page</Link> for a class assignment, which I often came across when looking up local parks and trails. The site often came up as the first result when searching for information on local parks and trails, and contained information such as ADA accessibility information hard to find elsewhere, which was a significant motivation for my redesign.</p>
-                            <p>
-                                I developed a redesigned, responsive website, <Link href="https://shaunlatip.github.io/responsive-redesign/" target="_blank" className={homeStyles.primaryLink}>linked here</Link>, based on the aims of the original website, that better met the needs of users visiting across mobile, tablet, and desktop platforms.
-                            </p>
+                            <div>
+                                <b>Impact</b>
+                                <p>
+                                    Made frequently used public park website <b>responsive and intuitive</b> so that more users can access key information (such as ADA accessibility) on the go.
+                                </p>
+                            </div>
+                            <div style={{marginTop: '1rem'}}>
+                                <b>Context</b>
+                                <p style={{marginBottom: '1rem'}}>
+                                    Redesign and development of the <Link href="https://exploreri.org/gSiteReport2.php?siteID=102&src=siteList" target="_blank" className={homeStyles.primaryLink}>Explore Rhode Island park page</Link>, often the first result when searching for information on local parks and trails. Site contained information such as ADA accessibility information hard to find elsewhere - a significant motivation to my redesign.
+                                    <br/>My <Link href="https://shaunlatip.github.io/responsive-redesign/" target="_blank" className={homeStyles.primaryLink}>redesigned, responsive website</Link> better met the needs of users visiting across platforms.
+                                </p>
+                            </div>
                             <div className={projectStyles.projectInfo}>
                                 <div>
                                     <b>Role</b>
                                     <p>UI/UX Designer<br/>User Researcher<br/>Frontend Developer</p>
-                                </div>
-                                <div>
-                                    <b>Platforms</b>
-                                    <p>Mobile, Tablet, <br/>and Desktop</p>
                                 </div>
                                 <div>
                                     <b>Timeline</b>
@@ -152,6 +156,10 @@ export default function ExploreRI() {
                                 <div>
                                     <b>Tools Used</b>
                                     <p>Figma, Balsamiq Wireframes, HTML, <br/>and CSS</p>
+                                </div>
+                                <div>
+                                    <b>Platforms</b>
+                                    <p>Mobile<br/>Tablet<br/>Desktop</p>
                                 </div>
                             </div>
 
