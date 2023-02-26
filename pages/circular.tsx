@@ -159,11 +159,11 @@ export default function Circular() {
                                 <b>Timeline</b>
                                 <p>Oct 25, 2022 to <br/>Nov 9, 2022 <br/>(Two Weeks)</p>
                             </div>
-                            <div>
+                            <div style={{width: '191px'}}>
                                 <b>Teammates</b>
                                 <p><Link href="https://www.julianahan.me/" target="_blank" className={homeStyles.primaryLink}>Juliana Han</Link> (Co-Lead)<br/>Eric Guo<br/>Kevin Nguyen</p>
                             </div>
-                            <div>
+                            <div style={{width: '170px'}}>
                                 <b>Platform</b>
                                 <p>Desktop</p>
                             </div>
