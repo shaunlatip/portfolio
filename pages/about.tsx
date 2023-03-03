@@ -29,7 +29,7 @@ export default function About() {
                             </h3>
                             <p>
                                 <br/>
-                                I'm a Computer Science student at Brown University with coursework spanning Urban Studies, Psychology, and Anthropology.
+                                I'm a Computer Science student at Brown with coursework spanning Urban Studies, Psychology, Anthropology, and East Asian Studies.
                                 <br/>
                                 <br/>
                                 <span className="primary600">As a designer and researcher</span>, my design process centers on accessibility, context, and impact.
@@ -57,19 +57,19 @@ export default function About() {
                                     A front-end engineer building a <Link target="_blank" className={homeStyles.primaryLink} href="https://castyr.com/">social podcasting and listening platform</Link> featured on <Link target="_blank" className={homeStyles.primaryLink} href="https://www.producthunt.com/products/castyr?utm_source=badge-featured&utm_medium=badge#castyr">Product Hunt</Link>.
                                 </li>
                                 <li>
-                                    An intern in an <Link target="_blank" className={homeStyles.primaryLink} href="https://digitaraya.com/">international startup accelerator</Link> working with early-stage startups to find product-market fit and grow.
+                                    An intern in an <Link target="_blank" className={homeStyles.primaryLink} href="https://digitaraya.com/">startup accelerator</Link> working with early-stage startups to find product-market fit and grow.
                                 </li>
                                 <li>
                                     The leader of a <Link  target="_blank" className={homeStyles.primaryLink} href="https://www.youtube.com/watch?v=my4Ga_uBGKA&t=36s&ab_channel=BeritaSatu">nonprofit</Link> in Jakarta, Indonesia promoting community organization, public health access, and social entrepreneurship.
                                 </li>
                                 <li>
-                                    A rock band guitarist and music producer, and (currently) a performing Jazz vocalist.
+                                    A rock band guitarist, music producer, and (currently) a performing Jazz vocalist studying under <Link target="_blank" className={homeStyles.primaryLink} href="https://college.berklee.edu/people/daniela-schachter">Daniela Schächter</Link> at Berklee.
                                 </li>
                             </ul>
                             <p>
                                 <br/>
                                 <br/>
-                                If you've read all the way here, thank you for taking this journey with me! <br/><br/>
+                                If you've read all the way here, thank you for taking this journey with me.<br/><br/>
                                 Reach out to me <Link target="_blank" className={homeStyles.primaryLink} href="mailto:shaunlatip@gmail.com">shaunlatip@gmail.com</Link> if you'd like to chat!
                             </p>
                         </div>

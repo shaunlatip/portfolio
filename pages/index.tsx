@@ -16,12 +16,12 @@ export default function Home() {
               <div className={styles.headlineContent}>
               {/* <img className={styles.portrait} src="portrait.png"/> */}
               <h1>
-                  Hi! I'm Shaun, a curious product designer and researcher.
+                  I'm Shaun, a curious product designer and researcher.
                   {/* <span className={styles.titleEmoji} role="img" aria-label="dog">☁️</span> */}
                 </h1>
                 <p className={styles.subHeadline}>
                   I design to shape a more inclusive, intentional digital world.
-                  <br/>My process is deeply informed by my past experiences in anthropology, psychology, and front-end development.
+                  <br/>My process is deeply informed by my past experiences in anthropology, behavioral research, and front-end development.
                   <br/>
                   Take a look at some of my work below to learn a bit more about how I tick.
                 </p>
@@ -102,7 +102,7 @@ export default function Home() {
                         <span className={styles.badge}>Web App</span>
                         <span className={styles.badge}>React/CSS/JS</span>
                       </div>
-                      <p>Interactive React web app to browse and make a team from certified cute pokemon</p>
+                      <p>Interactive React web app to browse and make a team from certified-cute pokemon</p>
                     </div>
                   </div>
                 </Link>
@@ -200,7 +200,7 @@ export default function Home() {
                   <div className={styles.otherProjectInfo}>
                     <div className={styles.otherProjectInfoContent}>
                       <h3>Scallop-Bot</h3>
-                      <p>Designer, pseudo-electrical-engineer, and coder for an Arduino-based art installation.</p>
+                      <p>Designer, engineer, and coder for an Arduino-based robotic art installation.</p>
                     </div>
                   </div>
                 </Link>
@@ -212,7 +212,7 @@ export default function Home() {
                   <div className={styles.otherProjectInfo}>
                     <div className={styles.otherProjectInfoContent}>
                       <h3>Pokemon Ranch</h3>
-                      <p>React web app that lets you select a team of certified-cute Pokemon that I developed.</p>
+                      <p>React web app that lets you browse and choose a Pokemon team.</p>
                     </div>
                   </div>
                 </Link>
