@@ -25,7 +25,7 @@ export default function Footer(
                             <br/>
                             <p>
                                 <Link target="_blank" href="mailto:shaunlatip@gmail.com" className={styles.greyLink}>shaunlatip@gmail.com</Link><br/>
-                                Made in React & Next.js with Care © 2022 Shaun Latip
+                                Coded with React & Next.js © 2022 Shaun Latip
                             </p>
                         </div>
                         <div className={styles.right}>
@@ -64,7 +64,7 @@ export default function Footer(
                             <br/>
                             <p>
                                 <Link target="_blank" href="mailto:shaunlatip@gmail.com" className={styles.greyLink}>shaunlatip@gmail.com</Link><br/>
-                                Made in React & Next.js with Care © 2022 Shaun Latip
+                                Coded with React & Next.js © 2022 Shaun Latip
                             </p>
                         </div>
                         <div className={styles.right}>

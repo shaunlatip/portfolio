@@ -83,8 +83,8 @@ export default function Home() {
                     <h2>Health Services Check In</h2>
                     <div className={styles.badges}>
                         <span className={styles.badge}>User Research</span>
-                        <span className={styles.badge}>Storyboard</span>
-                        <span className={styles.badge}>Persona Mapping</span>
+                        <span className={styles.badge}>Interviews</span>
+                        <span className={styles.badge}>Field Studies</span>
                       </div>
                       <p>User observation and interview research on the clinical experience at Brown Health Services.</p>
                     </div>
@@ -115,6 +115,7 @@ export default function Home() {
                     <div className={styles.projectInfoContent}>
                       <h2>Language and Thought</h2>
                       <div className={styles.badges}>
+                        <span className={styles.badge}>User Research</span>
                         <span className={styles.badge}>Behavioral Research</span>
                       </div>
                       <p>Running virtual research on how we think and speak at a Brown University psychology research lab</p>
