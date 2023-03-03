@@ -127,9 +127,9 @@ export default function ExploreRI() {
 
 
 
-                    <div className={projectStyles.sectionContainer} ref={overviewRef}>
+                    <div className={projectStyles.sectionContainer} ref={overviewRef} style={{paddingTop: 'calc(4rem - 34px)'}}>
                         <div className={projectStyles.section}>
-                            <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Overview</div>
+                            {/* <div className={projectStyles.sectionTitleLarge}>Overview</div> */}
                             {/* <b>Description</b> */}
                             <div>
                                 <b>Impact</b>
@@ -169,10 +169,9 @@ export default function ExploreRI() {
 
                     <div className={projectStyles.sectionContainer} style={{paddingTop: '2rem'}} ref={redesignedWebsiteRef}>
 
-                        <div className={projectStyles.section}>
-                            <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Redesigned Website</div>
-                        </div>
-                        
+        
+                        <div className={projectStyles.sectionTitleLarge} style={{alignSelf: 'center', paddingTop: '2rem'}}>Redesigned Website</div>
+
                         <div className={styles.frame}>
                             <div className={styles.comparison}>
                                 <Tabs isLazy={true} variant='unstyled' size='md' colorScheme='orange' defaultIndex={0}>
@@ -259,7 +258,7 @@ export default function ExploreRI() {
 
                     <div className={projectStyles.sectionContainerGray} ref={researchRef}>
                         <div className={projectStyles.section}>
-                        <div className={projectStyles.sectionTitle}>Research</div>
+                        <div className={projectStyles.sectionTitleLarge}>Research</div>
                             <h4 style={{fontWeight: 600}}>To start, I put myself in the shoes of the the user.</h4>
                             <p style={{marginBottom: '0.5rem'}}>
                                 Due to the limited time frame of two weeks, and the nature of the class assignment, I decided to start my research process by conducting a series of <Link href="https://www.nngroup.com/articles/cognitive-walkthroughs/" target="_blank" className={homeStyles.primaryLink}>cognitive walkthroughs</Link>.
@@ -344,7 +343,7 @@ export default function ExploreRI() {
                     </div>
 
                     <div className={projectStyles.sectionContainerDark}>
-                        <div className={projectStyles.section}>
+                        <div className={projectStyles.section} style={{alignItems: 'center'}}>
                             <h4 style={{fontWeight: 600}}>With these insights, I explored the key problems I would focus on.</h4>
                             <h4>On a broader scale, the website had significant issues surrounding <br/> <span className="primary600">organization</span>, <span className="primary600">platform responsiveness</span>, and <span className="primary600">accessibility</span>.
                             </h4>
@@ -421,9 +420,11 @@ export default function ExploreRI() {
                         </div>
                     </div>
                     <div className={projectStyles.sectionContainer}>
-                        <div className={projectStyles.section}>
-                            <h4 style={{fontWeight: 600}}>To inform myself, I also analyzed adjacent platforms for inspiration.</h4>
-                            <p>I viewed at a variety of platforms online that sought to accomplish similar functions as the page I was redesigning. I wanted to see what design patterns have worked before for similar functions, informing myself as best as I could before I started wireframing.</p>
+                        <div className={projectStyles.section} style={{alignItems: 'center', textAlign: 'center'}}>
+                            <h2 className={projectStyles.h2SectionHeader}>Competitor Analysis</h2>
+                            <p>I viewed at a variety of platforms online that sought to accomplish similar functions as Explore RI.<br/>
+                            I wanted to see what design patterns I could apply to my redesign.
+                            </p>
                         </div>
                         <div className={projectStyles.spreadRow} style={{gap: '4rem', marginTop: '4rem'}}>
                             <div className={projectStyles.spreadRowText}>
@@ -453,7 +454,7 @@ export default function ExploreRI() {
 
                     <div className={projectStyles.sectionContainerGray} ref={prototypingRef}>
                         <div className={projectStyles.section}>
-                            <div className={projectStyles.sectionTitle}>Prototyping</div>
+                            <div className={projectStyles.sectionTitleLarge}>Prototyping</div>
                             <h4 style={{fontWeight: 600}}>I then created three wireframes, with one for each platform.</h4>
                             <p>
                                 I focused on mapping out the layout of how the website would be structured using Balsamiq Wireframes. I prioritized making an overall structure that would <b>translate easily across desktop, tablet, and mobile,</b> with a strong sense of organization and hierarchy.
@@ -525,9 +526,8 @@ export default function ExploreRI() {
                     </div>
 
                     <div className={projectStyles.sectionContainer} ref={finalDesignsRef}>
-                        <div className={projectStyles.section}>
-                            <div className={projectStyles.sectionTitle}>Final Designs</div>
-                            <h2 className={projectStyles.h2SectionHeader}>High-Fidelity Design</h2>
+                        <div className={projectStyles.section} style={{alignItems: 'center'}}>
+                            <div className={projectStyles.sectionTitleLarge}>Final Designs</div>
                             <p>
                                 I then developed three high-fidelity prototypes in Figma, with one for each platform.
                             </p>
@@ -593,8 +593,9 @@ export default function ExploreRI() {
 
                     <div className={projectStyles.sectionContainerDark} ref={processRef}>
                         <div className={projectStyles.section}>
+                            <div className={projectStyles.sectionTitleLarge} style={{alignSelf: 'center'}}>Design Choices</div>
                             <h4 style={{alignSelf: 'center', textAlign: 'center', marginTop: '0rem'}}>
-                                My redesign process can be broken down into the three aspects of <br/> <span style={{fontWeight: 600, color: '#F0916C'}}>visual design</span>, <span style={{fontWeight: 600, color: '#F0916C'}}>structure</span>, and <span style={{fontWeight: 600, color: '#F0916C'}}>consistent language</span>.
+                                My design choices can be broken into the three changes of <br/> <span style={{fontWeight: 600, color: '#F0916C'}}>visual design</span>, <span style={{fontWeight: 600, color: '#F0916C'}}>structure</span>, and <span style={{fontWeight: 600, color: '#F0916C'}}>consistent language</span>.
                             </h4>
                         </div>
                     </div>
@@ -603,7 +604,7 @@ export default function ExploreRI() {
 
                     <div className={projectStyles.sectionContainerGray} style={{paddingBottom: '0rem', paddingTop: '2rem'}}>
                         <div className={projectStyles.section}>
-                            <b style={{marginBottom: 0}}><span style={{fontWeight: 600, color: '#F0916C'}}>Aspect #1</span></b>
+                            <b style={{marginBottom: 0}}><span style={{fontWeight: 600, color: '#F0916C'}}>Change 1</span></b>
                             
                             <h2 className={projectStyles.h2SectionHeader}>
                                 Visual Design
@@ -689,7 +690,7 @@ export default function ExploreRI() {
 
                     <div className={projectStyles.sectionContainer} style={{}}>
                         <div className={projectStyles.section}>
-                            <b style={{marginBottom: 0}}><span style={{fontWeight: 600, color: '#F0916C'}}>Aspect #2</span></b>
+                            <b style={{marginBottom: 0}}><span style={{fontWeight: 600, color: '#F0916C'}}>Change 2</span></b>
                             
                             <h2 className={projectStyles.h2SectionHeader}>
                                 Restructuring
@@ -812,7 +813,7 @@ export default function ExploreRI() {
 
                     <div className={projectStyles.sectionContainerGray} style={{}}>
                         <div className={projectStyles.section}>
-                            <b style={{marginBottom: 0}}><span style={{fontWeight: 600, color: '#F0916C'}}>Aspect #3</span></b>
+                            <b style={{marginBottom: 0}}><span style={{fontWeight: 600, color: '#F0916C'}}>Change 3</span></b>
                             
                             <h2 className={projectStyles.h2SectionHeader}>
                                 Consistent Language
@@ -862,7 +863,7 @@ export default function ExploreRI() {
 
                     <div className={projectStyles.sectionContainer} ref={takeawaysRef}>
                         <div className={projectStyles.section}>
-                            <div className={projectStyles.sectionTitle}>Takeaways</div>
+                            <div className={projectStyles.sectionTitleLarge}>Takeaways</div>
                             <p>
                                 This project was critical in developing myself as a designer. Redesigning this website taught me a lot in how to reduce unnecessary design elements and complexity to create simple, clean design. This process also taught me the importance of considering platform responsiveness as a key factor in crafting interfaces.
                             </p>
