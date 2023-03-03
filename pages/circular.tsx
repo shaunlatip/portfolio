@@ -178,7 +178,7 @@ export default function Circular() {
 
                 <div className={projectStyles.sections}>
 
-                    <div className={projectStyles.sectionContainerGray} ref={finalPrototypeRef}>
+                    <div className={projectStyles.sectionContainerGradient} ref={finalPrototypeRef} style={{paddingBottom: '0rem'}}>
                         <div className={projectStyles.section}  style={{}}>
                             {/* <div className={projectStyles.sectionTitleLarge} style={{paddingBottom: '0'}}>Preview</div> */}
                             <div className={projectStyles.sectionTitleLarge} style={{alignSelf: 'center'}}>Final Solution</div>
@@ -193,12 +193,8 @@ export default function Circular() {
                                 <iframe className={styles.previewIFrame} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FiEBib4ZvHpBnFPusFXnLl9%2FIterative%3Fpage-id%3D152%253A1823%26node-id%3D152%253A1823%26viewport%3D1106%252C1084%252C0.76%26scaling%3Dscale-down%26starting-point-node-id%3D152%253A1824" ></iframe>
                             </div>
                         </div>
-                    </div>
-
-
-
-                    <div className={projectStyles.sectionContainer} style={{padding: '2rem 0 2rem 0'}}>
-                        <div className={projectStyles.spreadRow}style={{gap: '2rem'}}>
+                    
+                        <div className={projectStyles.spreadRow}style={{gap: '2rem', padding: '2rem 0 2rem 0'}}>
                             <div className={projectStyles.spreadRowText}>
                                 <b style={{color: "#F0916C", fontWeight: '600'}}>01</b>
                                 <h4 style={{fontWeight: 600}}>
@@ -212,7 +208,7 @@ export default function Circular() {
                         </div>
                     </div>
 
-                    <div className={projectStyles.sectionContainerGray} style={{padding: '2rem 0 2rem 0'}}>
+                    <div className={projectStyles.sectionContainer} style={{padding: '2rem 0 2rem 0'}}>
                         <div className={projectStyles.spreadRow}style={{gap: '2rem'}}>
                             <div className={projectStyles.spreadRowText}>
                                 <b style={{color: "#F0916C", fontWeight: '600'}}>02</b>
@@ -227,7 +223,7 @@ export default function Circular() {
                         </div>
                     </div>
                     
-                    <div className={projectStyles.sectionContainer} style={{padding: '2rem 0 2rem 0'}}>
+                    <div className={projectStyles.sectionContainerGray} style={{padding: '2rem 0 2rem 0'}}>
                         <div className={projectStyles.spreadRow}style={{gap: '2rem'}}>
                             <div className={projectStyles.spreadRowText}>
                                 <b style={{color: "#F0916C", fontWeight: '600'}}>03</b>
@@ -242,7 +238,7 @@ export default function Circular() {
                         </div>
                     </div>
                     
-                    <div className={projectStyles.sectionContainerGray} style={{padding: '2rem 0 2rem 0'}}>
+                    <div className={projectStyles.sectionContainer} style={{padding: '2rem 0 2rem 0'}}>
                         <div className={projectStyles.spreadRow}style={{gap: '2rem'}}>
                             <div className={projectStyles.spreadRowText}>
                                 <b style={{color: "#F0916C", fontWeight: '600'}}>04</b>
@@ -260,7 +256,7 @@ export default function Circular() {
 
                     
                     
-                    <div className={projectStyles.sectionContainer} ref={challengeRef}>
+                    <div className={projectStyles.sectionContainerGray} ref={challengeRef}>
                         <div className={projectStyles.section}>
                             <div className={projectStyles.sectionTitleLarge} >Challenge</div>
                             {/* <h3>
@@ -442,7 +438,7 @@ export default function Circular() {
                         <div className={projectStyles.section}>
                             {/* <div className={projectStyles.sectionTitleLarge} style={{paddingBottom: '0'}}>Prototyping</div> */}
                             <div className={projectStyles.sectionTitleLarge}>Research</div>
-                            <h2 className={projectStyles.h2SectionHeader}>Platform Analysis</h2>
+                            <h2 className={projectStyles.h2SectionHeader}>Competitor Analysis</h2>
                             <p>
                                 I knew that Circular would have to <span style={{fontWeight: 600}}>merge ideas from a wide variety of genres.</span>
                             </p>
@@ -574,7 +570,7 @@ export default function Circular() {
                     <div className={projectStyles.sectionContainerGray}>
                         <div className={projectStyles.section}>
                             {/* <div className={projectStyles.sectionTitleLarge} style={{paddingBottom: '0'}}>Process</div> */}
-                            <h2 className={projectStyles.h2SectionHeader}>Framing User Flow</h2>
+                            <h2 className={projectStyles.h2SectionHeader}>User Flows</h2>
                             <p>
                                 I developed a user flow that would guide our initial prototype. With just two weeks for this solution, I decided designing based on user tasks would be time-efficient and effective. 
                             </p>

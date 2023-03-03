@@ -125,6 +125,14 @@
     background-color: #F7F7F7;
 }
 
+.sectionContainerGradient {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0 4rem 0;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F7F7F7 100%);
+}
+
 .sectionContainerDark {
     display: flex;
     flex-direction: column;
