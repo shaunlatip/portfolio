@@ -193,6 +193,8 @@ export default function Circular() {
                                 <iframe className={styles.previewIFrame} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FiEBib4ZvHpBnFPusFXnLl9%2FIterative%3Fpage-id%3D152%253A1823%26node-id%3D152%253A1823%26viewport%3D1106%252C1084%252C0.76%26scaling%3Dscale-down%26starting-point-node-id%3D152%253A1824" ></iframe>
                             </div>
                         </div>
+
+                        <h2 style={{marginTop: '6rem'}}>Solution Overview</h2>
                     
                         <div className={projectStyles.spreadRow}style={{gap: '2rem', padding: '2rem 0 2rem 0'}}>
                             <div className={projectStyles.spreadRowText}>
@@ -269,11 +271,10 @@ export default function Circular() {
                                 I started by outlining the challenge we were tasked with.
                             </h4> */}
                             <p>
-                                To start, I examined the current experience of how consumer technology was distributed. 
-                                Many existing consumer electronics platforms <span style={{fontWeight: 600}}>require customers to commit to fully purchasing or financing</span> the full cost of electronics before being able to use them.
+                                Many existing consumer electronics platforms <span>require customers to commit to fully purchasing or financing</span> the full cost of electronics before being able to use them.
                             </p>
                             <p>
-                                In response, Circular was attempting to change this through a novel approach: <span style={{fontWeight: 600}}>low-cost, convenient subscriptions</span> that let users try out or rent productss without committing. 
+                                Circular was attempting to change this through a novel approach: <br/><span style={{fontWeight: 600}}>low-cost, convenient temporary ownership</span> that let users try out or rent products before committing. 
                             </p>
                             {/* <p>
                                 With Circular, customers can pay a monthly rate to keep a product for as long as they want, before choosing to either buy it, or to return it. Returned products will then be refurbished and passed on to the next owner to extend its useful life.
@@ -358,9 +359,12 @@ export default function Circular() {
                     <div className={projectStyles.sectionContainerDark}>
                         <div className={projectStyles.section}>
                             {/* <h4 style={{fontWeight: 600}}>First, I outlined the value Circular should provide for users.</h4> */}
-                            <h4 style={{fontWeight: 600}}>
+                            {/* <h4 style={{fontWeight: 600}}>
                                 I broke down our goal into <span style={{color: '#F0916C'}}>three guiding design principles</span>.
-                            </h4>
+                            </h4> */}
+                            <h2>
+                                Design Principles
+                            </h2>
                             <div className={projectStyles.olLarge} style={{paddingTop: '2rem', paddingBottom: '2rem', gap: '1.5rem'}}>
                                 <div className={projectStyles.olItemLarge}>
                                     <span style={{fontSize: '1.5rem'}}>1</span>
@@ -425,11 +429,10 @@ export default function Circular() {
                                 Our group sketched a variety of possible design solutions to the challenge, quickly exploring a broad range of ideas, and discussing our varied solutions.
                             </p>
                         </div>
-                        <div className={styles.sketchFrameAlt}>
-                            <div className={styles.sketches}>
-                                <iframe className={styles.sketchDisplay} src="/circular/sketches.pdf"/>
+                            <div style={{marginTop: '1rem'}}>
+                                {/* <iframe className={styles.sketchDisplay} src="/circular/sketches.pdf"/> */}
+                                <Image src="/circular/sketches.png" width={840} height={567} alt="Initial sketches of Circular"/>
                             </div>
-                        </div>
                     </div>
 
                     
@@ -629,9 +632,9 @@ export default function Circular() {
                                     </div>
                                 </div>
                             </div>
-                            <p>
+                            {/* <p>
                                 We started to map out on a high-level how our first prototype would manage these tasks. To accomodate the abundance of filters, information, and different functions I anticipated our design would need, we decided on designing for a desktop web interface. 
-                            </p>
+                            </p> */}
                         </div>
                         <div className={projectStyles.spreadRow}style={{gap: '2rem'}}>
                             <div className={projectStyles.spreadRowText}>
@@ -701,9 +704,9 @@ export default function Circular() {
                         <div className={projectStyles.section}>
                             <div className={projectStyles.sectionTitleLarge}>First Iteration</div>
                             <p>I created a set of low-fidelity wireframes on Figma for the site-wide navigation bars and explore page, while wireframing the landing page closely with Juliana.</p>
-                            <p>
+                            {/* <p>
                                 During the wireframing process, I focused on <span style={{fontWeight: 300}}>defining the overall structure and organization</span> of my design, prioritizing during this process the development of a <span style={{fontWeight: 300}}>clear hierarchy through the size, shading, and position</span> of different elements.
-                            </p>
+                            </p> */}
                             
                             {/* <h4 style={{fontWeight: 600, marginTop: '1rem'}}>First, I defined a series of principles that guided our wireframing approach.</h4>
                             <div className={projectStyles.olLarge} style={{marginBottom: '2rem'}}>
@@ -844,7 +847,7 @@ export default function Circular() {
                             <p>
                                 As an emerging startup competing with a plethora of established e-commerce platforms, I found it important for Circular to host a distinctive brand identity. 
                             </p>
-                            <p> Based on my research, I designed a visual identity that centered around creating an <span style={{fontWeight: 600}}>approachable, inviting,</span> and <span style={{fontWeight: 600}}>energetic</span> experience for users; contrasting with the brand identities seen in Circular's main competition.</p>
+                            <p> I designed a visual identity that centered around creating an <span style={{fontWeight: 600}}>approachable, inviting,</span> and <span style={{fontWeight: 600}}>energetic</span> experience for users; contrasting with the brand identities seen in Circular's main competition.</p>
                             
                             {/* <p>This goal influenced my visual identity in two ways:</p> */}
 
@@ -878,7 +881,8 @@ export default function Circular() {
 
                     <div className={projectStyles.sectionContainer}>
                         <div className={projectStyles.section}>
-                            <h4 style={{fontWeight: 600}}>This led to Circular's initial interactive prototype.</h4>
+                            {/* <h4 style={{fontWeight: 600}}>This led to Circular's initial interactive prototype.</h4> */}
+                            <h2 className={projectStyles.h2SectionHeader} style={{alignSelf: 'center'}}>Initial Prototype</h2> 
                             {/* <p>I focused on augmenting the structure and layout from the wireframes to create an interactive Figma prototype that looked and felt like a real website.</p> */}
                         </div>
                         <div className={styles.frame}>

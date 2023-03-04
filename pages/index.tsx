@@ -12,32 +12,32 @@ export default function Home() {
       </Head>
         <div className={styles.pageWrapper}>
           <div className={styles.section}>
-            <div className={styles.headline}>
-              <div className={styles.headlineContent}>
-              {/* <img className={styles.portrait} src="portrait.png"/> */}
-              <h1>
-                  I'm Shaun, a curious product designer and researcher.
-                  {/* <span className={styles.titleEmoji} role="img" aria-label="dog">☁️</span> */}
-                </h1>
-                <p className={styles.subHeadline}>
-                  I design to shape a more inclusive, intentional digital world.
-                  <br/>My process is deeply informed by my past experiences in anthropology, behavioral research, and front-end development.
-                  <br/>
-                  Take a look at some of my work below to learn a bit more about how I tick.
-                </p>
-                <p className={styles.roles}>
-                  Senior in Computer Science @ <a className={styles.primaryLink} target="_blank" href="https://www.brown.edu/">Brown University</a> <br/>
-                  Previously Research @ <a className={styles.primaryLink} target="_blank" href="https://sites.brown.edu/bltlab/">Brown Language and Thought Lab</a>
-                </p>
+            <div className={styles.top}>
+              <div className={styles.headline}>
+                <div className={styles.headlineContent}>
+                {/* <img className={styles.portrait} src="portrait.png"/> */}
+                <h1>
+                    Hi! I'm Shaun.
+                    {/* <span className={styles.titleEmoji} role="img" aria-label="dog">☁️</span> */}
+                  </h1>
+                  <p className={styles.subHeadline}>
+                    I'm a <span style={{fontWeight: 600}}>designer</span> and <span style={{fontWeight: 600}}>researcher</span> working to shape a more inclusive, intentional digital world.
+                    <br/>
+                    Take a look at some of my work below to learn a bit more about how I tick.
+                  </p>
+                  <p className={styles.roles}>
+                    Senior in Computer Science @ <a className={styles.primaryLink} target="_blank" href="https://www.brown.edu/">Brown University</a> <br/>
+                    Previously Research @ <a className={styles.primaryLink} target="_blank" href="https://sites.brown.edu/bltlab/">Brown Language and Thought Lab</a>
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className={styles.headlineGraphic}>
-        
+              <div className={styles.headlineGraphic}>
+              </div>
             </div>
           </div>
           <div className={styles.section}>
             <h3 className={styles.sectionTitle}>
-              Selected work
+              Selected Work —
             </h3>
             <div className={styles.gallery}>
               
@@ -52,7 +52,7 @@ export default function Home() {
                         <span className={styles.badge}>User Research</span>
                         <span className={styles.badge}>User Testing</span>
                       </div>
-                      <p>Designing interactive MVP for YC W22 startup providing flexible access to consumer electronics</p>
+                      <p>Interactive MVP for Y Combinator 2022 startup providing flexible access to consumer electronics</p>
                     </div>
                   </div>
                 </Link>
@@ -134,7 +134,7 @@ export default function Home() {
               </div>
           </div>
           <div className={styles.section} id="writing">
-            <h3 className={styles.sectionTitle}>Writing</h3>
+            <h3 className={styles.sectionTitle}>Writing —</h3>
             <div className={styles.rowGallery}>
             <Link href="writing/OnTheEastSide.pdf">
               <div className={styles.row}>
@@ -180,7 +180,7 @@ export default function Home() {
           </div>
 
           <div className={styles.section} id="other" style={{marginTop: '1rem', marginBottom: '2rem'}}>
-            <h3 className={styles.sectionTitle}>Other side projects</h3>
+            <h3 className={styles.sectionTitle}>Side Projects —</h3>
             <div className={styles.otherProjects}>
 
               <div className={styles.otherProject}>

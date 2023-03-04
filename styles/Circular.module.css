@@ -34,9 +34,9 @@
 .sketches {
     /* width: calc(1080px); */
     /* background-color: white; */
-    filter: drop-shadow(0px 10px 32px rgba(0, 0, 0, 0.10));
+    /* filter: drop-shadow(0px 10px 32px rgba(0, 0, 0, 0.10));
     background-color: white;
-    border-radius: 12px;
+    border-radius: 12px; */
 }
 
 .splitCol {
@@ -118,7 +118,7 @@
     filter: drop-shadow(0px 10px 32px rgba(0, 0, 0, 0.10));
     background-color: white;
     border-radius: 12px;
-    width: 1080px;
+    width: 840px;
 }
 
 .initialHifis {
