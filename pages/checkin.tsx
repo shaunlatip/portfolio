@@ -125,9 +125,13 @@ export default function CheckIn() {
                 <div className={projectStyles.sections}>
                     <div className={projectStyles.sectionContainer} ref={contextRef} id="context">
                         <div className={projectStyles.section}>
-                            <div className={projectStyles.sectionTitle} style={{paddingBottom: '0'}}>Context</div>
+                            {/* <div className={projectStyles.sectionTitleLarge} style={{paddingBottom: '0'}}>Context</div> */}
                             {/* <b>Context</b> */}
-                            <p>Since September 2021, clinical care at Brown University has been centralized at the <Link target="_blank" href="https://www.brown.edu/news/2021-09-16/wellness" className={homeStyles.primaryLink}>new health and wellness center</Link>. Being a clinic that nearly everyone at Brown visits, I wanted to better understand how different users experience visiting the new clinic, from walking in the door to being taken care of, in order to find room for improvement. To accomplish this, I applied research methodologies I learned from my UI/UX course.</p>
+                            <div>
+                                <b>Context</b>
+                                <p>Since September 2021, clinical care at Brown University has been centralized at the <Link target="_blank" href="https://www.brown.edu/news/2021-09-16/wellness" className={homeStyles.primaryLink}>new health and wellness center</Link>. I wanted to better understand how different users experience visiting the new clinic, from walking in the door to being taken care of, in order to find room for improvement.</p>
+                                
+                            </div>
                             <div className={projectStyles.projectInfo}>
                                 <div>
                                     <b>Role</b>
@@ -139,7 +143,7 @@ export default function CheckIn() {
                                 </div>
                                 <div>
                                     <b>Skills</b>
-                                    <p>User Observation<br/>Storyboarding<br/>Persona Mapping</p>
+                                    <p>Field Observation<br/>Interviews<br/>Storyboarding<br/>Persona Mapping</p>
                                 </div>
                             </div>
                         </div>
@@ -154,7 +158,7 @@ export default function CheckIn() {
 
                     <div className={projectStyles.sectionContainer} ref={interfaceRef} id="interface">
                         <div className={projectStyles.section}>
-                            <div className={projectStyles.sectionTitle}>Interface</div>
+                            <div className={projectStyles.sectionTitleLarge}>Interface</div>
                             <h4 style={{fontWeight: 600}}>First, I got familiar with the check-in interface and its surroundings.</h4>
                         </div>
                         <div style={{alignItems: 'center', padding: '0 0 0 0', gap: '2rem'}} className={projectStyles.spreadRow}>
@@ -220,7 +224,7 @@ export default function CheckIn() {
 
                     <div className={projectStyles.sectionContainerGray} ref={observationsRef} id="#observations">
                         <div className={projectStyles.section}>
-                            <div className={projectStyles.sectionTitle}>Observations</div>
+                            <div className={projectStyles.sectionTitleLarge}>Observations</div>
                             <h4 style={{fontWeight: 600}}>Second, I observed users as they checked in to the clinic.</h4>
                             <p>
                                 Over two weekdays, I waited in the public seating area and observed 12 users in the morning and afternoon. I avoided observing up close how users filled out forms on the desktop check-in to respect their privacy. Instead, I focused on observing how each user navigated the station, including how long they lingered on each section, and their interactions with staff.
@@ -266,7 +270,7 @@ export default function CheckIn() {
 
                     <div className={projectStyles.sectionContainer} ref={interviewsRef} id="interviews">
                         <div className={projectStyles.section}>
-                            <div className={projectStyles.sectionTitle}>Interviews</div>
+                            <div className={projectStyles.sectionTitleLarge}>Interviews</div>
                             <h4 style={{fontWeight: 600}}>Next, I spoke with three users to hear about their experience directly.</h4>
                             <p>
                                 To make this process less daunting, I created an interview guide of 8 questions to better understand what underlying goals, frustrations, and emotions they associated with the experience. I crafted my questions based on <Link className={homeStyles.primaryLink} href="https://www.cs.cmu.edu/~jhm/Readings/Dillman,%20Chapter%204.pdf" target="_blank">Dillman's basics of crafting good questions</Link>, emphasizing open-ended questions to capture more information, and keeping it simple and objective.
@@ -373,7 +377,7 @@ export default function CheckIn() {
 
                     <div className={projectStyles.sectionContainerGray}ref={personasRef} id="personas">
                         <div className={projectStyles.section}>
-                            <div className={projectStyles.sectionTitle}>Personas</div>
+                            <div className={projectStyles.sectionTitleLarge}>Personas</div>
                             <h4 style={{fontWeight: 600}}>To analyze my findings, I devised two personas based on these insights.</h4>
                             <p style={{marginBottom: 
                             '0.5rem'}}>
@@ -675,7 +679,7 @@ export default function CheckIn() {
 
                     <div className={projectStyles.sectionContainerGray} ref={storyboardRef}>
                         <div className={projectStyles.section}>
-                            <div className={projectStyles.sectionTitle}>Storyboard</div>
+                            <div className={projectStyles.sectionTitleLarge}>Storyboard</div>
                             <h4 style={{fontWeight: 600}}>To further explore Scattered Sakshi's user journey, I created a storyboard. </h4>
                             <p>
                                 This was a challenge for me as I rarely draw human characters, so I spent much effort to go through multiple drafts, practice sketching expressions, and using examples from comics to better portray the experience. While crafting this storyboard, I focused on the three pillars of authenticity, simplicity, and emotion to frame Sakshi's experience. 
@@ -745,7 +749,7 @@ export default function CheckIn() {
 
                     <div className={projectStyles.sectionContainer} ref={takeawaysRef}>
                         <div className={projectStyles.section}>
-                            <div className={projectStyles.sectionTitle}>Takeaways</div>
+                            <div className={projectStyles.sectionTitleLarge}>Takeaways</div>
                                 <h4 style={{fontWeight: 600}}>As my first major UI/UX experience, this research project was truly valuable to my growth as a designer.</h4>
                                 <p>
                                     Looking back, it was truly exciting to put the UX tools that my UI/UX class introduced to work, in examining a part of campus that I find important in a deeper light. This project forced me to learn in a lot of ways which I found valuable in helping to develop my process; 

@@ -343,7 +343,7 @@ export default function ExploreRI() {
                     </div>
 
                     <div className={projectStyles.sectionContainerDark}>
-                        <div className={projectStyles.section} style={{alignItems: 'center'}}>
+                        <div className={projectStyles.section} style={{alignItems: 'center', textAlign: 'center'}}>
                             <h4 style={{fontWeight: 600}}>With these insights, I explored the key problems I would focus on.</h4>
                             <h4>On a broader scale, the website had significant issues surrounding <br/> <span className="primary600">organization</span>, <span className="primary600">platform responsiveness</span>, and <span className="primary600">accessibility</span>.
                             </h4>

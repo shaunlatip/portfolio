@@ -86,7 +86,7 @@ export default function Home() {
                         <span className={styles.badge}>Interviews</span>
                         <span className={styles.badge}>Field Studies</span>
                       </div>
-                      <p>User observation and interview research on the clinical experience at Brown Health Services.</p>
+                      <p>Field research and interviews examining the front-door clinical experience</p>
                     </div>
                   </div>
                 </Link>

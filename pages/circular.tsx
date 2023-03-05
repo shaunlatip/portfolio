@@ -442,14 +442,15 @@ export default function Circular() {
                             {/* <div className={projectStyles.sectionTitleLarge} style={{paddingBottom: '0'}}>Prototyping</div> */}
                             <div className={projectStyles.sectionTitleLarge}>Research</div>
                             <h2 className={projectStyles.h2SectionHeader}>Competitor Analysis</h2>
+                            <b>Why this research method?</b>
                             <p>
                                 I knew that Circular would have to <span style={{fontWeight: 600}}>merge ideas from a wide variety of genres.</span>
                             </p>
                             <p>
-                                 First, much of Circular's planned functionalities mirrored that of existing e-commerce marketplaces that Circular would compete with. Second, in contrast with these competitors, Circular was an emerging concept involving temporary ownership, short-term rentals, and heightened reuse.
+                                 Much of Circular's planned functionalities mirrored that of existing e-commerce marketplaces that Circular would compete with. In contrast with these competitors, Circular was an emerging concept involving temporary ownership, short-term rentals, and heightened reuse.
                             </p>
                             <p>
-                                I ran through a heuristic evaluation of a variety of platforms that fit these two sides of Circular. I looked at existing e-commerce competitors, such as Amazon, and newer platforms providing less conventional ways to access products, to see what I could incorporate, modify, and avoid.
+                                I evaluated plaforms that fit both these sides of Circular: existing e-commerce competitors, such as Amazon, and newer platforms providing less conventional ways to access products, to see what I could incorporate, modify, and avoid.
                             </p>
                         </div>
                        
@@ -460,13 +461,15 @@ export default function Circular() {
                     </div>
 
                     <div className={projectStyles.sectionContainerGray} style={{padding: 0}}>
+                    <h2 style={{color: '#F0916C', paddingTop: '4rem'}}>Traditional E-commerce</h2>
                         <div className={projectStyles.spreadRow} style={{gap: '4rem', marginTop: '4rem'}}>
                             <div className={projectStyles.spreadRowText}>
-                                <h3 style={{color: '#F0916C'}}>Traditional e-commerce</h3>
-                                <b>Amazon</b>
+                                <h3>Amazon</h3>
+                                <b style={{color: '#33a852'}}>Navigating with search and categories</b>
                                 <p>
                                     Despite selling across 33 categories, searching made finding products easy. The search bar itself took nearly the whole size of the navigation bar, making it hard to miss, while searching by category further helped to ease navigating the site.
                                 </p>
+                                <b style={{color: '#d92f25'}}>Homepage clutter</b>
                                 <p>
                                     Amazon’s home page, with endless cards of varying shapes filling up most of the screen, felt rather confusing to navigate through. Although space-efficient, the layout made exploring new products feel tedious.
                                 </p>
@@ -475,9 +478,8 @@ export default function Circular() {
                         </div>
                         <div className={projectStyles.spreadRow}style={{gap: '4rem', marginBottom: '4rem'}}>
                             <div className={projectStyles.spreadRowText}>
-                                <b>
-                                    Shopee Singapore
-                                </b>
+                                <h3>Shopee</h3>
+                                <b style={{color: '#33a852'}}>Dynamic banners and events</b>
                                 <p>
                                     Shopee’s <Link className={homeStyles.primaryLink} target="_blank" href="https://shopee.sg/">home page</Link> contains banners that feature current promotions and new products that change throughout the year. Having dynamic banners allows users to engage with content that remains relevant with seasonal events and trends.
                                 </p>
@@ -486,17 +488,23 @@ export default function Circular() {
                         </div>
                     </div>
 
+                    
+
                     <div className={projectStyles.sectionContainer} style={{padding: 0}}>
+                        <h2 style={{color: '#F0916C', paddingTop: '4rem'}}>Alternative Platforms</h2>
                         <div className={projectStyles.spreadRow}style={{gap: '4rem', marginTop: '4rem'}}>
                             
                             <div className={projectStyles.spreadRowText}>
-                                <h3 style={{color: '#F0916C'}}>Alternative platforms</h3>
-                                <b>
-                                    ScentBird
-                                </b>
-                                <p>
-                                    <Link className={homeStyles.primaryLink} target="_blank" href="https://www.scentbird.com/">ScentBird</Link> allows users to choose samples of designer fragrances on a monthly basis before buying them, intriguing me as another platform providing flexible access to consumer products.
-                                </p>
+                                {/* <h3 style={{color: '#F0916C'}}>Alternative platforms</h3> */}
+                                <h3>ScentBird</h3>
+                                
+                                <div>
+                                    <b>Why ScentBird?</b>
+                                    <p>
+                                        <Link className={homeStyles.primaryLink} target="_blank" href="https://www.scentbird.com/">ScentBird</Link> allows users to choose samples of designer fragrances on a monthly basis before buying them, intriguing me as another platform providing flexible access to consumer products.
+                                    </p>
+                                </div>
+                                <b style={{color: '#33a852'}}>Landing page conversion</b>
                                 <p>
                                     ScentBird directed new users to a landing page with prompts on how their process worked, with a variety of buttons channeling users to view their product offerings and sign up.
                                 </p>
@@ -507,19 +515,25 @@ export default function Circular() {
                         <div className={projectStyles.spreadRow}style={{gap: '4rem', marginBottom: '4rem'}}>
                             
                             <div className={projectStyles.spreadRowText}>
-                                <b>
+                                <h3>
                                     AirBnB
-                                </b>
+                                </h3>
+                                <div>
+                                    <b>Why AirBnB?</b>
+                                    <p>
+                                        I looked to AirBnB as an established example of a company providing more flexible ways to access products.
+                                    </p>
+                                </div>
+                                <b style={{color: '#33a852'}}>Focused search</b>
                                 <p>
-                                    I looked to AirBnB as an established example of a company providing more flexible ways to access products.
+                                    AirBnB's search bar, easily noticed at the center of the navigation bar, allows users to use constraints to easily quickly refine searches.
                                 </p>
+                                <b style={{color: '#33a852'}}>Consistent containers</b>
                                 <p>
-                                    AirBnB’s search bar, easily noticed at the center of the navigation bar, allows users to use constraints to easily quickly refine searches.
+                                    Listing's on AirBnB’s home page, with consistent sizing and layout, made scanning feel effortless.
                                 </p>
-                                <p>
-                                    AirBnB’s home page, with a consistent size for images and a common grid layout, made scanning through different listings feel natural.
-                                    A primarily white background with a single accent color also helps to draw users to focus onto listings and to search with the search icon.
-                                </p>
+                                <b style={{color: '#33a852'}}>Light styling</b>
+                                <p>A primarily white background with a single accent color places visual weight on listings.</p>
                             </div>
                             <Image style={{border: '1px solid #E4E4E4'}} alt="AirBnB home page" src="/circular/airbnb.jpg" height={321.6} width={551} />
                             
@@ -528,7 +542,7 @@ export default function Circular() {
 
                     <div className={projectStyles.sectionContainerDark}>
                         <div className={projectStyles.section} style={{marginTop: '0rem'}}>
-                            <h4 style={{fontWeight: 600}}>This analysis led me make several design choices.</h4>
+                            <h4 style={{fontWeight: 600}}>Competitive analysis led me to several design choices.</h4>
                             <div className={projectStyles.olLarge}>
                                 <div className={projectStyles.olItemLarge}>
                                     <span style={{fontSize: '1.5rem'}}>1</span>
@@ -548,7 +562,7 @@ export default function Circular() {
                                             Highlighting categories
                                         </b>
                                         <p>
-                                            Many marketplaces prominently featured a list of different product categories on their home page. I felt this was applicable to Circular in two ways: quickly communicating to users the range of products Circular could offer, and allowing users to quickly filter and browse categories they are interested in.
+                                            Provided two benefits: quickly communicating to users the range of products Circular could offer, and allowing users to quickly filter and browse categories they are interested in.
                                         </p>
                                     </div>
                                 </div>
@@ -559,10 +573,7 @@ export default function Circular() {
                                             Three simple steps
                                         </b>
                                         <p>
-                                            I examined existing, emerging platforms offering unconventional ways to try or access products. From this, I learned that websites that clearly communicated a simple process of ordering felt much easier to understand and navigate. 
-                                        </p>
-                                        <p>
-                                            Thus, I streamlined Circular's user process into three steps: Choosing a product, trying it, and buying/returning it - a pattern used in the landing page and across the platform.
+                                            Websites with a simple, straightforward, and consistent process felt the easiest to understand, leading to a three-step approach for communicating Circular's process.
                                         </p>
                                     </div>
                                 </div>
@@ -574,9 +585,10 @@ export default function Circular() {
                         <div className={projectStyles.section}>
                             {/* <div className={projectStyles.sectionTitleLarge} style={{paddingBottom: '0'}}>Process</div> */}
                             <h2 className={projectStyles.h2SectionHeader}>User Flows</h2>
-                            <p>
-                                I developed a user flow that would guide our initial prototype. With just two weeks for this solution, I decided designing based on user tasks would be time-efficient and effective. 
-                            </p>
+                            <b>Why choose this?</b>
+                                <p>
+                                    With just two weeks for this solution, I decided designing based on user tasks would be time-efficient and effective.
+                                </p>
                             <p>
                                 I made sure to consider how a variety of different possible users, each with a unique set of tasks they set out to complete, might be able to access and navigate a single website. 
                             </p>
@@ -668,7 +680,7 @@ export default function Circular() {
                                             Landing page
                                         </b>
                                         <p>
-                                            I decided on having users first go through a landing page to acquaint users with Circular's unique subscription model. This was inspired by how ScentBird and other emerging platforms similarly used a landing page.
+                                            I decided on having users first go through a landing page to acquaint users with Circular's unique subscription model.
                                         </p>
                                     </div>
                                 </div>
@@ -679,7 +691,7 @@ export default function Circular() {
                                             Logged in and out states
                                         </b>
                                         <p>
-                                            A logged out state and logged in state exist for certain pages, to prevent new users from being overwhelmed irrelevant information to their conversion, and to streamline information for returning users.
+                                            A logged out state and logged in state exist for certain pages to prioritize information differently for new users and returning users.
                                         </p>
                                     </div>
                                 </div>
@@ -690,7 +702,7 @@ export default function Circular() {
                                             Centralized explore page
                                         </b>
                                         <p>
-                                            A centralized Explore page lets users explore and search for new products, and, if logged in, allow easier managing of accounts. Centralization also allowed users to return to this page to reset after errors.
+                                            Allowing users to explore and search for new products, and, if logged in, allow easier managing of accounts. Centralization allowed users to return home to reset after errors.
                                         </p>
                                     </div>
                                 </div>
@@ -845,9 +857,7 @@ export default function Circular() {
                                 Why these choices?
                             </h4>
                             <p>
-                                As an emerging startup competing with a plethora of established e-commerce platforms, I found it important for Circular to host a distinctive brand identity. 
-                            </p>
-                            <p> I designed a visual identity that centered around creating an <span style={{fontWeight: 600}}>approachable, inviting,</span> and <span style={{fontWeight: 600}}>energetic</span> experience for users; contrasting with the brand identities seen in Circular's main competition.</p>
+                                As an emerging startup competing with a plethora of established e-commerce platforms, I found it important for Circular to host a distinctive brand identity centered around an <span style={{fontWeight: 600}}>approachable, inviting,</span> and <span style={{fontWeight: 600}}>energetic</span> experience for users.</p>
                             
                             {/* <p>This goal influenced my visual identity in two ways:</p> */}
 
@@ -1282,16 +1292,17 @@ export default function Circular() {
                     <div className={projectStyles.sectionContainer} ref={userTestingRef}>
                         <div className={projectStyles.section}>
                             <div className={projectStyles.sectionTitleLarge}>User Testing</div>
-                            <h4 style={{fontWeight: 600}}>
+                            {/* <h4 style={{fontWeight: 600}}>
                                 Our project underwent further user testing to gather insights.
-                            </h4>
+                            </h4> */}
+                            <h2 className={projectStyles.h2SectionHeader}>Methodology</h2>
                             <p>
-                                With our updates implemented, Juliana and I developed a series of tasks and assesments to be presented to three users on <Link href="https://www.usertesting.com/" target="_blank" className={homeStyles.primaryLink}>usertesting.com</Link> to interact with the interactive Figma prototype updated based on feedback from our first critique session.
+                                With the completed second iteration of our solution, Juliana and I developed a series of tasks and assesments to be presented to three users on <Link href="https://www.usertesting.com/" target="_blank" className={homeStyles.primaryLink}>usertesting.com</Link>.
                             </p>
                             
-                            <p>
+                            {/* <p>
                                 Here, we assessed how users on our prototype started new rentals and managed existing rentals. 
-                            </p>
+                            </p> */}
                             <b style={{marginTop: '1rem'}}>
                                 We designed a series of 4 tasks for each user to complete:
                             </b>
@@ -1363,9 +1374,12 @@ export default function Circular() {
 
                     <div className={projectStyles.sectionContainerGray}>
                         <div className={projectStyles.section}>
-                            <h4 style={{fontWeight: 600}}>
+                            {/* <h4 style={{fontWeight: 600}}>
                                 Analyzing these results led us to further insights on how to improve.
-                            </h4>
+                            </h4> */}
+                            <h2 className={projectStyles.h2SectionHeader}>
+                                Analyzing Results
+                            </h2>
                             <p>
                                 Whenever a user we surveyed had difficulty with successfully completing a task, we came up with specific ways to modify our prototype to better achieve our goals.
                             </p>
@@ -1646,7 +1660,8 @@ export default function Circular() {
                             </div>
                         </div>
                         <div className={projectStyles.section} style={{paddingTop: '4rem'}}>
-                            <h4 style={{fontWeight: 600}}>These findings led us to propose four more changes to our second iteration.</h4>
+                            {/* <h4 style={{fontWeight: 600}}>These findings led us to propose four more changes to our second iteration.</h4> */}
+                            <h2 className={projectStyles.h2SectionHeader}>Resulting Design Changes</h2>
                             <div className={projectStyles.olLarge} style={{paddingTop: '2rem', paddingBottom: '2rem', gap: '1.5rem'}}>
                                 <div className={projectStyles.olItemLarge}>
                                     <span style={{fontSize: '1.5rem'}}>1</span>
