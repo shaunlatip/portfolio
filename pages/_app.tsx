@@ -7,6 +7,9 @@ import { ChakraProvider } from '@chakra-ui/react';
 import { extendTheme } from "@chakra-ui/react"
 import { Analytics } from '@vercel/analytics/react';
 
+import { hotjar } from 'react-hotjar'
+import { useEffect } from 'react'
+
 import type { AppProps } from 'next/app'
 
 // pages/_app.js
@@ -16,6 +19,8 @@ import { Lora } from '@next/font/google'
 // If loading a variable font, you don't need to specify the font weight
 const inter = Inter({ subsets: ['latin'] })
 const lora = Lora({ subsets: ['latin'] })
+
+
 
 export default function App({ Component, pageProps }: AppProps) {
 
@@ -51,6 +56,10 @@ export default function App({ Component, pageProps }: AppProps) {
       body: `'Inter', sans-serif`,
     },
   })
+
+  useEffect(() => {
+    hotjar.initialize(3399316, 6)
+  }, [])
 
   return (
     <ChakraProvider theme={theme}>

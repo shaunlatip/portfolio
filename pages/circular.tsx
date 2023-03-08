@@ -369,7 +369,7 @@ export default function Circular() {
                                 <div className={projectStyles.olItemLarge}>
                                     <span style={{fontSize: '1.5rem'}}>1</span>
                                     <div>
-                                        <h4 style={{fontWeight: 600}}>Providing flexible access</h4>
+                                        <h4 style={{fontWeight: 600}}>More power to the user</h4>
                                         <p>
                                             Allow consumers to try products before fully purchasing them, providing users more flexibility. Users can pay monthly, keep products for as long as they want, and either purchase or return their products whenever they'd like.
                                         </p>
@@ -390,7 +390,7 @@ export default function Circular() {
                                 <div className={projectStyles.olItemLarge}>
                                     <span style={{fontSize: '1.5rem'}}>3</span>
                                     <div>
-                                        <h4 style={{fontWeight: 600}}>Assuring quality and choice</h4>
+                                        <h4 style={{fontWeight: 600}}>Conveying quality and choice</h4>
                                         <p>
                                             Users can easily browse from quality products across diverse categories on one platform, including the latest and most desirable electronics. Flexible access should not mean compromising on quality and choice.
                                         </p>
