@@ -406,4 +406,8 @@
   .otherProject {
     width: 100%;
   }
+
+  .headline h1 {
+    font-size: 3rem;
+  }
 }
