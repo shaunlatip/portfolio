@@ -390,7 +390,7 @@ export default function Circular() {
                                 <div className={projectStyles.olItemLarge}>
                                     <span style={{fontSize: '1.5rem'}}>3</span>
                                     <div>
-                                        <h4 style={{fontWeight: 600}}>Conveying quality and choice</h4>
+                                        <h4 style={{fontWeight: 600}}>Conveying trust, quality, and choice</h4>
                                         <p>
                                             Users can easily browse from quality products across diverse categories on one platform, including the latest and most desirable electronics. Flexible access should not mean compromising on quality and choice.
                                         </p>
@@ -1175,7 +1175,7 @@ export default function Circular() {
                                                     </div>
                                                     <div className={styles.critiqueRight}>
                                                         <p>
-                                                            Change layout from two products per row to one product per row to include more information, and ddd three action buttons for each rental
+                                                            Change layout from two products per row to one product per row to include more information, and add three action buttons for each rental
                                                         </p>
                                                     </div>
                                                 </div>

@@ -785,7 +785,7 @@ export default function ExploreRI() {
                             <div className={projectStyles.spreadRowText}>
                                 {/* <span style={{fontWeight: 600, color: '#F0916C', fontSize: '1rem'}}>Inclusion #1</span> */}
                                 <h4 style={{fontWeight: 600}}>
-                                    Clearly distributing sections
+                                    Navigation bar
                                 </h4>
                                 <p>
                                     A navigation bar is included near the start of the page that acts as a table of contents, and provides an overview on the sections further down the page. On click, these links allow users to quickly navigate to a specific section.
