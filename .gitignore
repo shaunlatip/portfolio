@@ -1,4 +1,2 @@
 node_modules
-.next
-// help me remove the .next folder from the git repo
-```
+.next/
