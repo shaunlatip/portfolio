@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Footer from 'components/Footer.tsx'
 import Image from 'next/image'
+import system from "styles/System.module.css";
 
 export default function Home() {
   return (
@@ -16,7 +17,18 @@ export default function Home() {
               <div className={styles.headline}>
                 <div className={styles.headlineContent}>
                 {/* <img className={styles.portrait} src="portrait.png"/> */}
-                <h1>
+                <p className={system.hero}>Hero</p>
+                <p className={system.h1}>Hero</p>
+                <p className={system.h2}>Hero</p>
+                <p className={system.h3}>Hero</p>
+                <p className={system.h4}>Hero</p>
+                <p className={system.h5}>Hero</p>
+                <p className={system.h6}>Hero</p>
+                <p className={system.regular}>Hero</p>
+                <p className={system.link}>Hero</p>
+                <p className={system.small}>Hero</p>
+                <p className={system.caption}>Hero</p>
+                  <h1>
                     Hi! I'm Shaun.
                     {/* <span className={styles.titleEmoji} role="img" aria-label="dog">☁️</span> */}
                   </h1>

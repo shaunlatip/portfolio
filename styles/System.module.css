@@ -1,0 +1,151 @@
+
+
+/* Font sizing */
+
+.hero {
+  font-family: SF Pro;
+  font-size: 160px;
+  font-style: normal;
+  line-height: 160px; /* 100% */
+}
+
+.h1 {
+  font-family: SF Pro;
+  font-size: 120px;
+  font-style: normal;
+  line-height: 100%; /* 120px */
+}
+
+.h2 {
+  font-family: SF Pro;
+  font-size: 80px;
+  font-style: normal;
+  line-height: 100%; /* 80px */
+  letter-spacing: -1.2px;
+}
+
+.h3 {
+  font-family: SF Pro;
+  font-size: 56px;
+  font-style: normal;
+  line-height: 120%; /* 67.2px */
+}
+
+.h4 {
+  /* H4 */
+  font-family: SF Pro;
+  font-size: 40px;
+  font-style: normal;
+  line-height: 130%; /* 52px */
+}
+
+.h5 {
+  font-family: SF Pro;
+  font-size: 30px;
+  font-style: normal;
+  line-height: 130%; /* 39px */
+}
+
+.h6 {
+  /* H4 */
+  font-family: SF Pro;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 150%; /* 36px */
+}
+
+.regular {
+  /* Regular */
+  font-family: SF Pro;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+}
+
+.link {
+  font-family: SF Pro;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+  text-decoration-line: underline;
+}
+
+.small {
+  /* Small */
+  font-family: SF Pro;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+
+.caption {
+  /* Caption */
+  font-family: SF Pro;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 18px */
+}
+
+/* Font weights */
+
+.light {
+  font-weight: 300;
+}
+
+.normal {
+  font-weight: 400;
+}
+.medium {
+  font-weight: 500;
+}
+.semibold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+/* Specifics */
+
+.capTag {
+  color: var(--backgrounds-white, #fff);
+  /* Cap Tag */
+  font-family: SF Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 510;
+  line-height: 150%; /* 21px */
+  letter-spacing: 0.7px;
+}
+
+.link {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #000;
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.link:hover::before {
+  transform: scaleX(1);
+}

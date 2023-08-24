@@ -1,9 +1,23 @@
+:root {
+  /* Colors */
+  --shade-1: hsla(0, 0%, 5%, 1);
+  --shade-2: hsla(220, 2%, 35%, 1);
+  --shade-3: hsla(220, 2%, 64%, 1);
+  --shade-4: hsla(180, 2%, 90%, 1);
+  --shade-5: hsla(180, 5%, 96%, 1);
+  --cinnabar: hsla(5, 82%, 60%, 1);
+  --pastel-blue: hsla(228, 14%, 52%, 1);
+
+  /* Spacing */
+  --content-width: 1200px;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-size: 18px;
-  color: black;
+  color: var(--shade-1);
   background: white;
   scroll-behavior: smooth;
   scroll-padding-top: 60px;
@@ -54,7 +68,7 @@ a:hover {
 
 .primary600 {
   font-weight: 600;
-  color: #F0916C;
+  color: #f0916c;
 }
 
 .weight600 {

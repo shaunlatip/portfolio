@@ -12,6 +12,7 @@ import { useEffect } from 'react'
 
 import type { AppProps } from 'next/app'
 
+
 import localFont from 'next/font/local'
 
 const SFPro = localFont({
