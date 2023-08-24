@@ -14,14 +14,6 @@ import type { AppProps } from 'next/app'
 
 import localFont from 'next/font/local'
 
-// pages/_app.js
-import { Inter } from 'next/font/google'
-import { Lora } from 'next/font/google'
-
-// If loading a variable font, you don't need to specify the font weight
-const inter = Inter({ subsets: ['latin'] })
-const lora = Lora({ subsets: ['latin'] })
-
 const SFPro = localFont({
   src: '../public/fonts/SF-Pro.ttf',
   fallback: ['Helvetica', 'system-ui', 'Arial']
