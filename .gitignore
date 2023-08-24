@@ -1,2 +1,9 @@
 node_modules/
 .next/
+.next/trace
+.next/static/chunks/webpack.js
+.next/static/chunks/pages/_app.js
+.next/server/pages/index.js
+.next/server/pages/_error.js
+.next/server/pages/_document.js
+.next/server/pages/_app.js
