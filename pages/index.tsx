@@ -15,10 +15,9 @@ export default function Home() {
             <div className={styles.top}>
               <div className={styles.headline}>
                 <div className={styles.headlineContent}>
-                {/* <img className={styles.portrait} src="portrait.png"/> */}
-                <h1>
+                  
+                  <h1>
                     Hi! I'm Shaun.
-                    {/* <span className={styles.titleEmoji} role="img" aria-label="dog">☁️</span> */}
                   </h1>
                   <p className={styles.subHeadline}>
                     I'm a <span style={{fontWeight: 600}}>designer</span> and <span style={{fontWeight: 600}}>researcher</span> working to shape a more inclusive, intentional digital world.

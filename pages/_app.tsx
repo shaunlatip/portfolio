@@ -12,15 +12,20 @@ import { useEffect } from 'react'
 
 import type { AppProps } from 'next/app'
 
+import localFont from 'next/font/local'
+
 // pages/_app.js
-import { Inter } from '@next/font/google'
-import { Lora } from '@next/font/google'
+import { Inter } from 'next/font/google'
+import { Lora } from 'next/font/google'
 
 // If loading a variable font, you don't need to specify the font weight
 const inter = Inter({ subsets: ['latin'] })
 const lora = Lora({ subsets: ['latin'] })
 
-
+const SFPro = localFont({
+  src: '../public/fonts/SF-Pro.ttf',
+  fallback: ['Helvetica', 'system-ui', 'Arial']
+})
 
 export default function App({ Component, pageProps }: AppProps) {
 
@@ -52,8 +57,8 @@ export default function App({ Component, pageProps }: AppProps) {
       },
     },
     fonts: {
-      heading: `'Inter', sans-serif`,
-      body: `'Inter', sans-serif`,
+      heading: `'SF Pro', sans-serif`,
+      body: `'SF Pro', sans-serif`,
     },
   })
 
@@ -63,7 +68,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <ChakraProvider theme={theme}>
-      <main className={inter.className} >
+      <main className={SFPro.className} >
           <style jsx global>{`
         `}</style>
             <NavbarLayout>
