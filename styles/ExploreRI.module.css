@@ -1,0 +1,124 @@
+.bannerProjectColor {
+  background-color: #e8f3e3;
+}
+
+.projectColorText {
+  color: #215560;
+}
+
+.styleGuideImage {
+  width: 100%;
+  margin: 1rem 0 1rem 0;
+  border-radius: 16px;
+}
+
+.frame {
+  padding: 2rem 2rem 1rem 2rem;
+  margin-top: 2rem;
+  background-color: #f4f4f4;
+  border-radius: 12px;
+}
+
+.frameAlt {
+  padding: 2rem 2rem 1rem 2rem;
+  margin-top: 4rem;
+  background-color: #e4e4e4;
+  border-radius: 12px;
+}
+
+.comparison {
+  width: calc(1080px);
+  /* background-color: white; */
+  filter: drop-shadow(0px 10px 32px rgba(0, 0, 0, 0.1));
+  background-color: white;
+  border-radius: 12px;
+}
+
+.problemSpreadPdf {
+  width: 1196px;
+  height: 1077px;
+}
+
+.lofis {
+  width: 100%;
+  border-radius: 12px;
+  filter: drop-shadow(0px 10px 32px rgba(0, 0, 0, 0.1));
+  background-color: white;
+}
+
+.lofiFrame {
+  width: 1082px;
+  height: calc(100vh - 160px);
+  margin: 1rem 0 1rem 0;
+  border: solid 1px #eaeaea;
+}
+
+.previewFrame {
+  width: 1080px;
+  height: 600px;
+  margin: 1rem 0 1rem 0;
+  border: solid 1px #eaeaea;
+}
+
+.previewFrameContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: "#F4F4F4";
+}
+
+.previewFrameTablet {
+  width: 820px;
+  height: 600px;
+  margin: 1rem 0 1rem 0;
+  border: solid 1px #eaeaea;
+}
+
+.previewFrameMobile {
+  width: 390px;
+  height: 600px;
+  margin: 1rem 0 1rem 0;
+  border: solid 1px #eaeaea;
+}
+
+.hifiFrame {
+  width: 100%;
+  height: 500px;
+  margin: 1rem 0 1rem 0;
+  border: solid 1px #eaeaea;
+  border-radius: 0 0 12px 12px;
+}
+
+.hifiComparison {
+  /* width: 100%; */
+  /* background-color: white; */
+  filter: drop-shadow(0px 10px 32px rgba(0, 0, 0, 0.1));
+  background-color: white;
+  border-radius: 12px;
+  width: 980px;
+}
+
+@media (max-width: 1100px) {
+  .previewFrame {
+    width: 100%;
+  }
+
+  .lofiFrame {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .comparison {
+    width: calc(100vw - 4rem);
+  }
+
+  .lofis {
+    width: calc(100vw - 4rem);
+  }
+
+  .hifiComparison {
+    width: calc(100vw - 4rem);
+  }
+}

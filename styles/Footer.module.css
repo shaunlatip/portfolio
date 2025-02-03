@@ -1,0 +1,173 @@
+.projectSection {
+  width: 1080px;
+  line-height: 1.5em;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--shade-1);
+  align-items: center;
+  margin: 0;
+  color: white;
+  line-height: 1.5rem;
+}
+
+.footerContent {
+  padding: 4rem 0 4rem 0;
+  flex-basis: 1080px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footerContent h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.footerContent p {
+  line-height: 1.5rem;
+}
+
+.footerContentProject {
+  padding: 4rem 0 4rem 0;
+
+  display: flex;
+  flex-basis: 1080px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footerContentProject h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.footerContentProject p {
+  line-height: 1.5rem;
+}
+
+.codedBy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1em;
+  font-weight: medium;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: 4vw;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.pageButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navItem {
+  padding: 8px;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.navLink {
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.navLink:hover {
+  color: #f0916c;
+  text-decoration: none;
+}
+
+.primaryLink {
+  color: #f0916c;
+}
+
+.primaryLink:hover {
+  color: #b4b4b4;
+  text-decoration: none;
+}
+
+.greyLink {
+  color: #ffffff;
+}
+
+.greyLink:hover {
+  color: #b4b4b4;
+  text-decoration: none;
+}
+
+.whiteToPrimaryLink {
+  color: #ffffff;
+}
+
+.whiteToPrimaryLink:hover {
+  color: #f0916c;
+  text-decoration: none;
+}
+
+.email:hover {
+  text-decoration: none;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.right {
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.noMarginBottom {
+  margin-bottom: 0;
+}
+
+@media (max-width: 730px) {
+  .footerContent {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .footerContentProject {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .right {
+    align-items: flex-start;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 1264px) {
+  .projectSection {
+    width: calc(100vw - 4rem);
+  }
+}
