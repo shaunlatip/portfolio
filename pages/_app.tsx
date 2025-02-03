@@ -1,7 +1,7 @@
 import "../styles/destyle.css";
 import "../styles/globals.css";
 import "../styles/transition.css";
-import Transition from "../components/Transition";
+import { Transition } from "../components/Transitions";
 import NavbarLayout from "../components/NavbarLayout";
 import { ChakraProvider } from "@chakra-ui/react";
 import { extendTheme } from "@chakra-ui/react";
