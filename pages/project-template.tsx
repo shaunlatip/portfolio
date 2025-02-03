@@ -8,7 +8,6 @@ import Footer from "../components/Footer";
 import Image from "next/image";
 import { useRef } from "react";
 import { motion } from "framer-motion";
-import { Fade } from "../components/Transitions";
 
 export default function ProjectTemplate() {
   // Refs for scroll navigation

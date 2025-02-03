@@ -1,16 +1,24 @@
-import { transition } from "@chakra-ui/react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/router";
+import { ReactNode } from "react";
 
-const Transition = ({ children }) => {
+// Props interfaces
+interface TransitionProps {
+  children: ReactNode;
+}
+
+interface FadeProps {
+  children: ReactNode;
+}
+
+// Original Transition component converted to TypeScript
+export const Transition = ({ children }: TransitionProps) => {
   const { asPath } = useRouter();
-  var transitionKey = "";
+  let transitionKey = "";
 
-  if (asPath.includes("#") == false) {
+  if (!asPath.includes("#")) {
     transitionKey = asPath;
   }
-
-  console.log(transitionKey);
 
   const variants = {
     out: {
@@ -54,5 +62,3 @@ const Transition = ({ children }) => {
     </div>
   );
 };
-
-export default Transition;
