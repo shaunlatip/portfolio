@@ -4,9 +4,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Footer from "../components//Footer";
 import Image from "next/image";
-import { GithubCircle } from "iconoir-react";
-import { Linkedin } from "iconoir-react";
-import { Mail } from "iconoir-react";
+import { GithubCircle, Linkedin, Mail } from "iconoir-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 
@@ -121,6 +119,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
+              {/*  Can convert project into a component with separate collapsed, dark/light mode states */}
               <div className={styles.highlightedProject}>
                 <div
                   className={`${styles.highlightedProjectImage} ${styles.supportAssistantImage}`}
@@ -450,6 +449,7 @@ Led 0→1 design for Mindbody's first LLM product, a support chatbot that improv
             </div>
           </div>
         </div>
+        {/* Below section should be just using dark mode in tailwind. */}
         <div className={styles.fullWidthSection}>
           <div className={styles.fullWidthContent}>
             <h3 className={styles.sectionTitle}>Side Projects —</h3>
